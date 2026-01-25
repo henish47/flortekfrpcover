@@ -42,7 +42,7 @@ const Home = () => {
                                 Built For The <span className="text-[#FFC107]">Heavy Loads.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-green-50 mb-10 leading-relaxed font-medium">
-                                Premium FRP & BMC Manhole Covers designed for modern infrastructure.
+                                Premium FRP Manhole Covers designed for modern infrastructure.
                                 Stronger than concrete, lighter than iron, and built to last.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
