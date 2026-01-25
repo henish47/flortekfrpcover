@@ -68,7 +68,7 @@ const Home = () => {
                             <div className="relative w-full max-w-lg aspect-square">
                                 <div className="absolute inset-0 bg-[#FFC107]/20 rounded-full blur-3xl scale-90 animate-pulse"></div>
                                 <img
-                                    src="public/images/hero-manhole.png"
+                                    src="public\images\heroimage.png"
                                     alt="Flortek Heavy "
                                     className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 object-contain"
                                 />
