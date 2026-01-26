@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.flortekindustries.com/sitemap.xml
+Sitemap: https://flortekfrpcover.vercel.app/sitemap.xml

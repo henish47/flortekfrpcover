@@ -38,6 +38,20 @@ const ProductDetail = () => {
                 title={product.name}
                 description={product.description || `Technical specifications and features of ${product.name} Manhole Cover by Flortek Industries.`}
                 keywords={`${product.name}, ${product.category}, flortek manhole covers, rajkot industrial products`}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": product.name,
+                    "image": `https://flortekfrpcover.vercel.app${product.image.startsWith('/') ? '' : '/'}${product.image}`,
+                    "description": product.description || `Flortek ${product.name}`,
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Flortek"
+                    },
+                    "sku": product.id,
+                    "category": product.category
+                }}
+                canonicalUrl={`https://flortekfrpcover.vercel.app/products/${product.id}`}
             />
 
             <div className="max-w-[1400px] mx-auto px-4 md:px-8">

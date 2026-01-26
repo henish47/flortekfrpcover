@@ -214,14 +214,22 @@ const Products = () => {
 
     return (
         <div className=" lg:pt-20 bg-slate-50 min-h-screen font-sans">
-            
-                <h1 className='font-semibold text-6xl mb-9 text-center mt-5'>OUR PRODUCTS</h1>
-            
+
+            <h1 className='font-semibold text-6xl mb-9 text-center mt-5'>OUR PRODUCTS</h1>
+
 
             <SEO
                 title="Industrial Product Catalogue | Flortek Industries"
                 description="Browse our comprehensive range of high-performance FRP, BMC, and recessed manhole covers. Precision-engineered solutions for modern infrastructure."
                 keywords="FRP manhole cover catalog, BMC covers India, industrial drainage gratings"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "name": "Flortek Product Catalogue",
+                    "description": "Comprehensive range of FRP, BMC and Steel Manhole Covers.",
+                    "url": "https://flortekfrpcover.vercel.app/products"
+                }}
+                canonicalUrl="https://flortekfrpcover.vercel.app/products"
             />
 
 
@@ -451,7 +459,7 @@ const Products = () => {
                 </div>
             </Section>
 
-     
+
         </div>
     );
 };

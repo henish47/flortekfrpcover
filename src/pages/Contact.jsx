@@ -60,6 +60,14 @@ const Contact = () => {
                 title="Contact Flortek | Architectural & Industrial Solutions"
                 description="Connect with Flortek Industries for premium FRP manhole covers and drainage solutions. Rajkot-based manufacturing with pan-India delivery."
                 keywords="contact flortek, get quote manhole covers, industrial composite suppliers"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "ContactPage",
+                    "name": "Contact Flortek Industries",
+                    "description": "Get in touch with Flortek Industries for inquiries about FRP and BMC manhole covers.",
+                    "url": "https://flortekfrpcover.vercel.app/contact"
+                }}
+                canonicalUrl="https://flortekfrpcover.vercel.app/contact"
             />
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">
@@ -127,7 +135,7 @@ const Contact = () => {
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                             ></iframe>
-                           
+
                         </div>
                     </div>
 
@@ -205,8 +213,8 @@ const Contact = () => {
                                 type="submit"
                                 disabled={status === 'submitting'}
                                 className={`w-full py-4 rounded-xl font-bold text-white transition-all flex items-center justify-center gap-2 ${status === 'submitting'
-                                        ? 'bg-slate-400 cursor-not-allowed'
-                                        : 'bg-primary hover:bg-emerald-600 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 active:scale-[0.98]'
+                                    ? 'bg-slate-400 cursor-not-allowed'
+                                    : 'bg-primary hover:bg-emerald-600 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 active:scale-[0.98]'
                                     }`}
                             >
                                 {status === 'submitting' ? 'Sending...' : (

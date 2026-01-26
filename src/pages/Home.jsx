@@ -8,12 +8,55 @@ import SEO from '../components/common/SEO';
 const Home = () => {
     const { openModal } = useModal();
 
+    const homeSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Flortek Industries",
+        "image": "https://flortekfrpcover.vercel.app/images/logo.png", // Assuming this exists or will exist
+        "@id": "https://flortekfrpcover.vercel.app",
+        "url": "https://flortekfrpcover.vercel.app",
+        "telephone": "+919876543210", // Placeholder, user can update
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
+            "addressLocality": "Rajkot",
+            "addressRegion": "Gujarat",
+            "postalCode": "360024",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 22.3039,
+            "longitude": 70.8022
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+        },
+        "priceRange": "₹₹",
+        "sameAs": [
+            "https://www.facebook.com/flortek",
+            "https://www.instagram.com/flortek"
+        ]
+    };
+
     return (
         <div className="bg-white min-h-screen font-sans">
             <SEO
-                title="Flortek Industries | Premium FRP & BMC Manhole Covers"
-                description="India's leading manufacturer of high-strength industrial manhole covers, drainage gratings, and recessed solutions. Built for durability and safety."
-                keywords="manhole covers, FRP covers, BMC covers, drainage gratings, Rajkot industry, Flortek"
+                title="Best FRP Manhole Cover Manufacturer & Supplier in India | Flortek Industries"
+                description="Flortek Industries: India's top manufacturer of heavy-duty FRP, BMC, and Steel Manhole Covers in Rajkot. Certified quality, theft-proof, and durable drainage solutions for infrastructure projects."
+                keywords="FRP manhole cover manufacturer, BMC manhole cover suppliers, steel manhole covers Rajkot, drainage gratings India, heavy duty manhole covers, composite manhole covers, fiber reinforced plastic covers, Flortek Industries"
+                schema={homeSchema}
+                canonicalUrl="https://flortekfrpcover.vercel.app"
             />
 
             {/* --- HERO SECTION (GREEN THEME) --- */}

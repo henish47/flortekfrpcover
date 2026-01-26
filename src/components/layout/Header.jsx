@@ -52,7 +52,7 @@ const Header = () => {
                     </div>
                     <div className="flex items-center gap-6">
                         <a
-                            href="/brochure.pdf"
+                            href="public/brochure.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 hover:text-accent transition-colors duration-300 group"
