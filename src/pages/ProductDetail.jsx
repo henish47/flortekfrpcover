@@ -19,7 +19,7 @@ const ProductDetail = () => {
             : [
                 product.image,
                 "/images/heroimage.png",
-                "/images/hero-manhole.png"
+                "/images/circular/hero-manhole.png"
             ]
     ) : [];
 

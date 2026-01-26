@@ -223,7 +223,7 @@ const Home = () => {
                                 <div className="absolute bottom-10 left-10 w-40 h-40 bg-[#109148] rounded-full opacity-10 blur-xl"></div>
 
                                 <img
-                                    src="/images/hero-manhole.png"
+                                    src="images/frp-450x450-b125-hero.png"
                                     alt="Flortek Manhole Cover"
                                     className="w-3/4 h-auto drop-shadow-2xl relative z-10 hover:scale-105 transition-transform duration-500"
                                     onError={(e) => { e.target.style.display = 'none'; }}
