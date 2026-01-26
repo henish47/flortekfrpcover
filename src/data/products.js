@@ -32,6 +32,11 @@ export const products = [
         name: "15x15\" Square Manhole Cover",
         category: "Square",
         image: "/images/FRP-15x15-2.5T-FW.png",
+        images: [
+            "/images/FRP-15x15-2.5T-FW.png",
+            "/images/hero-manhole.png",
+            "/images/FRP-10x10-2.5T-FW.png"
+        ],
         specs: { "Outer Size": "380x380mm (15x15\")", "Clear Opening": "300x300mm (12x12\")", "Load": "2.5 / 5 T" },
         features: ["High Durability", "Sealed Design", "Chemical Resistant"],
         description: "Versatile medium-duty cover for commercial and residential pathways."
@@ -41,6 +46,11 @@ export const products = [
         name: "18x18\" Square Manhole Cover",
         category: "Square",
         image: "/images/FRP-18x18-2.5T-FW.png",
+        images: [
+            "/images/FRP-18x18-2.5T-FW.png",
+            "/images/hero-manhole.png",
+            "/images/FRP-12x12-2.5T-FW.png"
+        ],
         specs: { "Outer Size": "450x450mm (18x18\")", "Clear Opening": "380x380mm (15x15\")", "Load": "2.5 T" },
         features: ["Reinforced Core", "Non-Conductive", "Anti-Theft"],
         description: "Popular size for sewer lines, offering accessibility and strength."
@@ -133,6 +143,11 @@ export const products = [
         name: "16\" Circular Manhole Cover",
         category: "Circular",
         image: "/images/hero-manhole.png",
+        images: [
+            "/images/hero-manhole.png",
+            "/images/FRP-10x10-2.5T-FW.png",
+            "/images/FRP-12x12-2.5T-FW.png"
+        ],
         specs: { "Outer Size": "400mm (16\")", "Clear Opening": "300mm (12\")", "Load": "2.5 T / 5.0 T" },
         features: ["Circular Precision", "Anti-Slide", "Lightweight"],
         description: "Standard circular cover for sewage and storm water systems."

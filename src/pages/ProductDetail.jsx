@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle, Shield, Truck, FileText, Phone, Zap, Maximize, Box, Layers, Share2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, CheckCircle, Shield, Truck, FileText, Phone, Zap, Maximize, Box, Layers, Share2, ChevronLeft, ChevronRight } from 'lucide-react';
 import Button from '../components/common/Button';
 import Section from '../components/common/Section';
 import { getProductById } from '../utils/productUtils';
@@ -10,9 +10,34 @@ import SEO from '../components/common/SEO';
 const ProductDetail = () => {
     const { id } = useParams();
     const product = getProductById(id);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    // Fallback: If product has no extra images defined, use these placeholders to demonstrate carousel
+    const images = product ? (
+        product.images && product.images.length > 1
+            ? product.images
+            : [
+                product.image,
+                "/images/heroimage.png",
+                "/images/hero-manhole.png"
+            ]
+    ) : [];
+
+    const hasMultipleImages = images.length > 1;
+
+    const nextImage = (e) => {
+        e?.stopPropagation();
+        setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    };
+
+    const prevImage = (e) => {
+        e?.stopPropagation();
+        setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
+    };
 
     useEffect(() => {
         window.scrollTo(0, 0);
+        setCurrentImageIndex(0);
     }, [id]);
 
     const handleShare = async () => {
@@ -99,22 +124,55 @@ const ProductDetail = () => {
                             <div className="absolute bottom-0 left-0 w-48 h-48 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl -ml-32 -mb-32 pointer-events-none" />
 
                             <div className="relative aspect-square md:aspect-[4/3] flex items-center justify-center p-8 md:p-12 lg:p-20">
-                                <motion.img
-                                    initial={{ scale: 0.9, opacity: 0, y: 20 }}
-                                    animate={{ scale: 1, opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, type: "spring" }}
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="relative z-10 max-w-full max-h-full object-contain drop-shadow-[0_45px_65px_rgba(0,0,0,0.15)]"
-                                />
+                                <AnimatePresence mode="wait">
+                                    <motion.img
+                                        key={currentImageIndex}
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.2 }}
+                                        src={images[currentImageIndex]}
+                                        alt={product.name}
+                                        className="relative z-10 w-full h-full object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_45px_65px_rgba(0,0,0,0.15)]"
+                                    />
+                                </AnimatePresence>
 
                                 {/* Floating Badge */}
-                                <div className="absolute top-4 right-4 md:top-8 md:right-8">
+                                <div className="absolute top-4 right-4 md:top-8 md:right-8 z-20">
                                     <span className="bg-white/90 backdrop-blur-md px-3 py-1.5 md:px-5 md:py-2.5 rounded-xl md:rounded-2xl text-[10px] md:text-xs font-black uppercase tracking-widest text-slate-800 shadow-lg border border-slate-100 flex items-center gap-1.5 md:gap-2">
                                         <Layers size={12} className="md:w-3.5 md:h-3.5 text-primary" />
                                         {product.category} Series
                                     </span>
                                 </div>
+
+                                {/* Carousel Controls */}
+                                {hasMultipleImages && (
+                                    <>
+                                        <button
+                                            onClick={prevImage}
+                                            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-lg border border-slate-100 flex items-center justify-center transition-all z-20 hover:scale-110"
+                                        >
+                                            <ChevronLeft size={20} />
+                                        </button>
+                                        <button
+                                            onClick={nextImage}
+                                            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-lg border border-slate-100 flex items-center justify-center transition-all z-20 hover:scale-110"
+                                        >
+                                            <ChevronRight size={20} />
+                                        </button>
+
+                                        {/* Dots Indicator */}
+                                        <div className="absolute bottom-6 left-0 right-0 flex justify-center gap-2 z-20">
+                                            {images.map((_, idx) => (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => setCurrentImageIndex(idx)}
+                                                    className={`w-2 h-2 md:w-2.5 md:h-2.5 rounded-full transition-all shadow-sm ${idx === currentImageIndex ? 'bg-primary scale-125' : 'bg-slate-300 hover:bg-slate-400'}`}
+                                                />
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         </div>
 
