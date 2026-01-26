@@ -37,7 +37,7 @@ const ProductDetail = () => {
             <SEO
                 title={product.name}
                 description={product.description || `Technical specifications and features of ${product.name} Manhole Cover by Flortek Industries.`}
-                keywords={`${product.name}, ${product.category}, flortek manhole covers, rajkot industrial products`}
+                keywords={`${product.name} Specifications, ${product.category} Manhole Cover India, Flortek ${product.name}, Best Quality ${product.category}, Buy ${product.name} Online, ${product.name} Load Capacity, FRP ${product.name} Price, Rust Proof Manhole Cover, Anti-theft Manhole Cover`}
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "Product",

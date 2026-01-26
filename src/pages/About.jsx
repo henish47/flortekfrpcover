@@ -9,7 +9,7 @@ const About = () => {
             <SEO
                 title="About Flortek Industries | Premium FRP Manufacturer"
                 description="Flortek Industries is a leading manufacturer of FRP Manhole Covers, BMC covers, and infrastructure solutions based in Rajkot, Gujarat. Est. 2017."
-                keywords="Flortek profile, FRP manufacturer Rajkot, manhole covers company India"
+                keywords="Flortek Industries Profile, Top FRP Manufacturer Rajkot, Best Manhole Cover Company India, ISO 9001:2015 Certified, SMC BMC Cover Factory, Flortek Founders, Infrastructure Solutions Gujarat, Manhole Cover Exporters"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "AboutPage",

@@ -54,7 +54,7 @@ const Home = () => {
             <SEO
                 title="Best FRP Manhole Cover Manufacturer & Supplier in India | Flortek Industries"
                 description="Flortek Industries: India's top manufacturer of heavy-duty FRP, BMC, and Steel Manhole Covers in Rajkot. Certified quality, theft-proof, and durable drainage solutions for infrastructure projects."
-                keywords="FRP manhole cover manufacturer, BMC manhole cover suppliers, steel manhole covers Rajkot, drainage gratings India, heavy duty manhole covers, composite manhole covers, fiber reinforced plastic covers, Flortek Industries"
+                keywords="FRP manhole cover manufacturer, BMC manhole cover suppliers, steel manhole covers Rajkot, drainage gratings India, heavy duty manhole covers, composite manhole covers, fiber reinforced plastic covers, Flortek Industries, Recessed Manhole Covers, Water Gully Gratings, Tank Covers, SFRC Covers, Industrial Drainage Solutions, Municipal Manhole Covers, Smart City Infrastructure, EN 124 Standard Covers, D400 Manhole Cover, B125 Manhole Cover, A15 Manhole Cover, Best FRP Cover India"
                 schema={homeSchema}
                 canonicalUrl="https://flortekfrpcover.vercel.app"
             />

@@ -59,7 +59,7 @@ const Contact = () => {
             <SEO
                 title="Contact Flortek | Architectural & Industrial Solutions"
                 description="Connect with Flortek Industries for premium FRP manhole covers and drainage solutions. Rajkot-based manufacturing with pan-India delivery."
-                keywords="contact flortek, get quote manhole covers, industrial composite suppliers"
+                keywords="Contact Flortek Industries, Get FRP Cover Quote, Manhole Cover Price List, Buy Manhole Covers Wholesale, Contact Manhole Cover Manufacturer Rajkot, Flortek Customer Care"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "ContactPage",

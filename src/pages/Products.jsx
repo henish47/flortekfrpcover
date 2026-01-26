@@ -221,7 +221,7 @@ const Products = () => {
             <SEO
                 title="Industrial Product Catalogue | Flortek Industries"
                 description="Browse our comprehensive range of high-performance FRP, BMC, and recessed manhole covers. Precision-engineered solutions for modern infrastructure."
-                keywords="FRP manhole cover catalog, BMC covers India, industrial drainage gratings"
+                keywords="Best FRP Manhole Cover Catalogue, BMC Manhole Cover Sizes, Industrial Drainage Gratings, Recessed Manhole Cover Price, Heavy Duty FRP Cover Specifications, Water Tank Cover 60x60, 45x60 Manhole Cover, 600mm Circular Manhole Cover, Square Frame Covers, Rectangular Drainage Gratings, FRP Grating Sizes, Load Class A15 B125 C250 D400"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "CollectionPage",
