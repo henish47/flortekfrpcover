@@ -85,8 +85,8 @@ const Home = () => {
                                 Built For The <span className="text-[#FFC107]">Heavy Loads.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-green-50 mb-10 leading-relaxed font-medium">
-                                Premium FRP & GRP Manhole Covers designed for modern infrastructure.
-                                Stronger than concrete, lighter than iron, and built to last.
+                                India's Premium FRP, BMC & SMC Manhole Cover Manufacturer.
+                                ISO Certified drainage solutions stronger than concrete, lighter than iron.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                                 <Link to="/products" className="inline-flex items-center justify-center px-8 py-4 bg-[#FFC107] hover:bg-yellow-300 text-slate-900 font-bold rounded-xl transition-all shadow-[0_10px_20px_rgba(255,193,7,0.3)] hover:-translate-y-1">

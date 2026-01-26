@@ -127,7 +127,7 @@ const Contact = () => {
                         {/* Map or Image Placeholder - simplified */}
                         <div className="rounded-2xl overflow-hidden h-64 bg-slate-100 border border-slate-200">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1847.7647341195748!2d70.81020776387265!3d22.143908995990042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDA4JzM4LjEiTiA3MMKwNDgnNDAuOSJF!5e0!3m2!1sen!2sin!4v1769320386252!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10470.140782488901!2d70.79688149363858!3d22.150944967781953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0786239eebca59%3A0xe89ef5df473b6e77!2sFlortek%20Industries!5e0!3m2!1sen!2sin!4v1769419594411!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
