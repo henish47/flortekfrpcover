@@ -1,6 +1,7 @@
 import React from 'react';
 import SEO from '../components/common/SEO';
 import { Building2, Users, Award, Truck, MapPin, Calendar, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
@@ -118,9 +119,9 @@ const About = () => {
                         <div className="p-8 bg-slate-900 rounded-3xl text-white">
                             <h3 className="text-xl font-bold mb-4 text-white">Need a Quote?</h3>
                             <p className="text-slate-400 text-sm mb-6">Contact our sales team for bulk orders and technical specifications.</p>
-                            <a href="/contact" className="block w-full text-center py-3 bg-primary hover:bg-emerald-600 text-white font-bold rounded-xl transition-colors">
+                            <Link to="/contact" className="block w-full text-center py-3 bg-primary hover:bg-emerald-600 text-white font-bold rounded-xl transition-colors">
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
