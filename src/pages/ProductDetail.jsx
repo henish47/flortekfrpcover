@@ -50,7 +50,7 @@ const ProductDetail = () => {
     }
 
     return (
-        <div className="md:pt-5 min-h-screen bg-slate-50 pb-20 font-sans">
+        <div className=" md:pt-5 min-h-screen bg-slate-50 pb-20 font-sans">
             <SEO
                 title={product.name}
                 description={product.description || `Technical specifications and features of ${product.name} Manhole Cover by Flortek Industries.`}
