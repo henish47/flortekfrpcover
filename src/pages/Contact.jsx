@@ -82,7 +82,7 @@ const Contact = () => {
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-slate-900">Headquarters</h4>
+                                        <h4 className="font-semibold text-slate-900">Address</h4>
                                         <p className="text-slate-600 leading-relaxed mt-1">
                                             Radhe Industrial Zone, Survey No.99/1-2,<br />
                                             Plot No.4/37, Veraval Shapar,<br />
