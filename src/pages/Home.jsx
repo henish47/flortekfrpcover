@@ -69,7 +69,7 @@ const Home = () => {
                 />
                 <div className="absolute bottom-0 left-0 w-64 h-64 bg-yellow-400/20 rounded-full blur-[80px] pointer-events-none -ml-10 -mb-10"></div>
 
-                <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                <div className="max-w-7xl mx-auto  px-4 md:px-8 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left: Text Content */}
                         <motion.div
@@ -85,8 +85,7 @@ const Home = () => {
                                 Built For The <span className="text-[#FFC107]">Heavy Loads.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-green-50 mb-10 leading-relaxed font-medium">
-                                India's Premium FRP, BMC & SMC Manhole Cover Manufacturer.
-                                ISO Certified drainage solutions stronger than concrete, lighter than iron.
+                               High-strength, corrosion-resistant FRP manhole covers engineered for industrial, municipal, and infrastructure applications.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                                 <Link to="/products" className="inline-flex items-center justify-center px-8 py-4 bg-[#FFC107] hover:bg-yellow-300 text-slate-900 font-bold rounded-xl transition-all shadow-[0_10px_20px_rgba(255,193,7,0.3)] hover:-translate-y-1">
