@@ -85,7 +85,7 @@ const Home = () => {
                                 Built For The <span className="text-[#FFC107]">Heavy Loads.</span>
                             </h1>
                             <p className="text-lg md:text-xl text-green-50 mb-10 leading-relaxed font-medium">
-                               High-strength, corrosion-resistant FRP manhole covers engineered for industrial, municipal, and infrastructure applications.
+                                High-strength, corrosion-resistant FRP manhole covers engineered for industrial, municipal, and infrastructure applications.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                                 <Link to="/products" className="inline-flex items-center justify-center px-8 py-4 bg-[#FFC107] hover:bg-yellow-300 text-slate-900 font-bold rounded-xl transition-all shadow-[0_10px_20px_rgba(255,193,7,0.3)] hover:-translate-y-1">
@@ -102,20 +102,55 @@ const Home = () => {
 
                         {/* Right: Product Image */}
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                            initial={{ opacity: 0, y: 80 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                             className="relative flex justify-center lg:justify-end"
+                            style={{ perspective: "1200px" }}
                         >
-                            <div className="relative w-full max-w-lg aspect-square">
-                                <div className="absolute inset-0 bg-[#FFC107]/20 rounded-full blur-3xl scale-90 animate-pulse"></div>
-                                <img
+                            <motion.div
+                                initial={{ rotateX: 18, rotateY: -18, scale: 0.9 }}
+                                animate={{ rotateX: 0, rotateY: 0, scale: 1 }}
+                                transition={{ duration: 1.4, ease: "easeOut" }}
+                                className="relative w-full max-w-xl aspect-square"
+                            >
+
+                                {/* Deep ambient glow */}
+                                <div className="absolute inset-0 rounded-full bg-gradient-to-tr 
+      from-[#FFC107]/50 via-[#FFB300]/30 to-transparent 
+      blur-[160px] scale-90" />
+
+                                {/* 3D shadow base */}
+                                <div className="absolute inset-10 rounded-full bg-black/50 blur-3xl translate-y-8 scale-95" />
+
+                                {/* Glass depth layer */}
+                                <div className="absolute inset-6 rounded-full bg-white/5 backdrop-blur-2xl border border-white/10" />
+
+                                {/* Product Image – TRUE 3D */}
+                                <motion.img
                                     src="images/heroimage.png"
-                                    alt="Flortek Heavy "
-                                    className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-700 object-contain"
+                                    alt="FRP Manhole Cover Manufacturer – Flortek Industries"
+                                    loading="lazy"
+                                    whileHover={{
+                                        rotateX: -12,
+                                        rotateY: 12,
+                                        scale: 1.12,
+                                    }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    className="
+        relative z-10 w-full h-full object-contain
+        drop-shadow-[0_50px_100px_rgba(0,0,0,0.7)]
+        will-change-transform
+      "
                                 />
-                            </div>
+
+                                {/* Specular highlight */}
+                                <div className="absolute inset-20 rounded-full bg-white/10 blur-xl rotate-12" />
+
+                            </motion.div>
                         </motion.div>
+
+
                     </div>
                 </div>
             </div>
