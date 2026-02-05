@@ -300,7 +300,16 @@ const Products = () => {
                                     {categories.map((cat, i) => (
                                         <button
                                             key={i}
-                                            onClick={() => setActiveCategory(cat)}
+                                            onClick={() => {
+                                                setActiveCategory(cat);
+                                                const gridElement = document.getElementById('products-grid');
+                                                if (gridElement) {
+                                                    // Add a small offset for the sticky header
+                                                    const yOffset = -150;
+                                                    const y = gridElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                                    window.scrollTo({ top: y, behavior: 'smooth' });
+                                                }
+                                            }}
                                             className={`flex-shrink-0 lg:w-full flex items-center justify-between gap-3 text-sm font-medium transition-all
                                                 px-4 py-2 rounded-full border lg:border-none lg:rounded-lg lg:px-4 lg:py-3 lg:text-left group
                                                 ${activeCategory === cat
