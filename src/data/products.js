@@ -185,12 +185,13 @@ export const products = [
     },
     {
         id: "circ-24",
-        name: "24\" Circular Manhole Cover",
+        name: "24\" Circular Manhole Cover ",
         category: "Circular",
+        image: "/images/circular/Round 24 5T.jpg.jpeg",
         images: [
-            "/images/circular/FRP-24-2.5T-FW.png",
+            "/images/circular/Round 24 5T.jpg.jpeg",
         ],
-        specs: { "Outer Size": "600mm (24\")", "Clear Opening": "500mm (20\")", "Load": "2.5 T / 5.0 T" },
+        specs: { "Outer Size": "600mm (24\")", "Clear Opening": "500mm (20\")", "Load": " 5.0 T" },
         features: ["Roadway Safe", "Heavy Flow Support", "Professional Grade"],
         description: "Large circular cover designed for city infrastructure nodes."
     },
