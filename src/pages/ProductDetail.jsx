@@ -14,13 +14,9 @@ const ProductDetail = () => {
 
     // Fallback: If product has no extra images defined, use these placeholders to demonstrate carousel
     const images = product ? (
-        product.images && product.images.length > 1
+        product.images && product.images.length > 0
             ? product.images
-            : [
-                product.image,
-                "/images/heroimage.png",
-                "/images/circular/hero-manhole.png"
-            ]
+            : [product.image]
     ) : [];
 
     const hasMultipleImages = images.length > 1;

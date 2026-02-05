@@ -421,11 +421,11 @@ export const products = [
     },
     {
         id: "hd-600-circ",
-        name: "600mm Heavy Duty Circular (C250)",
+        name: "600mm Heavy Duty Circular (B125)",
         category: "Heavy Duty",
-        image: "/images/circular/hero-manhole.png",
-        images: ["/images/circular/hero-manhole.png"],
-        specs: { "Diameter": "600mm", "Load": "25 T (C250) / 40 T (D400)", "Material": "Grade A FRP" },
+        image: "/images/circular/FRP 600 BS EN_124_B125.png",
+        images: ["/images/circular/FRP 600 BS EN_124_B125.png"],
+        specs: { "Diameter": "600mm", "Load": "12.5 T (B125)", "Material": "Grade A FRP" },
         features: ["Highway Rated", "Max Impact Resistance", "Double Sealing"],
         description: "Heavy-duty circular cover for high-traffic road usage."
     },
