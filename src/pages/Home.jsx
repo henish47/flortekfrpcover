@@ -173,7 +173,7 @@ const Home = () => {
                                     <div className="flex items-center gap-3">
                                         <div className="bg-[#109148] p-2 rounded-lg text-white">
                                             <ShieldCheck size={24} />
-                                        </div>
+                                            </div>
                                         <div>
                                             <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Certified</p>
                                             <p className="text-sm font-black text-slate-800">ISO 9001:2015</p>

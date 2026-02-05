@@ -15,6 +15,8 @@ import SizeChartPage from './pages/SizeChartPage';
 import Installation from './pages/Installation';
 import { ModalProvider } from './context/ModalContext';
 
+import Sitemap from './pages/Sitemap';
+
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -50,6 +52,7 @@ const AppContent = () => {
           <Route path="/applications" element={<Applications />} />
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/sitemap" element={<Sitemap />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
