@@ -297,8 +297,8 @@ export const products = [
         id: "rect-24x36",
         name: "24x36\" Rectangular Cover",
         category: "Rectangular",
-        image: "/images/rectangular/FRP-24x36-2.5T-FW.png",
-        images: ["/images/rectangular/FRP-24x36-2.5T-FW.png"],
+        // image: "/images/rectangular/FRP-24x36-2.5T-FW.png",
+        images: ["public/images/rectangular/24 X 36 FRP.PNG"],
         specs: { "Outer Size": "600x900mm (24x36\")", "Clear Opening": "500x800mm (20x32\")", "Load": "2.5 T / 5.0 T" },
         features: ["Cable Trench Load", "Bolt-down Option", "Max Length"],
         description: "Heavy-duty large rectangular cover for infrastructure hubs."
