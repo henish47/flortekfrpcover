@@ -168,7 +168,7 @@ const Home = () => {
                                 <motion.div
                                     animate={{ y: [0, 15, 0] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                                    className="absolute -top-4 -right-4 z-20 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/40 hidden md:block"
+                                    className="absolute -top-4 right-0 md:-right-4 z-20 bg-white/90 backdrop-blur-md p-2 md:p-4 rounded-2xl shadow-xl border border-white/40"
                                 >
                                     <div className="flex items-center gap-3">
                                         <div className="bg-[#109148] p-2 rounded-lg text-white">
@@ -185,7 +185,7 @@ const Home = () => {
                                 <motion.div
                                     animate={{ y: [0, -15, 0] }}
                                     transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                                    className="absolute bottom-10 -left-10 z-20 bg-[#FFC107] text-slate-900 p-4 rounded-2xl shadow-xl border border-yellow-300 hidden md:block"
+                                    className="absolute bottom-0 left-0 md:bottom-10 md:-left-10 z-20 bg-[#FFC107] text-slate-900 p-2 md:p-4 rounded-2xl shadow-xl border border-yellow-300"
                                 >
                                     <div className="flex items-center gap-3">
                                         <div className="bg-slate-900/10 p-2 rounded-lg">
