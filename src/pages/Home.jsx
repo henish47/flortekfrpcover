@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Star } from 'lucide-react';
+import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Star, Download } from 'lucide-react';
 import { useModal } from '../context/ModalContext';
 import { motion } from 'framer-motion';
 import SEO from '../components/common/SEO';
@@ -97,6 +97,13 @@ const Home = () => {
                                 >
                                     Get Quote
                                 </button>
+                                <a
+                                    href="/brochure.pdf"
+                                    download="Flortek_Brochure.pdf"
+                                    className="inline-flex items-center justify-center px-8 py-4 bg-emerald-800/50 hover:bg-emerald-800/70 border-2 border-transparent text-white font-bold rounded-xl transition-all backdrop-blur-sm"
+                                >
+                                    <Download size={18} className="mr-2" /> Brochure
+                                </a>
                             </div>
                         </motion.div>
 
