@@ -101,6 +101,7 @@ const Home = () => {
                         </motion.div>
 
                         {/* Right: Product Image */}
+                        {/* Right: Product Image */}
                         <motion.div
                             initial={{ opacity: 0, y: 80 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -110,14 +111,24 @@ const Home = () => {
                         >
                             <motion.div
                                 initial={{ rotateX: 18, rotateY: -18, scale: 0.9 }}
-                                animate={{ rotateX: 0, rotateY: 0, scale: 1 }}
-                                transition={{ duration: 1.4, ease: "easeOut" }}
+                                animate={{
+                                    rotateX: [0, 5, 0],
+                                    rotateY: [0, 10, 0],
+                                    y: [0, -20, 0],
+                                    scale: 1
+                                }}
+                                transition={{
+                                    duration: 6,
+                                    repeat: Infinity,
+                                    repeatType: "mirror",
+                                    ease: "easeInOut"
+                                }}
                                 className="relative w-full max-w-xl aspect-square"
                             >
 
                                 {/* Deep ambient glow */}
-                                <div className="absolute inset-0 rounded-full bg-gradient-to-tr 
-      from-[#FFC107]/50 via-[#FFB300]/30 to-transparent 
+                                <div className="absolute inset-0 rounded-full bg-gradient-to-tr
+      from-[#FFC107]/50 via-[#FFB300]/30 to-transparent
       blur-[160px] scale-90" />
 
                                 {/* 3D shadow base */}
@@ -132,11 +143,10 @@ const Home = () => {
                                     alt="FRP Manhole Cover Manufacturer – Flortek Industries"
                                     loading="lazy"
                                     whileHover={{
-                                        rotateX: -12,
-                                        rotateY: 12,
-                                        scale: 1.12,
+                                        scale: 1.1,
+                                        rotate: -5
                                     }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    transition={{ duration: 0.4 }}
                                     className="
         relative z-10 w-full h-full object-contain
         drop-shadow-[0_50px_100px_rgba(0,0,0,0.7)]
@@ -147,6 +157,40 @@ const Home = () => {
                                 {/* Specular highlight */}
                                 <div className="absolute inset-20 rounded-full bg-white/10 blur-xl rotate-12" />
 
+                                {/* Floating Badge 1: Quality */}
+                                <motion.div
+                                    animate={{ y: [0, 15, 0] }}
+                                    transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                                    className="absolute -top-4 -right-4 z-20 bg-white/90 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-white/40 hidden md:block"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-[#109148] p-2 rounded-lg text-white">
+                                            <ShieldCheck size={24} />
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] uppercase font-bold text-slate-500 tracking-wider">Certified</p>
+                                            <p className="text-sm font-black text-slate-800">ISO 9001:2015</p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
+                                {/* Floating Badge 2: Load */}
+                                <motion.div
+                                    animate={{ y: [0, -15, 0] }}
+                                    transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                                    className="absolute bottom-10 -left-10 z-20 bg-[#FFC107] text-slate-900 p-4 rounded-2xl shadow-xl border border-yellow-300 hidden md:block"
+                                >
+                                    <div className="flex items-center gap-3">
+                                        <div className="bg-slate-900/10 p-2 rounded-lg">
+                                            <Truck size={24} />
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] uppercase font-bold text-slate-700 tracking-wider">Load Capacity</p>
+                                            <p className="text-xl font-black">Up to 40T</p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+
                             </motion.div>
                         </motion.div>
 
@@ -156,7 +200,7 @@ const Home = () => {
             </div>
 
             {/* --- PRODUCT CATEGORIES (WHITE & GREEN/YELLOW ACCENTS) --- */}
-            <div className="bg-white py-24">
+            < div className="bg-white py-24" >
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -197,10 +241,10 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* --- WHY CHOOSE US (GREEN & YELLOW) --- */}
-            <div className="py-24 bg-green-50/50">
+            < div className="py-24 bg-green-50/50" >
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <motion.div
@@ -277,10 +321,10 @@ const Home = () => {
                         </motion.div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* --- REVIEWS / TESTIMONIALS (NEW SECTION) --- */}
-            <div className="bg-white py-24 border-t border-slate-100">
+            < div className="bg-white py-24 border-t border-slate-100" >
                 <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -342,10 +386,10 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* --- CTA SECTION (YELLOW THEME) --- */}
-            <div className="bg-[#FFC107] py-24 text-center px-4 relative overflow-hidden">
+            < div className="bg-[#FFC107] py-24 text-center px-4 relative overflow-hidden" >
                 <div className="absolute inset-0 bg-white/10 opacity-50 pattern-grid-lg"></div>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -365,8 +409,8 @@ const Home = () => {
                         Get a Quote Today
                     </button>
                 </motion.div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
