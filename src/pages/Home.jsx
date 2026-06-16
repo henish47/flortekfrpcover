@@ -4,48 +4,79 @@ import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Sta
 import { useModal } from '../context/ModalContext';
 import { motion } from 'framer-motion';
 import SEO from '../components/common/SEO';
+import FAQAccordion, { faqs } from '../components/common/FAQAccordion';
 
 const Home = () => {
     const { openModal } = useModal();
 
     const homeSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Flortek Industries Private Limited",
-        "image": "https://flortekfrpcover.vercel.app/images/logo.png", // Assuming this exists or will exist
-        "@id": "https://flortekfrpcover.vercel.app",
-        "url": "https://flortekfrpcover.vercel.app",
-        "telephone": "+919876543210", // Placeholder, user can update
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
-            "addressLocality": "Rajkot",
-            "addressRegion": "Gujarat",
-            "postalCode": "360024",
-            "addressCountry": "IN"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 22.3039,
-            "longitude": 70.8022
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-            ],
-            "opens": "09:00",
-            "closes": "18:00"
-        },
-        "priceRange": "₹₹",
-        "sameAs": [
-            "https://www.facebook.com/flortek",
-            "https://www.instagram.com/flortek"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://flortekfrpcover.vercel.app/#organization",
+                "name": "Flortek Industries Private Limited",
+                "url": "https://flortekfrpcover.vercel.app",
+                "logo": "https://flortekfrpcover.vercel.app/images/logo.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-8000888620",
+                    "contactType": "sales",
+                    "areaServed": "IN",
+                    "availableLanguage": ["en", "hi", "gu"]
+                }
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://flortekfrpcover.vercel.app/#localbusiness",
+                "name": "Flortek Industries Private Limited",
+                "image": "https://flortekfrpcover.vercel.app/images/logo.png",
+                "url": "https://flortekfrpcover.vercel.app",
+                "telephone": "+91-8000888620",
+                "priceRange": "₹₹",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
+                    "addressLocality": "Rajkot",
+                    "addressRegion": "Gujarat",
+                    "postalCode": "360024",
+                    "addressCountry": "IN"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 22.1509,
+                    "longitude": 70.7969
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "sameAs": [
+                    "https://www.facebook.com/flortek",
+                    "https://www.instagram.com/flortek"
+                ]
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://flortekfrpcover.vercel.app/#faq",
+                "mainEntity": faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            }
         ]
     };
 
@@ -256,6 +287,22 @@ const Home = () => {
                             </motion.div>
                         ))}
                     </div>
+                </div>
+            </div>
+
+            {/* --- FAQ SECTION (BLACK & WHITE) --- */}
+            <div className="bg-white py-24 border-t border-[#F5F5F5]">
+                <div className="max-w-7xl mx-auto px-6 md:px-8">
+                    <div className="text-center mb-16">
+                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-[0.2em] mb-4">
+                            FAQ
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter mb-4">Frequently Asked Questions</h2>
+                        <p className="text-[#333333] text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                            Have questions about our FRP manhole covers, load capacities, or custom designs? Explore our standard answers below.
+                        </p>
+                    </div>
+                    <FAQAccordion />
                 </div>
             </div>
 

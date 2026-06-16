@@ -5,23 +5,25 @@ import path from 'path';
 const BASE_URL = 'https://flortekfrpcover.vercel.app';
 
 const generateSitemap = () => {
-    // 1. Static Routes
+    // 1. Static & SEO Landing Routes
     const staticRoutes = [
         { url: '', changefreq: 'weekly', priority: 1.0 },
         { url: '/about', changefreq: 'monthly', priority: 0.8 },
         { url: '/products', changefreq: 'daily', priority: 0.9 },
-        { url: '/applications', changefreq: 'monthly', priority: 0.7 },
-        { url: '/contact', changefreq: 'yearly', priority: 0.6 },
+        { url: '/sizes', changefreq: 'monthly', priority: 0.8 },
+        { url: '/installation', changefreq: 'monthly', priority: 0.8 },
+        { url: '/applications', changefreq: 'monthly', priority: 0.8 },
+        { url: '/reviews', changefreq: 'monthly', priority: 0.7 },
+        { url: '/contact', changefreq: 'monthly', priority: 0.8 },
+        { url: '/sitemap', changefreq: 'monthly', priority: 0.5 },
+        { url: '/faq', changefreq: 'weekly', priority: 0.8 },
+        { url: '/frp-manhole-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-drain-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-cable-trench-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/heavy-duty-frp-covers', changefreq: 'weekly', priority: 0.9 },
     ];
 
-    // 2. Dynamic Product Routes
-    const productRoutes = products.map(product => ({
-        url: `/products/${product.id}`,
-        changefreq: 'weekly',
-        priority: 0.8
-    }));
-
-    const allRoutes = [...staticRoutes, ...productRoutes];
+    const allRoutes = [...staticRoutes];
 
     // 3. Generate XML
     const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>

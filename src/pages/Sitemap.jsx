@@ -24,6 +24,11 @@ const Sitemap = () => {
         { name: 'Reviews', path: '/reviews' },
         { name: 'Size Chart', path: '/sizes' },
         { name: 'Installation', path: '/installation' },
+        { name: 'FAQ Support', path: '/faq' },
+        { name: 'FRP Manhole Covers Guide', path: '/frp-manhole-covers' },
+        { name: 'FRP Drain Covers Guide', path: '/frp-drain-covers' },
+        { name: 'FRP Cable Trench Covers Guide', path: '/frp-cable-trench-covers' },
+        { name: 'Heavy Duty FRP Covers Guide', path: '/heavy-duty-frp-covers' },
     ];
 
     return (

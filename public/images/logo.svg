@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Black Circle Container -->
+  <circle cx="50" cy="50" r="45" fill="black" />
+  <!-- Minimalist White 'F' Monogram -->
+  <path d="M35 28h30v8H47v12h15v8H47v16H35Z" fill="white" />
+</svg>

@@ -15,6 +15,12 @@ import Installation from './pages/Installation';
 import { ModalProvider } from './context/ModalContext';
 
 import Sitemap from './pages/Sitemap';
+import FAQPage from './pages/FAQPage';
+import FRPManholeCovers from './pages/seo/FRPManholeCovers';
+import FRPDrainCovers from './pages/seo/FRPDrainCovers';
+import FRPCableTrenchCovers from './pages/seo/FRPCableTrenchCovers';
+import HeavyDutyFRPCovers from './pages/seo/HeavyDutyFRPCovers';
+import LeadGenPopup from './components/common/LeadGenPopup';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -52,10 +58,16 @@ const AppContent = () => {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/frp-manhole-covers" element={<FRPManholeCovers />} />
+          <Route path="/frp-drain-covers" element={<FRPDrainCovers />} />
+          <Route path="/frp-cable-trench-covers" element={<FRPCableTrenchCovers />} />
+          <Route path="/heavy-duty-frp-covers" element={<HeavyDutyFRPCovers />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
       <FloatingAction />
+      <LeadGenPopup />
       <Footer />
       <SpeedInsights />
     </div>

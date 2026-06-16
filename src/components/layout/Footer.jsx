@@ -62,6 +62,7 @@ const Footer = () => {
                                 { name: 'About Us', path: '/about' },
                                 { name: 'Our Products', path: '/products' },
                                 { name: 'Applications', path: '/applications' },
+                                { name: 'FAQ Support', path: '/faq' },
                                 { name: 'Contact Us', path: '/contact' }
                             ].map((link) => (
                                 <li key={link.name}>
@@ -84,19 +85,19 @@ const Footer = () => {
                         </h3>
                         <ul className="space-y-3">
                             {[
-                                'FRP Manhole Covers',
-                                'BMC Manhole Covers',
-                                'Recessed Covers',
-                                'Drainage Gratings',
-                                'Gully Gratings'
+                                { name: 'FRP Manhole Covers', path: '/frp-manhole-covers' },
+                                { name: 'FRP Drain Covers', path: '/frp-drain-covers' },
+                                { name: 'Cable Trench Covers', path: '/frp-cable-trench-covers' },
+                                { name: 'Heavy Duty FRP Covers', path: '/heavy-duty-frp-covers' },
+                                { name: 'Standard Sizing List', path: '/sizes' }
                             ].map((item) => (
-                                <li key={item}>
+                                <li key={item.name}>
                                     <Link
-                                        to="/products"
+                                        to={item.path}
                                         className="text-[#D9D9D9] hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-wider group"
                                     >
                                         <span className="w-1 h-1 rounded-full bg-[#333333] group-hover:bg-white transition-colors" />
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
