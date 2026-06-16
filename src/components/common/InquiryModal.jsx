@@ -66,9 +66,9 @@ const InquiryModal = ({ isOpen, onClose }) => {
                         className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden"
                     >
                         {/* Header */}
-                        <div className="px-6 py-4 border-b border-slate-100 flex justify-between items-center bg-slate-50">
-                            <h3 className="text-xl font-bold text-primary">Get a Quote</h3>
-                            <button onClick={onClose} className="p-2 hover:bg-slate-200 rounded-full transition-colors text-slate-500">
+                        <div className="px-6 py-4 border-b border-[#D9D9D9] flex justify-between items-center bg-[#F5F5F5]">
+                            <h3 className="text-xl font-bold text-black">Get a Quote</h3>
+                            <button onClick={onClose} className="p-2 hover:bg-[#D9D9D9] rounded-full transition-colors text-[#333333]">
                                 <X size={20} />
                             </button>
                         </div>
@@ -77,31 +77,31 @@ const InquiryModal = ({ isOpen, onClose }) => {
                         <div className="p-6">
                             {status === 'success' ? (
                                 <div className="flex flex-col items-center justify-center py-8 text-center">
-                                    <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+                                    <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-4">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h4 className="text-xl font-bold text-slate-800 mb-2">Request Sent!</h4>
-                                    <p className="text-slate-500">We'll get back to you within 24 hours.</p>
+                                    <h4 className="text-xl font-bold text-black mb-2">Request Sent!</h4>
+                                    <p className="text-[#333333]">We'll get back to you within 24 hours.</p>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="grid grid-cols-2 gap-4">
                                         <div>
-                                            <label className="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                                            <input required name="name" type="text" className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="John Doe" />
+                                            <label className="block text-sm font-medium text-[#333333] mb-1">Name</label>
+                                            <input required name="name" type="text" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="John Doe" />
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-slate-700 mb-1">Phone</label>
-                                            <input required name="phone" type="tel" className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="+91..." />
+                                            <label className="block text-sm font-medium text-[#333333] mb-1">Phone</label>
+                                            <input required name="phone" type="tel" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="+91..." />
                                         </div>
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                                        <input required name="email" type="email" className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="john@company.com" />
+                                        <label className="block text-sm font-medium text-[#333333] mb-1">Email</label>
+                                        <input required name="email" type="email" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="john@company.com" />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Requirement</label>
-                                        <textarea required name="requirement" rows="3" className="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all" placeholder="Describe your requirement..."></textarea>
+                                        <label className="block text-sm font-medium text-[#333333] mb-1">Requirement</label>
+                                        <textarea required name="requirement" rows="3" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="Describe your requirement..."></textarea>
                                     </div>
                                     <Button
                                         type="submit"

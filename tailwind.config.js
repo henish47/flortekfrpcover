@@ -8,22 +8,22 @@ export default {
         extend: {
             colors: {
                 primary: {
-                    DEFAULT: '#109148', // Green (Logo Border/Dot)
-                    light: '#15b058',
-                    dark: '#0c7539',
+                    DEFAULT: '#000000',
+                    light: '#333333',
+                    dark: '#000000',
                 },
                 secondary: {
-                    DEFAULT: '#1B2A4E', // Navy (Logo Text)
-                    light: '#2C3E68',
-                    dark: '#0f182e',
+                    DEFAULT: '#000000',
+                    light: '#333333',
+                    dark: '#000000',
                 },
                 accent: {
-                    DEFAULT: '#FFC107', // Yellow (Logo Background)
-                    hover: '#FFB300',
-                    light: '#FFD54F',
+                    DEFAULT: '#333333',
+                    hover: '#000000',
+                    light: '#D9D9D9',
                 },
                 surface: '#FFFFFF',
-                background: '#f8fafc' // Ultra light blue-grey
+                background: '#FFFFFF'
             },
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],

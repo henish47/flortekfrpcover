@@ -58,21 +58,21 @@ const Contact = () => {
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
                 title="Contact Flortek | Architectural & Industrial Solutions"
-                description="Connect with Flortek Industries for premium FRP manhole covers and drainage solutions. Rajkot-based manufacturing with pan-India delivery."
-                keywords="Contact Flortek Industries, Get FRP Cover Quote, Manhole Cover Price List, Buy Manhole Covers Wholesale, Contact Manhole Cover Manufacturer Rajkot, Flortek Customer Care"
+                description="Connect with Flortek Industries Private Limited for premium FRP manhole covers and drainage solutions. Rajkot-based manufacturing with pan-India delivery."
+                keywords="Contact Flortek Industries Private Limited, Get FRP Cover Quote, Manhole Cover Price List, Buy Manhole Covers Wholesale, Contact Manhole Cover Manufacturer Rajkot, Flortek Customer Care"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "ContactPage",
-                    "name": "Contact Flortek Industries",
-                    "description": "Get in touch with Flortek Industries for inquiries about FRP and BMC manhole covers.",
+                    "name": "Contact Flortek Industries Private Limited",
+                    "description": "Get in touch with Flortek Industries Private Limited for inquiries about FRP and BMC manhole covers.",
                     "url": "https://flortekfrpcover.vercel.app/contact"
                 }}
                 canonicalUrl="https://flortekfrpcover.vercel.app/contact"
             />
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Get in Touch</h1>
-                <p className="text-lg text-slate-600 max-w-2xl">
+                <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">Get in Touch</h1>
+                <p className="text-lg text-[#333333] max-w-2xl">
                     We'd love to hear from you. Please fill out the form below or contact us directly for any inquiries regarding our FRP & BMC solutions.
                 </p>
             </div>
@@ -83,15 +83,15 @@ const Contact = () => {
                     {/* --- LEFT: Contact Info --- */}
                     <div className="space-y-12">
                         <div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-2">Contact Information</h3>
+                            <h3 className="text-xl font-bold text-black mb-6 border-b border-[#D9D9D9]/50 pb-2">Contact Information</h3>
                             <div className="space-y-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-blue-50 p-3 rounded-lg text-primary mt-1">
+                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-slate-900">Address</h4>
-                                        <p className="text-slate-600 leading-relaxed mt-1">
+                                        <h4 className="font-semibold text-black">Address</h4>
+                                        <p className="text-[#333333] leading-relaxed mt-1">
                                             Radhe Industrial Zone, Survey No.99/1-2,<br />
                                             Plot No.4/37, Veraval Shapar,<br />
                                             Rajkot - 360024, Gujarat, India
@@ -100,23 +100,23 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-blue-50 p-3 rounded-lg text-primary mt-1">
+                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-slate-900">Phone & WhatsApp</h4>
-                                        <p className="text-slate-600 mt-1">+91 80008 88620</p>
-                                        <p className="text-sm text-slate-400 mt-1">Mon-Sat, 9am - 6pm IST</p>
+                                        <h4 className="font-semibold text-black">Phone & WhatsApp</h4>
+                                        <p className="text-[#333333] mt-1">+91 80008 88620</p>
+                                        <p className="text-sm text-[#333333]/80 mt-1">Mon-Sat, 9am - 6pm IST</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-blue-50 p-3 rounded-lg text-primary mt-1">
+                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-slate-900">Email</h4>
-                                        <a href="mailto:flortekindustries@gmail.com" className="text-slate-600 hover:text-primary transition-colors mt-1 block">
+                                        <h4 className="font-semibold text-black">Email</h4>
+                                        <a href="mailto:flortekindustries@gmail.com" className="text-[#333333] hover:text-black transition-colors mt-1 block">
                                             flortekindustries@gmail.com
                                         </a>
                                     </div>
@@ -125,7 +125,7 @@ const Contact = () => {
                         </div>
 
                         {/* Map or Image Placeholder - simplified */}
-                        <div className="rounded-2xl overflow-hidden h-64 bg-slate-100 border border-slate-200">
+                        <div className="rounded-2xl overflow-hidden h-64 bg-[#F5F5F5] border border-[#D9D9D9]">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10470.140782488901!2d70.79688149363858!3d22.150944967781953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f0786239eebca59%3A0xe89ef5df473b6e77!2sFlortek%20Industries!5e0!3m2!1sen!2sin!4v1769419594411!5m2!1sen!2sin"
                                 width="100%"
@@ -140,32 +140,32 @@ const Contact = () => {
                     </div>
 
                     {/* --- RIGHT: Contact Form --- */}
-                    <div className="bg-slate-50 p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm relative">
-                        <h3 className="text-2xl font-bold text-slate-900 mb-6">Send us a Message</h3>
+                    <div className="bg-[#F5F5F5] p-8 md:p-10 rounded-3xl border border-[#D9D9D9] relative">
+                        <h3 className="text-2xl font-bold text-black mb-6">Send us a Message</h3>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-sm font-semibold text-slate-700 mb-2">My Name</label>
+                                    <label className="block text-sm font-semibold text-[#333333] mb-2">My Name</label>
                                     <input
                                         type="text"
                                         name="name"
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
                                         placeholder="Enter your name"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-slate-700 mb-2">Phone Number</label>
+                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Phone Number</label>
                                     <input
                                         type="tel"
                                         name="phone"
                                         required
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
                                         placeholder="+91 00000 00000"
                                     />
                                 </div>
@@ -173,38 +173,38 @@ const Contact = () => {
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
+                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Email Address</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
                                         placeholder="you@company.com"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
+                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Company Name</label>
                                     <input
                                         type="text"
                                         name="company"
                                         value={formData.company}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
                                         placeholder="Your organization"
                                     />
                                 </div>
                             </div>
 
                             <div>
-                                <label className="block text-sm font-semibold text-slate-700 mb-2">Message / Requirements</label>
+                                <label className="block text-sm font-semibold text-[#333333] mb-2">Message / Requirements</label>
                                 <textarea
                                     name="requirements"
                                     rows="4"
                                     required
                                     value={formData.requirements}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white resize-none"
+                                    className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white resize-none"
                                     placeholder="Tell us about your project..."
                                 ></textarea>
                             </div>
@@ -213,8 +213,8 @@ const Contact = () => {
                                 type="submit"
                                 disabled={status === 'submitting'}
                                 className={`w-full py-4 rounded-xl font-bold text-white transition-all flex items-center justify-center gap-2 ${status === 'submitting'
-                                    ? 'bg-slate-400 cursor-not-allowed'
-                                    : 'bg-primary hover:bg-emerald-600 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 active:scale-[0.98]'
+                                    ? 'bg-[#D9D9D9] text-[#333333] cursor-not-allowed'
+                                    : 'bg-black hover:bg-[#333333] shadow-md hover:shadow-lg active:scale-[0.98]'
                                     }`}
                             >
                                 {status === 'submitting' ? 'Sending...' : (
@@ -233,11 +233,11 @@ const Contact = () => {
                                     exit={{ opacity: 0 }}
                                     className="absolute inset-0 bg-white/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center rounded-3xl"
                                 >
-                                    <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+                                    <div className="w-16 h-16 bg-[#F5F5F5] text-black rounded-full flex items-center justify-center mb-4">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-slate-900 mb-2">Message Sent!</h3>
-                                    <p className="text-slate-500 text-center max-w-xs">We have received your enquiry and will get back to you shortly.</p>
+                                    <h3 className="text-xl font-bold text-black mb-2">Message Sent!</h3>
+                                    <p className="text-[#333333] text-center max-w-xs">We have received your enquiry and will get back to you shortly.</p>
                                 </motion.div>
                             )}
                         </AnimatePresence>

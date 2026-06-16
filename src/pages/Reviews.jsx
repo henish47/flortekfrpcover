@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '../components/common/Section';
 import SEO from '../components/common/SEO';
-import { Star, Quote, User, ThumbsUp } from 'lucide-react';
+import { Star, Quote, User } from 'lucide-react';
 
 const Reviews = () => {
     const reviews = [
@@ -20,7 +20,7 @@ const Reviews = () => {
             company: "Urban Infrastructure",
             rating: 5,
             date: "September 28, 2024",
-            text: "Excellent service from Flortek industries. We needed a custom size for a drainage project, and they delivered within a week. The fit and finish are perfect.",
+            text: "Excellent service from Flortek Industries Private Limited. We needed a custom size for a drainage project, and they delivered within a week. The fit and finish are perfect.",
             verified: true
         },
         {
@@ -62,18 +62,17 @@ const Reviews = () => {
     ];
 
     return (
-        <div className="bg-slate-50 min-h-screen ">
+        <div className="bg-white min-h-screen font-sans">
             <SEO
-                title="Client Reviews & Testimonials | Flortek Industries"
+                title="Client Reviews & Testimonials | Flortek Industries Private Limited"
                 description="Read what engineers, architects, and contractors say about Flortek's FRP Manhole Covers and composite solutions."
             />
 
-            {/* Header */}
-            <section className="bg-slate-900 text-white py-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-[#109148]/20 rounded-full blur-[100px] pointer-events-none"></div>
+            <section className="bg-black text-white py-20 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-black mb-6">What Our Clients Say</h1>
-                    <p className="text-xl text-slate-300 max-w-2xl mx-auto">
+                    <p className="text-xl text-[#D9D9D9] max-w-2xl mx-auto">
                         Trusted by industry leaders for quality, durability, and reliability.
                     </p>
                 </div>
@@ -83,29 +82,29 @@ const Reviews = () => {
             <Section>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {reviews.map((review, index) => (
-                        <div key={index} className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                        <div key={index} className="bg-[#F5F5F5] p-8 rounded-3xl border border-[#D9D9D9] hover:border-black transition-all duration-300 flex flex-col h-full">
                             <div className="flex items-center justify-between mb-6">
-                                <div className="flex text-yellow-400 gap-1">
+                                <div className="flex text-black gap-1">
                                     {[...Array(review.rating)].map((_, i) => (
                                         <Star key={i} size={18} fill="currentColor" />
                                     ))}
                                 </div>
-                                <span className="text-xs text-slate-400 font-medium">{review.date}</span>
+                                <span className="text-xs text-[#333333]/60 font-medium">{review.date}</span>
                             </div>
 
                             <div className="mb-6 flex-grow">
-                                <Quote className="text-[#109148]/20 mb-3 rotate-180" size={40} />
-                                <p className="text-slate-600 leading-relaxed italic">"{review.text}"</p>
+                                <Quote className="text-black/10 mb-3 rotate-180" size={40} />
+                                <p className="text-[#333333] leading-relaxed italic">"{review.text}"</p>
                             </div>
 
-                            <div className="flex items-center gap-4 mt-auto pt-6 border-t border-slate-50">
-                                <div className="bg-slate-100 p-3 rounded-full text-slate-500">
+                            <div className="flex items-center gap-4 mt-auto pt-6 border-t border-[#D9D9D9]/50">
+                                <div className="bg-white p-3 rounded-full text-[#333333] border border-[#D9D9D9]/50">
                                     <User size={24} />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-slate-800">{review.name}</h4>
-                                    <div className="text-xs text-[#109148] font-bold uppercase tracking-wider">{review.role}</div>
-                                    <div className="text-xs text-slate-400">{review.company}</div>
+                                    <h4 className="font-bold text-black">{review.name}</h4>
+                                    <div className="text-xs text-black font-bold uppercase tracking-wider">{review.role}</div>
+                                    <div className="text-xs text-[#333333]/80">{review.company}</div>
                                 </div>
                             </div>
                         </div>
@@ -115,14 +114,13 @@ const Reviews = () => {
 
             {/* CTA */}
             <Section className="bg-white">
-                <div className="bg-[#109148] rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl">
-                    <div className="absolute inset-0 bg-[url('/images/pattern.png')] opacity-10 mix-blend-overlay"></div>
+                <div className="bg-black rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl border border-[#333333]">
                     <div className="relative z-10">
                         <h2 className="text-3xl md:text-5xl font-black mb-6">Join Our Satisfied Clients</h2>
-                        <p className="text-emerald-100 text-lg mb-10 max-w-2xl mx-auto">
+                        <p className="text-[#D9D9D9] text-lg mb-10 max-w-2xl mx-auto">
                             Experience the difference of premium quality FRP covers. Get a quote for your project today.
                         </p>
-                        <a href="/contact" className="inline-block bg-white text-[#109148] px-10 py-4 rounded-full font-bold text-lg hover:bg-slate-50 hover:scale-105 transition-all shadow-xl">
+                        <a href="/contact" className="inline-block bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#F5F5F5] hover:scale-105 transition-all shadow-xl">
                             Start Your Project
                         </a>
                     </div>

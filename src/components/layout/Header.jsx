@@ -33,21 +33,20 @@ const Header = () => {
         <>
             <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
-            <div className="bg-secondary text-slate-300 py-2.5 text-xs font-medium hidden md:block border-b border-white/5">
+            <div className="bg-black text-white py-2.5 text-[10px] font-bold tracking-wider uppercase hidden md:block border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                     <div className="flex gap-6">
                         <div className="flex items-center gap-3">
-                            <a href="tel:+918000888620" className="flex items-center gap-2 hover:text-white transition-colors duration-300">
-                                <Phone size={14} className="text-accent" /> +91 80008 88620
+                            <a href="tel:+918000888620" className="flex items-center gap-2 hover:text-[#D9D9D9] transition-colors duration-300">
+                                <Phone size={12} className="text-[#D9D9D9]" /> +91 80008 88620
                             </a>
                             <span className="opacity-20">|</span>
                             <a href="tel:+919724035200" className="hover:text-white transition-colors duration-300">
                                 +91 97240 35200
                             </a>
-
                         </div>
-                        <a href="mailto:flortekindustries@gmail.com" className="flex items-center gap-2 hover:text-accent transition-colors duration-300">
-                            <Mail size={14} className="text-accent" /> flortekindustries@gmail.com
+                        <a href="mailto:flortekindustries@gmail.com" className="flex items-center gap-2 hover:text-[#D9D9D9] transition-colors duration-300">
+                            <Mail size={12} className="text-[#D9D9D9]" /> flortekindustries@gmail.com
                         </a>
                     </div>
                     <div className="flex items-center gap-6">
@@ -55,55 +54,48 @@ const Header = () => {
                             href="/brochure.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 hover:text-accent transition-colors duration-300 group"
+                            className="flex items-center gap-2 hover:text-[#D9D9D9] transition-colors duration-300 group"
                         >
-                            <Download size={14} className="text-accent group-hover:animate-bounce" />
+                            <Download size={12} className="text-[#D9D9D9] group-hover:translate-y-0.5 transition-transform" />
                             <span>Download Brochure</span>
                         </a>
-                        <div className="flex items-center gap-2">
-                            <MapPin size={14} className="text-accent" /> Rajkot, Gujarat
+                        <div className="flex items-center gap-2 text-[#D9D9D9]">
+                            <MapPin size={12} className="text-[#D9D9D9]" /> Rajkot, Gujarat
                         </div>
                     </div>
                 </div>
             </div>
 
             <header
-                className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-accent/95 backdrop-blur-md shadow-2xl py-2' : 'bg-accent py-3'
-                    }`}
+                className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md border-b border-[#F5F5F5] py-2' : 'bg-white border-b border-[#F5F5F5] py-4'}`}
             >
-                {/* Gradient Border Bottom */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary/0 via-secondary/20 to-secondary/0" />
-
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
                         {/* Logo */}
                         <Link to="/" className="flex items-center gap-2 group relative z-50">
-                            <div className="bg-white/20 p-2 rounded-lg backdrop-blur-sm border border-white/30 transition-transform duration-300 group-hover:scale-105">
-                                <img
-                                    src="/images/logo.png"
-                                    alt="Flortek"
-                                    className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-10' : 'h-14'}`}
-                                />
-                            </div>
+                            <img
+                                src="/images/logo.png"
+                                alt="Flortek"
+                                className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}
+                            />
                         </Link>
 
                         {/* Desktop Nav */}
-                        <nav className="hidden md:flex items-center gap-1 bg-white/10 p-1.5 rounded-full border border-white/20 backdrop-blur-md shadow-inner">
+                        <nav className="hidden md:flex items-center gap-1 bg-[#F5F5F5] p-1 rounded-full border border-[#D9D9D9]/50">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
                                     to={link.path}
-                                    className="relative px-5 py-2 rounded-full text-sm font-bold transition-all duration-300"
+                                    className="relative px-5 py-2 rounded-full text-xs font-bold transition-all duration-300"
                                 >
                                     {location.pathname === link.path && (
                                         <motion.div
                                             layoutId="nav-pill"
-                                            className="absolute inset-0 bg-secondary shadow-lg rounded-full"
+                                            className="absolute inset-0 bg-black rounded-full"
                                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                                         />
                                     )}
-                                    <span className={`relative z-10 transition-colors duration-300 ${location.pathname === link.path ? 'text-accent' : 'text-secondary hover:text-secondary/70'
-                                        }`}>
+                                    <span className={`relative z-10 transition-colors duration-300 ${location.pathname === link.path ? 'text-white' : 'text-[#333333] hover:text-black'}`}>
                                         {link.name}
                                     </span>
                                 </Link>
@@ -114,8 +106,7 @@ const Header = () => {
                         <div className="hidden md:flex items-center gap-4">
                             <Button
                                 onClick={() => setIsModalOpen(true)}
-                                variant="secondary"
-                                className={`shadow-xl transition-all duration-300 border border-secondary hover:bg-secondary/90 ${scrolled ? 'py-2 px-5 text-sm' : 'py-2.5 px-6'}`}
+                                className={`transition-all duration-300 bg-black hover:bg-[#333333] text-white rounded-xl font-bold uppercase tracking-wider text-xs ${scrolled ? 'py-2 px-5' : 'py-2.5 px-6'}`}
                             >
                                 Get Quote
                             </Button>
@@ -124,10 +115,10 @@ const Header = () => {
                         {/* Mobile Menu Button & Language */}
                         <div className="flex items-center gap-2 md:hidden">
                             <button
-                                className="p-2 text-secondary relative z-50 bg-white/10 rounded-lg backdrop-blur-sm border border-secondary/10"
+                                className="p-2 text-black relative z-50 bg-[#F5F5F5] rounded-xl border border-[#D9D9D9]"
                                 onClick={() => setIsOpen(!isOpen)}
                             >
-                                {isOpen ? <X size={28} /> : <Menu size={28} />}
+                                {isOpen ? <X size={20} /> : <Menu size={20} />}
                             </button>
                         </div>
                     </div>
@@ -140,19 +131,18 @@ const Header = () => {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            className="md:hidden absolute top-full left-0 w-full bg-accent shadow-2xl border-t border-secondary/10 overflow-hidden"
+                            className="md:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-[#F5F5F5] overflow-hidden"
                         >
                             <div className="p-4 flex flex-col gap-2">
                                 {navLinks.map((link) => (
                                     <Link
                                         key={link.name}
                                         to={link.path}
-                                        className={`text-lg font-bold p-4 rounded-xl flex items-center justify-between transition-all ${location.pathname === link.path ? 'bg-secondary text-accent pl-6' : 'text-secondary hover:bg-secondary/5'
-                                            }`}
+                                        className={`text-sm font-bold p-4 rounded-xl flex items-center justify-between transition-all ${location.pathname === link.path ? 'bg-black text-white pl-6' : 'text-black hover:bg-[#F5F5F5]'}`}
                                         onClick={() => setIsOpen(false)}
                                     >
                                         {link.name}
-                                        {location.pathname === link.path && <div className="h-2 w-2 rounded-full bg-accent" />}
+                                        {location.pathname === link.path && <div className="h-1.5 w-1.5 rounded-full bg-white" />}
                                     </Link>
                                 ))}
                                 <div className="w-full mt-4">
@@ -161,8 +151,7 @@ const Header = () => {
                                             setIsOpen(false);
                                             setIsModalOpen(true);
                                         }}
-                                        variant="secondary"
-                                        className="w-full justify-center py-4 text-lg"
+                                        className="w-full justify-center bg-black hover:bg-[#333333] text-white py-4 rounded-xl font-bold uppercase tracking-wider text-xs"
                                     >
                                         Get Quote
                                     </Button>

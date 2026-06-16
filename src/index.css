@@ -12,9 +12,9 @@
   }
 
   body {
-    @apply bg-slate-50 text-slate-800 antialiased overflow-x-hidden;
-    background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-    background-size: 32px 32px;
+    @apply bg-white text-[#333333] antialiased overflow-x-hidden;
+    background-image: radial-gradient(#D9D9D9 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 
   h1,

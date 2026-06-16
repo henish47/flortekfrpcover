@@ -31,13 +31,11 @@ const FloatingAction = () => {
                         {/* Email Button */}
                         <a
                             href="mailto:flortekindustries@gmail.com"
-                            className="bg-gradient-to-tr from-[#EA4335] via-[#FBBC05]- to-[#4285F4] text-white p-3.5 rounded-full shadow-lg shadow-red-500/30 hover:shadow-red-500/50 hover:-translate-y-1 transition-all flex items-center justify-center group relative overflow-hidden"
+                            className="bg-black text-white p-3.5 rounded-full border border-[#333333] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"
                             aria-label="Send Email"
                         >
-                            <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500" />
-                            <Mail size={24} className="relative z-10" />
-                            <div className="absolute inset-0 bg-red-500 animate-ping opacity-20 group-hover:opacity-0 transition-opacity" />
-                            <span className="absolute right-full mr-3 bg-white text-slate-700 text-xs font-bold py-1 px-2 rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
+                            <Mail size={20} className="relative z-10" />
+                            <span className="absolute right-full mr-3 bg-white text-black text-xs font-bold py-1 px-2 rounded border border-[#D9D9D9] shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
                                 Mail via Gmail
                             </span>
                         </a>
@@ -47,13 +45,11 @@ const FloatingAction = () => {
                             href="https://wa.me/918000888620"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-[#25D366] text-white p-3.5 rounded-full shadow-lg shadow-green-500/30 hover:shadow-green-500/50 hover:-translate-y-1 transition-all flex items-center justify-center group relative overflow-hidden"
+                            className="bg-[#333333] text-white p-3.5 rounded-full border border-[#333333] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"
                             aria-label="Chat on WhatsApp"
                         >
-                            <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500" />
-                            <MessageCircle size={24} fill="currentColor" className="relative z-10" />
-                            {/* Tooltip for desktop */}
-                            <span className="absolute right-full mr-3 bg-white text-slate-700 text-xs font-bold py-1 px-2 rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
+                            <MessageCircle size={20} fill="currentColor" className="relative z-10" />
+                            <span className="absolute right-full mr-3 bg-white text-black text-xs font-bold py-1 px-2 rounded border border-[#D9D9D9] shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
                                 Chat with us
                             </span>
                         </a>
@@ -61,11 +57,11 @@ const FloatingAction = () => {
                         {/* Phone Button */}
                         <a
                             href="tel:+918000888620"
-                            className="bg-accent text-white p-3.5 rounded-full shadow-lg shadow-accent/30 hover:shadow-accent/50 hover:-translate-y-1 transition-all flex items-center justify-center group relative"
+                            className="bg-[#F5F5F5] text-black p-3.5 rounded-full border border-[#D9D9D9] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"
                             aria-label="Call Now"
                         >
-                            <Phone size={24} className="relative z-10 animate-pulse" />
-                            <span className="absolute right-full mr-3 bg-white text-slate-700 text-xs font-bold py-1 px-2 rounded shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
+                            <Phone size={20} className="relative z-10" />
+                            <span className="absolute right-full mr-3 bg-white text-black text-xs font-bold py-1 px-2 rounded border border-[#D9D9D9] shadow-sm opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap hidden lg:block">
                                 Call Now
                             </span>
                         </a>

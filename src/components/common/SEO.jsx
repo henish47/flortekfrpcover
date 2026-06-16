@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, name, type, schema, canonicalUrl }) => {
-    const siteTitle = "Flortek Industries";
+    const siteTitle = "Flortek Industries Private Limited";
     const fullTitle = title ? `${title} | ${siteTitle}` : siteTitle;
     const currentUrl = canonicalUrl || typeof window !== 'undefined' ? window.location.href : '';
 
