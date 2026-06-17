@@ -41,7 +41,7 @@ const SizeChart = () => {
             </div>
             <div className="rounded-3xl overflow-hidden border border-[#D9D9D9] shadow-sm bg-white">
                 <div className="overflow-x-auto">
-                    <table className="w-full text-left border-collapse min-w-[620px] md:min-w-0">
+                    <table className="w-full text-left border-collapse min-w-[340px] md:min-w-0">
                         {children}
                     </table>
                 </div>
@@ -118,28 +118,52 @@ const SizeChart = () => {
 
                             <TableWrapper>
                                 <thead>
-                                    <tr className="bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    {/* Desktop Headers */}
+                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Size</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" rowSpan={2}>Weight / Pc</th>
                                         <th className="py-4 px-4 text-center" rowSpan={2}>Qty / Box</th>
                                     </tr>
-                                    <tr className="bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center">MM</th>
                                     </tr>
+                                    {/* Mobile Headers */}
+                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Inner Size</th>
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Weight</th>
+                                        <th className="py-3 px-2 text-center">Qty/Bx</th>
+                                    </tr>
                                 </thead>
                                 <tbody className="divide-y divide-[#D9D9D9]/50 text-xs md:text-sm font-semibold">
                                     {(subTab === 'square' ? lightDutySquare : subTab === 'rect' ? lightDutyRect : lightDutyRound).map((item, i) => (
                                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
-                                            <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                            <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.weight} Kg</td>
-                                            <td className="py-3 px-4 text-center text-[#333333]">{item.qtyBox}</td>
+                                            {/* Desktop dimension columns */}
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                            
+                                            {/* Mobile combined Outer Size */}
+                                            <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                            </td>
+                                            {/* Mobile combined Inner Size */}
+                                            <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                            </td>
+
+                                            {/* Weight & Qty Box (Responsive Paddings) */}
+                                            <td className="py-3 px-2 md:px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">
+                                                {item.weight} <span className="text-[9px] text-[#555555] font-normal md:font-semibold md:text-xs">Kg</span>
+                                            </td>
+                                            <td className="py-3 px-2 md:px-4 text-center text-[#333333]">{item.qtyBox}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -203,26 +227,49 @@ const SizeChart = () => {
                             {heavySubTab === 'bc' ? (
                                 <TableWrapper>
                                     <thead>
-                                        <tr className="bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                        {/* Desktop Headers */}
+                                        <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                             <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                             <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Size</th>
                                             <th className="py-4 px-4 text-center" rowSpan={2}>Weight / Pc</th>
                                         </tr>
-                                        <tr className="bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                        <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                             <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                             <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                             <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                             <th className="py-2 px-3 text-center">MM</th>
                                         </tr>
+                                        {/* Mobile Headers */}
+                                        <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                            <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
+                                            <th className="py-3 px-2 text-center border-r border-white/10">Inner Size</th>
+                                            <th className="py-3 px-2 text-center">Weight</th>
+                                        </tr>
                                     </thead>
                                     <tbody className="divide-y divide-[#D9D9D9]/50 text-xs md:text-sm font-semibold">
                                         {(subTab === 'square' ? heavyDutyBCSquare : subTab === 'rect' ? heavyDutyBCRect : heavyDutyBCRound).map((item, i) => (
                                             <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
-                                                <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                                <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                                <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                                <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                                <td className="py-3 px-4 text-center text-[#333333]">{item.weight} Kg</td>
+                                                {/* Desktop columns */}
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                                
+                                                {/* Mobile combined Outer Size */}
+                                                <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                    <span className="block text-xs font-bold text-black">{item.outerMm}</span>
+                                                    <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                </td>
+                                                {/* Mobile combined Inner Size */}
+                                                <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                    <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
+                                                    <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                </td>
+
+                                                {/* Weight */}
+                                                <td className="py-3 px-2 md:px-4 text-center text-[#333333]">
+                                                    {item.weight} <span className="text-[9px] text-[#555555] font-normal md:font-semibold md:text-xs">Kg</span>
+                                                </td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -230,26 +277,49 @@ const SizeChart = () => {
                             ) : (
                                 <TableWrapper>
                                     <thead>
-                                        <tr className="bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                        {/* Desktop Headers */}
+                                        <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                             <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                             <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Size</th>
                                             <th className="py-4 px-4 text-center" rowSpan={2}>Weight / Pc</th>
                                         </tr>
-                                        <tr className="bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                        <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                             <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                             <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                             <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                             <th className="py-2 px-3 text-center">MM</th>
                                         </tr>
+                                        {/* Mobile Headers */}
+                                        <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                            <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
+                                            <th className="py-3 px-2 text-center border-r border-white/10">Inner Size</th>
+                                            <th className="py-3 px-2 text-center">Weight</th>
+                                        </tr>
                                     </thead>
                                     <tbody className="divide-y divide-[#D9D9D9]/50 text-xs md:text-sm font-semibold">
                                         {(subTab === 'square' ? heavyDutyDSquare : subTab === 'rect' ? heavyDutyDRect : heavyDutyDRound).map((item, i) => (
                                             <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
-                                                <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                                <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                                <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                                <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                                <td className="py-3 px-4 text-center text-[#333333]">{item.weight} Kg</td>
+                                                {/* Desktop columns */}
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
+                                                <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                                
+                                                {/* Mobile combined Outer Size */}
+                                                <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                    <span className="block text-xs font-bold text-black">{item.outerMm}</span>
+                                                    <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                </td>
+                                                {/* Mobile combined Inner Size */}
+                                                <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                    <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
+                                                    <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                </td>
+
+                                                {/* Weight */}
+                                                <td className="py-3 px-2 md:px-4 text-center text-[#333333]">
+                                                    {item.weight} <span className="text-[9px] text-[#555555] font-normal md:font-semibold md:text-xs">Kg</span>
+                                                </td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -273,28 +343,53 @@ const SizeChart = () => {
 
                             <TableWrapper>
                                 <thead>
-                                    <tr className="bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    {/* Desktop Headers */}
+                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" rowSpan={2}>Depth</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Opening</th>
                                         <th className="py-4 px-4 text-center" rowSpan={2}>Weight / Pc</th>
                                     </tr>
-                                    <tr className="bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center">INCH</th>
                                     </tr>
+                                    {/* Mobile Headers */}
+                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Depth</th>
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
+                                        <th className="py-3 px-2 text-center border-r border-white/10">Inner Opening</th>
+                                        <th className="py-3 px-2 text-center">Weight</th>
+                                    </tr>
                                 </thead>
                                 <tbody className="divide-y divide-[#D9D9D9]/50 text-xs md:text-sm font-semibold">
                                     {recessedCovers.map((item, i) => (
                                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
-                                            <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.depth}</td>
-                                            <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                            <td className="py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="py-3 px-4 text-center text-[#333333]">{item.weight} Kg</td>
+                                            {/* Shared columns */}
+                                            <td className="py-3 px-2 md:px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.depth}</td>
+                                            
+                                            {/* Desktop dimension columns */}
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
+                                            
+                                            {/* Mobile combined dimensions */}
+                                            <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                            </td>
+                                            <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                            </td>
+
+                                            {/* Weight */}
+                                            <td className="py-3 px-2 md:px-4 text-center text-[#333333]">
+                                                {item.weight} <span className="text-[9px] text-[#555555] font-normal md:font-semibold md:text-xs">Kg</span>
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -333,7 +428,8 @@ const SizeChart = () => {
 
                             <TableWrapper>
                                 <thead>
-                                    <tr className="bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    {/* Desktop Headers */}
+                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" rowSpan={2}>Shape</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Opening</th>
@@ -341,7 +437,7 @@ const SizeChart = () => {
                                         <th className="py-4 px-4 text-center border-r border-white/10" rowSpan={2}>Cover Only Weight</th>
                                         <th className="py-4 px-4 text-center" rowSpan={2}>Cover With Frame Weight</th>
                                     </tr>
-                                    <tr className="bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-2 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-2 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-2 text-center border-r border-white/10">MM</th>
@@ -349,19 +445,52 @@ const SizeChart = () => {
                                         <th className="py-2 px-2 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-2 text-center border-r border-white/10">INCH</th>
                                     </tr>
+                                    {/* Mobile Headers */}
+                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                        <th className="py-3 px-1 text-center border-r border-white/10">Shape</th>
+                                        <th className="py-3 px-1.5 text-center border-r border-white/10">Outer</th>
+                                        <th className="py-3 px-1.5 text-center border-r border-white/10">Inner</th>
+                                        <th className="py-3 px-1.5 text-center border-r border-white/10">Cover</th>
+                                        <th className="py-3 px-1.5 text-center">Weight (C/F)</th>
+                                    </tr>
                                 </thead>
                                 <tbody className="divide-y divide-[#D9D9D9]/50 text-xs font-semibold">
                                     {gulleyCovers.filter(item => item.duty.startsWith(gulleySubTab.split(' ')[0])).map((item, i) => (
                                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
-                                            <td className="py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.shape}</td>
-                                            <td className="py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                            <td className="py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.coverMm}</td>
-                                            <td className="py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.coverInch}</td>
-                                            <td className="py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.weightCoverOnly} Kg</td>
-                                            <td className="py-3 px-3 text-center text-[#333333]">{item.weightWithFrame} Kg</td>
+                                            {/* Shared columns */}
+                                            <td className="py-3 px-1 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.shape}</td>
+                                            
+                                            {/* Desktop dimension columns */}
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.coverMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.coverInch}</td>
+                                            
+                                            {/* Desktop weight columns */}
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.weightCoverOnly} Kg</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333]">{item.weightWithFrame} Kg</td>
+
+                                            {/* Mobile combined dimension columns */}
+                                            <td className="md:hidden py-3 px-1.5 text-center border-r border-[#D9D9D9]/40 text-black">
+                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                            </td>
+                                            <td className="md:hidden py-3 px-1.5 text-center border-r border-[#D9D9D9]/40 text-[#333333]">
+                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                            </td>
+                                            <td className="md:hidden py-3 px-1.5 text-center border-r border-[#D9D9D9]/40 text-[#333333]">
+                                                <span className="block text-xs font-bold text-[#333333]">{item.coverMm}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{item.coverInch}</span>
+                                            </td>
+                                            
+                                            {/* Mobile combined weight column */}
+                                            <td className="md:hidden py-3 px-1.5 text-center text-[#333333]">
+                                                <span className="block text-[9px] font-bold text-[#333333]">C: {item.weightCoverOnly}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">F: {item.weightWithFrame}</span>
+                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
