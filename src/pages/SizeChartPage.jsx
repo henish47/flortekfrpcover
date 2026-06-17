@@ -8,9 +8,9 @@ const SizeChartPage = () => {
     return (
         <div className="pt-0 bg-white min-h-screen font-sans">
             <SEO
-                title="Standard Sizes & Specifications | Flortek Industries Private Limited"
-                description="View our complete range of standard sizes for FRP/BMC/SMC manhole covers, gully covers, and recessed covers."
-                keywords="manhole cover sizes, frp cover dimensions, gully cover sizes, recessed cover sizes"
+                title="Standard Sizes, Weights & Dimensions | Flortek Industries Private Limited"
+                description="View our complete range of standard sizes, load ratings, and weights for FRP/BMC/SMC manhole covers, gully covers, and recessed covers."
+                keywords="manhole cover sizes, frp cover dimensions, gully cover sizes, recessed cover sizes, frp manhole cover weight, flortek size chart"
             />
 
             {/* Hero Section */}
@@ -27,19 +27,19 @@ const SizeChartPage = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h1 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-                            Technical Data & <br /> <span className="text-[#D9D9D9]">Dimensions</span>
+                            Technical Data & <br /> <span className="text-[#D9D9D9]">Specifications</span>
                         </h1>
                         <p className="text-[#D9D9D9] text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-                            Comprehensive size charts for our entire range of Light, Medium, and Heavy-duty manhole covers.
+                            Comprehensive sizing charts, product weights, and load ratings for our entire range of Light, Medium, and Heavy Duty covers.
                         </p>
                     </motion.div>
                 </div>
             </div>
 
             {/* Size Chart Container */}
-            <Section className="py-20 bg-white">
+            <Section className="py-16 bg-[#F5F5F5]/30">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="bg-[#F5F5F5] rounded-[3rem] p-8 md:p-12 border border-[#D9D9D9]">
+                    <div className="bg-[#F5F5F5] rounded-[2rem] md:rounded-[3rem] p-4 sm:p-8 md:p-12 border border-[#D9D9D9]">
                         <SizeChart />
                     </div>
                 </div>
