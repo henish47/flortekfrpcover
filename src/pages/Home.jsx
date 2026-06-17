@@ -302,50 +302,8 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* --- PRODUCT RANGE (WHITE & MONOCHROME) --- */}
-            <div className="bg-[#F5F5F5] py-32 border-b border-[#D9D9D9]/50">
-                <div className="max-w-7xl mx-auto px-6 md:px-8">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="text-center mb-20"
-                    >
-                        <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tight mb-4">Our Product Range</h2>
-                        <div className="w-16 h-1 bg-black mx-auto rounded-full mb-6"></div>
-                        <p className="text-[#333333] max-w-xl mx-auto font-medium text-lg leading-relaxed">
-                            From residential walkways to heavy industrial highways, we provide certified, engineered load class solutions.
-                        </p>
-                    </motion.div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {categories.map((cat, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ duration: 0.5, delay: idx * 0.1 }}
-                            >
-                                <Link to="/products" className="group block bg-white p-10 rounded-3xl border border-[#D9D9D9] hover:border-black hover:shadow-xl transition-all duration-300 h-full relative">
-                                    <div className="w-12 h-12 bg-[#F5F5F5] rounded-xl flex items-center justify-center text-black mb-8 group-hover:bg-black group-hover:text-white transition-colors duration-300">
-                                        <cat.icon size={24} />
-                                    </div>
-                                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black transition-colors uppercase tracking-tight">{cat.title}</h3>
-                                    <p className="text-sm text-[#333333] mb-6 leading-relaxed font-medium">{cat.desc}</p>
-                                    <span className="text-xs font-black text-black uppercase tracking-wider transition-colors flex items-center gap-1.5 border-b border-black w-fit pb-0.5">
-                                        Explore <ArrowRight size={12} />
-                                    </span>
-                                </Link>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-
             {/* --- PRODUCT SHOWCASE GALLERY --- */}
-            <div className="bg-white py-32 border-b border-[#D9D9D9]/50">
+            <div className="bg-[#F5F5F5] py-32 border-b border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -370,7 +328,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                                className="group bg-[#F5F5F5] rounded-2xl sm:rounded-3xl border border-[#D9D9D9] hover:border-black overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+                                className="group bg-white rounded-2xl sm:rounded-3xl border border-[#D9D9D9] hover:border-black overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
                             >
                                 {/* Image container */}
                                 <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-4 sm:p-8 border-b border-[#D9D9D9]/50">
@@ -422,8 +380,50 @@ const Home = () => {
                 </div>
             </div>
 
+            {/* --- PRODUCT RANGE (WHITE & MONOCHROME) --- */}
+            <div className="bg-white py-32 border-b border-[#D9D9D9]/50">
+                <div className="max-w-7xl mx-auto px-6 md:px-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center mb-20"
+                    >
+                        <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tight mb-4">Our Product Range</h2>
+                        <div className="w-16 h-1 bg-black mx-auto rounded-full mb-6"></div>
+                        <p className="text-[#333333] max-w-xl mx-auto font-medium text-lg leading-relaxed">
+                            From residential walkways to heavy industrial highways, we provide certified, engineered load class solutions.
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {categories.map((cat, idx) => (
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                            >
+                                <Link to="/products" className="group block bg-[#F5F5F5]/40 p-10 rounded-3xl border border-[#D9D9D9] hover:border-black hover:shadow-xl transition-all duration-300 h-full relative">
+                                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-black mb-8 group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                                        <cat.icon size={24} />
+                                    </div>
+                                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black transition-colors uppercase tracking-tight">{cat.title}</h3>
+                                    <p className="text-sm text-[#333333] mb-6 leading-relaxed font-medium">{cat.desc}</p>
+                                    <span className="text-xs font-black text-black uppercase tracking-wider transition-colors flex items-center gap-1.5 border-b border-black w-fit pb-0.5">
+                                        Explore <ArrowRight size={12} />
+                                    </span>
+                                </Link>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
             {/* --- WHY CHOOSE US (MONOCHROME GRID) --- */}
-            <div className="py-32 bg-white border-b border-[#D9D9D9]/50">
+            <div className="py-32 bg-[#F5F5F5] border-b border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
                         <motion.div
@@ -458,7 +458,7 @@ const Home = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: i * 0.1 }}
-                                    className="bg-[#F5F5F5] p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between"
+                                    className="bg-white p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between"
                                 >
                                     <div>
                                         <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white mb-6">
@@ -475,7 +475,7 @@ const Home = () => {
             </div>
 
             {/* --- REVIEWS / TESTIMONIALS --- */}
-            <div className="bg-[#F5F5F5] py-32 border-b border-[#D9D9D9]/50" >
+            <div className="bg-white py-32 border-b border-[#D9D9D9]/50" >
                 <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -516,7 +516,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                                className="bg-white p-8 rounded-3xl border border-[#D9D9D9] text-left hover:shadow-xl transition-all duration-300 group"
+                                className="bg-[#F5F5F5]/40 p-8 rounded-3xl border border-[#D9D9D9] text-left hover:shadow-xl transition-all duration-300 group"
                             >
                                 <div className="flex gap-1 mb-6 text-black">
                                     {[...Array(review.rating)].map((_, r) => (
@@ -540,10 +540,10 @@ const Home = () => {
             </div>
 
             {/* --- FAQ SECTION (BLACK & WHITE) --- */}
-            <div className="bg-white py-24 border-t border-[#F5F5F5]">
+            <div className="bg-[#F5F5F5] py-24 border-t border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="text-center mb-16">
-                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-[0.2em] mb-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-[0.2em] mb-4">
                             FAQ
                         </span>
                         <h2 className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter mb-4">Frequently Asked Questions</h2>
