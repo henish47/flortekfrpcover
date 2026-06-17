@@ -34,11 +34,17 @@ const SizeChart = () => {
     ];
 
     const TableWrapper = ({ children }) => (
-        <div className="rounded-3xl overflow-hidden border border-[#D9D9D9] shadow-sm mb-8 bg-white">
-            <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                    {children}
-                </table>
+        <div className="space-y-2 mb-8">
+            <div className="flex md:hidden items-center justify-center gap-1.5 text-[9px] font-black uppercase tracking-widest text-[#333333]/55 bg-[#F5F5F5] py-2 px-3 rounded-lg border border-[#D9D9D9]/40 w-fit mx-auto animate-pulse">
+                <span>Swipe left / right to view dimensions</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"><path d="m18 8 4 4-4 4"/><path d="M2 12h20"/><path d="m6 8-4 4 4 4"/></svg>
+            </div>
+            <div className="rounded-3xl overflow-hidden border border-[#D9D9D9] shadow-sm bg-white">
+                <div className="overflow-x-auto">
+                    <table className="w-full text-left border-collapse min-w-[620px] md:min-w-0">
+                        {children}
+                    </table>
+                </div>
             </div>
         </div>
     );
@@ -88,7 +94,7 @@ const SizeChart = () => {
                                     <button
                                         key={tab.id}
                                         onClick={() => setSubTab(tab.id)}
-                                        className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex-1 text-center ${subTab === tab.id
+                                        className={`px-4 py-2.5 rounded-lg text-xs font-bold transition-all flex-1 text-center ${subTab === tab.id
                                             ? 'bg-white text-black shadow-sm'
                                             : 'text-[#333333]/70 hover:text-black'
                                             }`}
@@ -172,7 +178,7 @@ const SizeChart = () => {
                                     <button
                                         key={tab.id}
                                         onClick={() => setSubTab(tab.id)}
-                                        className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex-1 text-center ${subTab === tab.id
+                                        className={`px-4 py-2.5 rounded-lg text-xs font-bold transition-all flex-1 text-center ${subTab === tab.id
                                             ? 'bg-white text-black shadow-sm'
                                             : 'text-[#333333]/70 hover:text-black'
                                             }`}
@@ -305,7 +311,7 @@ const SizeChart = () => {
                                     <button
                                         key={duty}
                                         onClick={() => setGulleySubTab(duty)}
-                                        className={`px-4 py-2 rounded-lg text-xs font-bold transition-all flex-1 text-center whitespace-nowrap ${gulleySubTab === duty
+                                        className={`px-4 py-2.5 rounded-lg text-xs font-bold transition-all flex-1 text-center whitespace-nowrap ${gulleySubTab === duty
                                             ? 'bg-white text-black shadow-sm'
                                             : 'text-[#333333]/70 hover:text-black'
                                             }`}

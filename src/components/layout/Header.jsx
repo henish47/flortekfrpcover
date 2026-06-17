@@ -115,8 +115,9 @@ const Header = () => {
                         {/* Mobile Menu Button & Language */}
                         <div className="flex items-center gap-2 md:hidden">
                             <button
-                                className="p-2 text-black relative z-50 bg-[#F5F5F5] rounded-xl border border-[#D9D9D9]"
+                                className="w-11 h-11 flex items-center justify-center text-black relative z-50 bg-[#F5F5F5] rounded-xl border border-[#D9D9D9] hover:border-black active:scale-95 transition-all outline-none"
                                 onClick={() => setIsOpen(!isOpen)}
+                                aria-label="Toggle Navigation Menu"
                             >
                                 {isOpen ? <X size={20} /> : <Menu size={20} />}
                             </button>
@@ -133,7 +134,7 @@ const Header = () => {
                             exit={{ opacity: 0, height: 0 }}
                             className="md:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-[#F5F5F5] overflow-hidden"
                         >
-                            <div className="p-4 flex flex-col gap-2">
+                            <div className="p-5 flex flex-col gap-2 max-h-[85vh] overflow-y-auto">
                                 {navLinks.map((link) => (
                                     <Link
                                         key={link.name}
@@ -145,7 +146,8 @@ const Header = () => {
                                         {location.pathname === link.path && <div className="h-1.5 w-1.5 rounded-full bg-white" />}
                                     </Link>
                                 ))}
-                                <div className="w-full mt-4">
+                                
+                                <div className="w-full mt-2">
                                     <Button
                                         onClick={() => {
                                             setIsOpen(false);
@@ -155,6 +157,41 @@ const Header = () => {
                                     >
                                         Get Quote
                                     </Button>
+                                </div>
+
+                                {/* Quick Contact Details inside Mobile Menu */}
+                                <div className="mt-4 pt-5 border-t border-[#D9D9D9]/50 space-y-4">
+                                    <p className="text-[10px] font-black uppercase tracking-widest text-[#333333]/50 px-2">
+                                        Quick Contacts
+                                    </p>
+                                    <div className="grid grid-cols-2 gap-2">
+                                        <a 
+                                            href="tel:+918000888620" 
+                                            className="flex items-center gap-2.5 p-3 rounded-xl bg-[#F5F5F5] border border-[#D9D9D9]/30 hover:border-black transition-all text-xs font-bold text-black"
+                                        >
+                                            <Phone size={14} className="text-[#333333]" />
+                                            <span>Call Us</span>
+                                        </a>
+                                        <a 
+                                            href="mailto:flortekindustries@gmail.com" 
+                                            className="flex items-center gap-2.5 p-3 rounded-xl bg-[#F5F5F5] border border-[#D9D9D9]/30 hover:border-black transition-all text-xs font-bold text-black"
+                                        >
+                                            <Mail size={14} className="text-[#333333]" />
+                                            <span>Email</span>
+                                        </a>
+                                    </div>
+                                    <a
+                                        href="/brochure.pdf"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex items-center justify-center gap-2 p-3 rounded-xl bg-white border border-[#D9D9D9]/85 text-xs font-bold text-black hover:bg-[#F5F5F5]"
+                                    >
+                                        <Download size={14} className="text-[#333333]" />
+                                        <span>Download Brochure</span>
+                                    </a>
+                                    <div className="flex items-center justify-center gap-2 text-[10px] text-[#333333]/65 font-bold uppercase py-1">
+                                        <MapPin size={12} /> Rajkot, Gujarat, India
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

@@ -61,7 +61,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 {/* Quote Button */}
                 <button
                     onClick={onQuote}
-                    className="w-full py-2.5 bg-black text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm"
+                    className="w-full h-11 bg-black text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
                 >
                     Get Quote
                 </button>
@@ -463,7 +463,7 @@ const Products = () => {
                                 placeholder="Search products..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="w-full pl-9 pr-9 py-2.5 bg-[#F5F5F5] border border-[#D9D9D9] rounded-full focus:bg-white focus:outline-none transition-all outline-none text-[11px] text-black placeholder:text-[#333333]/65 font-bold uppercase tracking-wider"
+                                className="w-full pl-9 pr-10 py-2.5 bg-[#F5F5F5] border border-[#D9D9D9] rounded-full focus:bg-white focus:outline-none transition-all outline-none text-[11px] text-black placeholder:text-[#333333]/65 font-bold uppercase tracking-wider"
                             />
                             <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#333333]/60">
                                 <Search size={12} />
@@ -471,9 +471,10 @@ const Products = () => {
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm("")}
-                                    className="absolute right-3.5 top-1/2 -translate-y-1/2 text-[#333333] hover:text-red-500"
+                                    className="absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center text-[#333333] hover:text-red-500 rounded-full hover:bg-black/5 active:scale-95 transition-all outline-none"
+                                    aria-label="Clear search query"
                                 >
-                                    <X size={12} />
+                                    <X size={14} />
                                 </button>
                             )}
                         </div>
