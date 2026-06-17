@@ -19,7 +19,7 @@ const LeadGenPopup = () => {
         if (!hasSeen) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
-            }, 12000); // 12 seconds delay
+            }, 10000); // 10 seconds delay
             return () => clearTimeout(timer);
         }
     }, []);
@@ -91,7 +91,7 @@ const LeadGenPopup = () => {
 
     const handleWhatsApp = () => {
         sessionStorage.setItem('flortek_lead_seen', 'true');
-        const text = encodeURIComponent(`Hi Flortek, I'm interested in FRP Covers. My Name is ${formData.name || 'Visitor'}.`);
+        const text = encodeURIComponent(`Hello Flortek, I visited your website and I am interested in your FRP products. Please provide more details.`);
         window.open(`https://wa.me/918000888620?text=${text}`, '_blank');
         setIsVisible(false);
     };

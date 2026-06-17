@@ -31,7 +31,7 @@ const Footer = () => {
                                 <Youtube size={18} />
                             </a>
                             <a
-                                href="https://wa.me/919724035200"
+                                href="https://wa.me/919724035200?text=Hello%20Flortek%2C%20I%20visited%20your%20website%20and%20am%20interested%20in%20your%20FRP%20products.%20Please%20provide%20more%20details."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="w-10 h-10 rounded-full bg-[#333333] flex items-center justify-center text-[#D9D9D9] hover:bg-white hover:text-black transition-all duration-300"

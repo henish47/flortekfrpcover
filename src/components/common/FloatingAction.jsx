@@ -42,7 +42,7 @@ const FloatingAction = () => {
 
                         {/* WhatsApp Button */}
                         <a
-                            href="https://wa.me/918000888620"
+                            href="https://wa.me/918000888620?text=Hello%20Flortek%2C%20I%20visited%20your%20website%20and%20I%20am%20interested%20in%20your%20FRP%20products.%20Please%20provide%20more%20details."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-[#333333] text-white p-3.5 rounded-full border border-[#333333] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"

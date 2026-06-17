@@ -199,7 +199,7 @@ const FRPCableTrenchCovers = () => {
                             Get Custom Price
                         </button>
                         <a
-                            href="https://wa.me/918000888620"
+                            href="https://wa.me/918000888620?text=Hello%20Flortek%2C%20I%20visited%20your%20website%20and%20am%20interested%20in%20your%20FRP%20Cable%20Trench%20Covers.%20Please%20provide%20more%20details."
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-4 border border-[#D9D9D9] text-black text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#F5F5F5] transition-all flex items-center justify-center gap-2"

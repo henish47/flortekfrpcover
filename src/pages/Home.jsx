@@ -402,7 +402,7 @@ const Home = () => {
                                             onClick={openModal}
                                             className="flex-grow py-2 sm:py-3 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl transition-all border border-black active:scale-95"
                                         >
-                                            Price
+                                            get best Price
                                         </button>
                                     </div>
                                 </div>
