@@ -409,6 +409,16 @@ const Home = () => {
                             </motion.div>
                         ))}
                     </div>
+
+                    {/* View All Products Button */}
+                    <div className="mt-16 text-center">
+                        <Link
+                            to="/products"
+                            className="inline-flex items-center justify-center px-10 py-4 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-black shadow-sm"
+                        >
+                            View All Products <ArrowRight size={14} className="ml-2" />
+                        </Link>
+                    </div>
                 </div>
             </div>
 
