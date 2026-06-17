@@ -8,13 +8,13 @@ const About = () => {
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
                 title="About Flortek Industries Private Limited | Premium FRP Manufacturer"
-                description="Flortek Industries Private Limited is a leading manufacturer of FRP Manhole Covers, BMC covers, and infrastructure solutions based in Rajkot, Gujarat. Est. 2017."
+                description="Flortek Industries Private Limited is a leading manufacturer of FRP Manhole Covers and infrastructure solutions based in Rajkot, Gujarat. Est. 2017."
                 keywords="Flortek Industries Private Limited Profile, Top FRP Manufacturer Rajkot, Best Manhole Cover Company India, ISO 9001:2015 Certified, SMC BMC Cover Factory, Flortek Founders, Infrastructure Solutions Gujarat, Manhole Cover Exporters"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "AboutPage",
                     "name": "About Flortek Industries Private Limited",
-                    "description": "Learn about Flortek Industries Private Limited, a premier manufacturer of FRP and BMC manhole covers since 2017.",
+                    "description": "Learn about Flortek Industries Private Limited, a premier manufacturer of FRP manhole covers since 2017.",
                     "url": "https://flortekfrpcover.vercel.app/about"
                 }}
                 canonicalUrl="https://flortekfrpcover.vercel.app/about"

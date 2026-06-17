@@ -64,7 +64,7 @@ const Contact = () => {
                     "@context": "https://schema.org",
                     "@type": "ContactPage",
                     "name": "Contact Flortek Industries Private Limited",
-                    "description": "Get in touch with Flortek Industries Private Limited for inquiries about FRP and BMC manhole covers.",
+                    "description": "Get in touch with Flortek Industries Private Limited for inquiries about FRP manhole covers.",
                     "url": "https://flortekfrpcover.vercel.app/contact"
                 }}
                 canonicalUrl="https://flortekfrpcover.vercel.app/contact"

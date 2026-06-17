@@ -7,12 +7,12 @@ import { useModal } from '../context/ModalContext';
 const ProductCard = ({ product, onZoom, onQuote }) => {
     return (
         <div 
-            className="bg-white rounded-3xl overflow-hidden border border-[#D9D9D9] hover:border-black hover:shadow-lg transition-all duration-500 h-full flex flex-col group relative"
+            className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D9D9D9] hover:border-black hover:shadow-lg transition-all duration-500 h-full flex flex-col group relative"
         >
             {/* Image container */}
             <div 
                 onClick={onZoom}
-                className="relative aspect-square overflow-hidden bg-[#F5F5F5] flex items-center justify-center p-6 group-hover:bg-[#F2F2F2] transition-colors duration-500 cursor-zoom-in"
+                className="relative aspect-square overflow-hidden bg-[#F5F5F5] flex items-center justify-center p-3 sm:p-6 group-hover:bg-[#F2F2F2] transition-colors duration-500 cursor-zoom-in"
             >
                 <img
                     src={product.imageUrl}
@@ -21,39 +21,39 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                     className="w-[85%] h-[85%] object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <span className="absolute bottom-4 right-4 bg-black/75 text-white text-[9px] font-black uppercase tracking-widest px-2.5 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    Zoom Image
+                <span className="absolute bottom-3 right-3 bg-black/75 text-white text-[8px] sm:text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    Zoom
                 </span>
                 
                 {/* Load class badge on image */}
-                <span className="absolute top-4 left-4 bg-black text-white text-[9px] font-black uppercase tracking-wider px-2.5 py-1 rounded-md shadow-sm">
+                <span className="absolute top-3 left-3 bg-black text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded shadow-sm">
                     {product.loadClass.split(' ')[0]} {product.loadClass.includes('Ton') ? 'Ton' : ''}
                 </span>
             </div>
             
             {/* Metadata container */}
-            <div className="p-5 flex-grow flex flex-col justify-between">
+            <div className="p-3 sm:p-5 flex-grow flex flex-col justify-between">
                 <div>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-[#333333]/60 block mb-1">
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-[#333333]/60 block mb-0.5">
                         {product.category}
                     </span>
-                    <h3 className="text-sm font-black uppercase text-black mb-3 line-clamp-2 leading-tight">
+                    <h3 className="text-xs sm:text-sm font-black uppercase text-black mb-2 line-clamp-2 leading-tight min-h-[2rem]">
                         {product.title}
                     </h3>
                     
                     {/* Specs list */}
-                    <div className="space-y-1 text-xs text-[#333333]/80 font-medium mb-5">
+                    <div className="space-y-1 text-[10px] sm:text-xs text-[#333333]/80 font-medium mb-3 sm:mb-5">
                         <div className="flex justify-between border-b border-[#F5F5F5] pb-1">
                             <span className="text-[#333333]/50">Shape:</span>
                             <span className="font-bold text-black">{product.shape}</span>
                         </div>
                         <div className="flex justify-between border-b border-[#F5F5F5] pb-1">
-                            <span className="text-[#333333]/50">Dimensions:</span>
-                            <span className="font-bold text-black">{product.dimensions}</span>
+                            <span className="text-[#333333]/50">Size:</span>
+                            <span className="font-bold text-black truncate max-w-[70px] sm:max-w-none" title={product.dimensions}>{product.dimensions.split('/')[0].trim()}</span>
                         </div>
                         <div className="flex justify-between">
                             <span className="text-[#333333]/50">Rating:</span>
-                            <span className="font-bold text-black text-[10px]">{product.loadClass}</span>
+                            <span className="font-bold text-black text-[9px] sm:text-[10px] truncate max-w-[65px] sm:max-w-none" title={product.loadClass}>{product.loadClass.split(' ')[0]} {product.loadClass.includes('Ton') ? 'T' : ''}</span>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 {/* Quote Button */}
                 <button
                     onClick={onQuote}
-                    className="w-full h-11 bg-black text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
+                    className="w-full h-9 sm:h-11 bg-black text-white rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
                 >
                     Get Quote
                 </button>
@@ -492,7 +492,7 @@ const Products = () => {
                         ) : filteredProducts.length > 0 ? (
                             <motion.div
                                 layout
-                                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                                className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6"
                             >
                                 {filteredProducts.map((product) => (
                                     <motion.div

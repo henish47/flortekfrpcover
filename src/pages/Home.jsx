@@ -362,7 +362,7 @@ const Home = () => {
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-8">
                         {galleryProducts.map((prod, idx) => (
                             <motion.div
                                 key={idx}
@@ -370,10 +370,10 @@ const Home = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                                className="group bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] hover:border-black overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+                                className="group bg-[#F5F5F5] rounded-2xl sm:rounded-3xl border border-[#D9D9D9] hover:border-black overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
                             >
                                 {/* Image container */}
-                                <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-8 border-b border-[#D9D9D9]/50">
+                                <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-4 sm:p-8 border-b border-[#D9D9D9]/50">
                                     <img
                                         src={prod.image}
                                         alt={prod.title}
@@ -381,28 +381,28 @@ const Home = () => {
                                     />
                                 </div>
                                 {/* Content */}
-                                <div className="p-8 flex flex-col flex-grow justify-between">
-                                    <div className="space-y-3">
-                                        <div className="flex justify-between items-start gap-4">
-                                            <h3 className="text-xl font-bold text-black uppercase tracking-tight leading-tight">{prod.title}</h3>
-                                            <span className="shrink-0 px-2.5 py-1 bg-black text-white text-[9px] font-black uppercase tracking-wider rounded">
+                                <div className="p-3 sm:p-8 flex flex-col flex-grow justify-between">
+                                    <div className="space-y-1.5 sm:space-y-3">
+                                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
+                                            <h3 className="text-xs sm:text-xl font-bold text-black uppercase tracking-tight leading-tight min-h-[2rem] sm:min-h-0">{prod.title}</h3>
+                                            <span className="shrink-0 w-fit px-1.5 py-0.5 sm:px-2.5 sm:py-1 bg-black text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider rounded">
                                                 {prod.load}
                                             </span>
                                         </div>
-                                        <p className="text-sm text-[#333333] leading-relaxed font-medium">{prod.desc}</p>
+                                        <p className="text-[10px] sm:text-sm text-[#333333] leading-relaxed font-medium line-clamp-3 sm:line-clamp-none">{prod.desc}</p>
                                     </div>
-                                    <div className="flex gap-4 pt-6 mt-auto">
+                                    <div className="flex gap-2 sm:gap-4 pt-3 sm:pt-6 mt-auto">
                                         <Link
                                             to="/sizes"
-                                            className="flex-grow py-3 text-center border border-black text-black font-bold uppercase tracking-wider text-[10px] rounded-xl hover:bg-[#F5F5F5] transition-all"
+                                            className="flex-grow py-2 sm:py-3 text-center border border-black text-black font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl hover:bg-[#F5F5F5] transition-all"
                                         >
-                                            View Sizes
+                                            Sizes
                                         </Link>
                                         <button
                                             onClick={openModal}
-                                            className="flex-grow py-3 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-[10px] rounded-xl transition-all border border-black"
+                                            className="flex-grow py-2 sm:py-3 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl transition-all border border-black active:scale-95"
                                         >
-                                            Get Price
+                                            Price
                                         </button>
                                     </div>
                                 </div>
