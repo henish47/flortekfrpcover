@@ -11,6 +11,7 @@ const Contact = () => {
         email: '',
         phone: '',
         company: '',
+        country: 'India',
         requirements: ''
     });
     const [status, setStatus] = useState('idle'); // idle | submitting | success | error
@@ -35,6 +36,7 @@ const Contact = () => {
                     "Phone Number": formData.phone,
                     "Email Address": formData.email,
                     "Company Name": formData.company,
+                    "Country": formData.country,
                     "Project Requirements": formData.requirements,
                     _subject: `New Project Enquiry: ${formData.name}`,
                     _template: "table"
@@ -43,7 +45,7 @@ const Contact = () => {
 
             if (response.ok) {
                 setStatus('success');
-                setFormData({ name: '', email: '', phone: '', company: '', requirements: '' });
+                setFormData({ name: '', email: '', phone: '', company: '', country: 'India', requirements: '' });
                 setTimeout(() => setStatus('idle'), 5000);
             } else {
                 setStatus('error');
@@ -57,15 +59,29 @@ const Contact = () => {
     return (
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
-                title="Contact Flortek | Architectural & Industrial Solutions"
-                description="Connect with Flortek Industries Private Limited for premium FRP manhole covers and drainage solutions. Rajkot-based manufacturing with pan-India delivery."
-                keywords="Contact Flortek Industries Private Limited, Get FRP Cover Quote, Manhole Cover Price List, Buy Manhole Covers Wholesale, Contact Manhole Cover Manufacturer Rajkot, Flortek Customer Care"
+                title="Buy FRP Manhole Covers Wholesale | Contact Flortek India"
+                description="Get custom pricing & catalog list of Flortek composite FRP/GRP manhole covers. Contact our sales department in Rajkot, Gujarat for bulk wholesale quotes."
+                keywords="buy FRP manhole covers wholesale, FRP manhole cover price list, composite cover manufacturers, buy drain grates bulk, contact Flortek sales"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "ContactPage",
                     "name": "Contact Flortek Industries Private Limited",
-                    "description": "Get in touch with Flortek Industries Private Limited for inquiries about FRP manhole covers.",
-                    "url": "https://flortekfrpcover.vercel.app/contact"
+                    "description": "Get in touch with Flortek Industries Private Limited for bulk inquiries about FRP manhole covers.",
+                    "url": "https://flortekfrpcover.vercel.app/contact",
+                    "mainEntity": {
+                        "@type": "LocalBusiness",
+                        "name": "Flortek Industries Private Limited",
+                        "telephone": "+91-8000888620",
+                        "email": "flortekindustries@gmail.com",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
+                            "addressLocality": "Rajkot",
+                            "addressRegion": "Gujarat",
+                            "postalCode": "360024",
+                            "addressCountry": "IN"
+                        }
+                    }
                 }}
                 canonicalUrl="https://flortekfrpcover.vercel.app/contact"
             />
@@ -171,7 +187,7 @@ const Contact = () => {
                                 </div>
                             </div>
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
                                     <label className="block text-sm font-semibold text-[#333333] mb-2">Email Address</label>
                                     <input
@@ -193,6 +209,29 @@ const Contact = () => {
                                         className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
                                         placeholder="Your organization"
                                     />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Country</label>
+                                    <select
+                                        name="country"
+                                        value={formData.country}
+                                        onChange={handleChange}
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white text-sm font-medium h-[50px]"
+                                    >
+                                        <option value="India">India</option>
+                                        <option value="United Arab Emirates">United Arab Emirates (UAE)</option>
+                                        <option value="United States">United States (USA)</option>
+                                        <option value="Saudi Arabia">Saudi Arabia (KSA)</option>
+                                        <option value="Oman">Oman</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Kuwait">Kuwait</option>
+                                        <option value="Bahrain">Bahrain</option>
+                                        <option value="Germany">Germany</option>
+                                        <option value="United Kingdom">United Kingdom (UK)</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Australia">Australia</option>
+                                        <option value="Other">Other Country</option>
+                                    </select>
                                 </div>
                             </div>
 

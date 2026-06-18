@@ -15,6 +15,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
             name: form.elements.name.value,
             phone: form.elements.phone.value,
             email: form.elements.email.value,
+            country: form.elements.country.value,
             requirement: form.elements.requirement.value,
             _subject: "New Product Quote Request - Flortek Website"
         };
@@ -95,9 +96,29 @@ const InquiryModal = ({ isOpen, onClose }) => {
                                             <input required name="phone" type="tel" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="+91..." />
                                         </div>
                                     </div>
-                                    <div>
-                                        <label className="block text-sm font-medium text-[#333333] mb-1">Email</label>
-                                        <input required name="email" type="email" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="john@company.com" />
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div>
+                                            <label className="block text-sm font-medium text-[#333333] mb-1">Email</label>
+                                            <input required name="email" type="email" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="john@company.com" />
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-[#333333] mb-1">Country</label>
+                                            <select required name="country" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all bg-white text-sm font-medium h-[42px]">
+                                                <option value="India">India</option>
+                                                <option value="United Arab Emirates">United Arab Emirates (UAE)</option>
+                                                <option value="United States">United States (USA)</option>
+                                                <option value="Saudi Arabia">Saudi Arabia (KSA)</option>
+                                                <option value="Oman">Oman</option>
+                                                <option value="Qatar">Qatar</option>
+                                                <option value="Kuwait">Kuwait</option>
+                                                <option value="Bahrain">Bahrain</option>
+                                                <option value="Germany">Germany</option>
+                                                <option value="United Kingdom">United Kingdom (UK)</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="Australia">Australia</option>
+                                                <option value="Other">Other Country</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div>
                                         <label className="block text-sm font-medium text-[#333333] mb-1">Requirement</label>

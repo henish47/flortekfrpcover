@@ -21,6 +21,12 @@ const generateSitemap = () => {
         { url: '/frp-drain-covers', changefreq: 'weekly', priority: 0.9 },
         { url: '/frp-cable-trench-covers', changefreq: 'weekly', priority: 0.9 },
         { url: '/heavy-duty-frp-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-cover-exporter', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-cover-manufacturer-india', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-cover-manufacturer-gujarat', changefreq: 'weekly', priority: 0.9 },
+        { url: '/industrial-frp-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/municipal-frp-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/frp-vs-cast-iron-covers', changefreq: 'weekly', priority: 0.9 },
     ];
 
     const allRoutes = [...staticRoutes];

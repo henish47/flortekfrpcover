@@ -10,6 +10,7 @@ const LeadGenPopup = () => {
         name: '',
         phone: '',
         company: '',
+        country: 'India',
         requirement: ''
     });
 
@@ -67,6 +68,7 @@ const LeadGenPopup = () => {
                     "Customer Name": formData.name,
                     "Phone Number": formData.phone,
                     "Company Name": formData.company || "N/A",
+                    "Country": formData.country,
                     "Project Requirements": formData.requirement,
                     _subject: `New Lead: ${formData.name} (${formData.phone})`,
                     _template: "table"
@@ -179,15 +181,35 @@ const LeadGenPopup = () => {
                                         {errors.phone && <p className="text-[10px] text-red-500 mt-1 font-bold">{errors.phone}</p>}
                                     </div>
 
-                                    <div>
+                                    <div className="grid grid-cols-2 gap-3">
                                         <input
                                             type="text"
                                             name="company"
                                             value={formData.company}
                                             onChange={handleChange}
-                                            placeholder="Company Name (Optional)"
+                                            placeholder="Company (Opt.)"
                                             className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:border-black text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none"
                                         />
+                                        <select
+                                            name="country"
+                                            value={formData.country}
+                                            onChange={handleChange}
+                                            className="w-full px-3 py-3 rounded-xl border border-[#D9D9D9] focus:border-black text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none"
+                                        >
+                                            <option value="India">India</option>
+                                            <option value="United Arab Emirates">UAE</option>
+                                            <option value="United States">USA</option>
+                                            <option value="Saudi Arabia">KSA</option>
+                                            <option value="Oman">Oman</option>
+                                            <option value="Qatar">Qatar</option>
+                                            <option value="Kuwait">Kuwait</option>
+                                            <option value="Bahrain">Bahrain</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="United Kingdom">UK</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Other">Other</option>
+                                        </select>
                                     </div>
 
                                     <div>

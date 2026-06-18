@@ -4,6 +4,7 @@ import SEO from '../../components/common/SEO';
 import { useModal } from '../../context/ModalContext';
 import { Shield, Settings, Truck, Award, ArrowRight, Home } from 'lucide-react';
 import { motion } from 'framer-motion';
+import SEOInquiryForm from '../../components/common/SEOInquiryForm';
 
 const FRPDrainCovers = () => {
     const { openModal } = useModal();
@@ -186,27 +187,8 @@ const FRPDrainCovers = () => {
 
                 {/* Sidebar Widget */}
                 <div className="lg:col-span-4 space-y-8">
-                    {/* Inquiry Card */}
-                    <div className="border border-[#D9D9D9] rounded-3xl p-6 bg-white shadow-sm">
-                        <h3 className="text-lg font-bold text-black uppercase tracking-tight mb-4">Request Free Quote</h3>
-                        <p className="text-xs text-[#333333] mb-6 leading-relaxed">
-                            Looking for custom sizes, slotted gratings, or pricing list? Request a custom quote today.
-                        </p>
-                        <button
-                            onClick={openModal}
-                            className="w-full py-4 bg-black text-white text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#333333] transition-all mb-4"
-                        >
-                            Get Custom Price
-                        </button>
-                        <a
-                            href="https://wa.me/918000888620?text=Hello%20Flortek%2C%20I%20visited%20your%20website%20and%20am%20interested%20in%20your%20FRP%20Drain%20Covers.%20Please%20provide%20more%20details."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full py-4 border border-[#D9D9D9] text-black text-xs font-bold uppercase tracking-wider rounded-xl hover:bg-[#F5F5F5] transition-all flex items-center justify-center gap-2"
-                        >
-                            WhatsApp Inquiry
-                        </a>
-                    </div>
+                    {/* Reusable B2B Inquiry form */}
+                    <SEOInquiryForm subject="FRP Drain Covers" />
 
                     {/* Internal Links Widget */}
                     <div className="border border-[#D9D9D9] rounded-3xl p-6 bg-[#F5F5F5]/30">

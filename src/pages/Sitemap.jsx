@@ -29,6 +29,12 @@ const Sitemap = () => {
         { name: 'FRP Drain Covers Guide', path: '/frp-drain-covers' },
         { name: 'FRP Cable Trench Covers Guide', path: '/frp-cable-trench-covers' },
         { name: 'Heavy Duty FRP Covers Guide', path: '/heavy-duty-frp-covers' },
+        { name: 'FRP Cover Exporter Guide', path: '/frp-cover-exporter' },
+        { name: 'FRP Cover Manufacturer India Guide', path: '/frp-cover-manufacturer-india' },
+        { name: 'FRP Cover Manufacturer Gujarat Guide', path: '/frp-cover-manufacturer-gujarat' },
+        { name: 'Industrial FRP Covers Guide', path: '/industrial-frp-covers' },
+        { name: 'Municipal FRP Covers Guide', path: '/municipal-frp-covers' },
+        { name: 'FRP vs Cast Iron Covers Comparison', path: '/frp-vs-cast-iron-covers' },
     ];
 
     return (

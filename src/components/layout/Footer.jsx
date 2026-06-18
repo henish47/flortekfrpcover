@@ -89,6 +89,7 @@ const Footer = () => {
                                 { name: 'FRP Drain Covers', path: '/frp-drain-covers' },
                                 { name: 'Cable Trench Covers', path: '/frp-cable-trench-covers' },
                                 { name: 'Heavy Duty FRP Covers', path: '/heavy-duty-frp-covers' },
+                                { name: 'FRP Cover Exporter', path: '/frp-cover-exporter' },
                                 { name: 'Standard Sizing List', path: '/sizes' }
                             ].map((item) => (
                                 <li key={item.name}>

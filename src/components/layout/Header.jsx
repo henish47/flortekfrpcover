@@ -25,6 +25,7 @@ const Header = () => {
         { name: 'Sizes', path: '/sizes' },
         { name: 'Install', path: '/installation' },
         { name: 'About', path: '/about' },
+        { name: 'Export', path: '/frp-cover-exporter' },
         { name: 'Applications', path: '/applications' },
         { name: 'Contact', path: '/contact' },
     ];

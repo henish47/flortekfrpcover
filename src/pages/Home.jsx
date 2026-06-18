@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Star, Download } from 'lucide-react';
+import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Star, Download, Globe, Anchor } from 'lucide-react';
 import { useModal } from '../context/ModalContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/common/SEO';
@@ -247,7 +247,7 @@ const Home = () => {
                                         <motion.img
                                             key={currentSlide}
                                             src={heroSlides[currentSlide].image}
-                                            alt={heroSlides[currentSlide].title}
+                                            alt={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
                                             initial={{ opacity: 0, scale: 0.8 }}
                                             animate={{ opacity: 1, scale: 1 }}
                                             exit={{ opacity: 0, scale: 0.85 }}
@@ -283,7 +283,7 @@ const Home = () => {
                                         >
                                             <img
                                                 src={slide.image}
-                                                alt={slide.title}
+                                                alt={`${slide.title} - FRP Cover Showcase`}
                                                 className="w-4/5 h-4/5 object-contain"
                                             />
                                         </button>
@@ -334,7 +334,7 @@ const Home = () => {
                                 <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-4 sm:p-8 border-b border-[#D9D9D9]/50">
                                     <img
                                         src={prod.image}
-                                        alt={prod.title}
+                                        alt={`${prod.title} - Flortek Composite Drainage Grating`}
                                         className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>
@@ -466,6 +466,89 @@ const Home = () => {
                                         </div>
                                         <h4 className="font-bold text-black text-lg mb-2 uppercase tracking-tight">{feature.title}</h4>
                                         <p className="text-sm text-[#333333] leading-relaxed font-medium">{feature.desc}</p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* --- GLOBAL EXPORT & SHIPPING SECTION --- */}
+            <div className="bg-white py-32 border-b border-[#D9D9D9]/50">
+                <div className="max-w-7xl mx-auto px-6 md:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                        <motion.div
+                            initial={{ opacity: 0, x: -30 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8 }}
+                            className="lg:col-span-6 space-y-6"
+                        >
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-wider">
+                                <Globe size={10} /> International Export Hub
+                            </span>
+                            <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none">
+                                FRP Cover Exporter & Global Supplier
+                            </h2>
+                            <p className="text-lg text-[#333333] leading-relaxed font-medium">
+                                Flortek Industries Private Limited manufactures premium, export-grade composite covers tailored for harsh global climates. From our location in Rajkot, India, we arrange seaworthy shipping containers to primary ports worldwide.
+                            </p>
+                            
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                                <div className="flex gap-3 items-start">
+                                    <div className="p-2 bg-[#F5F5F5] border border-[#D9D9D9] rounded-xl text-black">
+                                        <Anchor size={18} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Seaworthy Palletizing</h4>
+                                        <p className="text-xs text-[#333333] mt-0.5">Heavy shrink wrapping, steel-strapping, and edge protection to ensure zero transit damage.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-3 items-start">
+                                    <div className="p-2 bg-[#F5F5F5] border border-[#D9D9D9] rounded-xl text-black">
+                                        <Truck size={18} />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Fast Maritime Dispatch</h4>
+                                        <p className="text-xs text-[#333333] mt-0.5">Direct FCL container routing via Mundra Port to Jebel Ali (UAE), Houston (USA), and European ports.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-wrap gap-4 pt-6">
+                                <Link to="/frp-cover-exporter" className="inline-flex items-center justify-center px-8 py-4 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-black shadow-sm">
+                                    Request Export Quote <ArrowRight size={14} className="ml-2" />
+                                </Link>
+                                <a
+                                    href="/brochure.pdf"
+                                    download="Flortek_Export_Brochure.pdf"
+                                    className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-black hover:bg-[#F5F5F5] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all"
+                                >
+                                    <Download size={14} className="mr-2" /> Export Catalog
+                                </a>
+                            </div>
+                        </motion.div>
+
+                        <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            {[
+                                { title: "BS EN 124 Certified", desc: "Covers conform strictly to European load standards with full certification reports.", detail: "A15 to D400 Rating" },
+                                { title: "SGS / TUV Inspection Ready", desc: "Third-party quality auditing is welcomed pre-shipment at our factory.", detail: "100% Quality Guaranteed" },
+                                { title: "UV Stabilized Resilience", desc: "Specialized polymers built to withstand intense desert heat & UV rays.", detail: "Temp: -40°C to +80°C" },
+                                { title: "OEM & ODM Services", desc: "Custom municipal logos, brand lettering, and custom sizing molds.", detail: "Tailored to Order" }
+                            ].map((item, i) => (
+                                <motion.div
+                                    key={i}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: i * 0.1 }}
+                                    className="bg-[#F5F5F5]/40 p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between hover:border-black transition-all"
+                                >
+                                    <div>
+                                        <span className="text-[9px] font-black uppercase tracking-wider text-[#333333]/60 block mb-3">{item.detail}</span>
+                                        <h4 className="font-bold text-black text-lg mb-2 uppercase tracking-tight">{item.title}</h4>
+                                        <p className="text-xs text-[#333333] leading-relaxed font-medium">{item.desc}</p>
                                     </div>
                                 </motion.div>
                             ))}

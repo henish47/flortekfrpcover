@@ -38,9 +38,44 @@ const Applications = () => {
     return (
         <div className="bg-white overflow-hidden">
             <SEO
-                title="Industrial & Municipal Applications | Flortek Industries Private Limited"
-                description="Explore versatile application areas of Flortek FRP manhole covers. From high-speed highways to premium residential complexes."
-                keywords="highway manhole covers, industrial drainage solutions, residential manhole covers, FRP applications"
+                title="FRP Manhole Cover Application Areas | Industrial & Municipal Drainage"
+                description="Discover application areas for Flortek composite FRP covers. High-performance drainage solutions for highways (D400), petrol pumps (C250), car parks (B125), and pathways."
+                keywords="industrial FRP covers, road manhole covers, sewage chamber covers, commercial drain gratings, petrol pump manhole covers, smart city drainage, EN 124 load classes"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "ItemList",
+                    "name": "FRP Manhole Cover Load Class Applications",
+                    "description": "Flortek composite cover installation zones grouped by standard load ratings as per BS EN 124 guidelines.",
+                    "url": "https://flortekfrpcover.vercel.app/applications",
+                    "numberOfItems": 4,
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Class A15 (2.5/5 Ton) - Pedestrian Zones",
+                            "description": "Used in residential pathways, garden lawns, cycle tracks, and walk spaces with zero vehicle movement."
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Class B125 (12.5 Ton) - Medium Duty Roads",
+                            "description": "Used in residential driveways, parking decks, commercial walk lanes, and light vehicle parking spots."
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Class C250 (25 Ton) - Heavy Traffic Areas",
+                            "description": "Used in highway kerb channels, commercial loading bays, service stations, and petrol pumps."
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "name": "Class D400 (40 Ton) - Industrial Grade Mains",
+                            "description": "Used in national carriage ways, highways, heavy cargo airports, and industrial manufacturing estates."
+                        }
+                    ]
+                }}
+                canonicalUrl="https://flortekfrpcover.vercel.app/applications"
             />
 
             {/* Premium Hero Section - Monochrome Typography-focused */}

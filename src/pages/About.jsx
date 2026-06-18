@@ -7,15 +7,23 @@ const About = () => {
     return (
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
-                title="About Flortek Industries Private Limited | Premium FRP Manufacturer"
-                description="Flortek Industries Private Limited is a leading manufacturer of FRP Manhole Covers and infrastructure solutions based in Rajkot, Gujarat. Est. 2017."
-                keywords="Flortek Industries Private Limited Profile, Top FRP Manufacturer Rajkot, Best Manhole Cover Company India, ISO 9001:2015 Certified, SMC BMC Cover Factory, Flortek Founders, Infrastructure Solutions Gujarat, Manhole Cover Exporters"
+                title="About Flortek | Leading FRP & GRP Manhole Cover Manufacturer India"
+                description="Flortek Industries Private Limited is a premier ISO 9001:2015 certified manufacturer of high-strength, export-grade FRP, SMC, and GRP manhole covers, based in Rajkot, Gujarat."
+                keywords="FRP manhole cover manufacturer India, GRP manhole covers manufacturers, composite chamber covers supplier, SMC manhole cover factory, sewage chamber cover manufacturer Gujarat, Flortek company profile, Naresh Patel Rajkot"
                 schema={{
                     "@context": "https://schema.org",
                     "@type": "AboutPage",
                     "name": "About Flortek Industries Private Limited",
-                    "description": "Learn about Flortek Industries Private Limited, a premier manufacturer of FRP manhole covers since 2017.",
-                    "url": "https://flortekfrpcover.vercel.app/about"
+                    "description": "Learn about Flortek Industries Private Limited, a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
+                    "url": "https://flortekfrpcover.vercel.app/about",
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Flortek Industries Private Limited",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://flortekfrpcover.vercel.app/images/logo.png"
+                        }
+                    }
                 }}
                 canonicalUrl="https://flortekfrpcover.vercel.app/about"
             />
