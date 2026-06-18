@@ -453,7 +453,7 @@ const Products = () => {
                         </div>
                         <div className="text-left">
                             <p className="text-[9px] font-black uppercase text-[#333333]/50">Total Designs</p>
-                            <p className="text-[10px] font-black uppercase text-black">FRP & SMC Products</p>
+                            <p className="text-[10px] font-black uppercase text-black">FRP Products</p>
                         </div>
                     </div>
                 </div>
@@ -516,7 +516,7 @@ const Products = () => {
                     <AnimatePresence mode="popLayout">
                         {isLoading ? (
                             <div className="h-[40vh] flex flex-col items-center justify-center gap-6">
-                                <Loader2 className="animate-spin text-black" size={40} />
+                                <Loader2 className="animate-spin text-blEngineered Designsack" size={40} />
                                 <p className="text-[10px] font-black uppercase tracking-[0.5em] text-[#D9D9D9]">Loading Gallery...</p>
                             </div>
                         ) : filteredProducts.length > 0 ? (
