@@ -27,6 +27,15 @@ const generateSitemap = () => {
         { url: '/industrial-frp-covers', changefreq: 'weekly', priority: 0.9 },
         { url: '/municipal-frp-covers', changefreq: 'weekly', priority: 0.9 },
         { url: '/frp-vs-cast-iron-covers', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/top-10-frp-manhole-cover-manufacturers-india', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/best-frp-manhole-covers-industrial-applications', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/frp-vs-cast-iron-manhole-covers-comparison', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/how-to-choose-right-frp-manhole-cover', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/benefits-frp-covers-municipal-projects', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/frp-cover-price-guide-india', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/heavy-duty-frp-covers-features-applications', changefreq: 'weekly', priority: 0.9 },
+        { url: '/blog/why-frp-covers-replacing-cast-iron', changefreq: 'weekly', priority: 0.9 },
     ];
 
     const allRoutes = [...staticRoutes];

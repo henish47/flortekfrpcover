@@ -28,6 +28,17 @@ import MunicipalFRPCovers from './pages/seo/MunicipalFRPCovers';
 import FRPvsCastIronCovers from './pages/seo/FRPvsCastIronCovers';
 import LeadGenPopup from './components/common/LeadGenPopup';
 
+// Blog Pages
+import BlogIndex from './pages/blog/BlogIndex';
+import Top10Manufacturers from './pages/blog/Top10Manufacturers';
+import IndustrialApplications from './pages/blog/IndustrialApplications';
+import FRPvsCastIronComparison from './pages/blog/FRPvsCastIronComparison';
+import HowToChoose from './pages/blog/HowToChoose';
+import MunicipalBenefits from './pages/blog/MunicipalBenefits';
+import PriceGuide from './pages/blog/PriceGuide';
+import HeavyDutyFeatures from './pages/blog/HeavyDutyFeatures';
+import ReplacingCastIron from './pages/blog/ReplacingCastIron';
+
 // Scroll to top on route change
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -75,6 +86,18 @@ const AppContent = () => {
           <Route path="/industrial-frp-covers" element={<IndustrialFRPCovers />} />
           <Route path="/municipal-frp-covers" element={<MunicipalFRPCovers />} />
           <Route path="/frp-vs-cast-iron-covers" element={<FRPvsCastIronCovers />} />
+          
+          {/* Blog Routes */}
+          <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/top-10-frp-manhole-cover-manufacturers-india" element={<Top10Manufacturers />} />
+          <Route path="/blog/best-frp-manhole-covers-industrial-applications" element={<IndustrialApplications />} />
+          <Route path="/blog/frp-vs-cast-iron-manhole-covers-comparison" element={<FRPvsCastIronComparison />} />
+          <Route path="/blog/how-to-choose-right-frp-manhole-cover" element={<HowToChoose />} />
+          <Route path="/blog/benefits-frp-covers-municipal-projects" element={<MunicipalBenefits />} />
+          <Route path="/blog/frp-cover-price-guide-india" element={<PriceGuide />} />
+          <Route path="/blog/heavy-duty-frp-covers-features-applications" element={<HeavyDutyFeatures />} />
+          <Route path="/blog/why-frp-covers-replacing-cast-iron" element={<ReplacingCastIron />} />
+
           <Route path="*" element={<Home />} />
         </Routes>
       </main>

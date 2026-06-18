@@ -35,6 +35,15 @@ const Sitemap = () => {
         { name: 'Industrial FRP Covers Guide', path: '/industrial-frp-covers' },
         { name: 'Municipal FRP Covers Guide', path: '/municipal-frp-covers' },
         { name: 'FRP vs Cast Iron Covers Comparison', path: '/frp-vs-cast-iron-covers' },
+        { name: 'Flortek Knowledge Hub / Blog', path: '/blog' },
+        { name: 'Blog: Top 10 FRP Manhole Cover Manufacturers in India', path: '/blog/top-10-frp-manhole-cover-manufacturers-india' },
+        { name: 'Blog: Best FRP Manhole Covers for Industrial Applications', path: '/blog/best-frp-manhole-covers-industrial-applications' },
+        { name: 'Blog: FRP vs Cast Iron Manhole Covers: Complete Comparison', path: '/blog/frp-vs-cast-iron-manhole-covers-comparison' },
+        { name: 'Blog: How to Choose the Right FRP Manhole Cover', path: '/blog/how-to-choose-right-frp-manhole-cover' },
+        { name: 'Blog: Benefits of FRP Covers for Municipal Projects', path: '/blog/benefits-frp-covers-municipal-projects' },
+        { name: 'Blog: FRP Cover Price Guide in India', path: '/blog/frp-cover-price-guide-india' },
+        { name: 'Blog: Heavy Duty FRP Covers: Features and Applications', path: '/blog/heavy-duty-frp-covers-features-applications' },
+        { name: 'Blog: Why FRP Covers are Replacing Cast Iron Covers', path: '/blog/why-frp-covers-replacing-cast-iron' },
     ];
 
     return (
