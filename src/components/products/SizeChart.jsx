@@ -361,7 +361,7 @@ const SizeChart = () => {
                             <div className="text-center md:text-left md:flex md:justify-between md:items-end">
                                 <div>
                                     <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#333333]/60">Recessed Covers</span>
-                                    <h3 className="text-2xl font-black uppercase text-black">Recessed Manhole Covers</h3>
+                                    <h3 className="text-2xl font-black uppercase text-black">Recessed Manhole Covers (2.5 T & 5.0 T)</h3>
                                 </div>
                                 <p className="text-xs text-[#333333]/80 font-bold uppercase mt-2 md:mt-0 bg-[#F5F5F5] px-3 py-1 rounded-lg border border-[#D9D9D9]/50 w-fit mx-auto md:mx-0">
                                     Depths: 35 MM & 65 MM

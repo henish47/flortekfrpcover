@@ -20,7 +20,7 @@ const LeadGenPopup = () => {
         if (!hasSeen) {
             const timer = setTimeout(() => {
                 setIsVisible(true);
-            }, 10000); // 10 seconds delay
+            }, 120000); // seconds delay
             return () => clearTimeout(timer);
         }
     }, []);

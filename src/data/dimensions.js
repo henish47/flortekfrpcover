@@ -12,8 +12,7 @@ export const lightDutySquare = [
     { outerInch: "30 x 30", outerMm: "750 x 750", innerInch: "26 x 26", innerMm: "660 x 660", price2_5t: 3920.0, price5_0t: 5240.0, qtyBox: 1, weight: 22.0 },
     { outerInch: "32 x 32", outerMm: "800 x 800", innerInch: "28 x 28", innerMm: "700 x 700", price2_5t: 4600.0, price5_0t: 6090.0, qtyBox: 1, weight: 26.0 },
     { outerInch: "36 x 36", outerMm: "900 x 900", innerInch: "30 x 30", innerMm: "750 x 750", price2_5t: 5190.0, price5_0t: 6240.0, qtyBox: 1, weight: 38.0 },
-    { outerInch: "42 x 42", outerMm: "1070 x 1070", innerInch: "36 x 36", innerMm: "900 x 900", price2_5t: 7690.0, price5_0t: null, qtyBox: 1, weight: 57.0 },
-    { outerInch: "42 x 42", outerMm: "1070 x 1070", innerInch: "36 x 36", innerMm: "900 x 900", price2_5t: null, price5_0t: 9650.0, qtyBox: 1, weight: 76.0 },
+    { outerInch: "42 x 42", outerMm: "1070 x 1070", innerInch: "36 x 36", innerMm: "900 x 900", price2_5t: 7690.0, price5_0t: 9650.0, qtyBox: 1, weight: 57.0 },
     { outerInch: "46 x 46", outerMm: "1155 x 1155", innerInch: "40 x 40", innerMm: "1000 x 1000", price2_5t: 16240.0, price5_0t: 20100.0, qtyBox: 1, weight: 117.5 }
 ];
 
