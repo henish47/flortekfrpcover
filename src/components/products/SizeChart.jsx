@@ -66,6 +66,11 @@ const SizeChart = () => {
     const [subTab, setSubTab] = useState('square'); // 'square', 'rect', 'round'
     const [gulleySubTab, setGulleySubTab] = useState('Pedestrian / Light Duty'); // 'Pedestrian / Light Duty', '2.5 T', '5.0 T', 'B125'
 
+    const formatSize = (str) => {
+        if (!str) return '';
+        return str.replace(/\s*x\s*/gi, ' X ');
+    };
+
     const getCategoryImage = () => {
         if (activeTab === 'light') {
             if (subTab === 'square') {
@@ -243,20 +248,20 @@ const SizeChart = () => {
                                     {(subTab === 'square' ? lightDutySquare : subTab === 'rect' ? lightDutyRect : lightDutyRound).map((item, i) => (
                                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
                                             {/* Desktop dimension columns */}
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold">{item.innerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.outerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.outerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.innerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold">{formatSize(item.innerMm)}</td>
 
                                             {/* Mobile combined Outer Size */}
                                             <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
-                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                <span className="block text-xs font-bold text-black">{formatSize(item.outerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.outerInch)}</span>
                                             </td>
                                             {/* Mobile combined Inner Size */}
                                             <td className="md:hidden py-3 px-2 text-center text-black">
-                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                <span className="block text-xs font-bold text-[#333333]">{formatSize(item.innerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.innerInch)}</span>
                                             </td>
                                         </tr>
                                     ))}
@@ -331,21 +336,21 @@ const SizeChart = () => {
                                     {(subTab === 'square' ? heavyDutySquare : subTab === 'rect' ? heavyDutyRect : heavyDutyRound).map((item, i) => (
                                         <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F5F5F5]/30 hover:bg-[#F5F5F5]/60 transition-colors"}>
                                             {/* Desktop columns */}
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.outerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.outerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.innerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.innerMm)}</td>
                                             <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold">{item.rating}</td>
 
                                             {/* Mobile combined Outer Size */}
                                             <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
-                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                <span className="block text-xs font-bold text-black">{formatSize(item.outerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.outerInch)}</span>
                                             </td>
                                             {/* Mobile combined Inner Size */}
                                             <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
-                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                <span className="block text-xs font-bold text-[#333333]">{formatSize(item.innerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.innerInch)}</span>
                                             </td>
                                             <td className="md:hidden py-3 px-2 text-center text-xs font-bold text-[#333333]">{item.rating}</td>
                                         </tr>
@@ -396,19 +401,19 @@ const SizeChart = () => {
                                             <td className="py-3 px-2 md:px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.depth}</td>
 
                                             {/* Desktop dimension columns */}
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333]">{item.innerInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.outerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.outerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.innerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-4 text-center text-[#333333]">{formatSize(item.innerInch)}</td>
 
                                             {/* Mobile combined dimensions */}
                                             <td className="md:hidden py-3 px-2 text-center border-r border-[#D9D9D9]/40 text-black">
-                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                <span className="block text-xs font-bold text-black">{formatSize(item.outerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.outerInch)}</span>
                                             </td>
                                             <td className="md:hidden py-3 px-2 text-center text-black">
-                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                <span className="block text-xs font-bold text-[#333333]">{formatSize(item.innerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.innerInch)}</span>
                                             </td>
                                         </tr>
                                     ))}
@@ -478,25 +483,25 @@ const SizeChart = () => {
                                             <td className="py-3 px-1 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.shape}</td>
 
                                             {/* Desktop dimension columns */}
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.outerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.outerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.innerMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{item.innerInch}</td>
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{item.coverMm}</td>
-                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333]">{item.coverInch}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.outerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.outerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.innerMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333] border-r border-[#D9D9D9]/40">{formatSize(item.innerInch)}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-black font-bold border-r border-[#D9D9D9]/40">{formatSize(item.coverMm)}</td>
+                                            <td className="hidden md:table-cell py-3 px-3 text-center text-[#333333]">{formatSize(item.coverInch)}</td>
 
                                             {/* Mobile combined dimension columns */}
                                             <td className="md:hidden py-3 px-1.5 text-center border-r border-[#D9D9D9]/40 text-black">
-                                                <span className="block text-xs font-bold text-black">{item.outerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.outerInch}</span>
+                                                <span className="block text-xs font-bold text-black">{formatSize(item.outerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.outerInch)}</span>
                                             </td>
                                             <td className="md:hidden py-3 px-1.5 text-center border-r border-[#D9D9D9]/40 text-[#333333]">
-                                                <span className="block text-xs font-bold text-[#333333]">{item.innerMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.innerInch}</span>
+                                                <span className="block text-xs font-bold text-[#333333]">{formatSize(item.innerMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.innerInch)}</span>
                                             </td>
                                             <td className="md:hidden py-3 px-1.5 text-center text-[#333333]">
-                                                <span className="block text-xs font-bold text-[#333333]">{item.coverMm}</span>
-                                                <span className="block text-[9px] text-[#555555] font-normal">{item.coverInch}</span>
+                                                <span className="block text-xs font-bold text-[#333333]">{formatSize(item.coverMm)}</span>
+                                                <span className="block text-[9px] text-[#555555] font-normal">{formatSize(item.coverInch)}</span>
                                             </td>
                                         </tr>
                                     ))}
