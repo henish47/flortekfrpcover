@@ -144,9 +144,9 @@ const About = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {[
-                            { name: "Nikunj Savaliya", role: "Co-Founder & Director", description: "Driving strategy, growth, and technology integrations at Flortek." },
-                            { name: "Naresh Savaliya", role: "Co-Founder & Managing Director", description: "Providing operational leadership and ensuring manufacturing excellence." },
-                            { name: "Ketan Paghdar", role: "Technical Director", description: "Leading engineering development, quality certifications, and product innovation." },
+                            { name: "Nikunj Savaliya", role: "Co-Founder & Director", description: "" },
+                            { name: "Naresh Savaliya", role: "Co-Founder & Managing Director", description: "" },
+                            { name: "Ketan Paghdar", role: "Technical Director", description: "" },
                         ].map((member, idx) => (
                             <div key={idx} className="bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] p-8 flex flex-col items-center text-center hover:border-black hover:shadow-lg transition-all duration-500 group">
                                 <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center font-black text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform duration-300">
