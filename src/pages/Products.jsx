@@ -52,7 +52,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                             <span className="font-bold text-black truncate max-w-[70px] sm:max-w-none" title={product.dimensions}>{product.dimensions.split('/')[0].trim()}</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-[#333333]/50">Rating:</span>
+                            <span className="text-[#333333]/50">Load capacity :</span>
                             <span className="font-bold text-black text-[9px] sm:text-[10px] truncate max-w-[65px] sm:max-w-none" title={product.loadClass}>{product.loadClass.split(' ')[0]} {product.loadClass.includes('Ton') ? 'T' : ''}</span>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
 
 const Products = () => {
     const [searchTerm, setSearchTerm] = useState("");
-    const [activeCategory, setActiveCategory] = useState("All");
+    const [activeCategory, setActiveCategory] = useState("Manhole Covers");
     const [isLoading, setIsLoading] = useState(true);
     const [selectedImage, setSelectedImage] = useState(null);
     const { openModal } = useModal();
@@ -385,7 +385,11 @@ const Products = () => {
     ];
 
     const filteredProducts = productsData.filter(product => {
-        const matchesCategory = activeCategory === "All" || product.category === activeCategory;
+        const matchesCategory = activeCategory === "Heavy Duty"
+            ? (product.loadClass.includes("B125") || product.loadClass.includes("C250") || product.loadClass.includes("D400") || product.title.toLowerCase().includes("heavy duty"))
+            : activeCategory === "Manhole Covers"
+                ? (product.category === "Manhole Covers" && (product.loadClass.startsWith("2.5 Ton") || product.loadClass.startsWith("5 Ton")))
+                : product.category === activeCategory;
         const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
             product.shape.toLowerCase().includes(searchTerm.toLowerCase()) ||
             product.loadClass.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -464,7 +468,7 @@ const Products = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-[#D9D9D9]/40 pb-6">
                     {/* Category tabs */}
                     <div className="flex flex-wrap gap-1.5 w-full md:w-auto">
-                        {["All", "Manhole Covers", "Recessed Covers", "Gulley Covers"].map((cat) => (
+                        {["Manhole Covers", "Heavy Duty", "Recessed Covers", "Gulley Covers"].map((cat) => (
                             <button
                                 key={cat}
                                 onClick={() => {
@@ -513,6 +517,10 @@ const Products = () => {
 
                 {/* --- GALLERY GRID --- */}
                 <div className="mt-8">
+                    <div className="mb-6 flex items-center gap-2.5">
+                        <span className="w-1.5 h-6 bg-black rounded-full" />
+                        <h2 className="text-xl font-black text-black uppercase tracking-tight">{activeCategory}</h2>
+                    </div>
                     <AnimatePresence mode="popLayout">
                         {isLoading ? (
                             <div className="h-[40vh] flex flex-col items-center justify-center gap-6">

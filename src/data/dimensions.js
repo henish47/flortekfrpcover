@@ -40,9 +40,7 @@ export const lightDutyRound = [
     { outerInch: "28", outerMm: "710", innerInch: "24", innerMm: "600", price2_5t: 2220.0, price5_0t: 2620.0, qtyBox: 1, weight: 14.0 }
 ];
 
-// Heavy Duty (B125 & C250) Manhole Covers
 export const heavyDutyBCSquare = [
-    { outerInch: "12 x 12", outerMm: "300 x 300", innerInch: "10 x 10", innerMm: "250 x 250", priceB125: null, priceC250: null, weight: 6.0 },
     { outerInch: "17 x 17", outerMm: "430 x 430", innerInch: "12 x 12", innerMm: "300 x 300", priceB125: 3050.0, priceC250: 3320.0, weight: 18.0 },
     { outerInch: "24 x 24", outerMm: "600 x 600", innerInch: "18 x 18", innerMm: "450 x 450", priceB125: 5190.0, priceC250: 5860.0, weight: 32.0 },
     { outerInch: "30 x 30", outerMm: "760 x 760", innerInch: "24 x 24", innerMm: "600 x 600", priceB125: 7625.0, priceC250: 8790.0, weight: 56.0 },

@@ -9,7 +9,7 @@ const SizeChartPage = () => {
         <div className="pt-0 bg-white min-h-screen font-sans">
             <SEO
                 title="Standard Sizes, Weights & Dimensions | Flortek Industries Private Limited"
-                description="View our complete range of standard sizes, load ratings, and weights for FRP/BMC/SMC manhole covers, gully covers, and recessed covers."
+                description="View our complete range of standard sizes, load capacity, and weights for FRP/BMC/SMC manhole covers, gully covers, and recessed covers."
                 keywords="manhole cover sizes, frp cover dimensions, gully cover sizes, recessed cover sizes, frp manhole cover weight, flortek size chart"
             />
 
@@ -30,7 +30,7 @@ const SizeChartPage = () => {
                             Technical Data & <br /> <span className="text-[#D9D9D9]">Specifications</span>
                         </h1>
                         <p className="text-[#D9D9D9] text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
-                            Comprehensive sizing charts, product weights, and load ratings for our entire range of Light, Medium, and Heavy Duty covers.
+                            Comprehensive sizing charts, product weights, and load capacity for our entire range of Light, Medium, and Heavy Duty covers.
                         </p>
                     </motion.div>
                 </div>

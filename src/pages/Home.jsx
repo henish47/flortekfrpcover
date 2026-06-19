@@ -474,7 +474,7 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* --- GLOBAL EXPORT & SHIPPING SECTION --- */}
+            {/* --- GLOBAL EXPORT & SHIPPING SECTION ---
             <div className="bg-white py-32 border-b border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -555,10 +555,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* --- REVIEWS / TESTIMONIALS --- */}
-            <div className="bg-white py-32 border-b border-[#D9D9D9]/50" >
+            {/* <div className="bg-white py-32 border-b border-[#D9D9D9]/50" >
                 <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -620,7 +620,7 @@ const Home = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* --- FAQ SECTION (BLACK & WHITE) --- */}
             <div className="bg-[#F5F5F5] py-24 border-t border-[#D9D9D9]/50">

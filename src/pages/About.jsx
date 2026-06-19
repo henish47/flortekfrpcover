@@ -127,6 +127,38 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* --- OUR TEAM SECTION --- */}
+                <div className="mt-24 border-t border-[#D9D9D9]/50 pt-16">
+                    <div className="text-center md:text-left mb-12">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#333333]/60 mb-2 block">
+                            Leadership
+                        </span>
+                        <h2 className="text-3xl md:text-4xl font-black text-black uppercase tracking-tight mb-4">
+                            Our Team
+                        </h2>
+                        <p className="text-xs md:text-sm text-[#333333] max-w-2xl leading-relaxed font-medium">
+                            Meet the visionaries driving Flortek's mission to engineer premium, high-strength composite infrastructure solutions for global markets.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {[
+                            { name: "Nikunj Savaliya", role: "Co-Founder & Director", description: "Driving strategy, growth, and technology integrations at Flortek." },
+                            { name: "Naresh Savaliya", role: "Co-Founder & Managing Director", description: "Providing operational leadership and ensuring manufacturing excellence." },
+                            { name: "Ketan Patel", role: "Technical Director", description: "Leading engineering development, quality certifications, and product innovation." },
+                        ].map((member, idx) => (
+                            <div key={idx} className="bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] p-8 flex flex-col items-center text-center hover:border-black hover:shadow-lg transition-all duration-500 group">
+                                <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center font-black text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                                    {member.name.split(' ').map(n => n[0]).join('')}
+                                </div>
+                                <h3 className="text-base font-black text-black uppercase tracking-tight mb-1">{member.name}</h3>
+                                <p className="text-[10px] font-black text-[#333333]/60 uppercase tracking-widest mb-4">{member.role}</p>
+                                <p className="text-xs text-[#333333] leading-relaxed font-medium">{member.description}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );

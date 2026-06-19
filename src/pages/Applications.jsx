@@ -192,7 +192,7 @@ const Applications = () => {
                 </div>
             </section>
 
-            {/* Bottom CTA Banner - Monochrome Premium Banner */}
+            {/* Bottom CTA Banner - Monochrome Premium Banner
             <section className="py-24 px-4 bg-white border-t border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto">
                     <div className="relative bg-black rounded-[4rem] p-12 md:p-24 overflow-hidden shadow-xl">
@@ -209,7 +209,7 @@ const Applications = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };

@@ -21,11 +21,11 @@ const Header = () => {
 
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Products', path: '/products' },
+        { name: 'About Us', path: '/about' },
+        { name: 'Product Gallery', path: '/products' },
         { name: 'Sizes', path: '/sizes' },
         { name: 'Install', path: '/installation' },
-        { name: 'About', path: '/about' },
-        { name: 'Export', path: '/frp-cover-exporter' },
+        // { name: 'Export', path: '/frp-cover-exporter' },
         { name: 'Applications', path: '/applications' },
         { name: 'Contact', path: '/contact' },
     ];
