@@ -77,7 +77,7 @@ const Header = () => {
                             <img
                                 src="/images/logo.png"
                                 alt="Flortek"
-                                className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-14' : 'h-16'}`}
+                                className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-14 md:h-[72px]' : 'h-16 md:h-[84px]'}`}
                             />
                         </Link>
 

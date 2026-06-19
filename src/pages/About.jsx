@@ -74,7 +74,7 @@ const About = () => {
                                         { label: "CEO / Director", value: "Naresh Patel " },
                                         { label: "Year of Establishment", value: "2017" },
                                         { label: "Legal Status", value: "Partnership Firm" },
-                                        { label: "Annual Turnover", value: "Rs. 5 - 25 Crore" },
+                                        // { label: "Annual Turnover", value: "Rs. 5 - 25 Crore" },
                                         { label: "Main Products", value: "FRP, BMC, Steel Manhole Covers & Gratings" },
                                         { label: "GST No", value: "24AAHFF1407D1Z3" },
                                     ].map((row, index) => (

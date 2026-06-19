@@ -9,7 +9,7 @@ import { useModal } from '../context/ModalContext';
 const loadClasses = [
     {
         id: "A15",
-        load: "2.5 / 5 TONNE",
+        load: "2.5 Tonne & 5 TONNE",
         title: "Pedestrian Areas",
         desc: "Ideal for footpaths, gardens, and residential courtyards with zero vehicular traffic."
     },
