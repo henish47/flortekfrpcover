@@ -10,6 +10,15 @@ const IndustrialFRPCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Corrosion-Proof Industrial FRP Covers | Flortek",
+                "description": "High-performance composite FRP manhole covers and sewer gratings for industrial manufacturing plants, chemical zones, warehouses, and storage depots.",
+                "url": "https://www.flortekfrpcover.com/industrial-frp-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/industrial-frp-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/industrial-frp-covers#breadcrumb",
                 "itemListElement": [
@@ -24,28 +33,6 @@ const IndustrialFRPCovers = () => {
                         "position": 2,
                         "name": "Industrial FRP Covers",
                         "item": "https://www.flortekfrpcover.com/industrial-frp-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/industrial-frp-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Why are FRP covers preferred over cast iron in industrial plants?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "FRP covers are immune to chemical corrosion, non-conductive (safety around high voltage), 60% lighter than cast iron (easy inspection), and have zero scrap value, eliminating theft."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What chemical groups are your industrial covers resistant to?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Our covers resist a wide range of industrial chemicals, including diluted acids, alkalis, saline mixtures, hydrogen sulfide sewer gases, and chemical solvents."
-                        }
                     }
                 ]
             }

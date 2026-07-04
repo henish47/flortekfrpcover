@@ -79,6 +79,15 @@ const FRPCoverExporter = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "FRP Cover Exporter & Global B2B Supplier from India | Flortek",
+                "description": "Flortek is a premium industrial FRP cover exporter and manufacturer. Supplying heavy-duty composite manhole covers to UAE, USA, Oman, Saudi Arabia, and Europe. BS EN 124 certified.",
+                "url": "https://www.flortekfrpcover.com/frp-cover-exporter",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-cover-exporter#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-cover-exporter#breadcrumb",
                 "itemListElement": [
@@ -93,28 +102,6 @@ const FRPCoverExporter = () => {
                         "position": 2,
                         "name": "FRP Cover Exporter",
                         "item": "https://www.flortekfrpcover.com/frp-cover-exporter"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-cover-exporter#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What standards do your export-quality FRP covers meet?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Our FRP composite manhole covers conform strictly to global BS EN 124 standards, ensuring safety, load bearing, and quality certifications from third-party inspection firms."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Which countries do you ship to, and what are the freight terms?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "We export worldwide to UAE, USA, Saudi Arabia, Oman, Qatar, Germany, and more. We offer flexible trade terms including FOB (Rajkot/Mundra Port), CIF, CFR, and DDP depending on client requirements."
-                        }
                     }
                 ]
             }

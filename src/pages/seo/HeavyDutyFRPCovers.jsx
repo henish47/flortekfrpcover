@@ -13,6 +13,15 @@ const HeavyDutyFRPCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Heavy-Duty FRP & Composite Manhole Covers | Flortek",
+                "description": "High-strength, export-grade heavy-duty FRP manhole covers certified to Class C250 and D400 BS EN 124 standards. Built for highway and industrial cargo traffic.",
+                "url": "https://www.flortekfrpcover.com/heavy-duty-frp-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb",
                 "itemListElement": [
@@ -27,28 +36,6 @@ const HeavyDutyFRPCovers = () => {
                         "position": 2,
                         "name": "Heavy Duty FRP Covers",
                         "item": "https://www.flortekfrpcover.com/heavy-duty-frp-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What load capacities do heavy duty FRP covers support?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Our heavy duty covers are certified for Class C250 (25-tonne) and Class D400 (40-tonne) load capacities, making them suitable for truck lanes and main municipal carriage ways."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How does dynamic vehicular load affect FRP?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Flortek heavy-duty covers are molded under high pressure using continuous fiberglass reinforcement. They distribute dynamic wheel loads evenly, showing zero cracking or fatigue under heavy truck wheels."
-                        }
                     }
                 ]
             }

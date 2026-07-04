@@ -52,28 +52,6 @@ const HowToChoose = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the difference between clear opening size and outer frame size?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The clear opening size is the internal opening of the frame that provides access for workers or equipment. The outer frame size includes the flange seating area of the frame. Sizing must always be specified by the internal clear opening dimensions to ensure proper access."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What are the common load classes defined under the BS EN 124 standard?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The common BS EN 124 classes are Class A15 (1.5-ton pedestrian loading), Class B125 (12.5-ton residential parking loading), Class C250 (25-ton road shoulder and service station loading), and Class D400 (40-ton heavy-traffic main highway loading)."
-                        }
-                    }
-                ]
             }
         ]
     };

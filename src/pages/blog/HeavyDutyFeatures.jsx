@@ -52,28 +52,6 @@ const HeavyDutyFeatures = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How does composite material support heavy-duty 40-ton highway wheel loads?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Heavy-duty covers are manufactured by compressing continuous cross-woven fiberglass reinforcements and mineral aggregates inside custom-molded high-density thermosetting resins at high temperatures. This creates a dense structure capable of handling wheel pressures up to 40 tons (Class D400) according to BS EN 124 standards."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Where are Class C250 and D400 heavy-duty composite covers typically installed?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Class C250 and D400 covers are installed in areas with commercial traffic, including main highway lanes, road shoulders, petrol pump yards, industrial factories, docks, and airport terminal corridors."
-                        }
-                    }
-                ]
             }
         ]
     };

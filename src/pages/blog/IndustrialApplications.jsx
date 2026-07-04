@@ -52,28 +52,6 @@ const IndustrialApplications = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How does chemical exposure affect industrial manhole covers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Chemical exposure rapidly rusts traditional cast-iron and steel covers, causing structural decay and collapse hazards. Standard concrete covers also experience chemical attacks (such as sulfate attacks). FRP composite covers made with premium vinyl ester resins are completely immune to chemical decay, solvents, acids, and sewer gases."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is the recommended load class for industrial logistics terminals?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "For industrial logistics terminals, freight docks, and areas handling heavy forklifts and commercial container trailers, we recommend Class D400 (heavy-duty 40-ton rating) or Class C250 (medium-traffic 25-ton rating) depending on wheel load specifications, adhering to BS EN 124 standards."
-                        }
-                    }
-                ]
             }
         ]
     };

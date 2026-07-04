@@ -52,28 +52,6 @@ const ReplacingCastIron = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What is the primary driver behind replacing cast iron covers with FRP composite?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The primary driver is the theft of cast-iron covers for their scrap metal resale value. Stolen covers leave dangerous open sewer holes. FRP composite covers have zero scrap value, which prevents theft, ensuring public safety and reducing replacement costs."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are composite covers resistant to rust in saline coastal environments?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, unlike cast iron, which rusts when exposed to salt water and high humidity, composite FRP covers are completely rustproof and chemical-resistant. This makes them ideal for coastal cities, smart shipping ports, and chemical processing zones."
-                        }
-                    }
-                ]
             }
         ]
     };

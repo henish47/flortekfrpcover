@@ -52,28 +52,6 @@ const PriceGuide = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What factors influence the wholesale price of FRP manhole covers in India?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The price is primarily driven by three factors: the cover dimensions (larger covers require more raw materials), the BS EN 124 load rating (higher classes like D400 require more fiberglass reinforcing and thickness), and order volume (bulk wholesale quantities receive factory discounts)."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "How does the lifetime cost of FRP covers compare to cast iron?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "FRP covers feature lower lifetime costs. While ductile iron has high resale scrap value leading to frequent theft and replacement expenses, FRP has zero scrap value. FRP is also corrosion-resistant and requires no regular painting or maintenance."
-                        }
-                    }
-                ]
             }
         ]
     };

@@ -5,18 +5,48 @@ import { HelpCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const FAQPage = () => {
-    // Generate Google FAQ Schema markup dynamically
     const faqSchema = {
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqs.map(faq => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
+        "@graph": [
+            {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                    "@type": "Question",
+                    "name": faq.question,
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq.answer
+                    }
+                }))
+            },
+            {
+                "@type": "WebPage",
+                "name": "Frequently Asked Questions (FAQ) | Flortek Industries Private Limited",
+                "description": "Find answers to common questions about FRP manhole covers, load capacities, dimensions, custom designs, and industrial certifications.",
+                "url": "https://www.flortekfrpcover.com/faq",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/faq#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.flortekfrpcover.com/faq#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.flortekfrpcover.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "FAQ",
+                        "item": "https://www.flortekfrpcover.com/faq"
+                    }
+                ]
             }
-        }))
+        ]
     };
 
     return (

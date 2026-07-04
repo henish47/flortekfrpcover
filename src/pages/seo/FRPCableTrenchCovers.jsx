@@ -13,6 +13,15 @@ const FRPCableTrenchCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Non-Conductive FRP Cable Trench Covers | Flortek",
+                "description": "Engineered FRP cable trench covers and utility duct lids. Perfect electrical insulation, high load-bearing capacity, and corrosion-free performance.",
+                "url": "https://www.flortekfrpcover.com/frp-cable-trench-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-cable-trench-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-cable-trench-covers#breadcrumb",
                 "itemListElement": [
@@ -27,28 +36,6 @@ const FRPCableTrenchCovers = () => {
                         "position": 2,
                         "name": "FRP Cable Trench Covers",
                         "item": "https://www.flortekfrpcover.com/frp-cable-trench-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-cable-trench-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Why are FRP trench covers preferred in electrical substations?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "FRP is non-conductive, offering high electrical insulation. It prevents electrical shocks and static discharge, making it a critical safety requirement for high-voltage substations."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are cable trench covers anti-slip?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, our covers are engineered with custom slip-resistant checkered or gritted surface textures to ensure safety for workers walking over utility lines."
-                        }
                     }
                 ]
             }

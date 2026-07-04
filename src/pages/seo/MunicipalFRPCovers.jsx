@@ -10,6 +10,15 @@ const MunicipalFRPCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Zero-Theft Municipal FRP Manhole Covers | Flortek",
+                "description": "FRP composite manhole covers designed for municipal public works projects, sewage networks, and smart city infrastructure. RF-friendly and BS EN 124 certified.",
+                "url": "https://www.flortekfrpcover.com/municipal-frp-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#breadcrumb",
                 "itemListElement": [
@@ -24,28 +33,6 @@ const MunicipalFRPCovers = () => {
                         "position": 2,
                         "name": "Municipal FRP Covers",
                         "item": "https://www.flortekfrpcover.com/municipal-frp-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Why are municipal corporations shifting from cast iron to FRP manhole covers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Municipal corporations prefer FRP covers because they have zero scrap value, completely eliminating the epidemic of manhole cover theft which creates severe traffic hazards. Additionally, they are lightweight, rust-free, and last much longer than concrete or iron lids."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are Flortek municipal FRP covers suitable for smart city smart infrastructure?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, our composite covers are fully RF-friendly. Unlike heavy metallic cast-iron covers that block wireless signals, Flortek FRP covers allow RF signals to pass through easily, making them perfect for smart utility meters and smart city sensor configurations."
-                        }
                     }
                 ]
             }

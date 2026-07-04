@@ -101,15 +101,51 @@ const Home = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebSite",
+                "@id": "https://www.flortekfrpcover.com/#website",
+                "url": "https://www.flortekfrpcover.com",
+                "name": "Flortek Industries Private Limited",
+                "description": "Leading manufacturer of high-quality FRP, GRP and composite manhole covers in India."
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://www.flortekfrpcover.com/#webpage",
+                "url": "https://www.flortekfrpcover.com",
+                "name": "Home | Flortek Industries Private Limited",
+                "description": "Flortek Industries Private Limited is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects.",
+                "isPartOf": {
+                    "@id": "https://www.flortekfrpcover.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.flortekfrpcover.com/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://www.flortekfrpcover.com"
+                    }
+                ]
+            },
+            {
                 "@type": "Organization",
                 "@id": "https://www.flortekfrpcover.com/#organization",
                 "name": "Flortek Industries Private Limited",
                 "url": "https://www.flortekfrpcover.com",
-                "logo": "https://www.flortekfrpcover.com/images/logo.png",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.flortekfrpcover.com/logo.png"
+                },
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+91-8000888620",
                     "contactType": "sales",
+                    "email": "flortekindustries@gmail.com",
                     "areaServed": "IN",
                     "availableLanguage": ["en", "hi", "gu"]
                 }
@@ -118,10 +154,9 @@ const Home = () => {
                 "@type": "LocalBusiness",
                 "@id": "https://www.flortekfrpcover.com/#localbusiness",
                 "name": "Flortek Industries Private Limited",
-                "image": "https://www.flortekfrpcover.com/images/logo.png",
+                "image": "https://www.flortekfrpcover.com/logo.png",
                 "url": "https://www.flortekfrpcover.com",
                 "telephone": "+91-8000888620",
-                "priceRange": "₹₹",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
@@ -152,18 +187,6 @@ const Home = () => {
                     "https://www.facebook.com/flortek",
                     "https://www.instagram.com/flortek"
                 ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/#faq",
-                "mainEntity": faqs.map(faq => ({
-                    "@type": "Question",
-                    "name": faq.question,
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": faq.answer
-                    }
-                }))
             }
         ]
     };

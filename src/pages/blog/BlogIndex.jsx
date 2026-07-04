@@ -86,6 +86,38 @@ const BlogIndex = () => {
                 title="Knowledge Hub & Industrial Blog | Flortek"
                 description="Explore technical articles, engineering guides, and product comparisons on Fiber Reinforced Polymer (FRP) manhole covers and composite drainage solutions."
                 keywords="FRP Cover Blog, GRP Manhole Cover Articles, Composite Cover Guide, Indian Manhole Cover Market"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebPage",
+                            "name": "Knowledge Hub & Industrial Blog | Flortek",
+                            "description": "Explore technical articles, engineering guides, and product comparisons on Fiber Reinforced Polymer (FRP) manhole covers and composite drainage solutions.",
+                            "url": "https://www.flortekfrpcover.com/blog",
+                            "breadcrumb": {
+                                "@id": "https://www.flortekfrpcover.com/blog#breadcrumb"
+                            }
+                        },
+                        {
+                            "@type": "BreadcrumbList",
+                            "@id": "https://www.flortekfrpcover.com/blog#breadcrumb",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.flortekfrpcover.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Blog",
+                                    "item": "https://www.flortekfrpcover.com/blog"
+                                }
+                            ]
+                        }
+                    ]
+                }}
                 canonicalUrl="https://www.flortekfrpcover.com/blog"
             />
 

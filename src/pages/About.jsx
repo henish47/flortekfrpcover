@@ -12,18 +12,43 @@ const About = () => {
                 keywords="FRP manhole cover manufacturer India, GRP manhole covers manufacturers, composite chamber covers supplier, SMC manhole cover factory, sewage chamber cover manufacturer Gujarat, Flortek company profile, Naresh Patel Rajkot"
                 schema={{
                     "@context": "https://schema.org",
-                    "@type": "AboutPage",
-                    "name": "About Flortek Industries Private Limited",
-                    "description": "Learn about Flortek Industries Private Limited, a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
-                    "url": "https://www.flortekfrpcover.com/about",
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Flortek Industries Private Limited",
-                        "logo": {
-                            "@type": "ImageObject",
-                            "url": "https://www.flortekfrpcover.com/images/logo.png"
+                    "@graph": [
+                        {
+                            "@type": "AboutPage",
+                            "name": "About Flortek Industries Private Limited",
+                            "description": "Learn about Flortek Industries Private Limited, a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
+                            "url": "https://www.flortekfrpcover.com/about",
+                            "publisher": {
+                                "@type": "Organization",
+                                "name": "Flortek Industries Private Limited",
+                                "logo": {
+                                    "@type": "ImageObject",
+                                    "url": "https://www.flortekfrpcover.com/images/logo.png"
+                                }
+                            },
+                            "breadcrumb": {
+                                "@id": "https://www.flortekfrpcover.com/about#breadcrumb"
+                            }
+                        },
+                        {
+                            "@type": "BreadcrumbList",
+                            "@id": "https://www.flortekfrpcover.com/about#breadcrumb",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.flortekfrpcover.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "About",
+                                    "item": "https://www.flortekfrpcover.com/about"
+                                }
+                            ]
                         }
-                    }
+                    ]
                 }}
                 canonicalUrl="https://www.flortekfrpcover.com/about"
             />

@@ -52,28 +52,6 @@ const Top10Manufacturers = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How do I verify the load capacity of an FRP manhole cover before purchase?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The load capacity should conform to the BS EN 124 standard. Manufacturers must provide official batch testing certificates demonstrating proof load compression resistance (e.g., 12.5 tons for B125, 25 tons for C250, and 40 tons for D400) generated from certified hydraulic load testing machines."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why is buying direct from an FRP manufacturer in Rajkot, Gujarat advantageous?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Rajkot is India's leading engineering and molding hub. Purchasing direct from a manufacturer here reduces distribution markups, provides access to advanced hydraulic compression molding, and offers centralized logistics connectivity to major Indian ports like Mundra for exports."
-                        }
-                    }
-                ]
             }
         ]
     };

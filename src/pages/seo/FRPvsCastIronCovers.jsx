@@ -10,6 +10,15 @@ const FRPvsCastIronCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "FRP Composite vs Cast Iron Manhole Covers | Flortek",
+                "description": "Read the engineering comparison between FRP composite covers and traditional Cast Iron manhole lids. Discover why municipalities choose corrosion-proof, zero-theft composite covers.",
+                "url": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#breadcrumb",
                 "itemListElement": [
@@ -24,28 +33,6 @@ const FRPvsCastIronCovers = () => {
                         "position": 2,
                         "name": "FRP vs Cast Iron Covers",
                         "item": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Why are composite covers a better alternative to cast iron?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Composite FRP covers offer several distinct advantages: they have zero metal scrap value (eliminating theft completely), they are 60-70% lighter (reducing worker injury during maintenance), they do not rust or corrode when exposed to water or chemicals, and they provide excellent electrical insulation."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is the load capacity of FRP covers equal to cast iron?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, Flortek FRP covers are designed and tested to meet BS EN 124 standards, providing performance classes identical to cast iron: A15 (1.5T), B125 (12.5T), C250 (25T), and D400 (40T) load capacities."
-                        }
                     }
                 ]
             }

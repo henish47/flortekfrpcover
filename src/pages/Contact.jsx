@@ -64,24 +64,49 @@ const Contact = () => {
                 keywords="buy FRP manhole covers wholesale, FRP manhole cover price list, composite cover manufacturers, buy drain grates bulk, contact Flortek sales"
                 schema={{
                     "@context": "https://schema.org",
-                    "@type": "ContactPage",
-                    "name": "Contact Flortek Industries Private Limited",
-                    "description": "Get in touch with Flortek Industries Private Limited for bulk inquiries about FRP manhole covers.",
-                    "url": "https://www.flortekfrpcover.com/contact",
-                    "mainEntity": {
-                        "@type": "LocalBusiness",
-                        "name": "Flortek Industries Private Limited",
-                        "telephone": "+91-8000888620",
-                        "email": "flortekindustries@gmail.com",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
-                            "addressLocality": "Rajkot",
-                            "addressRegion": "Gujarat",
-                            "postalCode": "360024",
-                            "addressCountry": "IN"
+                    "@graph": [
+                        {
+                            "@type": "ContactPage",
+                            "name": "Contact Flortek Industries Private Limited",
+                            "description": "Get in touch with Flortek Industries Private Limited for bulk inquiries about FRP manhole covers.",
+                            "url": "https://www.flortekfrpcover.com/contact",
+                            "breadcrumb": {
+                                "@id": "https://www.flortekfrpcover.com/contact#breadcrumb"
+                            },
+                            "mainEntity": {
+                                "@type": "LocalBusiness",
+                                "name": "Flortek Industries Private Limited",
+                                "telephone": "+91-8000888620",
+                                "email": "flortekindustries@gmail.com",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
+                                    "addressLocality": "Rajkot",
+                                    "addressRegion": "Gujarat",
+                                    "postalCode": "360024",
+                                    "addressCountry": "IN"
+                                }
+                            }
+                        },
+                        {
+                            "@type": "BreadcrumbList",
+                            "@id": "https://www.flortekfrpcover.com/contact#breadcrumb",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.flortekfrpcover.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Contact",
+                                    "item": "https://www.flortekfrpcover.com/contact"
+                                }
+                            ]
                         }
-                    }
+                    ]
                 }}
                 canonicalUrl="https://www.flortekfrpcover.com/contact"
             />

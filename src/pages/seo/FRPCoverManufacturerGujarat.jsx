@@ -10,6 +10,15 @@ const FRPCoverManufacturerGujarat = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "FRP Cover Manufacturer & Supplier in Gujarat | Flortek",
+                "description": "Flortek is the leading manufacturer and supplier of premium composite FRP covers in Gujarat. Located in Rajkot with direct supply to Ahmedabad, Surat, and Vadodara.",
+                "url": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#breadcrumb",
                 "itemListElement": [
@@ -24,28 +33,6 @@ const FRPCoverManufacturerGujarat = () => {
                         "position": 2,
                         "name": "FRP Cover Manufacturer Gujarat",
                         "item": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Where is your manufacturing factory located in Gujarat?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Our state-of-the-art compression molding factory is located in Radhe Industrial Zone, Veraval Shapar, Rajkot, Gujarat. Rajkot is a major industrial and engineering hub in India, providing seamless logistical access."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What industries do you supply FRP manhole covers to in Gujarat?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "We supply chemical plants in Dahej/Ankleshwar, infrastructure developers in GANDHINAGAR/GIFT City, municipal corporations in Ahmedabad, Vadodara, Surat, and Rajkot, and real-estate developers across Gujarat."
-                        }
                     }
                 ]
             }

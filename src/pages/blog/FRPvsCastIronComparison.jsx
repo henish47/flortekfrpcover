@@ -52,28 +52,6 @@ const FRPvsCastIronComparison = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How does the weight of FRP covers compare to cast iron?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "FRP composite manhole covers are approximately 60% to 70% lighter than traditional cast-iron covers of equivalent size and load rating. This weight reduction allows two operators to safely lift the cover with manual keys, minimizing workplace injuries."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Why do municipal councils prefer FRP covers over metal ones?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Municipal councils prefer FRP because it has no resale scrap value, which eliminates theft. Stolen cast-iron covers leave open sewer holes that present fatal hazards to public traffic, making theft prevention a primary municipal concern."
-                        }
-                    }
-                ]
             }
         ]
     };

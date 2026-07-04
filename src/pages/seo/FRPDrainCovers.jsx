@@ -13,6 +13,15 @@ const FRPDrainCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Heavy-Duty FRP Drain Covers & Sewer Gratings | Flortek",
+                "description": "Premium industrial FRP drain covers, storm water gully gratings, and slotted trench covers. Corrosion-free, rust-resistant, and high load capacity.",
+                "url": "https://www.flortekfrpcover.com/frp-drain-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-drain-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-drain-covers#breadcrumb",
                 "itemListElement": [
@@ -27,28 +36,6 @@ const FRPDrainCovers = () => {
                         "position": 2,
                         "name": "FRP Drain Covers",
                         "item": "https://www.flortekfrpcover.com/frp-drain-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-drain-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Can FRP drain covers withstand chemicals?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. FRP drain covers are engineered using premium chemical-resistant resins that resist harsh industrial chemicals, acids, sewage runoff, and rust."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are slotted or grating patterns available for drain covers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, we offer both solid-top and slotted grating designs to allow quick rainwater drainage while stopping large debris from entering sewer lines."
-                        }
                     }
                 ]
             }

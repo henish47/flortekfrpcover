@@ -13,6 +13,15 @@ const FRPManholeCovers = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "Premium FRP Manhole Covers Manufacturer in Rajkot, India",
+                "description": "Looking for heavy-duty FRP manhole covers? Flortek is a leading manufacturer in Rajkot, Gujarat, providing corrosion-free, high-load composite covers.",
+                "url": "https://www.flortekfrpcover.com/frp-manhole-covers",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb",
                 "itemListElement": [
@@ -27,28 +36,6 @@ const FRPManholeCovers = () => {
                         "position": 2,
                         "name": "FRP Manhole Covers",
                         "item": "https://www.flortekfrpcover.com/frp-manhole-covers"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What are the standard sizes for FRP manhole covers?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Standard sizes range from 300x300mm to 1000x1000mm in square/rectangular shapes, and 450mm to 900mm diameter in circular shapes. Custom sizes can also be manufactured."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are Flortek FRP manhole covers certified?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, our covers conform to international BS EN 124 testing standards and Indian IS 1726 specifications for load capacity and permanent set."
-                        }
                     }
                 ]
             }

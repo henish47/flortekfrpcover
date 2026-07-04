@@ -13,48 +13,79 @@ const Installation = () => {
                 keywords="manhole cover installation guide, how to install FRP cover, sewage chamber frame embedding, BS EN 124 load testing, M-20 concrete frame backing, Flortek installation guidelines"
                 schema={{
                     "@context": "https://schema.org",
-                    "@type": "HowTo",
-                    "name": "How to Install FRP Manhole Covers properly",
-                    "description": "Step-by-step technical guide for civil contractors to install Fiber Reinforced Plastic (FRP) manhole covers conforming to BS EN 124 standards.",
-                    "image": "https://www.flortekfrpcover.com/images/technical/installation-fig2.png",
-                    "totalTime": "PT48H",
-                    "step": [
+                    "@graph": [
                         {
-                            "@type": "HowToStep",
-                            "position": 1,
-                            "name": "Check Clear Opening & Ground Level",
-                            "text": "Ensure the clear opening of the frame is not smaller than that of the chamber. Verify the top level of the frame matches the final ground or road level.",
-                            "image": "https://www.flortekfrpcover.com/images/technical/installation-fig1.png",
-                            "url": "https://www.flortekfrpcover.com/installation#step-1"
+                            "@type": "WebPage",
+                            "name": "How to Install FRP Manhole Covers | BS EN 124 Technical Guide",
+                            "description": "Technical step-by-step guide for proper seating and concrete embedding of composite FRP and GRP manhole covers to ensure BS EN 124 load test capacity.",
+                            "url": "https://www.flortekfrpcover.com/installation",
+                            "breadcrumb": {
+                                "@id": "https://www.flortekfrpcover.com/installation#breadcrumb"
+                            }
                         },
                         {
-                            "@type": "HowToStep",
-                            "position": 2,
-                            "name": "Prepare Concrete Bedding",
-                            "text": "Prepare a solid concrete bedding taking into consideration the height of the frame flange.",
-                            "url": "https://www.flortekfrpcover.com/installation#step-2"
+                            "@type": "BreadcrumbList",
+                            "@id": "https://www.flortekfrpcover.com/installation#breadcrumb",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.flortekfrpcover.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Installation Guide",
+                                    "item": "https://www.flortekfrpcover.com/installation"
+                                }
+                            ]
                         },
                         {
-                            "@type": "HowToStep",
-                            "position": 3,
-                            "name": "Embed Frame in M-20 Concrete",
-                            "text": "The frame must be embedded in a minimum of M-20 grade concrete. Ensure the bedding offers full support to the frame's load-bearing flange.",
+                            "@type": "HowTo",
+                            "name": "How to Install FRP Manhole Covers properly",
+                            "description": "Step-by-step technical guide for civil contractors to install Fiber Reinforced Plastic (FRP) manhole covers conforming to BS EN 124 standards.",
                             "image": "https://www.flortekfrpcover.com/images/technical/installation-fig2.png",
-                            "url": "https://www.flortekfrpcover.com/installation#step-3"
-                        },
-                        {
-                            "@type": "HowToStep",
-                            "position": 4,
-                            "name": "Reinforce Unsupported Sections",
-                            "text": "If a section of the frame is not supported by solid ground, install a reinforced concrete (RCC) beam of minimum M-20 grade and at least 100mm height under the unsupported section.",
-                            "url": "https://www.flortekfrpcover.com/installation#step-4"
-                        },
-                        {
-                            "@type": "HowToStep",
-                            "position": 5,
-                            "name": "Curing / Concrete Setting Time",
-                            "text": "Allow the concrete to set and cure for a minimum of 48 hours before exposing the manhole cover to vehicular or pedestrian traffic.",
-                            "url": "https://www.flortekfrpcover.com/installation#step-5"
+                            "totalTime": "PT48H",
+                            "step": [
+                                {
+                                    "@type": "HowToStep",
+                                    "position": 1,
+                                    "name": "Check Clear Opening & Ground Level",
+                                    "text": "Ensure the clear opening of the frame is not smaller than that of the chamber. Verify the top level of the frame matches the final ground or road level.",
+                                    "image": "https://www.flortekfrpcover.com/images/technical/installation-fig1.png",
+                                    "url": "https://www.flortekfrpcover.com/installation#step-1"
+                                },
+                                {
+                                    "@type": "HowToStep",
+                                    "position": 2,
+                                    "name": "Prepare Concrete Bedding",
+                                    "text": "Prepare a solid concrete bedding taking into consideration the height of the frame flange.",
+                                    "url": "https://www.flortekfrpcover.com/installation#step-2"
+                                },
+                                {
+                                    "@type": "HowToStep",
+                                    "position": 3,
+                                    "name": "Embed Frame in M-20 Concrete",
+                                    "text": "The frame must be embedded in a minimum of M-20 grade concrete. Ensure the bedding offers full support to the frame's load-bearing flange.",
+                                    "image": "https://www.flortekfrpcover.com/images/technical/installation-fig2.png",
+                                    "url": "https://www.flortekfrpcover.com/installation#step-3"
+                                },
+                                {
+                                    "@type": "HowToStep",
+                                    "position": 4,
+                                    "name": "Reinforce Unsupported Sections",
+                                    "text": "If a section of the frame is not supported by solid ground, install a reinforced concrete (RCC) beam of minimum M-20 grade and at least 100mm height under the unsupported section.",
+                                    "url": "https://www.flortekfrpcover.com/installation#step-4"
+                                },
+                                {
+                                    "@type": "HowToStep",
+                                    "position": 5,
+                                    "name": "Curing / Concrete Setting Time",
+                                    "text": "Allow the concrete to set and cure for a minimum of 48 hours before exposing the manhole cover to vehicular or pedestrian traffic.",
+                                    "url": "https://www.flortekfrpcover.com/installation#step-5"
+                                }
+                            ]
                         }
                     ]
                 }}

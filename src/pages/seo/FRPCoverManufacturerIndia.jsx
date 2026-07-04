@@ -10,6 +10,15 @@ const FRPCoverManufacturerIndia = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
+                "@type": "WebPage",
+                "name": "FRP Cover Manufacturer & B2B Supplier in India | Flortek",
+                "description": "Flortek is a premier ISO 9001:2015 certified manufacturer of high-quality composite FRP covers in India. Nationwide delivery, custom sizing, and BS EN 124 compliance.",
+                "url": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india",
+                "breadcrumb": {
+                    "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb"
+                }
+            },
+            {
                 "@type": "BreadcrumbList",
                 "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb",
                 "itemListElement": [
@@ -24,28 +33,6 @@ const FRPCoverManufacturerIndia = () => {
                         "position": 2,
                         "name": "FRP Cover Manufacturer India",
                         "item": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "Do you deliver FRP covers across all states in India?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Flortek Industries Private Limited has a comprehensive logistics network providing safe pan-India dispatch and delivery. We regularly ship truckload consignments to Maharashtra, Karnataka, Tamil Nadu, Delhi-NCR, Telangana, and other states."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Is Flortek an ISO certified manufacturing company?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, our manufacturing facility is ISO 9001:2015 certified, adhering strictly to global quality management systems from raw material processing to final load testing checks."
-                        }
                     }
                 ]
             }

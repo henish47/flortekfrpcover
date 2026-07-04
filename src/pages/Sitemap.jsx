@@ -52,6 +52,38 @@ const Sitemap = () => {
                 title="Sitemap | Flortek Industries Private Limited"
                 description="Navigate through Flortek Industries Private Limited's complete website structure. Find links to all our products, categories, and company information."
                 keywords="Flortek Sitemap, Site Map, Website Navigation, Product List"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@graph": [
+                        {
+                            "@type": "WebPage",
+                            "name": "Sitemap | Flortek Industries Private Limited",
+                            "description": "Navigate through Flortek Industries Private Limited's complete website structure. Find links to all our products, categories, and company information.",
+                            "url": "https://www.flortekfrpcover.com/sitemap",
+                            "breadcrumb": {
+                                "@id": "https://www.flortekfrpcover.com/sitemap#breadcrumb"
+                            }
+                        },
+                        {
+                            "@type": "BreadcrumbList",
+                            "@id": "https://www.flortekfrpcover.com/sitemap#breadcrumb",
+                            "itemListElement": [
+                                {
+                                    "@type": "ListItem",
+                                    "position": 1,
+                                    "name": "Home",
+                                    "item": "https://www.flortekfrpcover.com"
+                                },
+                                {
+                                    "@type": "ListItem",
+                                    "position": 2,
+                                    "name": "Sitemap",
+                                    "item": "https://www.flortekfrpcover.com/sitemap"
+                                }
+                            ]
+                        }
+                    ]
+                }}
                 canonicalUrl="https://www.flortekfrpcover.com/sitemap"
             />
 

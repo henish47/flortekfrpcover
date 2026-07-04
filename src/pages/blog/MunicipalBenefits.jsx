@@ -52,28 +52,6 @@ const MunicipalBenefits = () => {
                         "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
-            },
-            {
-                "@type": "FAQPage",
-                "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#faq",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "How does the zero scrap value of FRP covers benefit municipal corporations?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "FRP covers are constructed from non-metallic composite fibers and thermosetting resins, giving them zero resale value as scrap metal. This prevents theft, which is a major issue with cast-iron covers. Eliminating theft helps municipalities keep covers securely in place, reducing public safety risks and replacement costs."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Are composite covers suitable for smart city IoT meters?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, unlike cast iron or concrete with internal steel reinforcement, FRP composite covers are transparent to radio frequencies. This allows underground smart utility meters and telecommunication sensors to transmit data to the surface without signal interference."
-                        }
-                    }
-                ]
             }
         ]
     };
