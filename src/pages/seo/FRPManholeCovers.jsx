@@ -14,25 +14,25 @@ const FRPManholeCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-manhole-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Manhole Covers",
-                        "item": "https://flortekfrpcover.vercel.app/frp-manhole-covers"
+                        "item": "https://www.flortekfrpcover.com/frp-manhole-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-manhole-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -62,7 +62,7 @@ const FRPManholeCovers = () => {
                 description="Looking for heavy-duty FRP manhole covers? Flortek is a leading manufacturer in Rajkot, Gujarat, providing corrosion-free, high-load composite covers."
                 keywords="FRP Manhole Covers, Composite Manhole Covers, Circular FRP Covers, Square FRP Covers, Manhole Cover Manufacturer Rajkot, EN 124 Certified Covers India"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-manhole-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-manhole-covers"
             />
 
             {/* Breadcrumb Navigation (UI) */}

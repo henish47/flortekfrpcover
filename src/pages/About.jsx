@@ -15,17 +15,17 @@ const About = () => {
                     "@type": "AboutPage",
                     "name": "About Flortek Industries Private Limited",
                     "description": "Learn about Flortek Industries Private Limited, a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
-                    "url": "https://flortekfrpcover.vercel.app/about",
+                    "url": "https://www.flortekfrpcover.com/about",
                     "publisher": {
                         "@type": "Organization",
                         "name": "Flortek Industries Private Limited",
                         "logo": {
                             "@type": "ImageObject",
-                            "url": "https://flortekfrpcover.vercel.app/images/logo.png"
+                            "url": "https://www.flortekfrpcover.com/images/logo.png"
                         }
                     }
                 }}
-                canonicalUrl="https://flortekfrpcover.vercel.app/about"
+                canonicalUrl="https://www.flortekfrpcover.com/about"
             />
 
             {/* --- HEADER SECTION --- */}

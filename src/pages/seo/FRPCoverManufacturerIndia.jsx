@@ -11,25 +11,25 @@ const FRPCoverManufacturerIndia = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-india#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Cover Manufacturer India",
-                        "item": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-india"
+                        "item": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-india#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -59,7 +59,7 @@ const FRPCoverManufacturerIndia = () => {
                 description="Flortek is the leading ISO 9001:2015 certified FRP cover manufacturer and supplier in India. Factory-direct wholesale prices and pan-India delivery."
                 keywords="FRP Cover Manufacturer India, FRP Cover Supplier India, FRP Cover Company India, composite manhole cover factory, buy manhole covers bulk India"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-cover-manufacturer-india"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-cover-manufacturer-india"
             />
 
             {/* Breadcrumb Navigation */}

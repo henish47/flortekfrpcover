@@ -2,7 +2,7 @@ import { products } from './src/data/products.js';
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'https://flortekfrpcover.vercel.app';
+const BASE_URL = 'https://www.flortekfrpcover.com';
 
 const generateSitemap = () => {
     // 1. Static & SEO Landing Routes

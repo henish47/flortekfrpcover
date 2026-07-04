@@ -67,7 +67,7 @@ const Contact = () => {
                     "@type": "ContactPage",
                     "name": "Contact Flortek Industries Private Limited",
                     "description": "Get in touch with Flortek Industries Private Limited for bulk inquiries about FRP manhole covers.",
-                    "url": "https://flortekfrpcover.vercel.app/contact",
+                    "url": "https://www.flortekfrpcover.com/contact",
                     "mainEntity": {
                         "@type": "LocalBusiness",
                         "name": "Flortek Industries Private Limited",
@@ -83,7 +83,7 @@ const Contact = () => {
                         }
                     }
                 }}
-                canonicalUrl="https://flortekfrpcover.vercel.app/contact"
+                canonicalUrl="https://www.flortekfrpcover.com/contact"
             />
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">

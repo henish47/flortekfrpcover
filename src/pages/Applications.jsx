@@ -46,7 +46,7 @@ const Applications = () => {
                     "@type": "ItemList",
                     "name": "FRP Manhole Cover Load Class Applications",
                     "description": "Flortek composite cover installation zones grouped by standard load ratings as per BS EN 124 guidelines.",
-                    "url": "https://flortekfrpcover.vercel.app/applications",
+                    "url": "https://www.flortekfrpcover.com/applications",
                     "numberOfItems": 4,
                     "itemListElement": [
                         {
@@ -75,7 +75,7 @@ const Applications = () => {
                         }
                     ]
                 }}
-                canonicalUrl="https://flortekfrpcover.vercel.app/applications"
+                canonicalUrl="https://www.flortekfrpcover.com/applications"
             />
 
             {/* Premium Hero Section - Monochrome Typography-focused */}

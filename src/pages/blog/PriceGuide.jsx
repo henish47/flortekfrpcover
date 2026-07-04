@@ -11,31 +11,31 @@ const PriceGuide = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-cover-price-guide-india#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "FRP Cover Price Guide in India",
-                        "item": "https://flortekfrpcover.vercel.app/blog/frp-cover-price-guide-india"
+                        "item": "https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-cover-price-guide-india#article",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india#article",
                 "headline": "FRP Cover Price Guide in India",
                 "description": "Understand FRP cover pricing in India. Examine cost factors such as dimensions, BS EN 124 load classes, raw material polymer grades, and B2B volume pricing.",
                 "datePublished": "2026-06-08",
@@ -49,13 +49,13 @@ const PriceGuide = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-cover-price-guide-india#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const PriceGuide = () => {
                 description="Comprehensive wholesale price guide for FRP/GRP manhole covers in India. Learn about cost factors, size-based pricing, and bulk commercial rates."
                 keywords="FRP Cover Price India, GRP Manhole Cover Cost, wholesale composite cover rates, buy bulk manhole covers"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/frp-cover-price-guide-india"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/frp-cover-price-guide-india"
             />
 
             {/* Breadcrumb Navigation */}

@@ -11,31 +11,31 @@ const ReplacingCastIron = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/why-frp-covers-replacing-cast-iron#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Why FRP Covers are Replacing Cast Iron Covers",
-                        "item": "https://flortekfrpcover.vercel.app/blog/why-frp-covers-replacing-cast-iron"
+                        "item": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/why-frp-covers-replacing-cast-iron#article",
+                "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#article",
                 "headline": "Why FRP Covers are Replacing Cast Iron Covers",
                 "description": "Understand the global shift from metal lids to composite access systems. Learn how Fiber Reinforced Polymer (FRP) covers address theft, handling safety, and corrosion issues.",
                 "datePublished": "2026-06-01",
@@ -49,13 +49,13 @@ const ReplacingCastIron = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/why-frp-covers-replacing-cast-iron#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const ReplacingCastIron = () => {
                 description="Explore the shift from cast iron to composite manhole covers. Study weight differences, corrosion, theft prevention, and total cost of ownership."
                 keywords="Replacing Cast Iron Covers, alternative to cast iron manhole covers, modern utility lids, buy composite covers wholesale"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/why-frp-covers-replacing-cast-iron"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron"
             />
 
             {/* Breadcrumb Navigation */}

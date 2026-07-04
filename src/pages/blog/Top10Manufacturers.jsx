@@ -11,31 +11,31 @@ const Top10Manufacturers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/top-10-frp-manhole-cover-manufacturers-india#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Top 10 FRP Manhole Cover Manufacturers in India",
-                        "item": "https://flortekfrpcover.vercel.app/blog/top-10-frp-manhole-cover-manufacturers-india"
+                        "item": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/top-10-frp-manhole-cover-manufacturers-india#article",
+                "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#article",
                 "headline": "Top 10 FRP Manhole Cover Manufacturers in India",
                 "description": "An extensive technical review of the top 10 FRP manhole cover manufacturers in India. Evaluate brands based on BS EN 124 certifications, load capacity testing, raw material grading, and wholesale rates.",
                 "datePublished": "2026-06-18",
@@ -49,13 +49,13 @@ const Top10Manufacturers = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/top-10-frp-manhole-cover-manufacturers-india#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const Top10Manufacturers = () => {
                 description="Comprehensive technical review of the top 10 FRP manhole cover manufacturers in India. Evaluate GRP suppliers by BS EN 124 compliance, load capacity, and wholesale rates."
                 keywords="Top FRP Manhole Cover Manufacturers India, GRP Cover Suppliers India, Best Manhole Cover Brands, buy composite manhole covers wholesale"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/top-10-frp-manhole-cover-manufacturers-india"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india"
             />
 
             {/* Breadcrumb Navigation */}

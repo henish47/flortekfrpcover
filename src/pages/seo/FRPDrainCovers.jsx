@@ -14,25 +14,25 @@ const FRPDrainCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-drain-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-drain-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Drain Covers",
-                        "item": "https://flortekfrpcover.vercel.app/frp-drain-covers"
+                        "item": "https://www.flortekfrpcover.com/frp-drain-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-drain-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-drain-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -62,7 +62,7 @@ const FRPDrainCovers = () => {
                 description="High-strength FRP drain covers and composite stormwater gratings for residential driveways, commercial paths, and industrial processing units."
                 keywords="FRP Drain Covers, Composite Drain Covers, Drainage Gratings, Storm Water Channel Covers, Gutter Cover Manufacturer India"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-drain-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-drain-covers"
             />
 
             {/* Breadcrumb Navigation (UI) */}

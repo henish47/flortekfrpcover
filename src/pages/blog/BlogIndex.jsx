@@ -86,7 +86,7 @@ const BlogIndex = () => {
                 title="Knowledge Hub & Industrial Blog | Flortek"
                 description="Explore technical articles, engineering guides, and product comparisons on Fiber Reinforced Polymer (FRP) manhole covers and composite drainage solutions."
                 keywords="FRP Cover Blog, GRP Manhole Cover Articles, Composite Cover Guide, Indian Manhole Cover Market"
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog"
+                canonicalUrl="https://www.flortekfrpcover.com/blog"
             />
 
             {/* Breadcrumbs */}

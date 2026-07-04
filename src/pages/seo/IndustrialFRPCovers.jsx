@@ -11,25 +11,25 @@ const IndustrialFRPCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/industrial-frp-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/industrial-frp-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Industrial FRP Covers",
-                        "item": "https://flortekfrpcover.vercel.app/industrial-frp-covers"
+                        "item": "https://www.flortekfrpcover.com/industrial-frp-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/industrial-frp-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/industrial-frp-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -59,7 +59,7 @@ const IndustrialFRPCovers = () => {
                 description="Heavy duty industrial FRP manhole covers and chemical-resistant gratings. Certified to Class C250 and D400. Perfect for chemical factories and logistics parks."
                 keywords="Industrial FRP Covers, FRP Covers for Factories, Heavy Duty Industrial Covers, chemical resistant manhole covers, factory drain gratings"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/industrial-frp-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/industrial-frp-covers"
             />
 
             {/* Breadcrumb Navigation */}

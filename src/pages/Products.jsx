@@ -402,7 +402,7 @@ const Products = () => {
         "@type": "ItemList",
         "name": "Flortek FRP & GRP Composite Manhole Covers Catalog",
         "description": "Index of EN 124 certified composite manhole covers, recessed chamber covers, and storm water gully grates manufactured by Flortek.",
-        "url": "https://flortekfrpcover.vercel.app/products",
+        "url": "https://www.flortekfrpcover.com/products",
         "numberOfItems": productsData.length,
         "itemListElement": productsData.map((prod, index) => ({
             "@type": "ListItem",
@@ -410,7 +410,7 @@ const Products = () => {
             "item": {
                 "@type": "Product",
                 "name": prod.title,
-                "image": `https://flortekfrpcover.vercel.app${prod.imageUrl}`,
+                "image": `https://www.flortekfrpcover.com${prod.imageUrl}`,
                 "description": `${prod.title} in ${prod.shape} shape, certified load rating class: ${prod.loadClass}, dimensions: ${prod.dimensions}. Manufactured by Flortek.`,
                 "offers": {
                     "@type": "AggregateOffer",
@@ -432,7 +432,7 @@ const Products = () => {
                 description="Explore Flortek's full catalog of FRP, SMC, and GRP manhole covers, recessed drain covers, and water gully gratings. Certified to EN 124 load classes."
                 keywords="FRP manhole cover price list, composite manhole cover sizes, recessed manhole cover catalog, GRP manhole cover manufacturers, drainage gratings price"
                 schema={productsSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/products"
+                canonicalUrl="https://www.flortekfrpcover.com/products"
             />
 
             {/* --- SLIM & MODERN PAGE HEADER --- */}

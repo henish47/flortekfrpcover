@@ -26,7 +26,7 @@ const FAQPage = () => {
                 description="Find answers to common questions about FRP manhole covers, load capacities, dimensions, custom designs, and industrial certifications."
                 keywords="FRP Cover FAQ, Composite Cover Questions, FRP Load Capacities, Custom Manhole Covers Gujarat, Flortek FAQ"
                 schema={faqSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/faq"
+                canonicalUrl="https://www.flortekfrpcover.com/faq"
             />
 
             {/* Header Section */}

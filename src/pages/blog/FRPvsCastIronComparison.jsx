@@ -11,31 +11,31 @@ const FRPvsCastIronComparison = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-vs-cast-iron-manhole-covers-comparison#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "FRP vs Cast Iron Manhole Covers: Complete Comparison",
-                        "item": "https://flortekfrpcover.vercel.app/blog/frp-vs-cast-iron-manhole-covers-comparison"
+                        "item": "https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-vs-cast-iron-manhole-covers-comparison#article",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison#article",
                 "headline": "FRP vs Cast Iron Manhole Covers: Complete Comparison",
                 "description": "An exhaustive technical comparison of FRP composite vs traditional Cast Iron manhole covers. Read about load capacity, safety, theft risk, and total costs.",
                 "datePublished": "2026-06-15",
@@ -49,13 +49,13 @@ const FRPvsCastIronComparison = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/frp-vs-cast-iron-manhole-covers-comparison#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const FRPvsCastIronComparison = () => {
                 description="Technical comparison of FRP composite and Cast Iron manhole covers. Analyze load metrics, manual weight differences, theft prevention, and cost values."
                 keywords="FRP vs Cast Iron Covers, Composite Covers vs Cast Iron, Manhole Cover Comparison, Ductile Iron alternative, buy bulk wholesale covers"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/frp-vs-cast-iron-manhole-covers-comparison"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/frp-vs-cast-iron-manhole-covers-comparison"
             />
 
             {/* Breadcrumb Navigation */}

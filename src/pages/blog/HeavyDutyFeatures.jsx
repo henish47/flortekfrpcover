@@ -11,31 +11,31 @@ const HeavyDutyFeatures = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/heavy-duty-frp-covers-features-applications#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Heavy Duty FRP Covers: Features and Applications",
-                        "item": "https://flortekfrpcover.vercel.app/blog/heavy-duty-frp-covers-features-applications"
+                        "item": "https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/heavy-duty-frp-covers-features-applications#article",
+                "@id": "https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications#article",
                 "headline": "Heavy Duty FRP Covers: Features and Applications",
                 "description": "Explore the structural design and application parameters of heavy-duty composite manhole covers (Class C250 and D400) handling heavy transport traffic.",
                 "datePublished": "2026-06-05",
@@ -49,13 +49,13 @@ const HeavyDutyFeatures = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/heavy-duty-frp-covers-features-applications#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const HeavyDutyFeatures = () => {
                 description="Engineering overview of heavy duty FRP covers. Study Class D400 composite manhole covers, raw material molding processes, and highway applications."
                 keywords="Heavy Duty FRP Covers, D400 Composite Covers, High Load Capacity Manhole Lids, buy bulk commercial covers"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/heavy-duty-frp-covers-features-applications"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/heavy-duty-frp-covers-features-applications"
             />
 
             {/* Breadcrumb Navigation */}

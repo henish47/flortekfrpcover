@@ -11,31 +11,31 @@ const IndustrialApplications = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/best-frp-manhole-covers-industrial-applications#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Best FRP Manhole Covers for Industrial Applications",
-                        "item": "https://flortekfrpcover.vercel.app/blog/best-frp-manhole-covers-industrial-applications"
+                        "item": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/best-frp-manhole-covers-industrial-applications#article",
+                "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#article",
                 "headline": "Best FRP Manhole Covers for Industrial Applications",
                 "description": "Discover why FRP composite covers are the premier alternative for industrial environments like chemical plants, wastewater treatment nodes, oil refineries, and warehouse terminals.",
                 "datePublished": "2026-06-17",
@@ -49,13 +49,13 @@ const IndustrialApplications = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/best-frp-manhole-covers-industrial-applications#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const IndustrialApplications = () => {
                 description="Comprehensive engineering guide to choosing the best FRP manhole covers for industrial settings. Optimized for factories, chemical zones, and warehouses."
                 keywords="Industrial FRP Covers, Chemical Resistant Manhole Covers, Factory Chamber Lids, composite drainage grates, buy bulk industrial covers"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/best-frp-manhole-covers-industrial-applications"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications"
             />
 
             {/* Breadcrumb Navigation */}

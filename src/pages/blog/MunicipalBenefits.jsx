@@ -11,31 +11,31 @@ const MunicipalBenefits = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/benefits-frp-covers-municipal-projects#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "Benefits of FRP Covers for Municipal Projects",
-                        "item": "https://flortekfrpcover.vercel.app/blog/benefits-frp-covers-municipal-projects"
+                        "item": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/benefits-frp-covers-municipal-projects#article",
+                "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#article",
                 "headline": "Benefits of FRP Covers for Municipal Projects",
                 "description": "Examine how municipal corporations and public works departments utilize Fiber Reinforced Polymer (FRP) manhole covers to eliminate theft, improve safety, and support smart city RF networks.",
                 "datePublished": "2026-06-10",
@@ -49,13 +49,13 @@ const MunicipalBenefits = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/benefits-frp-covers-municipal-projects#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const MunicipalBenefits = () => {
                 description="Discover why civic municipal councils prefer FRP manhole covers. Learn about public safety benefits, zero-theft, and smart city RF transparency."
                 keywords="Municipal FRP Covers, smart city manhole lids, sewer cover benefits, buy public works covers wholesale"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/benefits-frp-covers-municipal-projects"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects"
             />
 
             {/* Breadcrumb Navigation */}

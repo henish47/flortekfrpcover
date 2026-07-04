@@ -14,25 +14,25 @@ const HeavyDutyFRPCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/heavy-duty-frp-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Heavy Duty FRP Covers",
-                        "item": "https://flortekfrpcover.vercel.app/heavy-duty-frp-covers"
+                        "item": "https://www.flortekfrpcover.com/heavy-duty-frp-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/heavy-duty-frp-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -62,7 +62,7 @@ const HeavyDutyFRPCovers = () => {
                 description="Heavy duty FRP composite manhole covers certified for Class C250 and D400 load capacities. Durable, lightweight, and engineered for vehicular road traffic."
                 keywords="Heavy Duty FRP Covers, 20 Ton Manhole Cover, 40 Ton Composite Cover, Traffic Rated Manhole Lids, C250 D400 Covers India"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/heavy-duty-frp-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/heavy-duty-frp-covers"
             />
 
             {/* Breadcrumb Navigation (UI) */}

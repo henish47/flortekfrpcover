@@ -14,25 +14,25 @@ const FRPCableTrenchCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cable-trench-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-cable-trench-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Cable Trench Covers",
-                        "item": "https://flortekfrpcover.vercel.app/frp-cable-trench-covers"
+                        "item": "https://www.flortekfrpcover.com/frp-cable-trench-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cable-trench-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-cable-trench-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -62,7 +62,7 @@ const FRPCableTrenchCovers = () => {
                 description="Engineered FRP cable trench covers and utility duct lids. Perfect electrical insulation, high load-bearing capacity, and corrosion-free performance."
                 keywords="FRP Cable Trench Covers, Substation Trench Covers, Electrical Trench Covers, Composite Duct Lids, Non Conductive Covers India"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-cable-trench-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-cable-trench-covers"
             />
 
             {/* Breadcrumb Navigation (UI) */}

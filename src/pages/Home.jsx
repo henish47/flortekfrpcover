@@ -102,10 +102,10 @@ const Home = () => {
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://flortekfrpcover.vercel.app/#organization",
+                "@id": "https://www.flortekfrpcover.com/#organization",
                 "name": "Flortek Industries Private Limited",
-                "url": "https://flortekfrpcover.vercel.app",
-                "logo": "https://flortekfrpcover.vercel.app/images/logo.png",
+                "url": "https://www.flortekfrpcover.com",
+                "logo": "https://www.flortekfrpcover.com/images/logo.png",
                 "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+91-8000888620",
@@ -116,10 +116,10 @@ const Home = () => {
             },
             {
                 "@type": "LocalBusiness",
-                "@id": "https://flortekfrpcover.vercel.app/#localbusiness",
+                "@id": "https://www.flortekfrpcover.com/#localbusiness",
                 "name": "Flortek Industries Private Limited",
-                "image": "https://flortekfrpcover.vercel.app/images/logo.png",
-                "url": "https://flortekfrpcover.vercel.app",
+                "image": "https://www.flortekfrpcover.com/images/logo.png",
+                "url": "https://www.flortekfrpcover.com",
                 "telephone": "+91-8000888620",
                 "priceRange": "₹₹",
                 "address": {
@@ -155,7 +155,7 @@ const Home = () => {
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/#faq",
+                "@id": "https://www.flortekfrpcover.com/#faq",
                 "mainEntity": faqs.map(faq => ({
                     "@type": "Question",
                     "name": faq.question,
@@ -175,7 +175,7 @@ const Home = () => {
                 description="Flortek Industries Private Limited is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects."
                keywords="FRP manhole cover manufacturer India, FRP manhole cover supplier Gujarat, heavy duty FRP manhole covers, corrosion resistant manhole covers, EN 124 certified manhole covers, D400 B125 A15 manhole covers, industrial drainage solutions India, municipal manhole covers, composite manhole covers, anti theft FRP covers, Flortek Industries Private Limited, Simtex private limited, Simtex frp cover"
                 schema={homeSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app"
+                canonicalUrl="https://www.flortekfrpcover.com"
             />            {/* --- HERO SECTION (TWO-COLUMN WITH PRODUCT IMAGE) --- */}
             <div className="bg-white text-black min-h-[85vh] flex items-center relative overflow-hidden border-b border-[#F5F5F5]">
                 {/* Background decorative blobs */}

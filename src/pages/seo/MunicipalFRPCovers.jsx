@@ -11,25 +11,25 @@ const MunicipalFRPCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/municipal-frp-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Municipal FRP Covers",
-                        "item": "https://flortekfrpcover.vercel.app/municipal-frp-covers"
+                        "item": "https://www.flortekfrpcover.com/municipal-frp-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/municipal-frp-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -59,7 +59,7 @@ const MunicipalFRPCovers = () => {
                 description="Premium municipal-grade FRP manhole covers and sewer gratings. BS EN 124 certified, zero-theft, and RF-friendly for modern smart city and highway projects."
                 keywords="Municipal FRP Covers, Smart City FRP Covers, Infrastructure FRP Covers, municipal manhole covers, sewer drainage covers, RF-friendly covers"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/municipal-frp-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/municipal-frp-covers"
             />
 
             {/* Breadcrumb Navigation */}

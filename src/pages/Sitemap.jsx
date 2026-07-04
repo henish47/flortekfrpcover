@@ -52,7 +52,7 @@ const Sitemap = () => {
                 title="Sitemap | Flortek Industries Private Limited"
                 description="Navigate through Flortek Industries Private Limited's complete website structure. Find links to all our products, categories, and company information."
                 keywords="Flortek Sitemap, Site Map, Website Navigation, Product List"
-                canonicalUrl="https://flortekfrpcover.vercel.app/sitemap"
+                canonicalUrl="https://www.flortekfrpcover.com/sitemap"
             />
 
             <div className="max-w-7xl mx-auto px-4 md:px-8">

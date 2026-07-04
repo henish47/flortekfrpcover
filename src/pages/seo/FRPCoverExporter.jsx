@@ -80,25 +80,25 @@ const FRPCoverExporter = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-exporter#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-exporter#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Cover Exporter",
-                        "item": "https://flortekfrpcover.vercel.app/frp-cover-exporter"
+                        "item": "https://www.flortekfrpcover.com/frp-cover-exporter"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-exporter#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-exporter#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -128,7 +128,7 @@ const FRPCoverExporter = () => {
                 description="Flortek is a premium industrial FRP cover exporter and manufacturer. Supplying heavy-duty composite manhole covers to UAE, USA, Oman, Saudi Arabia, and Europe. BS EN 124 certified."
                 keywords="FRP Cover Exporter, FRP Manhole Cover Manufacturer India, FRP Cover Supplier UAE, FRP Cover Supplier USA, Industrial FRP Covers Exporter, Composite Manhole Cover Export Quality"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-cover-exporter"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-cover-exporter"
             />
 
             {/* Breadcrumb Navigation */}

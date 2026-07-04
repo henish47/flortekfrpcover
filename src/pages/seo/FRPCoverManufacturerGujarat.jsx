@@ -11,25 +11,25 @@ const FRPCoverManufacturerGujarat = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-gujarat#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP Cover Manufacturer Gujarat",
-                        "item": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-gujarat"
+                        "item": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-cover-manufacturer-gujarat#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -59,7 +59,7 @@ const FRPCoverManufacturerGujarat = () => {
                 description="Flortek is the leading manufacturer and supplier of premium composite FRP covers in Gujarat. Located in Rajkot with direct supply to Ahmedabad, Surat, and Vadodara."
                 keywords="FRP Cover Manufacturer Gujarat, FRP Cover Supplier Gujarat, FRP Cover Company Gujarat, Rajkot manhole cover factory, composite covers Ahmedabad, GIFT city drainage"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-cover-manufacturer-gujarat"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat"
             />
 
             {/* Breadcrumb Navigation */}

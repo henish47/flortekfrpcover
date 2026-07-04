@@ -11,31 +11,31 @@ const HowToChoose = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/blog/how-to-choose-right-frp-manhole-cover#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Blog",
-                        "item": "https://flortekfrpcover.vercel.app/blog"
+                        "item": "https://www.flortekfrpcover.com/blog"
                     },
                     {
                         "@type": "ListItem",
                         "position": 3,
                         "name": "How to Choose the Right FRP Manhole Cover",
-                        "item": "https://flortekfrpcover.vercel.app/blog/how-to-choose-right-frp-manhole-cover"
+                        "item": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover"
                     }
                 ]
             },
             {
                 "@type": "BlogPosting",
-                "@id": "https://flortekfrpcover.vercel.app/blog/how-to-choose-right-frp-manhole-cover#article",
+                "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#article",
                 "headline": "How to Choose the Right FRP Manhole Cover",
                 "description": "An essential engineering checklist and guide to selecting the correct FRP/GRP manhole cover size, load class, frame configuration, and sealing.",
                 "datePublished": "2026-06-12",
@@ -49,13 +49,13 @@ const HowToChoose = () => {
                     "name": "Flortek Industries Private Limited",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://flortekfrpcover.vercel.app/logo.png"
+                        "url": "https://www.flortekfrpcover.com/logo.png"
                     }
                 }
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/blog/how-to-choose-right-frp-manhole-cover#faq",
+                "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -85,7 +85,7 @@ const HowToChoose = () => {
                 description="Engineering selection handbook for choosing the correct FRP manhole cover. Find out about clear opening dimensions, BS EN 124 load classes, and locking seals."
                 keywords="Choose FRP Manhole Cover, manhole cover size guide, FRP load classes EN 124, buy composite covers wholesale"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/blog/how-to-choose-right-frp-manhole-cover"
+                canonicalUrl="https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover"
             />
 
             {/* Breadcrumb Navigation */}

@@ -11,25 +11,25 @@ const FRPvsCastIronCovers = () => {
         "@graph": [
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://flortekfrpcover.vercel.app/frp-vs-cast-iron-covers#breadcrumb",
+                "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#breadcrumb",
                 "itemListElement": [
                     {
                         "@type": "ListItem",
                         "position": 1,
                         "name": "Home",
-                        "item": "https://flortekfrpcover.vercel.app"
+                        "item": "https://www.flortekfrpcover.com"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "FRP vs Cast Iron Covers",
-                        "item": "https://flortekfrpcover.vercel.app/frp-vs-cast-iron-covers"
+                        "item": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers"
                     }
                 ]
             },
             {
                 "@type": "FAQPage",
-                "@id": "https://flortekfrpcover.vercel.app/frp-vs-cast-iron-covers#faq",
+                "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#faq",
                 "mainEntity": [
                     {
                         "@type": "Question",
@@ -59,7 +59,7 @@ const FRPvsCastIronCovers = () => {
                 description="Comprehensive technical comparison between FRP composite and Cast Iron manhole covers. Discover why FRP is the best alternative to cast iron for B2B buyers."
                 keywords="FRP vs Cast Iron Covers, Best Alternative to Cast Iron Covers, Composite Covers vs Cast Iron, composite vs metal manhole covers, non-metallic utility lids"
                 schema={pageSchema}
-                canonicalUrl="https://flortekfrpcover.vercel.app/frp-vs-cast-iron-covers"
+                canonicalUrl="https://www.flortekfrpcover.com/frp-vs-cast-iron-covers"
             />
 
             {/* Breadcrumb Navigation */}
