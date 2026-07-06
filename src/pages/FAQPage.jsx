@@ -3,6 +3,7 @@ import SEO from '../components/common/SEO';
 import FAQAccordion, { faqs } from '../components/common/FAQAccordion';
 import { HelpCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const FAQPage = () => {
     const faqSchema = {
@@ -88,7 +89,19 @@ const FAQPage = () => {
             >
                 <FAQAccordion />
             </motion.div>
+
+            <div className="max-w-4xl mx-auto px-4 mt-16 text-center border-t border-[#D9D9D9]/50 pt-10">
+                <p className="text-sm font-bold text-[#333333]/80">
+                    Need further technical details or dimensional drawings? Visit our {" "}
+                    <Link to="/products" className="underline text-black hover:text-[#333333] transition-colors">Product Catalogue</Link>
+                    {" "} or review the {" "}
+                    <Link to="/sizes" className="underline text-black hover:text-[#333333] transition-colors">Standard Size Chart</Link>.
+                    For bulk manufacturing queries and wholesale quotes, please {" "}
+                    <Link to="/contact" className="underline text-black hover:text-[#333333] transition-colors">Contact Our Sales Team</Link>.
+                </p>
+            </div>
         </div>
+
     );
 };
 

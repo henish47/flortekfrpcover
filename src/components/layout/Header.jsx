@@ -76,11 +76,12 @@ const Header = () => {
                         <Link to="/" className="flex items-center gap-2 group relative z-50">
                             <img
                                 src="/images/logo.png"
-                                alt="Flortek"
+                                alt="Flortek Industries Private Limited - FRP Manhole Cover Logo"
+                                title="Flortek Industries Private Limited - FRP Manhole Cover Logo"
+                                decoding="async"
                                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-14 md:h-[72px]' : 'h-16 md:h-[84px]'}`}
                             />
                         </Link>
-
                         {/* Desktop Nav */}
                         <nav className="hidden md:flex items-center gap-1 bg-[#F5F5F5] p-1 rounded-full border border-[#D9D9D9]/50">
                             {navLinks.map((link) => (

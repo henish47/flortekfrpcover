@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, Loader2 } from 'lucide-react';
+import { useSearchParams, Link } from 'react-router-dom';
 import SEO from '../components/common/SEO';
 import { useModal } from '../context/ModalContext';
 
@@ -17,7 +18,9 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 <img
                     src={product.imageUrl}
                     alt={`${product.title} - Flortek Composite FRP Cover`}
+                    title={`${product.title} - Flortek Composite FRP Cover`}
                     loading="lazy"
+                    decoding="async"
                     className="w-[85%] h-[85%] object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -68,10 +71,10 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
             </div>
         </div>
     );
-};
-
-const Products = () => {
-    const [searchTerm, setSearchTerm] = useState("");
+};const Products = () => {
+    const [searchParams] = useSearchParams();
+    const querySearch = searchParams.get("search") || "";
+    const [searchTerm, setSearchTerm] = useState(querySearch);
     const [activeCategory, setActiveCategory] = useState("Manhole Covers");
     const [isLoading, setIsLoading] = useState(true);
     const [selectedImage, setSelectedImage] = useState(null);
@@ -462,6 +465,9 @@ const Products = () => {
                         <p className="text-[#333333] text-xs md:text-sm font-medium max-w-xl leading-relaxed">
                             Explore our premium range of composite solutions, rated by load capacity and engineered for extreme industrial/municipal service.
                         </p>
+                        <p className="text-xs text-[#333333]/80 leading-relaxed max-w-xl mt-3">
+                            Check our <Link to="/sizes" className="underline text-black font-bold hover:text-[#333333] transition-colors">Sizing Matrix Chart</Link> or see specific <Link to="/applications" className="underline text-black font-bold hover:text-[#333333] transition-colors">Application Areas</Link> for municipal and industrial projects.
+                        </p>
                     </div>
 
                     {/* Quick Stats */}
@@ -577,7 +583,30 @@ const Products = () => {
                 </div>
             </div>
 
-            {/* --- LIGHTBOX MODAL --- */}
+            {/* Related Resources & Guides (Internal Linking & Topical Authority) */}
+            <div className="bg-[#F5F5F5] border-t border-[#D9D9D9] py-16 px-6 md:px-8 mt-20">
+                <div className="max-w-[1400px] mx-auto text-center md:text-left">
+                    <h3 className="text-xs font-black uppercase tracking-widest text-[#333333]/60 mb-8 block">Technical Knowledge Guides</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <h4 className="font-bold text-black text-sm mb-2 uppercase tracking-tight">FRP vs Cast Iron</h4>
+                            <p className="text-xs text-[#333333] leading-relaxed mb-4">Learn why polymer composite covers are rapidly replacing cast iron across major municipal sewerage networks.</p>
+                            <Link to="/blog/frp-vs-cast-iron-manhole-covers-comparison" className="text-xs font-bold text-black underline hover:text-[#333333]">Read Article &rarr;</Link>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-black text-sm mb-2 uppercase tracking-tight">FRP Cover Selection Guide</h4>
+                            <p className="text-xs text-[#333333] leading-relaxed mb-4">Understand load grades under standard BS EN 124 specifications and how to size covers correctly for your site.</p>
+                            <Link to="/blog/how-to-choose-right-frp-manhole-cover" className="text-xs font-bold text-black underline hover:text-[#333333]">Read Article &rarr;</Link>
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-black text-sm mb-2 uppercase tracking-tight">Installation Walkthrough</h4>
+                            <p className="text-xs text-[#333333] leading-relaxed mb-4">Step-by-step instructions on frame centering and concrete bedding to ensure maximum lifetime durability.</p>
+                            <Link to="/installation" className="text-xs font-bold text-black underline hover:text-[#333333]">View Guide &rarr;</Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <AnimatePresence>
                 {selectedImage && (
                     <motion.div

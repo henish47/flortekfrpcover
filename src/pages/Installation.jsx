@@ -215,6 +215,9 @@ const Installation = () => {
                                     <img
                                         src="/images/technical/installation-fig1.png"
                                         alt="Frame Leveling Diagram for FRP Composite Manhole Cover Installation"
+                                        title="Frame Leveling Diagram for FRP Composite Manhole Cover Installation"
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-auto object-contain mix-blend-multiply"
                                     />
                                     <p className="text-center text-xs font-bold text-[#333333]/80 mt-4 uppercase tracking-widest">
@@ -227,6 +230,9 @@ const Installation = () => {
                                     <img
                                         src="/images/technical/installation-fig2.png"
                                         alt="Proper Concrete Bedding for Heavy Duty FRP Frame Seating"
+                                        title="Proper Concrete Bedding for Heavy Duty FRP Frame Seating"
+                                        loading="lazy"
+                                        decoding="async"
                                         className="w-full h-auto object-contain mix-blend-multiply"
                                     />
                                     <p className="text-center text-xs font-bold text-[#333333]/80 mt-4 uppercase tracking-widest">

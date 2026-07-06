@@ -214,10 +214,23 @@ const Applications = () => {
                             >
                                 <img
                                     src="/images/technical/installation.png"
-                                    alt="Installation Diagram"
+                                    alt="Installation Diagram for FRP Manhole Covers on Concrete Roadways"
+                                    title="Installation Diagram for FRP Manhole Covers on Concrete Roadways"
+                                    loading="lazy"
+                                    decoding="async"
                                     className="w-full h-auto rounded-[3rem] shadow-sm mix-blend-multiply"
                                 />
                             </motion.div>
+                        </div>
+
+                        <div className="text-center lg:col-span-2 mt-8 border-t border-[#D9D9D9]/30 pt-8">
+                            <p className="text-sm font-bold text-[#333333]/80">
+                                Need custom load configurations for specific application areas? Browse our {" "}
+                                <Link to="/products" className="underline text-black hover:text-[#333333] transition-colors">Product Gallery</Link>
+                                {" "} or {" "}
+                                <Link to="/contact" className="underline text-black hover:text-[#333333] transition-colors">Request a Quote</Link>
+                                {" "} for direct-from-factory wholesale pricing.
+                            </p>
                         </div>
                     </div>
                 </div>

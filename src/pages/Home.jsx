@@ -271,6 +271,8 @@ const Home = () => {
                                             key={currentSlide}
                                             src={heroSlides[currentSlide].image}
                                             alt={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
+                                            title={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
+                                            decoding="async"
                                             initial={{ opacity: 0, scale: 0.8 }}
                                             animate={{ opacity: 1, scale: 1 }}
                                             exit={{ opacity: 0, scale: 0.85 }}
@@ -307,6 +309,8 @@ const Home = () => {
                                             <img
                                                 src={slide.image}
                                                 alt={`${slide.title} - FRP Cover Showcase`}
+                                                title={`${slide.title} - FRP Cover Showcase`}
+                                                decoding="async"
                                                 className="w-4/5 h-4/5 object-contain"
                                             />
                                         </button>
@@ -358,6 +362,9 @@ const Home = () => {
                                     <img
                                         src={prod.image}
                                         alt={`${prod.title} - Flortek Composite Drainage Grating`}
+                                        title={`${prod.title} - Flortek Composite Drainage Grating`}
+                                        loading="lazy"
+                                        decoding="async"
                                         className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                                     />
                                 </div>

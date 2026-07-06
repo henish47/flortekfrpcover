@@ -40,10 +40,12 @@ const ProductPreviewCard = ({ categoryData }) => {
                 <img
                     src={categoryData.image}
                     alt={categoryData.title}
+                    title={categoryData.title}
+                    loading="lazy"
+                    decoding="async"
                     className="max-w-[90%] max-h-[90%] object-contain mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
                 />
             </div>
-
             <h4 className="text-sm font-black uppercase text-black mb-2 tracking-tight">
                 {categoryData.title}
             </h4>

@@ -1,4 +1,9 @@
+# Optimized robots.txt for Google and AI Search Engines (Googlebot, Bingbot, ChatGPT, Claude, Gemini, etc.)
 User-agent: *
 Allow: /
 
+# Host
+Host: https://www.flortekfrpcover.com
+
+# Sitemap Link
 Sitemap: https://www.flortekfrpcover.com/sitemap.xml

@@ -12,7 +12,10 @@ const Footer = () => {
                         <div className="mb-6">
                             <img
                                 src="/images/logo.png"
-                                alt="Flortek Industries Private Limited"
+                                alt="Flortek Industries Private Limited - FRP Manhole Cover Manufacturer Logo"
+                                title="Flortek Industries Private Limited - FRP Manhole Cover Manufacturer Logo"
+                                loading="lazy"
+                                decoding="async"
                                 className="h-10 w-auto object-contain brightness-0 invert"
                             />
                         </div>
