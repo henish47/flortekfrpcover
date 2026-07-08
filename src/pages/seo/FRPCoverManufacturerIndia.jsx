@@ -74,7 +74,7 @@ const FRPCoverManufacturerIndia = () => {
                         FRP Cover Manufacturer in India
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited is India's leading ISO 9001:2015 certified engineering firm manufacturing high-strength, non-corrosive Fiber Reinforced Polymer (FRP) covers. From our advanced factory, we supply infrastructure projects nationwide with certified composite drainage solutions.
+                        FLORTEK INDUSTRIES PVT. LTD. is India's leading ISO 9001:2015 certified engineering firm manufacturing high-strength, non-corrosive Fiber Reinforced Polymer (FRP) covers. From our advanced factory, we supply infrastructure projects nationwide with certified composite drainage solutions.
                     </p>
                 </motion.div>
             </div>

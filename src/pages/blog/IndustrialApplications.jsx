@@ -42,11 +42,11 @@ const IndustrialApplications = () => {
                 "dateModified": "2026-06-17",
                 "author": {
                     "@type": "Organization",
-                    "name": "Flortek Industries Private Limited"
+                    "name": "FLORTEK INDUSTRIES PVT. LTD."
                 },
                 "publisher": {
                     "@type": "Organization",
-                    "name": "Flortek Industries Private Limited",
+                    "name": "FLORTEK INDUSTRIES PVT. LTD.",
                     "logo": {
                         "@type": "ImageObject",
                         "url": "https://www.flortekfrpcover.com/logo.png"

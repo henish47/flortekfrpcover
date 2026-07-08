@@ -8,9 +8,9 @@ const SizeChartPage = () => {
     return (
         <div className="pt-0 bg-white min-h-screen font-sans">
             <SEO
-                title="Standard Sizes, Weights & Dimensions | Flortek Industries Private Limited"
+                title="Standard Sizes, Weights & Dimensions | FLORTEK INDUSTRIES PVT. LTD."
                 description="View our complete range of standard sizes, load capacity, and weights for FRP/BMC/SMC manhole covers, gully covers, and recessed covers."
-                keywords="manhole cover sizes, frp cover dimensions, gully cover sizes, recessed cover sizes, frp manhole cover weight, flortek size chart"
+                keywords="FRP manhole cover dimensions, composite cover clear opening chart, GRP cover load class specs, 10x10, 12x12, 18x18, 24x24, 24x36, 600x600, 450x450, EN 124 load test sizes, chamber cover weight chart"
             />
 
             {/* Hero Section */}

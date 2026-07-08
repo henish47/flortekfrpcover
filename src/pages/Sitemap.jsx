@@ -49,16 +49,16 @@ const Sitemap = () => {
     return (
         <div className="bg-white min-h-screen pt-24 pb-16 font-sans">
             <SEO
-                title="Sitemap | Flortek Industries Private Limited"
-                description="Navigate through Flortek Industries Private Limited's complete website structure. Find links to all our products, categories, and company information."
-                keywords="Flortek Sitemap, Site Map, Website Navigation, Product List"
+                title="Sitemap | FLORTEK INDUSTRIES PVT. LTD."
+                description="Navigate through FLORTEK INDUSTRIES PVT. LTD.'s complete website structure. Find links to all our products, categories, and company information."
+                keywords="FLORTEK INDUSTRIES PVT. LTD. sitemap, website navigation index, composite cover pages sitemap, GRP manhole cover links"
                 schema={{
                     "@context": "https://schema.org",
                     "@graph": [
                         {
                             "@type": "WebPage",
-                            "name": "Sitemap | Flortek Industries Private Limited",
-                            "description": "Navigate through Flortek Industries Private Limited's complete website structure. Find links to all our products, categories, and company information.",
+                            "name": "Sitemap | FLORTEK INDUSTRIES PVT. LTD.",
+                            "description": "Navigate through FLORTEK INDUSTRIES PVT. LTD.'s complete website structure. Find links to all our products, categories, and company information.",
                             "url": "https://www.flortekfrpcover.com/sitemap",
                             "breadcrumb": {
                                 "@id": "https://www.flortekfrpcover.com/sitemap#breadcrumb"
@@ -95,7 +95,7 @@ const Sitemap = () => {
                         Sitemap
                     </h1>
                     <p className="text-lg text-[#333333] max-w-2xl mx-auto">
-                        Overview of Flortek Industries Private Limited website content and structure.
+                        Overview of FLORTEK INDUSTRIES PVT. LTD. website content and structure.
                     </p>
                     <div className="h-1 w-24 bg-black mx-auto mt-6 rounded-full" />
                 </div>

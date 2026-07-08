@@ -42,11 +42,11 @@ const Top10Manufacturers = () => {
                 "dateModified": "2026-06-18",
                 "author": {
                     "@type": "Organization",
-                    "name": "Flortek Industries Private Limited"
+                    "name": "FLORTEK INDUSTRIES PVT. LTD."
                 },
                 "publisher": {
                     "@type": "Organization",
-                    "name": "Flortek Industries Private Limited",
+                    "name": "FLORTEK INDUSTRIES PVT. LTD.",
                     "logo": {
                         "@type": "ImageObject",
                         "url": "https://www.flortekfrpcover.com/logo.png"
@@ -105,10 +105,10 @@ const Top10Manufacturers = () => {
                     
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">
-                            1. Flortek Industries Private Limited
+                            1. FLORTEK INDUSTRIES PVT. LTD.
                         </h2>
                         <p>
-                            Based in the premier industrial engineering capital of Rajkot, Gujarat, **Flortek Industries Private Limited** is an ISO 9001:2015 certified manufacturer specializing in high-performance composite polymer products. Flortek utilizes advanced automated hydraulic compression molding machinery and continuous-strand fiberglass matrix systems to yield covers with extreme density and load compliance.
+                            Based in the premier industrial engineering capital of Rajkot, Gujarat, **FLORTEK INDUSTRIES PVT. LTD.** is an ISO 9001:2015 certified manufacturer specializing in high-performance composite polymer products. Flortek utilizes advanced automated hydraulic compression molding machinery and continuous-strand fiberglass matrix systems to yield covers with extreme density and load compliance.
                         </p>
                         <p>
                             Flortek's in-house laboratory conducts rigorous quality checks (deflection limits, heat aging, dynamic shear, and proof load compression testing) for every production run, ensuring absolute BS EN 124 conformity. By offering direct factory pricing, custom dimensional branding, and dedicated B2B logistics networks across India and export terminals, Flortek is the top-rated supply partner for major smart cities, airport authorities, petrochemical zones, and residential townships.

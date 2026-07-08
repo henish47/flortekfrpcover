@@ -59,23 +59,23 @@ const Contact = () => {
     return (
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
-                title="Buy FRP Manhole Covers Wholesale | Contact Flortek India"
+                title="Buy FRP Manhole Covers Wholesale | Contact FLORTEK INDUSTRIES PVT. LTD."
                 description="Get custom pricing & catalog list of Flortek composite FRP/GRP manhole covers. Contact our sales department in Rajkot, Gujarat for bulk wholesale quotes."
-                keywords="buy FRP manhole covers wholesale, FRP manhole cover price list, composite cover manufacturers, buy drain grates bulk, contact Flortek sales"
+                keywords="contact FLORTEK INDUSTRIES PVT. LTD., buy FRP manhole covers wholesale, custom GRP cover enquiry, bulk drainage covers price, B2B composite cover manufacturer Rajkot, wholesale RF-friendly covers quote"
                 schema={{
                     "@context": "https://schema.org",
                     "@graph": [
                         {
                             "@type": "ContactPage",
-                            "name": "Contact Flortek Industries Private Limited",
-                            "description": "Get in touch with Flortek Industries Private Limited for bulk inquiries about FRP manhole covers.",
+                            "name": "Contact FLORTEK INDUSTRIES PVT. LTD.",
+                            "description": "Get in touch with FLORTEK INDUSTRIES PVT. LTD. for bulk inquiries about FRP manhole covers.",
                             "url": "https://www.flortekfrpcover.com/contact",
                             "breadcrumb": {
                                 "@id": "https://www.flortekfrpcover.com/contact#breadcrumb"
                             },
                             "mainEntity": {
                                 "@type": "LocalBusiness",
-                                "name": "Flortek Industries Private Limited",
+                                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                                 "telephone": "+91-8000888620",
                                 "email": "flortekindustries@gmail.com",
                                 "address": {

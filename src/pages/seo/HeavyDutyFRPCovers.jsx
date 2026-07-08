@@ -77,7 +77,7 @@ const HeavyDutyFRPCovers = () => {
                         Heavy Duty FRP Covers
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited manufactures industrial-grade, traffic-rated Heavy Duty FRP manhole covers. Certified for 25-tonne (C250) and 40-tonne (D400) wheel loads to handle the continuous impact of commercial trucks, delivery buses, and public transport infrastructure.
+                        FLORTEK INDUSTRIES PVT. LTD. manufactures industrial-grade, traffic-rated Heavy Duty FRP manhole covers. Certified for 25-tonne (C250) and 40-tonne (D400) wheel loads to handle the continuous impact of commercial trucks, delivery buses, and public transport infrastructure.
                     </p>
                 </motion.div>
             </div>

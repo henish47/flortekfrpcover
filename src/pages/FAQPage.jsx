@@ -22,7 +22,7 @@ const FAQPage = () => {
             },
             {
                 "@type": "WebPage",
-                "name": "Frequently Asked Questions (FAQ) | Flortek Industries Private Limited",
+                "name": "Frequently Asked Questions (FAQ) | FLORTEK INDUSTRIES PVT. LTD.",
                 "description": "Find answers to common questions about FRP manhole covers, load capacities, dimensions, custom designs, and industrial certifications.",
                 "url": "https://www.flortekfrpcover.com/faq",
                 "breadcrumb": {
@@ -53,7 +53,7 @@ const FAQPage = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Frequently Asked Questions (FAQ) | Flortek Industries Private Limited"
+                title="Frequently Asked Questions (FAQ) | FLORTEK INDUSTRIES PVT. LTD."
                 description="Find answers to common questions about FRP manhole covers, load capacities, dimensions, custom designs, and industrial certifications."
                 keywords="FRP Cover FAQ, Composite Cover Questions, FRP Load Capacities, Custom Manhole Covers Gujarat, Flortek FAQ"
                 schema={faqSchema}

@@ -143,7 +143,7 @@ const FRPCoverExporter = () => {
                         FRP Cover Exporter & Manufacturer India
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited is a premier engineering firm and certified **Industrial FRP Covers Exporter**. Operating out of our state-of-the-art facility in Rajkot, India, we ship BS EN 124 certified composite covers worldwide to municipal corporations, contractors, and civil distributors in the **UAE**, **USA**, and Middle-East regions.
+                        FLORTEK INDUSTRIES PVT. LTD. is a premier engineering firm and certified **Industrial FRP Covers Exporter**. Operating out of our state-of-the-art facility in Rajkot, India, we ship BS EN 124 certified composite covers worldwide to municipal corporations, contractors, and civil distributors in the **UAE**, **USA**, and Middle-East regions.
                     </p>
                 </motion.div>
             </div>

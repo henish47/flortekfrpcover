@@ -74,7 +74,7 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                     Need FRP Covers?
                 </h3>
                 <p className="text-xs md:text-sm text-[#333333] mt-1 font-bold">
-                    Get Factory Direct Pricing from Flortek Industries Pvt. Ltd.
+                    Get Factory Direct Pricing from FLORTEK INDUSTRIES PVT. LTD.
                 </p>
             </div>
 

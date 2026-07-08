@@ -74,7 +74,7 @@ const FRPCoverManufacturerGujarat = () => {
                         FRP Cover Manufacturer in Gujarat
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited is Gujarat's premier engineering firm and **FRP Cover Company Gujarat**. Based in the industrial hub of Rajkot, we supply certified, heavy-duty composite manhole covers and drain gratings to infrastructure, industrial estates, and municipal corporations statewide.
+                        FLORTEK INDUSTRIES PVT. LTD. is Gujarat's premier engineering firm and **FRP Cover Company Gujarat**. Based in the industrial hub of Rajkot, we supply certified, heavy-duty composite manhole covers and drain gratings to infrastructure, industrial estates, and municipal corporations statewide.
                     </p>
                 </motion.div>
             </div>

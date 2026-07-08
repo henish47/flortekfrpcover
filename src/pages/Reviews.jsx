@@ -20,7 +20,7 @@ const Reviews = () => {
             company: "Urban Infrastructure",
             rating: 5,
             date: "September 28, 2024",
-            text: "Excellent service from Flortek Industries Private Limited. We needed a custom size for a drainage project, and they delivered within a week. The fit and finish are perfect.",
+            text: "Excellent service from FLORTEK INDUSTRIES PVT. LTD. We needed a custom size for a drainage project, and they delivered within a week. The fit and finish are perfect.",
             verified: true
         },
         {
@@ -64,7 +64,7 @@ const Reviews = () => {
     return (
         <div className="bg-white min-h-screen font-sans">
             <SEO
-                title="Client Reviews & Testimonials | Flortek Industries Private Limited"
+                title="Client Reviews & Testimonials | FLORTEK INDUSTRIES PVT. LTD."
                 description="Read what engineers, architects, and contractors say about Flortek's FRP Manhole Covers and composite solutions."
             />
 

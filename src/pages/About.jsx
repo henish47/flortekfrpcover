@@ -8,19 +8,19 @@ const About = () => {
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
                 title="About Flortek | Leading FRP & GRP Manhole Cover Manufacturer India"
-                description="Flortek Industries Private Limited is a premier ISO 9001:2015 certified manufacturer of high-strength, export-grade FRP, SMC, and GRP manhole covers, based in Rajkot, Gujarat."
+                description="FLORTEK INDUSTRIES PVT. LTD. is a premier ISO 9001:2015 certified manufacturer of high-strength, export-grade FRP, SMC, and GRP manhole covers, based in Rajkot, Gujarat."
                 keywords="FRP manhole cover manufacturer India, GRP manhole covers manufacturers, composite chamber covers supplier, SMC manhole cover factory, sewage chamber cover manufacturer Gujarat, Flortek company profile, Naresh Patel Rajkot"
                 schema={{
                     "@context": "https://schema.org",
                     "@graph": [
                         {
                             "@type": "AboutPage",
-                            "name": "About Flortek Industries Private Limited",
-                            "description": "Learn about Flortek Industries Private Limited, a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
+                            "name": "About FLORTEK INDUSTRIES PVT. LTD.",
+                            "description": "Learn about FLORTEK INDUSTRIES PVT. LTD., a premier manufacturer and supplier of FRP and GRP manhole covers since 2017.",
                             "url": "https://www.flortekfrpcover.com/about",
                             "publisher": {
                                 "@type": "Organization",
-                                "name": "Flortek Industries Private Limited",
+                                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                                 "logo": {
                                     "@type": "ImageObject",
                                     "url": "https://www.flortekfrpcover.com/images/logo.png"
@@ -57,7 +57,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">
                 <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">About Flortek</h1>
                 <p className="text-lg text-[#333333] max-w-3xl leading-relaxed">
-                    Flortek Industries Private Limited is a premier manufacturer and supplier of high-quality FRP (Fiber Reinforced Plastic), BMC (Bulk Molding Compound), and Steel Manhole Covers. Established in 2017 in Rajkot, Gujarat, we are dedicated to building the backbone of modern infrastructure with products designed for strength, safety, and longevity.
+                    FLORTEK INDUSTRIES PVT. LTD. is a premier manufacturer and supplier of high-quality FRP (Fiber Reinforced Plastic), BMC (Bulk Molding Compound), and Steel Manhole Covers. Established in 2017 in Rajkot, Gujarat, we are dedicated to building the backbone of modern infrastructure with products designed for strength, safety, and longevity.
                 </p>
             </div>
 
@@ -94,7 +94,7 @@ const About = () => {
                             <table className="w-full text-left border-collapse">
                                 <tbody className="divide-y divide-[#D9D9D9]/50">
                                     {[
-                                        { label: "Business Name", value: "Flortek Industries Private Limited" },
+                                        { label: "Business Name", value: "FLORTEK INDUSTRIES PVT. LTD." },
                                         { label: "Nature of Business", value: "Manufacturer & Exporter" },
                                         { label: "CEO / Director", value: "Naresh Patel " },
                                         { label: "Year of Establishment", value: "2017" },

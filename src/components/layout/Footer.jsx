@@ -12,8 +12,8 @@ const Footer = () => {
                         <div className="mb-6">
                             <img
                                 src="/images/logo.png"
-                                alt="Flortek Industries Private Limited - FRP Manhole Cover Manufacturer Logo"
-                                title="Flortek Industries Private Limited - FRP Manhole Cover Manufacturer Logo"
+                                alt="FLORTEK INDUSTRIES PVT. LTD. - FRP Manhole Cover Manufacturer Logo"
+                                title="FLORTEK INDUSTRIES PVT. LTD. - FRP Manhole Cover Manufacturer Logo"
                                 loading="lazy"
                                 decoding="async"
                                 className="h-10 w-auto object-contain brightness-0 invert"
@@ -133,7 +133,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-[#333333] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-wider text-[#D9D9D9]/70">
-                    <p>&copy; {new Date().getFullYear()} Flortek Industries Private Limited. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} FLORTEK INDUSTRIES PVT. LTD. All rights reserved.</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
                         <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

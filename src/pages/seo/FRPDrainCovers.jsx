@@ -77,7 +77,7 @@ const FRPDrainCovers = () => {
                         FRP Drain Covers & Gratings
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited manufactures premium FRP drain covers and stormwater channel gratings. Engineered to manage municipal runoff and industrial chemical effluents with zero corrosion and long-term durability.
+                        FLORTEK INDUSTRIES PVT. LTD. manufactures premium FRP drain covers and stormwater channel gratings. Engineered to manage municipal runoff and industrial chemical effluents with zero corrosion and long-term durability.
                     </p>
                 </motion.div>
             </div>

@@ -432,7 +432,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
             },
             {
                 "@type": "Organization",
-                "name": "Flortek Industries Private Limited",
+                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                 "url": "https://www.flortekfrpcover.com",
                 "logo": {
                     "@type": "ImageObject",
@@ -447,7 +447,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
             <SEO
                 title="FRP & GRP Manhole Cover Price List & Catalog | Flortek"
                 description="Explore Flortek's full catalog of FRP, SMC, and GRP manhole covers, recessed drain covers, and water gully gratings. Certified to EN 124 load classes."
-                keywords="FRP manhole cover price list, composite manhole cover sizes, recessed manhole cover catalog, GRP manhole cover manufacturers, drainage gratings price"
+                keywords="FRP manhole cover price list, composite manhole cover sizes, 600x600mm manhole cover, 450x450mm chamber cover, GRP manhole cover manufacturers, drainage gratings price, heavy duty gully covers catalog, recessed tile manhole covers, A15 B125 C250 D400 covers"
                 schema={productsSchema}
                 canonicalUrl="https://www.flortekfrpcover.com/products"
             />

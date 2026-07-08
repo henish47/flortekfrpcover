@@ -74,7 +74,7 @@ const MunicipalFRPCovers = () => {
                         Municipal FRP Covers & Smart City Gratings
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited manufactures BS EN 124 certified **Municipal FRP Covers** and utility chamber solutions. Designed to solve municipal headaches like theft, corrosion, and heavy maintenance, our composite solutions are built for smart cities, public highways, and stormwater infrastructure.
+                        FLORTEK INDUSTRIES PVT. LTD. manufactures BS EN 124 certified **Municipal FRP Covers** and utility chamber solutions. Designed to solve municipal headaches like theft, corrosion, and heavy maintenance, our composite solutions are built for smart cities, public highways, and stormwater infrastructure.
                     </p>
                 </motion.div>
             </div>

@@ -77,7 +77,7 @@ const FRPCableTrenchCovers = () => {
                         FRP Cable Trench Covers
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited manufactures premium, non-conductive, high-strength FRP cable trench covers and utility duct lids. Built specifically to protect electrical wiring networks and heavy power cabling runs in high-voltage environments.
+                        FLORTEK INDUSTRIES PVT. LTD. manufactures premium, non-conductive, high-strength FRP cable trench covers and utility duct lids. Built specifically to protect electrical wiring networks and heavy power cabling runs in high-voltage environments.
                     </p>
                 </motion.div>
             </div>

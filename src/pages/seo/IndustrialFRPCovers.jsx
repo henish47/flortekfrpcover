@@ -74,7 +74,7 @@ const IndustrialFRPCovers = () => {
                         Industrial FRP Covers & Gratings
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited manufactures engineering-grade **Industrial FRP Covers** and factory drainage gratings. Certified for heavy wheel loads (Class C250 & D400) and engineered with high-resistance resin matrixes to survive the chemical, electrical, and physical stresses of factory floors.
+                        FLORTEK INDUSTRIES PVT. LTD. manufactures engineering-grade **Industrial FRP Covers** and factory drainage gratings. Certified for heavy wheel loads (Class C250 & D400) and engineered with high-resistance resin matrixes to survive the chemical, electrical, and physical stresses of factory floors.
                     </p>
                 </motion.div>
             </div>

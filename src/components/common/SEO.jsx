@@ -6,13 +6,13 @@ import { seoData } from '../../utils/seoData';
 const SEO = ({ title: propTitle, description: propDescription, keywords: propKeywords, type, schema, canonicalUrl }) => {
     const location = useLocation();
     const pathname = location.pathname;
-    const siteTitle = "Flortek Industries";
+    const siteTitle = "FLORTEK INDUSTRIES PVT. LTD.";
     const domain = "https://www.flortekfrpcover.com";
 
     // 1. Fetch metadata from centralized database or fall back to props
     const pageMeta = seoData[pathname] || {};
-    const seoTitle = pageMeta.title || propTitle || "FRP Manhole Covers Manufacturer | Flortek Industries";
-    const seoDescription = pageMeta.description || propDescription || "Flortek Industries is a premier manufacturer of high-quality FRP and composite manhole covers in Rajkot, Gujarat. Built for heavy-duty infrastructure.";
+    const seoTitle = pageMeta.title || propTitle || "FRP Manhole Covers Manufacturer | FLORTEK INDUSTRIES PVT. LTD.";
+    const seoDescription = pageMeta.description || propDescription || "FLORTEK INDUSTRIES PVT. LTD. is a premier manufacturer of high-quality FRP and composite manhole covers in Rajkot, Gujarat. Built for heavy-duty infrastructure.";
     const seoKeywords = pageMeta.keywords || propKeywords || "FRP Manhole Cover, BMC Manhole Cover, Steel Manhole Cover, Drainage Grating, Flortek";
 
     // 2. Generate clean canonical URL (remove trailing slash for consistency)
@@ -29,7 +29,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
         "@type": "WebSite",
         "@id": `${domain}/#website`,
         "url": domain,
-        "name": "Flortek Industries Private Limited",
+        "name": "FLORTEK INDUSTRIES PVT. LTD.",
         "description": "Manufacturer of high-quality FRP, BMC, & Steel Manhole Covers",
         "publisher": {
             "@id": `${domain}/#organization`
@@ -49,13 +49,14 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
     const organizationSchema = {
         "@type": "Organization",
         "@id": `${domain}/#organization`,
-        "name": "Flortek Industries Private Limited",
+        "name": "FLORTEK INDUSTRIES PVT. LTD.",
+        "legalName": "FLORTEK INDUSTRIES PVT. LTD.",
         "url": domain,
         "logo": {
             "@type": "ImageObject",
             "@id": `${domain}/#logo`,
             "url": `${domain}/images/logo.png`,
-            "caption": "Flortek Industries Private Limited"
+            "caption": "FLORTEK INDUSTRIES PVT. LTD."
         },
         "image": {
             "@id": `${domain}/#logo`
@@ -82,7 +83,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
     const localBusinessSchema = {
         "@type": "LocalBusiness",
         "@id": `${domain}/#localbusiness`,
-        "name": "Flortek Industries Private Limited",
+        "name": "FLORTEK INDUSTRIES PVT. LTD.",
         "image": `${domain}/images/logo.png`,
         "url": domain,
         "telephone": "+91-8000888620",
@@ -304,7 +305,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
             <meta property="og:description" content={seoDescription} />
             <meta property="og:url" content={cleanUrl} />
             <meta property="og:image" content={ogImage} />
-            <meta property="og:site_name" content="Flortek Industries" />
+            <meta property="og:site_name" content="FLORTEK INDUSTRIES PVT. LTD." />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />

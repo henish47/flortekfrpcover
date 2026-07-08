@@ -76,8 +76,8 @@ const Header = () => {
                         <Link to="/" className="flex items-center gap-2 group relative z-50">
                             <img
                                 src="/images/logo.png"
-                                alt="Flortek Industries Private Limited - FRP Manhole Cover Logo"
-                                title="Flortek Industries Private Limited - FRP Manhole Cover Logo"
+                                alt="FLORTEK INDUSTRIES PVT. LTD. - FRP Manhole Cover Logo"
+                                title="FLORTEK INDUSTRIES PVT. LTD. - FRP Manhole Cover Logo"
                                 decoding="async"
                                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-14 md:h-[72px]' : 'h-16 md:h-[84px]'}`}
                             />

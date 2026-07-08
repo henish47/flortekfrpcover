@@ -77,7 +77,7 @@ const FRPManholeCovers = () => {
                         FRP Manhole Covers
                     </h1>
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
-                        Flortek Industries Private Limited is India's leading engineering firm manufacturing high-strength, zero-theft, and long-lasting Fiber Reinforced Plastic (FRP) manhole covers. Designed for municipal roads, private townships, and high-impact industrial chambers.
+                        FLORTEK INDUSTRIES PVT. LTD. is India's leading engineering firm manufacturing high-strength, zero-theft, and long-lasting Fiber Reinforced Plastic (FRP) manhole covers. Designed for municipal roads, private townships, and high-impact industrial chambers.
                     </p>
                 </motion.div>
             </div>

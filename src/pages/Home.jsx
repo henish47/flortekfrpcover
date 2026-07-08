@@ -104,15 +104,15 @@ const Home = () => {
                 "@type": "WebSite",
                 "@id": "https://www.flortekfrpcover.com/#website",
                 "url": "https://www.flortekfrpcover.com",
-                "name": "Flortek Industries Private Limited",
+                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                 "description": "Leading manufacturer of high-quality FRP, GRP and composite manhole covers in India."
             },
             {
                 "@type": "WebPage",
                 "@id": "https://www.flortekfrpcover.com/#webpage",
                 "url": "https://www.flortekfrpcover.com",
-                "name": "Home | Flortek Industries Private Limited",
-                "description": "Flortek Industries Private Limited is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects.",
+                "name": "Home | FLORTEK INDUSTRIES PVT. LTD.",
+                "description": "FLORTEK INDUSTRIES PVT. LTD. is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects.",
                 "isPartOf": {
                     "@id": "https://www.flortekfrpcover.com/#website"
                 },
@@ -135,7 +135,7 @@ const Home = () => {
             {
                 "@type": "Organization",
                 "@id": "https://www.flortekfrpcover.com/#organization",
-                "name": "Flortek Industries Private Limited",
+                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                 "url": "https://www.flortekfrpcover.com",
                 "logo": {
                     "@type": "ImageObject",
@@ -153,7 +153,7 @@ const Home = () => {
             {
                 "@type": "LocalBusiness",
                 "@id": "https://www.flortekfrpcover.com/#localbusiness",
-                "name": "Flortek Industries Private Limited",
+                "name": "FLORTEK INDUSTRIES PVT. LTD.",
                 "image": "https://www.flortekfrpcover.com/logo.png",
                 "url": "https://www.flortekfrpcover.com",
                 "telephone": "+91-8000888620",
@@ -194,9 +194,9 @@ const Home = () => {
     return (
         <div className="bg-white min-h-screen font-sans">
             <SEO
-                title="Best FRP Manhole Cover Manufacturer & Supplier in India | Flortek Industries Private Limited"
-                description="Flortek Industries Private Limited is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects."
-               keywords="FRP manhole cover manufacturer India, FRP manhole cover supplier Gujarat, heavy duty FRP manhole covers, corrosion resistant manhole covers, EN 124 certified manhole covers, D400 B125 A15 manhole covers, industrial drainage solutions India, municipal manhole covers, composite manhole covers, anti theft FRP covers, Flortek Industries Private Limited, Simtex private limited, Simtex frp cover"
+                title="Best FRP Manhole Cover Manufacturer & Supplier in India | FLORTEK INDUSTRIES PVT. LTD."
+                description="FLORTEK INDUSTRIES PVT. LTD. is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects."
+               keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
                 schema={homeSchema}
                 canonicalUrl="https://www.flortekfrpcover.com"
             />            {/* --- HERO SECTION (TWO-COLUMN WITH PRODUCT IMAGE) --- */}
@@ -522,7 +522,7 @@ const Home = () => {
                                 FRP Cover Exporter & Global Supplier
                             </h2>
                             <p className="text-lg text-[#333333] leading-relaxed font-medium">
-                                Flortek Industries Private Limited manufactures premium, export-grade composite covers tailored for harsh global climates. From our location in Rajkot, India, we arrange seaworthy shipping containers to primary ports worldwide.
+                                FLORTEK INDUSTRIES PVT. LTD. manufactures premium, export-grade composite covers tailored for harsh global climates. From our location in Rajkot, India, we arrange seaworthy shipping containers to primary ports worldwide.
                             </p>
                             
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
