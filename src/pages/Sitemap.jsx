@@ -63,24 +63,6 @@ const Sitemap = () => {
                             "breadcrumb": {
                                 "@id": "https://www.flortekfrpcover.com/sitemap#breadcrumb"
                             }
-                        },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/sitemap#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Sitemap",
-                                    "item": "https://www.flortekfrpcover.com/sitemap"
-                                }
-                            ]
                         }
                     ]
                 }}

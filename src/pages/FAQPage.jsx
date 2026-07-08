@@ -28,24 +28,6 @@ const FAQPage = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/faq#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/faq#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "FAQ",
-                        "item": "https://www.flortekfrpcover.com/faq"
-                    }
-                ]
             }
         ]
     };

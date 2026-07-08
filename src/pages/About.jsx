@@ -29,24 +29,6 @@ const About = () => {
                             "breadcrumb": {
                                 "@id": "https://www.flortekfrpcover.com/about#breadcrumb"
                             }
-                        },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/about#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "About",
-                                    "item": "https://www.flortekfrpcover.com/about"
-                                }
-                            ]
                         }
                     ]
                 }}

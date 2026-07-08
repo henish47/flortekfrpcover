@@ -97,24 +97,6 @@ const BlogIndex = () => {
                             "breadcrumb": {
                                 "@id": "https://www.flortekfrpcover.com/blog#breadcrumb"
                             }
-                        },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/blog#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Blog",
-                                    "item": "https://www.flortekfrpcover.com/blog"
-                                }
-                            ]
                         }
                     ]
                 }}

@@ -53,24 +53,7 @@ const Applications = () => {
                                 "@id": "https://www.flortekfrpcover.com/applications#breadcrumb"
                             }
                         },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/applications#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Applications",
-                                    "item": "https://www.flortekfrpcover.com/applications"
-                                }
-                            ]
-                        },
+                        
                         {
                             "@type": "ItemList",
                             "name": "FRP Manhole Cover Load Class Applications",

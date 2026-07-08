@@ -9,30 +9,7 @@ const IndustrialApplications = () => {
     const pageSchema = {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "https://www.flortekfrpcover.com/blog"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Best FRP Manhole Covers for Industrial Applications",
-                        "item": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications"
-                    }
-                ]
-            },
+            
             {
                 "@type": "BlogPosting",
                 "@id": "https://www.flortekfrpcover.com/blog/best-frp-manhole-covers-industrial-applications#article",

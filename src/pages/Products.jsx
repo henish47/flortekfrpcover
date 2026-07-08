@@ -412,24 +412,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                     "@id": "https://www.flortekfrpcover.com/products#breadcrumb"
                 }
             },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/products#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Products",
-                        "item": "https://www.flortekfrpcover.com/products"
-                    }
-                ]
-            },
+            
             {
                 "@type": "Organization",
                 "name": "FLORTEK INDUSTRIES PVT. LTD.",

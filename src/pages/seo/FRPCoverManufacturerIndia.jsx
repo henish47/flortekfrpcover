@@ -17,24 +17,6 @@ const FRPCoverManufacturerIndia = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "FRP Cover Manufacturer India",
-                        "item": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india"
-                    }
-                ]
             }
         ]
     };

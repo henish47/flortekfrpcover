@@ -120,18 +120,7 @@ const Home = () => {
                     "@id": "https://www.flortekfrpcover.com/#breadcrumb"
                 }
             },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    }
-                ]
-            },
+            
             {
                 "@type": "Organization",
                 "@id": "https://www.flortekfrpcover.com/#organization",

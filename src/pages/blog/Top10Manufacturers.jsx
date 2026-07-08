@@ -9,30 +9,7 @@ const Top10Manufacturers = () => {
     const pageSchema = {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "https://www.flortekfrpcover.com/blog"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Top 10 FRP Manhole Cover Manufacturers in India",
-                        "item": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india"
-                    }
-                ]
-            },
+            
             {
                 "@type": "BlogPosting",
                 "@id": "https://www.flortekfrpcover.com/blog/top-10-frp-manhole-cover-manufacturers-india#article",

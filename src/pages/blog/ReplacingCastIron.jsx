@@ -9,30 +9,7 @@ const ReplacingCastIron = () => {
     const pageSchema = {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "https://www.flortekfrpcover.com/blog"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Why FRP Covers are Replacing Cast Iron Covers",
-                        "item": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron"
-                    }
-                ]
-            },
+            
             {
                 "@type": "BlogPosting",
                 "@id": "https://www.flortekfrpcover.com/blog/why-frp-covers-replacing-cast-iron#article",

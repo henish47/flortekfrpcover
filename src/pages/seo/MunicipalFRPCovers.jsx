@@ -17,24 +17,6 @@ const MunicipalFRPCovers = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/municipal-frp-covers#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Municipal FRP Covers",
-                        "item": "https://www.flortekfrpcover.com/municipal-frp-covers"
-                    }
-                ]
             }
         ]
     };

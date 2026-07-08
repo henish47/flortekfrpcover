@@ -9,30 +9,7 @@ const HowToChoose = () => {
     const pageSchema = {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "https://www.flortekfrpcover.com/blog"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "How to Choose the Right FRP Manhole Cover",
-                        "item": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover"
-                    }
-                ]
-            },
+            
             {
                 "@type": "BlogPosting",
                 "@id": "https://www.flortekfrpcover.com/blog/how-to-choose-right-frp-manhole-cover#article",

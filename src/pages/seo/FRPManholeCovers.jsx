@@ -20,24 +20,6 @@ const FRPManholeCovers = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "FRP Manhole Covers",
-                        "item": "https://www.flortekfrpcover.com/frp-manhole-covers"
-                    }
-                ]
             }
         ]
     };

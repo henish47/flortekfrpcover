@@ -87,24 +87,6 @@ const Contact = () => {
                                     "addressCountry": "IN"
                                 }
                             }
-                        },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/contact#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Contact",
-                                    "item": "https://www.flortekfrpcover.com/contact"
-                                }
-                            ]
                         }
                     ]
                 }}

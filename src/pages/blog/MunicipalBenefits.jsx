@@ -9,30 +9,7 @@ const MunicipalBenefits = () => {
     const pageSchema = {
         "@context": "https://schema.org",
         "@graph": [
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Blog",
-                        "item": "https://www.flortekfrpcover.com/blog"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Benefits of FRP Covers for Municipal Projects",
-                        "item": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects"
-                    }
-                ]
-            },
+            
             {
                 "@type": "BlogPosting",
                 "@id": "https://www.flortekfrpcover.com/blog/benefits-frp-covers-municipal-projects#article",

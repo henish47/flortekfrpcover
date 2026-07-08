@@ -17,24 +17,6 @@ const FRPvsCastIronCovers = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "FRP vs Cast Iron Covers",
-                        "item": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers"
-                    }
-                ]
             }
         ]
     };

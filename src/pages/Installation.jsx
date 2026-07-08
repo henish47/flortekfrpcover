@@ -23,24 +23,7 @@ const Installation = () => {
                                 "@id": "https://www.flortekfrpcover.com/installation#breadcrumb"
                             }
                         },
-                        {
-                            "@type": "BreadcrumbList",
-                            "@id": "https://www.flortekfrpcover.com/installation#breadcrumb",
-                            "itemListElement": [
-                                {
-                                    "@type": "ListItem",
-                                    "position": 1,
-                                    "name": "Home",
-                                    "item": "https://www.flortekfrpcover.com"
-                                },
-                                {
-                                    "@type": "ListItem",
-                                    "position": 2,
-                                    "name": "Installation Guide",
-                                    "item": "https://www.flortekfrpcover.com/installation"
-                                }
-                            ]
-                        },
+                        
                         {
                             "@type": "HowTo",
                             "name": "How to Install FRP Manhole Covers properly",

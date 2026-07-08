@@ -20,24 +20,6 @@ const HeavyDutyFRPCovers = () => {
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb"
                 }
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://www.flortekfrpcover.com"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Heavy Duty FRP Covers",
-                        "item": "https://www.flortekfrpcover.com/heavy-duty-frp-covers"
-                    }
-                ]
             }
         ]
     };

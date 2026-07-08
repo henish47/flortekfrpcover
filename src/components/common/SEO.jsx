@@ -194,7 +194,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
 
     if (pathname !== '/') {
         webpageSchema.breadcrumb = {
-            "@id": `${cleanUrl}/#breadcrumb`
+            "@id": `${cleanUrl}#breadcrumb`
         };
     }
     graph.push(webpageSchema);
@@ -258,7 +258,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
 
         const breadcrumbSchema = {
             "@type": "BreadcrumbList",
-            "@id": `${cleanUrl}/#breadcrumb`,
+            "@id": `${cleanUrl}#breadcrumb`,
             "itemListElement": breadcrumbElements
         };
         graph.push(breadcrumbSchema);
