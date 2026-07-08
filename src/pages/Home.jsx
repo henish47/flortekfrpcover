@@ -196,7 +196,7 @@ const Home = () => {
             <SEO
                 title="Best FRP Manhole Cover Manufacturer & Supplier in India | FLORTEK INDUSTRIES PVT. LTD."
                 description="FLORTEK INDUSTRIES PVT. LTD. is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects."
-               keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
+               keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
                 schema={homeSchema}
                 canonicalUrl="https://www.flortekfrpcover.com"
             />            {/* --- HERO SECTION (TWO-COLUMN WITH PRODUCT IMAGE) --- */}

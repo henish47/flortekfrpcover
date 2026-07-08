@@ -2,7 +2,7 @@ export const seoData = {
     "/": {
         title: "FRP Manhole Covers Manufacturer | FLORTEK INDUSTRIES PVT. LTD.",
         description: "FLORTEK INDUSTRIES PVT. LTD. is India's leading manufacturer of high-quality FRP manhole covers, gully covers, and drainage gratings for municipal & industrial projects.",
-        keywords: "FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
+        keywords: "FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
     },
     "/about": {
         title: "About FLORTEK INDUSTRIES PVT. LTD. | FRP Manhole Cover Manufacturer",
@@ -77,7 +77,7 @@ export const seoData = {
     "/frp-cover-manufacturer-india": {
         title: "FRP Cover Manufacturer India | GRP Composite Covers",
         description: "Trusted FRP cover manufacturer in India. Flortek produces high-quality composite manhole covers, gully grates, and trench covers under strict EN 124 quality.",
-        keywords: "FRP cover manufacturer India, GRP cover factory India, B2B composite covers India, EN 124 certified manufacturer India, buy manhole covers bulk India, FLORTEK INDUSTRIES PVT. LTD."
+        keywords: "India's No. 1 FRP manhole cover manufacturer, FRP cover manufacturer India, GRP cover factory India, B2B composite covers India, EN 124 certified manufacturer India, buy manhole covers bulk India, FLORTEK INDUSTRIES PVT. LTD."
     },
     "/frp-cover-manufacturer-gujarat": {
         title: "FRP Cover Manufacturer Gujarat | Shapar Rajkot Factory",
