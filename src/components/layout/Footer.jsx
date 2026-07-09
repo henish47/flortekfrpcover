@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white pt-20 pb-10 relative border-t border-[#333333]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16">
                     {/* Company Info */}
                     <div>
                         <div className="mb-6">
@@ -65,8 +65,10 @@ const Footer = () => {
                                 { name: 'About Us', path: '/about' },
                                 { name: 'Our Products', path: '/products' },
                                 { name: 'Applications', path: '/applications' },
+                                { name: 'Installation', path: '/installation' },
+                                { name: 'Reviews', path: '/reviews' },
                                 { name: 'FAQ Support', path: '/faq' },
-                                { name: 'Contact Us', path: '/contact' }
+                                { name: 'Sitemap', path: '/sitemap' }
                             ].map((link) => (
                                 <li key={link.name}>
                                     <Link
@@ -81,19 +83,23 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Products */}
+                    {/* Products & Solutions */}
                     <div>
                         <h3 className="text-sm font-black uppercase tracking-wider mb-6 text-white inline-block relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-8 after:h-0.5 after:bg-white after:rounded-full">
-                            Our Range
+                            Solutions
                         </h3>
                         <ul className="space-y-3">
                             {[
                                 { name: 'FRP Manhole Covers', path: '/frp-manhole-covers' },
                                 { name: 'FRP Drain Covers', path: '/frp-drain-covers' },
                                 { name: 'Cable Trench Covers', path: '/frp-cable-trench-covers' },
-                                { name: 'Heavy Duty FRP Covers', path: '/heavy-duty-frp-covers' },
+                                { name: 'Heavy Duty Covers', path: '/heavy-duty-frp-covers' },
                                 { name: 'FRP Cover Exporter', path: '/frp-cover-exporter' },
-                                { name: 'Standard Sizing List', path: '/sizes' }
+                                { name: 'Manufacturer India', path: '/frp-cover-manufacturer-india' },
+                                { name: 'Manufacturer Gujarat', path: '/frp-cover-manufacturer-gujarat' },
+                                { name: 'Industrial Covers', path: '/industrial-frp-covers' },
+                                { name: 'Municipal Covers', path: '/municipal-frp-covers' },
+                                { name: 'FRP vs Cast Iron', path: '/frp-vs-cast-iron-covers' }
                             ].map((item) => (
                                 <li key={item.name}>
                                     <Link
@@ -102,6 +108,36 @@ const Footer = () => {
                                     >
                                         <span className="w-1 h-1 rounded-full bg-[#333333] group-hover:bg-white transition-colors" />
                                         {item.name}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Blog & Resources */}
+                    <div>
+                        <h3 className="text-sm font-black uppercase tracking-wider mb-6 text-white inline-block relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-8 after:h-0.5 after:bg-white after:rounded-full">
+                            Insights
+                        </h3>
+                        <ul className="space-y-3">
+                            {[
+                                { name: 'Blog Hub', path: '/blog' },
+                                { name: 'Top Manufacturers', path: '/blog/top-10-frp-manhole-cover-manufacturers-india' },
+                                { name: 'Industrial Access', path: '/blog/best-frp-manhole-covers-industrial-applications' },
+                                { name: 'FRP vs Cast Iron Guide', path: '/blog/frp-vs-cast-iron-manhole-covers-comparison' },
+                                { name: 'Sizing Guide', path: '/blog/how-to-choose-right-frp-manhole-cover' },
+                                { name: 'Municipal Benefits', path: '/blog/benefits-frp-covers-municipal-projects' },
+                                { name: 'FRP Cover Prices', path: '/blog/frp-cover-price-guide-india' },
+                                { name: 'Heavy Duty Features', path: '/blog/heavy-duty-frp-covers-features-applications' },
+                                { name: 'Replacing Cast Iron', path: '/blog/why-frp-covers-replacing-cast-iron' }
+                            ].map((blog) => (
+                                <li key={blog.name}>
+                                    <Link
+                                        to={blog.path}
+                                        className="text-[#D9D9D9] hover:text-white transition-colors flex items-center gap-2 text-xs font-bold uppercase tracking-wider group"
+                                    >
+                                        <span className="w-1 h-1 rounded-full bg-[#333333] group-hover:bg-white transition-colors" />
+                                        {blog.name}
                                     </Link>
                                 </li>
                             ))}

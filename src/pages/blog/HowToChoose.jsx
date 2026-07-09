@@ -72,6 +72,16 @@ const HowToChoose = () => {
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
                         Selecting the correct Fiber Reinforced Polymer (FRP) manhole cover for your B2B project prevents structural failures and reduces replacement costs. This guide outlines the key engineering criteria—dimensions, load classes, framing, sealing, and configurations—required to make an informed choice.
                     </p>
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP-24x24-2.5T-FW.png" 
+                            alt="Square 24x24 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Square 24x24 FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
@@ -94,6 +104,17 @@ const HowToChoose = () => {
                             Check our complete dimensional matrix on the <Link to="/sizes" className="text-black font-bold underline hover:text-[#333333]">Sizing Chart page</Link> to cross-reference dimensions with load capacities.
                         </p>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/recessed/RECESS COVER _ 450X450_2.5T_GRAY.jpg" 
+                            alt="Recessed Grey Composite Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Recessed Grey Composite Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">
@@ -153,6 +174,17 @@ const HowToChoose = () => {
                             ))}
                         </div>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP-18x24-2.5T-FW.png" 
+                            alt="Rectangular FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Rectangular FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4 border-t border-[#D9D9D9]/50 pt-8">
                         <h3 className="text-2xl font-black text-black uppercase tracking-tight">Frequently Asked Questions</h3>

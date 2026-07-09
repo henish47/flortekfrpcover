@@ -72,6 +72,16 @@ const PriceGuide = () => {
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
                         Budgeting for large-scale municipal, industrial, or residential projects requires an understanding of utility cover costs. This guide details the pricing dynamics of Fiber Reinforced Polymer (FRP) manhole covers in India, outlining size classifications, load rating impacts, and wholesale volume benefits.
                     </p>
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/750X750_B125_WHITE.jpg" 
+                            alt="White B125 Composite Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK B125 White Composite Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
@@ -100,6 +110,17 @@ const PriceGuide = () => {
                             Detailed dimensional profiles can be reviewed on our <Link to="/products" className="text-black font-bold underline hover:text-[#333333]">Products page</Link> to match load classes to project parameters.
                         </p>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP-300x300-B125.jpg" 
+                            alt="Standard 300x300 B125 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 300x300 B125 FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     {/* Cost Estimation Matrix */}
                     <section className="space-y-4">
@@ -185,6 +206,17 @@ const PriceGuide = () => {
                             ))}
                         </div>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/900 X 900_124_B125.jpeg" 
+                            alt="Large B125 Square FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Large Square B125 FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4 border-t border-[#D9D9D9]/50 pt-8">
                         <h3 className="text-2xl font-black text-black uppercase tracking-tight">Frequently Asked Questions</h3>

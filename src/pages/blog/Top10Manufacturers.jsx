@@ -72,6 +72,16 @@ const Top10Manufacturers = () => {
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
                         Selecting the right supply partner for Fiber Reinforced Polymer (FRP) manhole covers ensures structural safety and economic feasibility. In this guide, we evaluate the top 10 FRP composite cover manufacturers in India based on engineering capabilities, material grades, BS EN 124 compliance, and value delivery.
                     </p>
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP-24x24-2.5T-FW.png" 
+                            alt="High Performance FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK High Performance FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
@@ -94,6 +104,17 @@ const Top10Manufacturers = () => {
                             Explore our product lineup on the <Link to="/products" className="text-black font-bold underline hover:text-[#333333]">Products page</Link> to view specific dimensions, configurations, and loading parameters.
                         </p>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/750X750_C250_WHITE.png" 
+                            alt="White Class C250 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK White Class C250 FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">
@@ -213,6 +234,17 @@ const Top10Manufacturers = () => {
                             </div>
                         </div>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP 450x450 BS En 124_D400 GYAY.png" 
+                            alt="Grey Class D400 Heavy Duty FRP Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Class D400 Heavy Duty FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4 border-t border-[#D9D9D9]/50 pt-8">
                         <h3 className="text-2xl font-black text-black uppercase tracking-tight">Frequently Asked Questions</h3>

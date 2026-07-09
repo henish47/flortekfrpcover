@@ -72,6 +72,16 @@ const FRPvsCastIronComparison = () => {
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
                         Selecting the correct material for utility access chambers involves weighing safety, theft risk, durability, and cost. In this guide, we provide a head-to-head technical comparison between Fiber Reinforced Polymer (FRP) composite covers and traditional Cast Iron (CI) or Ductile Iron (DI) covers.
                     </p>
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP-450x450-B125.png" 
+                            alt="Premium B125 Composite Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK B125 Composite Manhole Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
@@ -91,6 +101,17 @@ const FRPvsCastIronComparison = () => {
                             **FRP composite covers** are engineered using a matrix of high-strength glass fibers bound with thermosetting polymer resins. This structure achieves equivalent load ratings to cast iron while resolving its primary disadvantages.
                         </p>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP 600 BS EN_124_B125.png" 
+                            alt="Round Class B125 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Round B125 FRP Manhole Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     {/* Comparison Grid */}
                     <section className="space-y-4">
@@ -203,6 +224,17 @@ const FRPvsCastIronComparison = () => {
                             ))}
                         </div>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/750X750_B125_GRAY.png" 
+                            alt="Grey B125 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Grey B125 FRP Manhole Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4 border-t border-[#D9D9D9]/50 pt-8">
                         <h3 className="text-2xl font-black text-black uppercase tracking-tight">Frequently Asked Questions</h3>

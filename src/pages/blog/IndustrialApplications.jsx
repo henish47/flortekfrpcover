@@ -72,6 +72,16 @@ const IndustrialApplications = () => {
                     <p className="text-lg md:text-xl text-[#333333] max-w-4xl leading-relaxed">
                         Industrial operating conditions present extreme physical and chemical challenges. Access covers on factory floors, petrochemical grids, and logistics docks are exposed to continuous vehicular impact, chemical solvents, acidic washes, and thermal fluctuations. In this technical article, we evaluate the properties required for industrial applications and outline how composite Fiber Reinforced Polymer (FRP) covers deliver superior safety.
                     </p>
+                    <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/FRP 600x600 BS En 124_D400.png" 
+                            alt="Industrial Heavy Duty D400 FRP Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK Industrial D400 Heavy Duty FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
                 </motion.div>
             </div>
 
@@ -109,6 +119,17 @@ const IndustrialApplications = () => {
                             Flortek's industrial composite line utilizes high-purity vinyl ester resins and cross-woven fiberglass layers to meet these criteria. You can read more about this on our <Link to="/products" className="text-black font-bold underline hover:text-[#333333]">Products page</Link> to match load classes to your plant's logistics layout.
                         </p>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/technical/installation.png" 
+                            alt="Industrial FRP Manhole Cover Installation Diagram by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK FRP Cover Installation Diagram" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">
@@ -177,6 +198,17 @@ const IndustrialApplications = () => {
                             ))}
                         </div>
                     </section>
+
+                    <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
+                        <img 
+                            src="/images/750X750_C250_GRAY.png" 
+                            alt="Grey Class C250 Industrial FRP Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK C250 Industrial Grey FRP Cover" 
+                            loading="lazy" 
+                            decoding="async" 
+                            className="w-full h-auto max-h-[450px] object-contain"
+                        />
+                    </div>
 
                     <section className="space-y-4 border-t border-[#D9D9D9]/50 pt-8">
                         <h3 className="text-2xl font-black text-black uppercase tracking-tight">Frequently Asked Questions</h3>
