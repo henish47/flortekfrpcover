@@ -74,9 +74,9 @@ const FRPvsCastIronComparison = () => {
                     </p>
                     <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
                         <img 
-                            src="/images/FRP-450x450-B125.png" 
-                            alt="Premium B125 Composite Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
-                            title="FLORTEK B125 Composite Manhole Cover" 
+                            src="/images/FRP-450x450-D400-FLORTEK.jpg" 
+                            alt="Class D400 450x450mm FRP Manhole Cover branded FLORTEK by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 450x450mm Class D400 FRP Manhole Cover" 
                             loading="lazy" 
                             decoding="async" 
                             className="w-full h-auto max-h-[450px] object-contain"

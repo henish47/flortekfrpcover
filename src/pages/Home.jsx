@@ -12,7 +12,7 @@ const heroSlides = [
         title: "D400 Heavy Duty",
         type: "Square Cover",
         load: "Tested Load Cap: 40 Tons",
-        image: "/images/FRP 600x600 BS En 124_D400.png"
+        image: "/images/FRP-600x600-D400-FLORTEK.jpg"
     },
     {
         title: "Circular B125",

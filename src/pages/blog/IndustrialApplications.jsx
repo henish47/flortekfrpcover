@@ -74,9 +74,9 @@ const IndustrialApplications = () => {
                     </p>
                     <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
                         <img 
-                            src="/images/FRP 600x600 BS En 124_D400.png" 
-                            alt="Industrial Heavy Duty D400 FRP Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
-                            title="FLORTEK Industrial D400 Heavy Duty FRP Cover" 
+                            src="/images/FRP-600x600-D400-FLORTEK.jpg" 
+                            alt="Industrial Class D400 600x600mm FRP Manhole Cover branded FLORTEK by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 600x600mm Industrial D400 FRP Manhole Cover" 
                             loading="lazy" 
                             decoding="async" 
                             className="w-full h-auto max-h-[450px] object-contain"

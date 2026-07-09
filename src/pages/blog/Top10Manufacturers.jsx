@@ -74,9 +74,9 @@ const Top10Manufacturers = () => {
                     </p>
                     <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
                         <img 
-                            src="/images/FRP-24x24-2.5T-FW.png" 
-                            alt="High Performance FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
-                            title="FLORTEK High Performance FRP Cover" 
+                            src="/images/FRP-750x750-D400-FLORTEK.jpg" 
+                            alt="Certified Class D400 750x750mm FRP Manhole Cover branded FLORTEK by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 750x750mm Class D400 Certified FRP Cover" 
                             loading="lazy" 
                             decoding="async" 
                             className="w-full h-auto max-h-[450px] object-contain"

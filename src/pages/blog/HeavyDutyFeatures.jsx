@@ -74,9 +74,9 @@ const HeavyDutyFeatures = () => {
                     </p>
                     <div className="mt-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
                         <img 
-                            src="/images/FRP 600x600 BS En 124_D400.png" 
-                            alt="Heavy Duty Class D400 FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
-                            title="FLORTEK Class D400 Heavy Duty FRP Manhole Cover" 
+                            src="/images/FRP-750x750-D400-FLORTEK.jpg" 
+                            alt="Heavy Duty Class D400 750x750mm FRP Manhole Cover branded FLORTEK by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 750x750mm Class D400 FRP Manhole Cover" 
                             loading="lazy" 
                             decoding="async" 
                             className="w-full h-auto max-h-[450px] object-contain"
@@ -212,9 +212,9 @@ const HeavyDutyFeatures = () => {
 
                     <div className="my-8 overflow-hidden rounded-3xl border border-[#D9D9D9] bg-[#F5F5F5] w-full max-h-[450px] flex items-center justify-center">
                         <img 
-                            src="/images/FRP 600x600 BS En 124_D400 GRAY.png" 
-                            alt="D400 Heavy Duty Grey FRP Manhole Cover manufactured by FLORTEK INDUSTRIES PVT. LTD." 
-                            title="FLORTEK D400 Heavy Duty Grey FRP Manhole Cover" 
+                            src="/images/FRP-600x600-D400-FLORTEK.jpg" 
+                            alt="Heavy Duty Class D400 600x600mm FRP Manhole Cover branded FLORTEK by FLORTEK INDUSTRIES PVT. LTD." 
+                            title="FLORTEK 600x600mm Class D400 FRP Manhole Cover" 
                             loading="lazy" 
                             decoding="async" 
                             className="w-full h-auto max-h-[450px] object-contain"
