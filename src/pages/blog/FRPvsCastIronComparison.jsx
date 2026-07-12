@@ -36,7 +36,7 @@ const FRPvsCastIronComparison = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="FRP vs Cast Iron Manhole Covers: Complete Comparison | Flortek"
+                title="FRP vs Cast Iron Manhole Covers: Complete Comparison | FLORTEK INDUSTRIES PVT. LTD."
                 description="Technical comparison of FRP composite and Cast Iron manhole covers. Analyze load metrics, manual weight differences, theft prevention, and cost values."
                 keywords="FRP vs Cast Iron Covers, Composite Covers vs Cast Iron, Manhole Cover Comparison, Ductile Iron alternative, buy bulk wholesale covers"
                 schema={pageSchema}

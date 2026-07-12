@@ -27,7 +27,7 @@ const FRPCableTrenchCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Non-Conductive FRP Cable Trench Covers | Flortek"
+                title="Non-Conductive FRP Cable Trench Covers | FLORTEK INDUSTRIES PVT. LTD."
                 description="Engineered FRP cable trench covers and utility duct lids. Perfect electrical insulation, high load-bearing capacity, and corrosion-free performance."
                 keywords="FRP Cable Trench Covers, Substation Trench Covers, Electrical Trench Covers, Composite Duct Lids, Non Conductive Covers India"
                 schema={pageSchema}

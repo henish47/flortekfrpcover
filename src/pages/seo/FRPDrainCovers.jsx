@@ -27,7 +27,7 @@ const FRPDrainCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="FRP Drain Covers & Stormwater Channel Gratings | Flortek"
+                title="FRP Drain Covers & Stormwater Channel Gratings | FLORTEK INDUSTRIES PVT. LTD."
                 description="High-strength FRP drain covers and composite stormwater gratings for residential driveways, commercial paths, and industrial processing units."
                 keywords="FRP Drain Covers, Composite Drain Covers, Drainage Gratings, Storm Water Channel Covers, Gutter Cover Manufacturer India"
                 schema={pageSchema}

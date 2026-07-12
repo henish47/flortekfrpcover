@@ -83,7 +83,7 @@ const BlogIndex = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Knowledge Hub & Industrial Blog | Flortek"
+                title="Knowledge Hub & Industrial Blog | FLORTEK INDUSTRIES PVT. LTD."
                 description="Explore technical articles, engineering guides, and product comparisons on Fiber Reinforced Polymer (FRP) manhole covers and composite drainage solutions."
                 keywords="FRP Cover Blog, GRP Manhole Cover Articles, Composite Cover Guide, Indian Manhole Cover Market"
                 schema={{
@@ -91,7 +91,7 @@ const BlogIndex = () => {
                     "@graph": [
                         {
                             "@type": "WebPage",
-                            "name": "Knowledge Hub & Industrial Blog | Flortek",
+                            "name": "Knowledge Hub & Industrial Blog | FLORTEK INDUSTRIES PVT. LTD.",
                             "description": "Explore technical articles, engineering guides, and product comparisons on Fiber Reinforced Polymer (FRP) manhole covers and composite drainage solutions.",
                             "url": "https://www.flortekfrpcover.com/blog",
                             "breadcrumb": {

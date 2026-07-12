@@ -1,22 +1,99 @@
 export const seoData = {
     "/": {
-        title: "FRP Manhole Covers Manufacturer | FLORTEK INDUSTRIES PVT. LTD.",
-        description: "FLORTEK INDUSTRIES PVT. LTD. is India's leading manufacturer of high-quality FRP manhole covers, gully covers, and drainage gratings for municipal & industrial projects.",
-        keywords: "FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
-    },
+    title: "FLORTEK INDUSTRIES PVT. LTD. | FRP Manhole Cover Manufacturer in India | FRP Manhole Covers",
+    description: "FLORTEK INDUSTRIES PVT. LTD. is a trusted B2B manufacturer of premium FRP Manhole Covers, Recessed Tile Covers, BMC Manhole Covers, Steel Manhole Covers, Gully Covers, Drainage Gratings, Cable Trench Covers, Composite Covers, and Infrastructure Products. We provide high-strength, corrosion-resistant, BS EN 124 compliant solutions for municipal, industrial, commercial, and infrastructure projects across India.",
+    keywords: `
+        FLORTEK INDUSTRIES PVT. LTD.,
+        Simtex frp cover,
+        Nexus Cast PVT LTD,
+        Wave frp cover,
+        Water king frp cover,
+        frp cover manufacyures in Gujrat,
+        frp cover manufacyures in Rajkot,
+        Flortek FRP Cover,
+        FRP Manhole Cover,
+        FRP Manhole Cover Manufacturer,
+        FRP Manhole Cover Manufacturer India,
+        FRP Manhole Cover Manufacturer Gujarat,
+        FRP Manhole Cover Manufacturer Rajkot,
+        FRP Manhole Cover Supplier,
+        FRP Manhole Cover Exporter,
+        FRP Chamber Cover,
+        FRP Chamber Cover Manufacturer,
+        FRP Drain Cover,
+        FRP Drain Cover Manufacturer,
+        FRP Gully Cover,
+        FRP Gully Cover Manufacturer,
+        FRP Cable Trench Cover,
+        FRP Cable Trench Cover Manufacturer,
+        FRP Drainage Grating,
+        FRP Grating,
+        Composite Manhole Cover,
+        Composite Manhole Cover Manufacturer,
+        GRP Manhole Cover,
+        GRP Manhole Cover Manufacturer,
+        BMC Manhole Cover,
+        BMC Manhole Cover Manufacturer,
+        Steel Manhole Cover,
+        Steel Manhole Cover Manufacturer,
+        Heavy Duty FRP Manhole Cover,
+        Heavy Duty Composite Cover,
+        Anti Theft Manhole Cover,
+        Corrosion Resistant Manhole Cover,
+        Rust Proof Manhole Cover,
+        Chemical Resistant Manhole Cover,
+        Weather Resistant Manhole Cover,
+        Lightweight Manhole Cover,
+        Lockable Manhole Cover,
+        Road Drain Cover,
+        Sewer Cover,
+        Utility Cover,
+        Inspection Chamber Cover,
+        Municipal Drainage Solutions,
+        Industrial Drainage Solutions,
+        Infrastructure Products,
+        Smart City Drainage Products,
+        BS EN 124 Manhole Cover,
+        EN124 Certified Manhole Cover,
+        A15 Manhole Cover,
+        B125 Manhole Cover,
+        C250 Manhole Cover,
+        D400 Manhole Cover,
+        E600 Manhole Cover,
+        F900 Manhole Cover,
+        300x300 FRP Manhole Cover,
+        450x450 FRP Manhole Cover,
+        600x600 FRP Manhole Cover,
+        900x900 FRP Manhole Cover,
+        1000x1000 FRP Manhole Cover,
+        18x18 FRP Cover,
+        24x24 FRP Cover,
+        24x36 FRP Cover,
+        Round Manhole Cover,
+        Square Manhole Cover,
+        Rectangular Manhole Cover,
+        Custom Size Manhole Cover,
+        Road Infrastructure Products,
+        Municipal Infrastructure Products,
+        Industrial Infrastructure Products,
+        Made in India,
+        Rajkot,
+        Gujarat,
+        India  `
+},
     "/about": {
         title: "About FLORTEK INDUSTRIES PVT. LTD. | FRP Manhole Cover Manufacturer",
         description: "Learn about FLORTEK INDUSTRIES PVT. LTD., a premier B2B manufacturer of heavy-duty composite FRP, GRP, and BMC manhole covers in Rajkot, Gujarat.",
         keywords: "FLORTEK INDUSTRIES PVT. LTD. about, FRP manhole cover factory Rajkot, composite chamber covers exporter Gujarat, ISO 9001 2015 certified manufacturer, GRP cover manufacturing company profile, Flortek FRP engineering, bulk sewage cover supplier"
     },
     "/products": {
-        title: "FRP Manhole Cover Catalogue | Flortek Drainage Products",
+        title: "FRP Manhole Cover Catalogue | FLORTEK INDUSTRIES PVT. LTD. Drainage Products",
         description: "Explore our catalog of heavy-duty FRP manhole covers, BMC covers, drainage gratings, gully covers, and trench grates manufactured for industrial projects.",
         keywords: "FRP manhole cover price list, composite manhole cover sizes, 600x600mm manhole cover, 450x450mm chamber cover, GRP manhole cover manufacturers, drainage gratings price, heavy duty gully covers catalog, recessed tile manhole covers, A15 B125 C250 D400 covers"
     },
     "/sizes": {
         title: "FRP Manhole Cover Sizes & Standard Load Dimensions Chart",
-        description: "View standard sizes and load capacity charts for Flortek's FRP and GRP manhole covers, designed under EN 124 standards for municipal and industrial use.",
+        description: "View standard sizes and load capacity charts for FLORTEK INDUSTRIES PVT. LTD.'s FRP and GRP manhole covers, designed under EN 124 standards for municipal and industrial use.",
         keywords: "FRP manhole cover dimensions, composite cover clear opening chart, GRP cover load class specs, 10x10, 12x12, 18x18, 24x24, 24x36, 600x600, 450x450, EN 124 load test sizes, chamber cover weight chart"
     },
     "/installation": {
@@ -26,11 +103,11 @@ export const seoData = {
     },
     "/applications": {
         title: "FRP Manhole Cover Applications & Drainage Projects",
-        description: "Discover industrial, residential, and municipal applications of Flortek's FRP manhole covers, trench covers, and structural drainage grates across India.",
+        description: "Discover industrial, residential, and municipal applications of FLORTEK INDUSTRIES PVT. LTD.'s FRP manhole covers, trench covers, and structural drainage grates across India.",
         keywords: "FRP manhole cover applications, industrial trench covers, smart city utility covers, residential drainage grates, petrol pump manhole covers, municipal sewer covers, structural drainage solutions"
     },
     "/reviews": {
-        title: "Flortek Client Testimonials & Manufacturing Reviews",
+        title: "Client Testimonials & Manufacturing Reviews | FLORTEK INDUSTRIES PVT. LTD.",
         description: "Read reviews and success stories from municipal authorities and industrial clients who trust FLORTEK INDUSTRIES PVT. LTD. for premium FRP manhole covers and grates.",
         keywords: "FLORTEK INDUSTRIES PVT. LTD. reviews, composite cover testimonials, client success stories, B2B manufacturing ratings, municipal contractor feedback, drainage products review"
     },
@@ -40,7 +117,7 @@ export const seoData = {
         keywords: "contact FLORTEK INDUSTRIES PVT. LTD., buy FRP manhole covers wholesale, custom GRP cover enquiry, bulk drainage covers price, B2B composite cover manufacturer Rajkot, wholesale RF-friendly covers quote"
     },
     "/sitemap": {
-        title: "Flortek FRP Manhole Cover Manufacturer Sitemap Index",
+        title: "FRP Manhole Cover Manufacturer Sitemap Index | FLORTEK INDUSTRIES PVT. LTD.",
         description: "Navigate through the sitemap of FLORTEK INDUSTRIES PVT. LTD. to find all our FRP, GRP, and BMC manhole covers, products, articles, and pages.",
         keywords: "FLORTEK INDUSTRIES PVT. LTD. sitemap, website navigation index, composite cover pages sitemap, GRP manhole cover links"
     },
@@ -71,12 +148,12 @@ export const seoData = {
     },
     "/frp-cover-exporter": {
         title: "FRP Cover Exporter India | Global GRP Composite Supply",
-        description: "Flortek is a leading exporter of heavy-duty composite FRP, GRP, and BMC manhole covers and drainage gratings from India to international markets worldwide.",
+        description: "FLORTEK INDUSTRIES PVT. LTD. is a leading exporter of heavy-duty composite FRP, GRP, and BMC manhole covers and drainage gratings from India to international markets worldwide.",
         keywords: "FRP cover exporter, GRP cover export India, global composite cover supplier Rajkot, B2B drainage cover exporter UAE USA, export quality BMC manhole covers, FLORTEK INDUSTRIES PVT. LTD."
     },
     "/frp-cover-manufacturer-india": {
         title: "FRP Cover Manufacturer India | GRP Composite Covers",
-        description: "Trusted FRP cover manufacturer in India. Flortek produces high-quality composite manhole covers, gully grates, and trench covers under strict EN 124 quality.",
+        description: "Trusted FRP cover manufacturer in India. FLORTEK INDUSTRIES PVT. LTD. produces high-quality composite manhole covers, gully grates, and trench covers under strict EN 124 quality.",
         keywords: "India's No. 1 FRP manhole cover manufacturer, FRP cover manufacturer India, GRP cover factory India, B2B composite covers India, EN 124 certified manufacturer India, buy manhole covers bulk India, FLORTEK INDUSTRIES PVT. LTD."
     },
     "/frp-cover-manufacturer-gujarat": {

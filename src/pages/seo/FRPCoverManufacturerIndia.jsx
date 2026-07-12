@@ -24,8 +24,8 @@ const FRPCoverManufacturerIndia = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="FRP Cover Manufacturer & Supplier in India | Flortek"
-                description="Flortek is the leading ISO 9001:2015 certified FRP cover manufacturer and supplier in India. Factory-direct wholesale prices and pan-India delivery."
+                title="FRP Cover Manufacturer & Supplier in India | FLORTEK INDUSTRIES PVT. LTD."
+                description="FLORTEK INDUSTRIES PVT. LTD. is the leading ISO 9001:2015 certified FRP cover manufacturer and supplier in India. Factory-direct wholesale prices and pan-India delivery."
                 keywords="India's No. 1 FRP Manhole Cover Manufacturer, FRP Cover Manufacturer India, FRP Cover Supplier India, FRP Cover Company India, composite manhole cover factory, buy manhole covers bulk India"
                 schema={pageSchema}
                 canonicalUrl="https://www.flortekfrpcover.com/frp-cover-manufacturer-india"

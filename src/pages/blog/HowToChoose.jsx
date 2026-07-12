@@ -36,7 +36,7 @@ const HowToChoose = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="How to Choose the Right FRP Manhole Cover | Flortek"
+                title="How to Choose the Right FRP Manhole Cover | FLORTEK INDUSTRIES PVT. LTD."
                 description="Engineering selection handbook for choosing the correct FRP manhole cover. Find out about clear opening dimensions, BS EN 124 load classes, and locking seals."
                 keywords="Choose FRP Manhole Cover, manhole cover size guide, FRP load classes EN 124, buy composite covers wholesale"
                 schema={pageSchema}

@@ -36,7 +36,7 @@ const Top10Manufacturers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="Top 10 FRP Manhole Cover Manufacturers in India | Flortek"
+                title="Top 10 FRP Manhole Cover Manufacturers in India | FLORTEK INDUSTRIES PVT. LTD."
                 description="Comprehensive technical review of the top 10 FRP manhole cover manufacturers in India. Evaluate GRP suppliers by BS EN 124 compliance, load capacity, and wholesale rates."
                 keywords="Top FRP Manhole Cover Manufacturers India, GRP Cover Suppliers India, Best Manhole Cover Brands, buy composite manhole covers wholesale"
                 schema={pageSchema}

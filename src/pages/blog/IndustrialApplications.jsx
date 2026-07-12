@@ -36,7 +36,7 @@ const IndustrialApplications = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="Best FRP Manhole Covers for Industrial Applications | Flortek"
+                title="Best FRP Manhole Covers for Industrial Applications | FLORTEK INDUSTRIES PVT. LTD."
                 description="Comprehensive engineering guide to choosing the best FRP manhole covers for industrial settings. Optimized for factories, chemical zones, and warehouses."
                 keywords="Industrial FRP Covers, Chemical Resistant Manhole Covers, Factory Chamber Lids, composite drainage grates, buy bulk industrial covers"
                 schema={pageSchema}

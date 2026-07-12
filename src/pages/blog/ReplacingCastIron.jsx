@@ -36,7 +36,7 @@ const ReplacingCastIron = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="Why FRP Covers are Replacing Cast Iron Covers | Flortek"
+                title="Why FRP Covers are Replacing Cast Iron Covers | FLORTEK INDUSTRIES PVT. LTD."
                 description="Explore the shift from cast iron to composite manhole covers. Study weight differences, corrosion, theft prevention, and total cost of ownership."
                 keywords="Replacing Cast Iron Covers, alternative to cast iron manhole covers, modern utility lids, buy composite covers wholesale"
                 schema={pageSchema}

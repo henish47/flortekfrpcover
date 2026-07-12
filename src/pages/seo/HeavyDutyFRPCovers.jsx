@@ -27,7 +27,7 @@ const HeavyDutyFRPCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Heavy Duty FRP Manhole Covers (25-Ton & 40-Ton) | Flortek"
+                title="Heavy Duty FRP Manhole Covers (25-Ton & 40-Ton) | FLORTEK INDUSTRIES PVT. LTD."
                 description="Heavy duty FRP composite manhole covers certified for Class C250 and D400 load capacities. Durable, lightweight, and engineered for vehicular road traffic."
                 keywords="Heavy Duty FRP Covers, 20 Ton Manhole Cover, 40 Ton Composite Cover, Traffic Rated Manhole Lids, C250 D400 Covers India"
                 schema={pageSchema}

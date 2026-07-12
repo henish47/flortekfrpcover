@@ -36,7 +36,7 @@ const MunicipalBenefits = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="Benefits of FRP Covers for Municipal Projects | Flortek"
+                title="Benefits of FRP Covers for Municipal Projects | FLORTEK INDUSTRIES PVT. LTD."
                 description="Discover why civic municipal councils prefer FRP manhole covers. Learn about public safety benefits, zero-theft, and smart city RF transparency."
                 keywords="Municipal FRP Covers, smart city manhole lids, sewer cover benefits, buy public works covers wholesale"
                 schema={pageSchema}

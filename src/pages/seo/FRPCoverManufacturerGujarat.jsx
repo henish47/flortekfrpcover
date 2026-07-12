@@ -24,8 +24,8 @@ const FRPCoverManufacturerGujarat = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="FRP Cover Manufacturer & Supplier in Gujarat | Flortek"
-                description="Flortek is the leading manufacturer and supplier of premium composite FRP covers in Gujarat. Located in Rajkot with direct supply to Ahmedabad, Surat, and Vadodara."
+                title="FRP Cover Manufacturer & Supplier in Gujarat | FLORTEK INDUSTRIES PVT. LTD."
+                description="FLORTEK INDUSTRIES PVT. LTD. is the leading manufacturer and supplier of premium composite FRP covers in Gujarat. Located in Rajkot with direct supply to Ahmedabad, Surat, and Vadodara."
                 keywords="FRP Cover Manufacturer Gujarat, FRP Cover Supplier Gujarat, FRP Cover Company Gujarat, Rajkot manhole cover factory, composite covers Ahmedabad, GIFT city drainage"
                 schema={pageSchema}
                 canonicalUrl="https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat"

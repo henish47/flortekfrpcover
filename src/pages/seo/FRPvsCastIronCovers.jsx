@@ -24,7 +24,7 @@ const FRPvsCastIronCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="FRP vs Cast Iron Manhole Covers | Best Alternative | Flortek"
+                title="FRP vs Cast Iron Manhole Covers | Best Alternative | FLORTEK INDUSTRIES PVT. LTD."
                 description="Comprehensive technical comparison between FRP composite and Cast Iron manhole covers. Discover why FRP is the best alternative to cast iron for B2B buyers."
                 keywords="FRP vs Cast Iron Covers, Best Alternative to Cast Iron Covers, Composite Covers vs Cast Iron, composite vs metal manhole covers, non-metallic utility lids"
                 schema={pageSchema}

@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className="bg-white min-h-screen font-sans pt-24 md:pt-32 pb-20">
             <SEO
-                title="About Flortek | Leading FRP & GRP Manhole Cover Manufacturer India"
+                title="About FLORTEK INDUSTRIES PVT. LTD. | Leading FRP & GRP Manhole Cover Manufacturer India"
                 description="FLORTEK INDUSTRIES PVT. LTD. is a premier ISO 9001:2015 certified manufacturer of high-strength, export-grade FRP, SMC, and GRP manhole covers, based in Rajkot, Gujarat."
                 keywords="FRP manhole cover manufacturer India, GRP manhole covers manufacturers, composite chamber covers supplier, SMC manhole cover factory, sewage chamber cover manufacturer Gujarat, Flortek company profile, Naresh Patel Rajkot"
                 schema={{

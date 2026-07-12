@@ -24,7 +24,7 @@ const MunicipalFRPCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Municipal FRP Covers & Smart City Drainage Solutions | Flortek"
+                title="Municipal FRP Covers & Smart City Drainage Solutions | FLORTEK INDUSTRIES PVT. LTD."
                 description="Premium municipal-grade FRP manhole covers and sewer gratings. BS EN 124 certified, zero-theft, and RF-friendly for modern smart city and highway projects."
                 keywords="Municipal FRP Covers, Smart City FRP Covers, Infrastructure FRP Covers, municipal manhole covers, sewer drainage covers, RF-friendly covers"
                 schema={pageSchema}

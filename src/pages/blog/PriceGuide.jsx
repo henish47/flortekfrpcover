@@ -36,7 +36,7 @@ const PriceGuide = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="FRP Cover Price Guide in India | Flortek"
+                title="FRP Cover Price Guide in India | FLORTEK INDUSTRIES PVT. LTD."
                 description="Comprehensive wholesale price guide for FRP/GRP manhole covers in India. Learn about cost factors, size-based pricing, and bulk commercial rates."
                 keywords="FRP Cover Price India, GRP Manhole Cover Cost, wholesale composite cover rates, buy bulk manhole covers"
                 schema={pageSchema}

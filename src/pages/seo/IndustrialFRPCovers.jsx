@@ -24,7 +24,7 @@ const IndustrialFRPCovers = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="Industrial FRP Covers & Factory Manhole Lids | Flortek"
+                title="Industrial FRP Covers & Factory Manhole Lids | FLORTEK INDUSTRIES PVT. LTD."
                 description="Heavy duty industrial FRP manhole covers and chemical-resistant gratings. Certified to Class C250 and D400. Perfect for chemical factories and logistics parks."
                 keywords="Industrial FRP Covers, FRP Covers for Factories, Heavy Duty Industrial Covers, chemical resistant manhole covers, factory drain gratings"
                 schema={pageSchema}

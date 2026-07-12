@@ -36,7 +36,7 @@ const HeavyDutyFeatures = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans text-black">
             <SEO
-                title="Heavy Duty FRP Covers: Features & Applications | Flortek"
+                title="Heavy Duty FRP Covers: Features & Applications | FLORTEK INDUSTRIES PVT. LTD."
                 description="Engineering overview of heavy duty FRP covers. Study Class D400 composite manhole covers, raw material molding processes, and highway applications."
                 keywords="Heavy Duty FRP Covers, D400 Composite Covers, High Load Capacity Manhole Lids, buy bulk commercial covers"
                 schema={pageSchema}

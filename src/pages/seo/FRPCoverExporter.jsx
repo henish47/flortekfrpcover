@@ -93,8 +93,8 @@ const FRPCoverExporter = () => {
     return (
         <div className="bg-white min-h-screen pt-24 md:pt-32 pb-20 font-sans">
             <SEO
-                title="FRP Cover Exporter & Global B2B Supplier from India | Flortek"
-                description="Flortek is a premium industrial FRP cover exporter and manufacturer. Supplying heavy-duty composite manhole covers to UAE, USA, Oman, Saudi Arabia, and Europe. BS EN 124 certified."
+                title="FRP Cover Exporter & Global B2B Supplier from India | FLORTEK INDUSTRIES PVT. LTD."
+                description="FLORTEK INDUSTRIES PVT. LTD. is a premium industrial FRP cover exporter and manufacturer. Supplying heavy-duty composite manhole covers to UAE, USA, Oman, Saudi Arabia, and Europe. BS EN 124 certified."
                 keywords="FRP Cover Exporter, FRP Manhole Cover Manufacturer India, FRP Cover Supplier UAE, FRP Cover Supplier USA, Industrial FRP Covers Exporter, Composite Manhole Cover Export Quality"
                 schema={pageSchema}
                 canonicalUrl="https://www.flortekfrpcover.com/frp-cover-exporter"
