@@ -19,28 +19,57 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        const name = formData.name.trim();
+        const phone = formData.phone.trim();
+        const email = formData.email.trim();
+        const city = formData.city.trim();
+        const requirement = formData.requirement.trim();
+
+        if (status === 'submitting') return;
+
+        // Validation checks
+        if (!name) {
+            alert("Please enter your name.");
+            return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (!phone || !/^\+?[0-9\s\-()]{7,20}$/.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+        if (!requirement) {
+            alert("Please enter your requirement details.");
+            return;
+        }
+
         setStatus('submitting');
 
+        const formDataObj = new FormData();
+        formDataObj.append("access_key", "448d2ed5-cd76-47be-b441-3b9e6279a06c");
+        formDataObj.append("subject", "New Quote Request | FLORTEK INDUSTRIES PVT. LTD.");
+        formDataObj.append("from_name", "FLORTEK Industries PVT LTD");
+        
+        formDataObj.append("Lead Source", subject);
+        formDataObj.append("name", name);
+        formDataObj.append("phone", phone);
+        formDataObj.append("email", email);
+        formDataObj.append("city", city);
+        formDataObj.append("requirement", requirement);
+        formDataObj.append("message", requirement);
+
         try {
-            const response = await fetch("https://formsubmit.co/ajax/flortekindustries@gmail.com", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    "Lead Source": subject,
-                    "Customer Name": formData.name,
-                    "Mobile Number": formData.phone,
-                    "Email Address": formData.email,
-                    "City / Location": formData.city,
-                    "Project Requirements": formData.requirement,
-                    _subject: `${subject}: ${formData.name} (${formData.city})`,
-                    _template: "table"
-                })
+                body: formDataObj
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (response.ok && data.success) {
                 setStatus('success');
                 setFormData({
                     name: '',
@@ -89,9 +118,12 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                         <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
                             <CheckCircle size={32} />
                         </div>
-                        <h4 className="text-2xl font-black uppercase tracking-tight text-black mb-2">Thank You!</h4>
+                        <h4 className="text-2xl font-black uppercase tracking-tight text-black mb-2">Quote Request Submitted Successfully!</h4>
+                        <p className="text-sm text-[#333333] max-w-xs mx-auto leading-relaxed mb-1">
+                            Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.
+                        </p>
                         <p className="text-sm text-[#333333] max-w-xs mx-auto leading-relaxed">
-                            Your quotation request has been sent. Our technical sales desk will get back to you with custom pricing in a short while.
+                            We'll contact you shortly.
                         </p>
                     </motion.div>
                 ) : (
@@ -177,7 +209,7 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                             >
                                 {status === 'submitting' ? (
                                     <>
-                                        <Loader size={14} className="animate-spin mr-2" /> Sending...
+                                        <Loader size={14} className="animate-spin mr-2" /> Submitting...
                                     </>
                                 ) : (
                                     <>

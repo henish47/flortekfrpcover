@@ -22,28 +22,58 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        const name = formData.name.trim();
+        const phone = formData.phone.trim();
+        const email = formData.email.trim();
+        const company = formData.company.trim();
+        const country = formData.country;
+        const requirements = formData.requirements.trim();
+
+        if (status === 'submitting') return;
+
+        // Validation checks
+        if (!name) {
+            alert("Please enter your name.");
+            return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (!phone || !/^\+?[0-9\s\-()]{7,20}$/.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+        if (!requirements) {
+            alert("Please enter your message or requirements.");
+            return;
+        }
+
         setStatus('submitting');
 
+        const formDataObj = new FormData();
+        formDataObj.append("access_key", "448d2ed5-cd76-47be-b441-3b9e6279a06c");
+        formDataObj.append("subject", "New Quote Request | FLORTEK INDUSTRIES PVT. LTD.");
+        formDataObj.append("from_name", "FLORTEK Industries PVT LTD");
+        
+        formDataObj.append("name", name);
+        formDataObj.append("phone", phone);
+        formDataObj.append("email", email);
+        formDataObj.append("company", company || "N/A");
+        formDataObj.append("country", country);
+        formDataObj.append("requirements", requirements);
+        formDataObj.append("message", requirements);
+
         try {
-            const response = await fetch("https://formsubmit.co/ajax/flortekindustries@gmail.com", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    "Customer Name": formData.name,
-                    "Phone Number": formData.phone,
-                    "Email Address": formData.email,
-                    "Company Name": formData.company,
-                    "Country": formData.country,
-                    "Project Requirements": formData.requirements,
-                    _subject: `New Project Enquiry: ${formData.name}`,
-                    _template: "table"
-                })
+                body: formDataObj
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (response.ok && data.success) {
                 setStatus('success');
                 setFormData({ name: '', email: '', phone: '', company: '', country: 'India', requirements: '' });
                 setTimeout(() => setStatus('idle'), 5000);
@@ -263,7 +293,7 @@ const Contact = () => {
                                     : 'bg-black hover:bg-[#333333] shadow-md hover:shadow-lg active:scale-[0.98]'
                                     }`}
                             >
-                                {status === 'submitting' ? 'Sending...' : (
+                                {status === 'submitting' ? 'Submitting...' : (
                                     <>
                                         Send Message <Send size={18} />
                                     </>
@@ -282,8 +312,9 @@ const Contact = () => {
                                     <div className="w-16 h-16 bg-[#F5F5F5] text-black rounded-full flex items-center justify-center mb-4">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-black mb-2">Message Sent!</h3>
-                                    <p className="text-[#333333] text-center max-w-xs">We have received your enquiry and will get back to you shortly.</p>
+                                    <h3 className="text-xl font-bold text-black mb-2">Quote Request Submitted Successfully!</h3>
+                                    <p className="text-[#333333] text-center max-w-xs mb-1">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
+                                    <p className="text-[#333333] text-center max-w-xs">We'll contact you shortly.</p>
                                 </motion.div>
                             )}
                         </AnimatePresence>

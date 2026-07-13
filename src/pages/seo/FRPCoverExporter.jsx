@@ -27,32 +27,65 @@ const FRPCoverExporter = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        const name = formData.name.trim();
+        const email = formData.email.trim();
+        const phone = formData.phone.trim();
+        const company = formData.company.trim();
+        const country = formData.country;
+        const port = formData.port.trim();
+        const loadClass = formData.loadClass;
+        const quantity = formData.quantity;
+        const requirements = formData.requirements.trim();
+
+        if (status === 'submitting') return;
+
+        // Validation checks
+        if (!name) {
+            alert("Please enter your name.");
+            return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (!phone || !/^\+?[0-9\s\-()]{7,20}$/.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+        if (!requirements) {
+            alert("Please enter custom markings & specifications.");
+            return;
+        }
+
         setStatus('submitting');
 
+        const formDataObj = new FormData();
+        formDataObj.append("access_key", "448d2ed5-cd76-47be-b441-3b9e6279a06c");
+        formDataObj.append("subject", "New Quote Request | FLORTEK INDUSTRIES PVT. LTD.");
+        formDataObj.append("from_name", "FLORTEK Industries PVT LTD");
+        
+        formDataObj.append("Lead Source", "B2B Exporter Page Form");
+        formDataObj.append("name", name);
+        formDataObj.append("email", email);
+        formDataObj.append("phone", phone);
+        formDataObj.append("company", company);
+        formDataObj.append("country", country);
+        formDataObj.append("port", port || "Not Specified");
+        formDataObj.append("loadClass", loadClass);
+        formDataObj.append("quantity", quantity);
+        formDataObj.append("requirements", requirements);
+        formDataObj.append("message", requirements);
+
         try {
-            const response = await fetch("https://formsubmit.co/ajax/flortekindustries@gmail.com", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    "Lead Source": "B2B Exporter Page Form",
-                    "Customer Name": formData.name,
-                    "Corporate Email": formData.email,
-                    "Phone / WhatsApp": formData.phone,
-                    "Company Name": formData.company,
-                    "Destination Country": formData.country,
-                    "Port of Discharge": formData.port || "Not Specified",
-                    "Load Rating Class": formData.loadClass,
-                    "Approximate Qty": formData.quantity,
-                    "Project Requirements": formData.requirements,
-                    _subject: `B2B International Inquiry: ${formData.company} (${formData.country})`,
-                    _template: "table"
-                })
+                body: formDataObj
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (response.ok && data.success) {
                 setStatus('success');
                 setFormData({
                     name: '',
@@ -196,9 +229,12 @@ const FRPCoverExporter = () => {
                                 <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-6">
                                     <CheckCircle size={32} />
                                 </div>
-                                <h4 className="text-2xl font-black uppercase tracking-tight text-black mb-2">Inquiry Submitted!</h4>
+                                <h3 className="text-2xl font-bold text-black mb-2">Quote Request Submitted Successfully!</h3>
+                                <p className="text-sm text-[#333333] max-w-xs mx-auto mb-1">
+                                    Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.
+                                </p>
                                 <p className="text-sm text-[#333333] max-w-xs mx-auto">
-                                    Thank you. Our B2B Export Desk will review your project parameters and contact you via email or WhatsApp within 12 hours.
+                                    We'll contact you shortly.
                                 </p>
                             </div>
                         ) : (
@@ -287,7 +323,7 @@ const FRPCoverExporter = () => {
                                 >
                                     {status === 'submitting' ? (
                                         <>
-                                            <Loader size={14} className="animate-spin" /> Submitting Request...
+                                            <Loader size={14} className="animate-spin" /> Submitting...
                                         </>
                                     ) : (
                                         <>

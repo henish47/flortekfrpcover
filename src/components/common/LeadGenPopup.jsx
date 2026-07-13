@@ -54,34 +54,45 @@ const LeadGenPopup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validateForm()) return;
+        if (status === 'submitting') return;
 
         setStatus('submitting');
+        
+        const formDataObj = new FormData();
+        formDataObj.append("access_key", "448d2ed5-cd76-47be-b441-3b9e6279a06c");
+        formDataObj.append("subject", "New Quote Request | FLORTEK INDUSTRIES PVT. LTD.");
+        formDataObj.append("from_name", "FLORTEK Industries PVT LTD");
+        
+        formDataObj.append("Lead Source", "Homepage Lead Popup");
+        formDataObj.append("name", formData.name.trim());
+        formDataObj.append("phone", formData.phone.trim());
+        formDataObj.append("company", formData.company || "N/A");
+        formDataObj.append("country", formData.country);
+        formDataObj.append("requirement", formData.requirement.trim());
+        formDataObj.append("message", formData.requirement.trim());
+
         try {
-            const response = await fetch("https://formsubmit.co/ajax/flortekindustries@gmail.com", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    "Lead Source": "Homepage Lead Popup",
-                    "Customer Name": formData.name,
-                    "Phone Number": formData.phone,
-                    "Company Name": formData.company || "N/A",
-                    "Country": formData.country,
-                    "Project Requirements": formData.requirement,
-                    _subject: `New Lead: ${formData.name} (${formData.phone})`,
-                    _template: "table"
-                })
+                body: formDataObj
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (response.ok && data.success) {
                 setStatus('success');
                 sessionStorage.setItem('flortek_lead_seen', 'true');
-                // Automatically close success modal after 4 seconds
+                setFormData({
+                    name: '',
+                    phone: '',
+                    company: '',
+                    country: 'India',
+                    requirement: ''
+                });
+                // Automatically close success modal after 5 seconds
                 setTimeout(() => {
                     setIsVisible(false);
-                }, 4000);
+                }, 5000);
             } else {
                 setStatus('error');
             }
@@ -137,9 +148,12 @@ const LeadGenPopup = () => {
                                 >
                                     <CheckCircle size={32} />
                                 </motion.div>
-                                <h3 className="text-2xl font-black uppercase tracking-tight mb-2">Thank You!</h3>
+                                <h3 className="text-2xl font-black uppercase tracking-tight mb-2">Quote Request Submitted Successfully!</h3>
+                                <p className="text-sm text-[#333333] max-w-xs mx-auto mb-1 font-medium">
+                                    Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.
+                                </p>
                                 <p className="text-sm text-[#333333] max-w-xs mx-auto">
-                                    Your quotation request has been sent. Our team will contact you shortly.
+                                    We'll contact you shortly.
                                 </p>
                             </div>
                         ) : (

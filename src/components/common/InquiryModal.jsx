@@ -8,41 +8,64 @@ const InquiryModal = ({ isOpen, onClose }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        
+        const form = e.target;
+        const name = form.elements.name.value.trim();
+        const phone = form.elements.phone.value.trim();
+        const email = form.elements.email.value.trim();
+        const requirement = form.elements.requirement.value.trim();
+
+        if (status === 'submitting') return;
+
+        // Validation checks
+        if (!name) {
+            alert("Please enter your name.");
+            return;
+        }
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+        if (!phone || !/^\+?[0-9\s\-()]{7,20}$/.test(phone)) {
+            alert("Please enter a valid phone number.");
+            return;
+        }
+        if (!requirement) {
+            alert("Please enter your requirement.");
+            return;
+        }
+
         setStatus('submitting');
 
-        const form = e.target;
-        const formData = {
-            name: form.elements.name.value,
-            phone: form.elements.phone.value,
-            email: form.elements.email.value,
-            country: form.elements.country.value,
-            requirement: form.elements.requirement.value,
-            _subject: "New Product Quote Request - Flortek Website"
-        };
+        const formData = new FormData(form);
+        formData.append("access_key", "448d2ed5-cd76-47be-b441-3b9e6279a06c");
+        formData.append("subject", "New Quote Request | FLORTEK INDUSTRIES PVT. LTD.");
+        formData.append("from_name", "FLORTEK Industries PVT LTD");
+        formData.append("message", requirement); // Prominent message field for Web3Forms
 
         try {
-            const response = await fetch("https://formsubmit.co/ajax/henishpatel47@gmail.com", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify(formData)
+                body: formData
             });
 
-            if (response.ok) {
+            const data = await response.json();
+
+            if (response.ok && data.success) {
                 setStatus('success');
+                form.reset();
                 setTimeout(() => {
                     onClose();
                     setStatus('idle');
-                }, 3000);
+                }, 5000);
             } else {
                 setStatus('idle');
-                alert("Something went wrong. Please try again or call us directly.");
+                alert(data.message || "Something went wrong. Please try again or call us directly.");
             }
         } catch (error) {
             setStatus('idle');
             console.error("Submission error:", error);
+            alert("Connection error. Please try again later.");
         }
     };
 
@@ -77,12 +100,13 @@ const InquiryModal = ({ isOpen, onClose }) => {
                         {/* Body */}
                         <div className="p-6">
                             {status === 'success' ? (
-                                <div className="flex flex-col items-center justify-center py-8 text-center">
+                                <div className="flex flex-col items-center justify-center py-8 text-center animate-fade-in">
                                     <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-4">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h4 className="text-xl font-bold text-black mb-2">Request Sent!</h4>
-                                    <p className="text-[#333333]">We'll get back to you within 24 hours.</p>
+                                    <h4 className="text-xl font-bold text-black mb-2">Quote Request Submitted Successfully!</h4>
+                                    <p className="text-[#333333] mb-1 font-medium">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
+                                    <p className="text-[#333333] text-sm">We'll contact you shortly.</p>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-4">
@@ -132,7 +156,7 @@ const InquiryModal = ({ isOpen, onClose }) => {
                                     >
                                         {status === 'submitting' ? (
                                             <>
-                                                <Loader size={18} className="animate-spin mr-2" /> Sending...
+                                                <Loader size={18} className="animate-spin mr-2" /> Submitting...
                                             </>
                                         ) : (
                                             <>
