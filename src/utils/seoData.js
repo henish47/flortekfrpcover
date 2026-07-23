@@ -157,7 +157,7 @@ export const seoData = {
         keywords: "India's No. 1 FRP manhole cover manufacturer, FRP cover manufacturer India, GRP cover factory India, B2B composite covers India, EN 124 certified manufacturer India, buy manhole covers bulk India, FLORTEK INDUSTRIES PVT. LTD."
     },
     "/frp-cover-manufacturer-gujarat": {
-        title: "FRP Cover Manufacturer Gujarat | Shapar Rajkot Factory",
+        title: "FRP Cover Manufacturer in Gujarat | FLORTEK INDUSTRIES PVT. LTD.",
         description: "FLORTEK INDUSTRIES PVT. LTD. is a top-tier manufacturer of FRP composite manhole covers in Shapar Rajkot, Gujarat. Heavy-duty design for industrial and public roads.",
         keywords: "FRP cover manufacturer Gujarat, Shapar Rajkot factory, composite manhole covers Gujarat, municipal drainage supplier Rajkot, GIFT city drainage covers, FLORTEK INDUSTRIES PVT. LTD."
     },
