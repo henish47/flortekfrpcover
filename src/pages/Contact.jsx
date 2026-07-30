@@ -124,8 +124,8 @@ const Contact = () => {
             />
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">
-                <h1 className="text-4xl md:text-5xl font-bold text-black mb-4 tracking-tight">Get in Touch</h1>
-                <p className="text-lg text-[#333333] max-w-2xl">
+                <h1 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight uppercase">Get in Touch</h1>
+                <p className="text-lg text-black max-w-2xl font-medium leading-relaxed">
                     We'd love to hear from you. Please fill out the form below or contact us directly for any inquiries regarding our FRP & BMC solutions.
                 </p>
             </div>
@@ -136,15 +136,15 @@ const Contact = () => {
                     {/* --- LEFT: Contact Info --- */}
                     <div className="space-y-12">
                         <div>
-                            <h3 className="text-xl font-bold text-black mb-6 border-b border-[#D9D9D9]/50 pb-2">Contact Information</h3>
+                            <h3 className="text-xl font-black text-black mb-6 border-b border-[#D9D9D9]/50 pb-2 uppercase tracking-tight">Contact Information</h3>
                             <div className="space-y-8">
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
+                                    <div className="bg-[#1B8036]/10 p-3 rounded-xl text-[#1B8036] border border-[#1B8036]/20 mt-1 shadow-sm">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-black">Address</h4>
-                                        <p className="text-[#333333] leading-relaxed mt-1">
+                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Address</h4>
+                                        <p className="text-black font-medium leading-relaxed mt-1 text-sm">
                                             Radhe Industrial Zone, Survey No.99/1-2,<br />
                                             Plot No.4/37, Veraval Shapar,<br />
                                             Rajkot - 360024, Gujarat, India
@@ -153,23 +153,23 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
+                                    <div className="bg-[#1B8036]/10 p-3 rounded-xl text-[#1B8036] border border-[#1B8036]/20 mt-1 shadow-sm">
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-black">Phone & WhatsApp</h4>
-                                        <p className="text-[#333333] mt-1">+91 80008 88620</p>
-                                        <p className="text-sm text-[#333333]/80 mt-1">Mon-Sat, 9am - 6pm IST</p>
+                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Phone & WhatsApp</h4>
+                                        <p className="text-black font-bold mt-1 text-sm">+91 80008 88620</p>
+                                        <p className="text-xs text-black/70 font-medium mt-1 uppercase tracking-wider">Mon-Sat, 9am - 6pm IST</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start gap-4">
-                                    <div className="bg-[#F5F5F5] p-3 rounded-lg text-black mt-1">
+                                    <div className="bg-[#1B8036]/10 p-3 rounded-xl text-[#1B8036] border border-[#1B8036]/20 mt-1 shadow-sm">
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-black">Email</h4>
-                                        <a href="mailto:flortekindustries@gmail.com" className="text-[#333333] hover:text-black transition-colors mt-1 block">
+                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Email</h4>
+                                        <a href="mailto:flortekindustries@gmail.com" className="text-black font-medium hover:text-[#1B8036] transition-colors mt-1 block text-sm">
                                             flortekindustries@gmail.com
                                         </a>
                                     </div>
@@ -194,31 +194,31 @@ const Contact = () => {
 
                     {/* --- RIGHT: Contact Form --- */}
                     <div className="bg-[#F5F5F5] p-8 md:p-10 rounded-3xl border border-[#D9D9D9] relative">
-                        <h3 className="text-2xl font-bold text-black mb-6">Send us a Message</h3>
+                        <h3 className="text-2xl font-black text-black mb-6 uppercase tracking-tight">Send us a Message</h3>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block text-sm font-semibold text-[#333333] mb-2">My Name</label>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">My Name *</label>
                                     <input
                                         type="text"
                                         name="name"
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium"
                                         placeholder="Enter your name"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Phone Number</label>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">Phone Number *</label>
                                     <input
                                         type="tel"
                                         name="phone"
                                         required
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium"
                                         placeholder="+91 00000 00000"
                                     />
                                 </div>
@@ -226,34 +226,34 @@ const Contact = () => {
 
                              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 <div>
-                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Email Address</label>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">Email Address *</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium"
                                         placeholder="you@company.com"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Company Name</label>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">Company Name</label>
                                     <input
                                         type="text"
                                         name="company"
                                         value={formData.company}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium"
                                         placeholder="Your organization"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-[#333333] mb-2">Country</label>
+                                    <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">Country</label>
                                     <select
                                         name="country"
                                         value={formData.country}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white text-sm font-medium h-[50px]"
+                                        className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium h-[50px]"
                                     >
                                         <option value="India">India</option>
                                         <option value="United Arab Emirates">United Arab Emirates (UAE)</option>
@@ -273,14 +273,14 @@ const Contact = () => {
                             </div>
 
                             <div>
-                                <label className="block text-sm font-semibold text-[#333333] mb-2">Message / Requirements</label>
+                                <label className="block text-xs font-bold uppercase tracking-wider text-black mb-2">Message / Requirements *</label>
                                 <textarea
                                     name="requirements"
                                     rows="4"
                                     required
                                     value={formData.requirements}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9]/80 focus:outline-none focus:border-black transition-all bg-white resize-none"
+                                    className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:outline-none focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] transition-all bg-white text-black font-medium resize-none"
                                     placeholder="Tell us about your project..."
                                 ></textarea>
                             </div>
@@ -288,9 +288,9 @@ const Contact = () => {
                             <button
                                 type="submit"
                                 disabled={status === 'submitting'}
-                                className={`w-full py-4 rounded-xl font-bold text-white transition-all flex items-center justify-center gap-2 ${status === 'submitting'
-                                    ? 'bg-[#D9D9D9] text-[#333333] cursor-not-allowed'
-                                    : 'bg-black hover:bg-[#333333] shadow-md hover:shadow-lg active:scale-[0.98]'
+                                className={`w-full py-4 rounded-xl font-black uppercase tracking-wider text-xs text-white transition-all flex items-center justify-center gap-2 ${status === 'submitting'
+                                    ? 'bg-[#D9D9D9] text-black cursor-not-allowed'
+                                    : 'bg-[#1B8036] hover:bg-[#145C27] shadow-md hover:shadow-lg active:scale-[0.98]'
                                     }`}
                             >
                                 {status === 'submitting' ? 'Submitting...' : (
@@ -309,12 +309,12 @@ const Contact = () => {
                                     exit={{ opacity: 0 }}
                                     className="absolute inset-0 bg-white/95 backdrop-blur-sm z-10 flex flex-col items-center justify-center rounded-3xl"
                                 >
-                                    <div className="w-16 h-16 bg-[#F5F5F5] text-black rounded-full flex items-center justify-center mb-4">
+                                    <div className="w-16 h-16 bg-[#1B8036] text-white rounded-full flex items-center justify-center mb-4 shadow-lg shadow-[#1B8036]/30">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-black mb-2">Quote Request Submitted Successfully!</h3>
-                                    <p className="text-[#333333] text-center max-w-xs mb-1">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
-                                    <p className="text-[#333333] text-center max-w-xs">We'll contact you shortly.</p>
+                                    <h3 className="text-xl font-black text-[#0B1B3D] mb-2 uppercase tracking-tight">Quote Request Submitted Successfully!</h3>
+                                    <p className="text-black text-center max-w-xs mb-1 font-medium">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
+                                    <p className="text-black text-center max-w-xs font-medium">We'll contact you shortly.</p>
                                 </motion.div>
                             )}
                         </AnimatePresence>

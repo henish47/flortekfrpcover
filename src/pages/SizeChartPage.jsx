@@ -14,7 +14,7 @@ const SizeChartPage = () => {
             />
 
             {/* Hero Section */}
-            <div className="relative py-20 px-4 bg-black text-center overflow-hidden">
+            <div className="relative py-20 px-4 bg-[#1B8036] text-center overflow-hidden border-b border-[#145C27]">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white rounded-full blur-[100px] -mr-40 -mt-40"></div>
                     <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white rounded-full blur-[100px] -ml-40 -mb-40"></div>
@@ -27,9 +27,9 @@ const SizeChartPage = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <h1 className="text-4xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-                            Technical Data & <br /> <span className="text-[#D9D9D9]">Specifications</span>
+                            Technical Data & <br /> <span className="text-[#FFC700]">Specifications</span>
                         </h1>
-                        <p className="text-[#D9D9D9] text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
+                        <p className="text-white/90 text-lg md:text-xl font-medium max-w-2xl mx-auto leading-relaxed">
                             Comprehensive sizing charts, product weights, and load capacity for our entire range of Light, Medium, and Heavy Duty covers.
                         </p>
                     </motion.div>

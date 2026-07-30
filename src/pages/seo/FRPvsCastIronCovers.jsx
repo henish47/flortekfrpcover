@@ -11,7 +11,7 @@ const FRPvsCastIronCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "FRP Composite vs Cast Iron Manhole Covers | Flortek",
+                "name": "FRP Composite vs Cast Iron Manhole Covers | FLORTEK INDUSTRIES PVT. LTD.",
                 "description": "Read the engineering comparison between FRP composite covers and traditional Cast Iron manhole lids. Discover why municipalities choose corrosion-proof, zero-theft composite covers.",
                 "url": "https://www.flortekfrpcover.com/frp-vs-cast-iron-covers",
                 "breadcrumb": {
@@ -64,7 +64,7 @@ const FRPvsCastIronCovers = () => {
             {/* Main Content Grid */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Text Body */}
-                <div className="lg:col-span-8 text-[#333333] text-sm md:text-base leading-relaxed space-y-8">
+                <div className="lg:col-span-8 blog-article-body space-y-12">
                     
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">

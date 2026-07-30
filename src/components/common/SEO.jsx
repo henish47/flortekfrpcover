@@ -55,7 +55,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
         "logo": {
             "@type": "ImageObject",
             "@id": `${domain}/#logo`,
-            "url": `${domain}/images/logo.png`,
+            "url": `${domain}/flortek_logo_2.webp`,
             "caption": "FLORTEK INDUSTRIES PVT. LTD."
         },
         "image": {
@@ -84,7 +84,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
         "@type": "LocalBusiness",
         "@id": `${domain}/#localbusiness`,
         "name": "FLORTEK INDUSTRIES PVT. LTD.",
-        "image": `${domain}/images/logo.png`,
+        "image": `${domain}/flortek_logo_2.webp`,
         "url": domain,
         "telephone": "+91-8000888620",
         "email": "flortekindustries@gmail.com",
@@ -289,7 +289,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
         "@graph": graph
     };
 
-    const ogImage = `${domain}/images/logo.png`;
+    const ogImage = `${domain}/flortek_logo_2.webp`;
 
     return (
         <Helmet>

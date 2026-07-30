@@ -64,12 +64,12 @@ const FAQAccordion = () => {
                                 onClick={() => toggleFAQ(index)}
                                 aria-expanded={isOpen}
                             >
-                                <span className="text-base md:text-lg font-bold text-black transition-colors duration-200 group-hover:text-black/70">
+                                <span className="text-base md:text-lg font-bold text-black transition-colors duration-200 group-hover:text-[#1B8036]">
                                     {faq.question}
                                 </span>
                                 <ChevronDown
                                     size={20}
-                                    className={`text-black shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                                    className={`text-[#1B8036] shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
                                 />
                             </button>
                             <AnimatePresence initial={false}>
@@ -81,7 +81,7 @@ const FAQAccordion = () => {
                                         transition={{ duration: 0.3, ease: "easeInOut" }}
                                         className="overflow-hidden"
                                     >
-                                        <p className="text-sm md:text-base text-[#333333] leading-relaxed pt-3 pr-8">
+                                        <p className="text-sm md:text-base text-black leading-relaxed pt-3 pr-8 font-medium">
                                             {faq.answer}
                                         </p>
                                     </motion.div>

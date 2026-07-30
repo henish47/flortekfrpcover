@@ -11,7 +11,7 @@ const FRPCoverManufacturerIndia = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "FRP Cover Manufacturer & B2B Supplier in India | Flortek",
+                "name": "FRP Cover Manufacturer & B2B Supplier in India | Flortek Industries PVT. LTD.",
                 "description": "Flortek is a premier ISO 9001:2015 certified manufacturer of high-quality composite FRP covers in India. Nationwide delivery, custom sizing, and BS EN 124 compliance.",
                 "url": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india",
                 "breadcrumb": {
@@ -64,7 +64,7 @@ const FRPCoverManufacturerIndia = () => {
             {/* Main Content Grid */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Text Body */}
-                <div className="lg:col-span-8 text-[#333333] text-sm md:text-base leading-relaxed space-y-8">
+                <div className="lg:col-span-8 blog-article-body space-y-12">
                     
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">

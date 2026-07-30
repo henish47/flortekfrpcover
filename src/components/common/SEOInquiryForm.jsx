@@ -96,13 +96,13 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
     return (
         <div className="bg-[#F5F5F5] border border-[#D9D9D9] rounded-[2rem] p-6 md:p-8 shadow-xl relative overflow-hidden font-sans text-black" id="seo-quote-form">
             <div className="mb-6">
-                <span className="inline-block px-3 py-1 rounded-full bg-black text-white text-[9px] font-black uppercase tracking-wider mb-2">
+                <span className="inline-block px-3 py-1 rounded-full bg-[#FFC700] text-[#0B1B3D] text-[9px] font-black uppercase tracking-wider mb-2">
                     Quick Inquiry
                 </span>
                 <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-black leading-tight">
                     Need FRP Covers?
                 </h3>
-                <p className="text-xs md:text-sm text-[#333333] mt-1 font-bold">
+                <p className="text-xs md:text-sm text-black mt-1 font-bold">
                     Get Factory Direct Pricing from FLORTEK INDUSTRIES PVT. LTD.
                 </p>
             </div>
@@ -115,81 +115,81 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                         exit={{ opacity: 0, scale: 0.95 }}
                         className="text-center py-12"
                     >
-                        <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <div className="w-16 h-16 bg-[#1B8036] text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-[#1B8036]/30">
                             <CheckCircle size={32} />
                         </div>
                         <h4 className="text-2xl font-black uppercase tracking-tight text-black mb-2">Quote Request Submitted Successfully!</h4>
-                        <p className="text-sm text-[#333333] max-w-xs mx-auto leading-relaxed mb-1">
+                        <p className="text-sm text-black max-w-xs mx-auto leading-relaxed mb-1 font-medium">
                             Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.
                         </p>
-                        <p className="text-sm text-[#333333] max-w-xs mx-auto leading-relaxed">
+                        <p className="text-sm text-black max-w-xs mx-auto leading-relaxed font-medium">
                             We'll contact you shortly.
                         </p>
                     </motion.div>
                 ) : (
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <div>
-                            <label className="block text-[10px] font-black uppercase tracking-wider text-[#333333] mb-1">Your Name *</label>
+                            <label className="block text-[10px] font-black uppercase tracking-wider text-black mb-1">Your Name *</label>
                             <input
                                 required
                                 name="name"
                                 type="text"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-black outline-none bg-white text-sm font-medium transition-all"
+                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none bg-white text-black text-sm font-medium transition-all"
                                 placeholder="Enter your full name"
                             />
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label className="block text-[10px] font-black uppercase tracking-wider text-[#333333] mb-1">Mobile Number *</label>
+                                <label className="block text-[10px] font-black uppercase tracking-wider text-black mb-1">Mobile Number *</label>
                                 <input
                                     required
                                     name="phone"
                                     type="tel"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-black outline-none bg-white text-sm font-medium transition-all"
+                                    className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none bg-white text-black text-sm font-medium transition-all"
                                     placeholder="Enter 10-digit mobile number"
                                 />
                             </div>
                             <div>
-                                <label className="block text-[10px] font-black uppercase tracking-wider text-[#333333] mb-1">Email Address *</label>
+                                <label className="block text-[10px] font-black uppercase tracking-wider text-black mb-1">Email Address *</label>
                                 <input
                                     required
                                     name="email"
                                     type="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-black outline-none bg-white text-sm font-medium transition-all"
+                                    className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none bg-white text-black text-sm font-medium transition-all"
                                     placeholder="you@company.com"
                                 />
                             </div>
                         </div>
 
                         <div>
-                            <label className="block text-[10px] font-black uppercase tracking-wider text-[#333333] mb-1">City / Location *</label>
+                            <label className="block text-[10px] font-black uppercase tracking-wider text-black mb-1">City / Location *</label>
                             <input
                                 required
                                 name="city"
                                 type="text"
                                 value={formData.city}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-black outline-none bg-white text-sm font-medium transition-all"
+                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none bg-white text-black text-sm font-medium transition-all"
                                 placeholder="E.g. Rajkot, Dubai, Houston"
                             />
                         </div>
 
                         <div>
-                            <label className="block text-[10px] font-black uppercase tracking-wider text-[#333333] mb-1">Requirement Details *</label>
+                            <label className="block text-[10px] font-black uppercase tracking-wider text-black mb-1">Requirement Details *</label>
                             <textarea
                                 required
                                 name="requirement"
                                 rows="3"
                                 value={formData.requirement}
                                 onChange={handleChange}
-                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-black outline-none bg-white text-xs font-medium resize-none transition-all"
+                                className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none bg-white text-black text-xs font-medium resize-none transition-all"
                                 placeholder="Specify sizes, quantities, loading classes (E.g. A15, B125, C250, D400)..."
                             ></textarea>
                         </div>
@@ -205,7 +205,7 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                                 type="submit"
                                 disabled={status === 'submitting'}
                                 variant="primary"
-                                className="w-full justify-center py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-black hover:bg-[#333333] text-white transition-colors"
+                                className="w-full justify-center py-3.5 rounded-xl text-xs font-black uppercase tracking-wider bg-[#1B8036] hover:bg-[#145C27] text-white transition-colors border border-[#1B8036]"
                             >
                                 {status === 'submitting' ? (
                                     <>
@@ -220,7 +220,7 @@ const SEOInquiryForm = ({ subject = "SEO Landing Page Inquiry" }) => {
                             <button
                                 type="button"
                                 onClick={handleWhatsApp}
-                                className="w-full py-3.5 border border-[#D9D9D9] hover:bg-[#EAEAEA] text-black text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2 bg-white"
+                                className="w-full py-3.5 border border-[#1B8036] text-[#1B8036] hover:bg-[#1B8036]/10 text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2 bg-white"
                             >
                                 <MessageSquare size={14} /> WhatsApp Inquiry
                             </button>

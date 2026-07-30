@@ -11,7 +11,7 @@ const MunicipalFRPCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "Zero-Theft Municipal FRP Manhole Covers | Flortek",
+                "name": "Zero-Theft Municipal FRP Manhole Covers | Flortek Industries PVT. LTD.",
                 "description": "FRP composite manhole covers designed for municipal public works projects, sewage networks, and smart city infrastructure. RF-friendly and BS EN 124 certified.",
                 "url": "https://www.flortekfrpcover.com/municipal-frp-covers",
                 "breadcrumb": {
@@ -64,7 +64,7 @@ const MunicipalFRPCovers = () => {
             {/* Main Content Grid */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Text Body */}
-                <div className="lg:col-span-8 text-[#333333] text-sm md:text-base leading-relaxed space-y-8">
+                <div className="lg:col-span-8 blog-article-body space-y-12">
                     
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">

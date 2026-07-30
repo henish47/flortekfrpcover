@@ -144,28 +144,28 @@ const LeadGenPopup = () => {
                                 <motion.div
                                     initial={{ scale: 0 }}
                                     animate={{ scale: 1 }}
-                                    className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-6"
+                                    className="w-16 h-16 bg-[#1B8036] text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-[#1B8036]/30"
                                 >
                                     <CheckCircle size={32} />
                                 </motion.div>
-                                <h3 className="text-2xl font-black uppercase tracking-tight mb-2">Quote Request Submitted Successfully!</h3>
-                                <p className="text-sm text-[#333333] max-w-xs mx-auto mb-1 font-medium">
+                                <h3 className="text-2xl font-black uppercase tracking-tight mb-2 text-[#0B1B3D]">Quote Request Submitted Successfully!</h3>
+                                <p className="text-sm text-black max-w-xs mx-auto mb-1 font-medium">
                                     Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.
                                 </p>
-                                <p className="text-sm text-[#333333] max-w-xs mx-auto">
+                                <p className="text-sm text-black max-w-xs mx-auto font-medium">
                                     We'll contact you shortly.
                                 </p>
                             </div>
                         ) : (
                             <div>
                                 <div className="mb-6">
-                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[9px] font-black uppercase tracking-wider mb-3">
+                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC700]/20 border border-[#FFC700] text-black text-[9px] font-black uppercase tracking-wider mb-3">
                                         Exclusive Request
                                     </span>
-                                    <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none mb-1">
+                                    <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tighter leading-none mb-1 text-black">
                                         Need FRP Covers?
                                     </h3>
-                                    <p className="text-xs text-[#333333] font-medium uppercase tracking-wide">
+                                    <p className="text-xs text-black font-bold uppercase tracking-wide">
                                         Get Free Quotation Today.
                                     </p>
                                 </div>
@@ -178,7 +178,7 @@ const LeadGenPopup = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             placeholder="Your Name *"
-                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none ${errors.name ? 'border-red-500' : 'border-[#D9D9D9] focus:border-black'}`}
+                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white text-black transition-all outline-none ${errors.name ? 'border-red-500' : 'border-[#D9D9D9] focus:border-[#1B8036]'}`}
                                         />
                                         {errors.name && <p className="text-[10px] text-red-500 mt-1 font-bold">{errors.name}</p>}
                                     </div>
@@ -190,7 +190,7 @@ const LeadGenPopup = () => {
                                             value={formData.phone}
                                             onChange={handleChange}
                                             placeholder="Mobile Number *"
-                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none ${errors.phone ? 'border-red-500' : 'border-[#D9D9D9] focus:border-black'}`}
+                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white text-black transition-all outline-none ${errors.phone ? 'border-red-500' : 'border-[#D9D9D9] focus:border-[#1B8036]'}`}
                                         />
                                         {errors.phone && <p className="text-[10px] text-red-500 mt-1 font-bold">{errors.phone}</p>}
                                     </div>
@@ -202,13 +202,13 @@ const LeadGenPopup = () => {
                                             value={formData.company}
                                             onChange={handleChange}
                                             placeholder="Company (Opt.)"
-                                            className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:border-black text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none"
+                                            className="w-full px-4 py-3 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] text-sm font-medium bg-[#F5F5F5] focus:bg-white text-black transition-all outline-none"
                                         />
                                         <select
                                             name="country"
                                             value={formData.country}
                                             onChange={handleChange}
-                                            className="w-full px-3 py-3 rounded-xl border border-[#D9D9D9] focus:border-black text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none"
+                                            className="w-full px-3 py-3 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] text-sm font-medium bg-[#F5F5F5] focus:bg-white text-black transition-all outline-none"
                                         >
                                             <option value="India">India</option>
                                             <option value="United Arab Emirates">UAE</option>
@@ -233,7 +233,7 @@ const LeadGenPopup = () => {
                                             onChange={handleChange}
                                             placeholder="Specify Sizing / Suffix Requirements *"
                                             rows="3"
-                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white transition-all outline-none resize-none ${errors.requirement ? 'border-red-500' : 'border-[#D9D9D9] focus:border-black'}`}
+                                            className={`w-full px-4 py-3 rounded-xl border text-sm font-medium bg-[#F5F5F5] focus:bg-white text-black transition-all outline-none resize-none ${errors.requirement ? 'border-red-500' : 'border-[#D9D9D9] focus:border-[#1B8036]'}`}
                                         />
                                         {errors.requirement && <p className="text-[10px] text-red-500 mt-1 font-bold">{errors.requirement}</p>}
                                     </div>
@@ -248,7 +248,7 @@ const LeadGenPopup = () => {
                                         <button
                                             type="submit"
                                             disabled={status === 'submitting'}
-                                            className="w-full py-3.5 bg-black hover:bg-[#333333] text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2 shadow-md disabled:bg-gray-400"
+                                            className="w-full py-3.5 bg-[#1B8036] hover:bg-[#145C27] text-white text-xs font-black uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2 shadow-md disabled:bg-gray-400"
                                         >
                                             {status === 'submitting' ? (
                                                 <>
@@ -262,7 +262,7 @@ const LeadGenPopup = () => {
                                         <button
                                             type="button"
                                             onClick={handleWhatsApp}
-                                            className="w-full py-3.5 border border-[#D9D9D9] hover:bg-[#F5F5F5] text-black text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2"
+                                            className="w-full py-3.5 border border-[#1B8036] text-[#1B8036] hover:bg-[#1B8036]/10 text-xs font-bold uppercase tracking-wider rounded-xl transition-all flex items-center justify-center gap-2"
                                         >
                                             <MessageSquare size={14} /> Contact on WhatsApp
                                         </button>

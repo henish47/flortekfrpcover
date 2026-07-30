@@ -5,10 +5,10 @@ const Button = ({ children, variant = 'primary', className = '', ...props }) => 
     const baseStyles = "px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2";
 
     const variants = {
-        primary: "bg-black text-white hover:bg-[#333333] border border-black shadow-sm",
-        secondary: "bg-[#F5F5F5] text-black border border-[#D9D9D9] hover:bg-[#D9D9D9]",
-        outline: "border border-black text-black bg-transparent hover:bg-[#F5F5F5]",
-        ghost: "text-black hover:bg-[#F5F5F5]"
+        primary: "bg-[#1B8036] text-white hover:bg-[#145C27] border border-[#1B8036] shadow-sm",
+        secondary: "bg-[#FFC700] text-[#0B1B3D] border border-[#FFC700] hover:bg-[#E6B200] font-bold",
+        outline: "border border-[#1B8036] text-[#1B8036] bg-transparent hover:bg-[#1B8036] hover:text-white",
+        ghost: "text-[#0B1B3D] hover:bg-[#F5F5F5]"
     };
 
     return (

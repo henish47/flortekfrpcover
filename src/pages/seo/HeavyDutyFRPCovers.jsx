@@ -14,7 +14,7 @@ const HeavyDutyFRPCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "Heavy-Duty FRP & Composite Manhole Covers | Flortek",
+                "name": "Heavy-Duty FRP & Composite Manhole Covers | Flortek Industries PVT. LTD.",
                 "description": "High-strength, export-grade heavy-duty FRP manhole covers certified to Class C250 and D400 BS EN 124 standards. Built for highway and industrial cargo traffic.",
                 "url": "https://www.flortekfrpcover.com/heavy-duty-frp-covers",
                 "breadcrumb": {
@@ -67,7 +67,7 @@ const HeavyDutyFRPCovers = () => {
             {/* Main Content Area (SEO Copywriting) */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
                 {/* Text Body */}
-                <div className="lg:col-span-8 text-[#333333] text-sm md:text-base leading-relaxed space-y-8">
+                <div className="lg:col-span-8 blog-article-body space-y-12">
                     <section className="space-y-4">
                         <h2 className="text-2xl md:text-3xl font-black text-black uppercase tracking-tight">
                             Traffic-Rated Structural Composite Covers

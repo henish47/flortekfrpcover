@@ -3,12 +3,12 @@ import { Phone, Mail } from 'lucide-react';
 
 const FloatingAction = () => {
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+        <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex flex-col items-end gap-2.5">
             <div className="flex flex-col gap-3">
                 {/* Email Button */}
                 <a
                     href="mailto:flortekindustries@gmail.com"
-                    className="bg-black text-white p-3.5 rounded-full border border-[#333333] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"
+                    className="bg-[#0B1B3D] text-white p-3.5 rounded-full border border-[#0B1B3D] shadow-md hover:bg-[#1B8036] hover:-translate-y-1 transition-all flex items-center justify-center group relative"
                     aria-label="Send Email"
                 >
                     <Mail size={20} className="relative z-10" />
@@ -36,7 +36,7 @@ const FloatingAction = () => {
                 {/* Phone Button */}
                 <a
                     href="tel:+918000888620"
-                    className="bg-[#F5F5F5] text-black p-3.5 rounded-full border border-[#D9D9D9] shadow-md hover:-translate-y-1 transition-all flex items-center justify-center group relative"
+                    className="bg-[#FFC700] text-[#0B1B3D] p-3.5 rounded-full border border-[#FFC700] shadow-md hover:bg-[#E6B200] hover:-translate-y-1 transition-all flex items-center justify-center group relative font-bold"
                     aria-label="Call Now"
                 >
                     <Phone size={20} className="relative z-10" />

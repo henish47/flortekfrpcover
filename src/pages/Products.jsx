@@ -8,7 +8,7 @@ import { useModal } from '../context/ModalContext';
 const ProductCard = ({ product, onZoom, onQuote }) => {
     return (
         <div 
-            className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D9D9D9] hover:border-black hover:shadow-lg transition-all duration-500 h-full flex flex-col group relative"
+            className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden border border-[#D9D9D9] hover:border-[#1B8036] hover:shadow-lg transition-all duration-500 h-full flex flex-col group relative"
         >
             {/* Image container */}
             <div 
@@ -29,7 +29,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 </span>
                 
                 {/* Load class badge on image */}
-                <span className="absolute top-3 left-3 bg-black text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded shadow-sm">
+                <span className="absolute top-3 left-3 bg-[#1B8036] text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded shadow-sm">
                     {product.loadClass.split(' ')[0]} {product.loadClass.includes('Ton') ? 'Ton' : ''}
                 </span>
             </div>
@@ -37,7 +37,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
             {/* Metadata container */}
             <div className="p-3 sm:p-5 flex-grow flex flex-col justify-between">
                 <div>
-                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-[#333333]/60 block mb-0.5">
+                    <span className="text-[9px] sm:text-[10px] font-black uppercase tracking-wider text-black block mb-0.5">
                         {product.category}
                     </span>
                     <h3 className="text-xs sm:text-sm font-black uppercase text-black mb-2 line-clamp-2 leading-tight min-h-[2rem]">
@@ -45,17 +45,17 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                     </h3>
                     
                     {/* Specs list */}
-                    <div className="space-y-1 text-[10px] sm:text-xs text-[#333333]/80 font-medium mb-3 sm:mb-5">
+                    <div className="space-y-1 text-[10px] sm:text-xs text-black font-medium mb-3 sm:mb-5">
                         <div className="flex justify-between border-b border-[#F5F5F5] pb-1">
-                            <span className="text-[#333333]/50">Shape:</span>
+                            <span className="text-black font-semibold">Shape:</span>
                             <span className="font-bold text-black">{product.shape}</span>
                         </div>
                         <div className="flex justify-between border-b border-[#F5F5F5] pb-1">
-                            <span className="text-[#333333]/50">Size:</span>
+                            <span className="text-black font-semibold">Size:</span>
                             <span className="font-bold text-black truncate max-w-[70px] sm:max-w-none" title={product.dimensions}>{product.dimensions.split('/')[0].trim()}</span>
                         </div>
                         <div className="flex justify-between">
-                            <span className="text-[#333333]/50">Load capacity :</span>
+                            <span className="text-black font-semibold">Load capacity :</span>
                             <span className="font-bold text-black text-[9px] sm:text-[10px] truncate max-w-[65px] sm:max-w-none" title={product.loadClass}>{product.loadClass.split(' ')[0]} {product.loadClass.includes('Ton') ? 'T' : ''}</span>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 {/* Quote Button */}
                 <button
                     onClick={onQuote}
-                    className="w-full h-9 sm:h-11 bg-black text-white rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
+                    className="w-full h-9 sm:h-11 bg-[#1B8036] text-white rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-black uppercase tracking-wider hover:bg-[#145C27] transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95 border border-[#1B8036]"
                 >
                     Get Quote
                 </button>
@@ -469,8 +469,37 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
             {/* --- FILTER CONTROL BAR --- */}
             <div className="max-w-[1400px] mx-auto px-6 md:px-8 mt-8 mb-16">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-[#D9D9D9]/40 pb-6">
-                    {/* Category tabs */}
-                    <div className="flex flex-wrap gap-1.5 w-full md:w-auto">
+                    {/* Mobile Dropdown Menu (Visible on mobile screens) */}
+                    <div className="w-full md:hidden mb-2">
+                        <label htmlFor="mobile-category-select" className="block text-[10px] font-black uppercase tracking-widest text-black/70 mb-1.5">
+                            Select Product Category:
+                        </label>
+                        <div className="relative">
+                            <select
+                                id="mobile-category-select"
+                                value={activeCategory}
+                                onChange={(e) => {
+                                    setActiveCategory(e.target.value);
+                                    setSearchTerm("");
+                                }}
+                                className="w-full py-3 px-4 pr-10 bg-[#1B8036] text-white border border-[#1B8036] rounded-xl text-xs font-extrabold uppercase tracking-wider shadow-md focus:outline-none appearance-none cursor-pointer"
+                            >
+                                {["Manhole Covers", "Heavy Duty", "Recessed Covers", "Gulley Covers"].map((cat) => (
+                                    <option key={cat} value={cat} className="bg-white text-black font-bold py-2">
+                                        {cat}
+                                    </option>
+                                ))}
+                            </select>
+                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-white">
+                                <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9.293 12.95l0.707 0.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Desktop Category tabs (Visible on tablet & desktop) */}
+                    <div className="hidden md:flex flex-wrap gap-1.5 w-full md:w-auto">
                         {["Manhole Covers", "Heavy Duty", "Recessed Covers", "Gulley Covers"].map((cat) => (
                             <button
                                 key={cat}
@@ -479,8 +508,8 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                                     setSearchTerm("");
                                 }}
                                 className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all border ${activeCategory === cat
-                                    ? 'bg-black text-white border-black shadow-sm'
-                                    : 'bg-white text-[#333333]/80 border-[#D9D9D9]/70 hover:border-black hover:text-black'
+                                    ? 'bg-[#1B8036] text-white border-[#1B8036] shadow-sm'
+                                    : 'bg-white text-black border-[#D9D9D9] hover:border-[#1B8036] hover:text-[#1B8036]'
                                     }`}
                             >
                                 {cat}
@@ -490,25 +519,25 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
 
                     {/* Search & Count */}
                     <div className="flex items-center gap-4 w-full md:w-auto justify-between md:justify-end">
-                        <div className="text-[10px] font-black uppercase tracking-wider text-[#333333]/60 hidden sm:block">
+                        <div className="text-[10px] font-black uppercase tracking-wider text-black hidden sm:block">
                             Showing {filteredProducts.length} items
                         </div>
                         
-                        <div className="relative w-full sm:max-w-xs focus-within:ring-2 focus-within:ring-black/10 transition-all rounded-full">
+                        <div className="relative w-full sm:max-w-xs focus-within:ring-2 focus-within:ring-[#1B8036]/20 transition-all rounded-full">
                             <input
                                 type="text"
                                 placeholder="Search products..."
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                className="w-full pl-9 pr-10 py-2.5 bg-[#F5F5F5] border border-[#D9D9D9] rounded-full focus:bg-white focus:outline-none transition-all outline-none text-[11px] text-black placeholder:text-[#333333]/65 font-bold uppercase tracking-wider"
+                                className="w-full pl-9 pr-10 py-2.5 bg-[#F5F5F5] border border-[#D9D9D9] rounded-full focus:bg-white focus:outline-none transition-all outline-none text-[11px] text-black placeholder:text-black/65 font-bold uppercase tracking-wider"
                             />
-                            <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#333333]/60">
+                            <div className="absolute left-3.5 top-1/2 -translate-y-1/2 text-black">
                                 <Search size={12} />
                             </div>
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm("")}
-                                    className="absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center text-[#333333] hover:text-red-500 rounded-full hover:bg-black/5 active:scale-95 transition-all outline-none"
+                                    className="absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center text-black hover:text-red-500 rounded-full hover:bg-black/5 active:scale-95 transition-all outline-none"
                                     aria-label="Clear search query"
                                 >
                                     <X size={14} />
@@ -521,7 +550,7 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                 {/* --- GALLERY GRID --- */}
                 <div className="mt-8">
                     <div className="mb-6 flex items-center gap-2.5">
-                        <span className="w-1.5 h-6 bg-black rounded-full" />
+                        <span className="w-1.5 h-6 bg-[#1B8036] rounded-full" />
                         <h2 className="text-xl font-black text-black uppercase tracking-tight">{activeCategory}</h2>
                     </div>
                     <AnimatePresence mode="popLayout">
@@ -563,6 +592,40 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
                             </motion.div>
                         )}
                     </AnimatePresence>
+
+                    {/* Quick Sub-Category Navigation Bar Below Product Cards Grid */}
+                    <div className="mt-12 p-6 sm:p-8 bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div className="text-center md:text-left">
+                            <h4 className="text-base font-black uppercase text-black tracking-tight mb-1">
+                                Explore Other Product Categories
+                            </h4>
+                            <p className="text-xs text-black font-medium">
+                                Switch instantly between heavy-duty highway covers, recessed tile covers, and gulley grates.
+                            </p>
+                        </div>
+                        <div className="flex flex-wrap justify-center gap-2.5">
+                            {[
+                                { label: "SEE HEAVY DUTY", category: "Heavy Duty" },
+                                { label: "SEE RECESSED COVERS", category: "Recessed Covers" },
+                                { label: "SEE GULLEY COVERS", category: "Gulley Covers" }
+                            ].map((item) => (
+                                <button
+                                    key={item.category}
+                                    onClick={() => {
+                                        setActiveCategory(item.category);
+                                        setSearchTerm("");
+                                        window.scrollTo({ top: 350, behavior: 'smooth' });
+                                    }}
+                                    className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border shadow-xs ${activeCategory === item.category
+                                        ? 'bg-[#1B8036] text-white border-[#1B8036] shadow-sm'
+                                        : 'bg-white text-black border-[#D9D9D9] hover:bg-[#1B8036] hover:text-white hover:border-[#1B8036]'
+                                        }`}
+                                >
+                                    {item.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
 

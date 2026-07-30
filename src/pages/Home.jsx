@@ -5,6 +5,8 @@ import { useModal } from '../context/ModalContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/common/SEO';
 import FAQAccordion, { faqs } from '../components/common/FAQAccordion';
+import GoogleReviews from '../components/home/GoogleReviews';
+import FRPComparisonMatrix from '../components/home/FRPComparisonMatrix';
 
 // Slide show data for Hero section
 const heroSlides = [
@@ -195,40 +197,40 @@ const Home = () => {
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-black rounded-full blur-[120px] -mr-40 -mt-40"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-6 md:px-8 w-full py-16 md:py-24 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                <div className="max-w-7xl mx-auto px-4 md:px-8 w-full py-10 sm:py-16 md:py-24 relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
                         {/* Left Column: Text Content */}
-                        <div className="lg:col-span-7 text-left space-y-8">
+                        <div className="lg:col-span-7 text-left space-y-6 md:space-y-8">
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}
-                                className="space-y-8"
+                                className="space-y-6 md:space-y-8"
                             >
-                                <span className="inline-block py-1.5 px-4 rounded-full bg-[#F5F5F5] text-black text-[10px] font-black tracking-widest uppercase border border-[#D9D9D9]">
+                                <span className="inline-block py-1.5 px-3.5 rounded-full bg-[#FFC700]/20 text-black text-[10px] font-black tracking-widest uppercase border border-[#FFC700]">
                                     Est. 2017 | Rajkot, India
                                 </span>
-                                <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-[0.95] text-black uppercase">
+                                <h1 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-[1.05] sm:leading-[0.95] text-black uppercase">
                                     Engineering <br />
-                                    <span className="text-[#333333]">Structural Strength.</span>
+                                    <span className="text-[#1B8036]">Structural Strength.</span>
                                 </h1>
-                                <p className="text-base md:text-xl text-[#333333] font-medium leading-relaxed max-w-2xl">
+                                <p className="text-xs sm:text-base md:text-xl text-black font-medium leading-relaxed max-w-2xl">
                                     High-performance, corrosion-resistant FRP manhole covers engineered with absolute precision for modern infrastructure, commercial hubs, and industrial applications.
                                 </p>
-                                <div className="flex flex-wrap gap-4 pt-2">
-                                    <Link to="/products" className="inline-flex items-center justify-center px-8 py-4 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-black shadow-sm">
+                                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-2">
+                                    <Link to="/products" className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm">
                                         View Products <ArrowRight size={14} className="ml-2" />
                                     </Link>
                                     <button
                                         onClick={openModal}
-                                        className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-black hover:bg-[#F5F5F5] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#FFC700] shadow-sm"
                                     >
                                         Get Quote
                                     </button>
                                     <a
                                         href="/brochure.pdf"
                                         download="Flortek_Brochure.pdf"
-                                        className="inline-flex items-center justify-center px-8 py-4 bg-[#F5F5F5] hover:bg-[#D9D9D9] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#D9D9D9]"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#F5F5F5] hover:bg-[#D9D9D9] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#D9D9D9]"
                                     >
                                         <Download size={14} className="mr-2" /> Brochure
                                     </a>
@@ -362,22 +364,22 @@ const Home = () => {
                                     <div className="space-y-1.5 sm:space-y-3">
                                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 sm:gap-4">
                                             <h3 className="text-xs sm:text-xl font-bold text-black uppercase tracking-tight leading-tight min-h-[2rem] sm:min-h-0">{prod.title}</h3>
-                                            <span className="shrink-0 w-fit px-1.5 py-0.5 sm:px-2.5 sm:py-1 bg-black text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider rounded">
+                                            <span className="shrink-0 w-fit px-1.5 py-0.5 sm:px-2.5 sm:py-1 bg-[#1B8036] text-white text-[8px] sm:text-[9px] font-black uppercase tracking-wider rounded">
                                                 {prod.load}
                                             </span>
                                         </div>
-                                        <p className="text-[10px] sm:text-sm text-[#333333] leading-relaxed font-medium line-clamp-3 sm:line-clamp-none">{prod.desc}</p>
+                                        <p className="text-[10px] sm:text-sm text-black leading-relaxed font-medium line-clamp-3 sm:line-clamp-none">{prod.desc}</p>
                                     </div>
                                     <div className="flex gap-2 sm:gap-4 pt-3 sm:pt-6 mt-auto">
                                         <Link
                                             to="/sizes"
-                                            className="flex-grow py-2 sm:py-3 text-center border border-black text-black font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl hover:bg-[#F5F5F5] transition-all"
+                                            className="flex-grow py-2 sm:py-3 text-center border border-[#0B1B3D] text-[#0B1B3D] font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl hover:bg-[#F5F5F5] transition-all"
                                         >
                                             Sizes
                                         </Link>
                                         <button
                                             onClick={openModal}
-                                            className="flex-grow py-2 sm:py-3 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl transition-all border border-black active:scale-95"
+                                            className="flex-grow py-2 sm:py-3 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-[9px] sm:text-[10px] rounded-lg sm:rounded-xl transition-all border border-[#1B8036] active:scale-95 shadow-sm"
                                         >
                                             get best Price
                                         </button>
@@ -391,7 +393,7 @@ const Home = () => {
                     <div className="mt-16 text-center">
                         <Link
                             to="/products"
-                            className="inline-flex items-center justify-center px-10 py-4 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-black shadow-sm"
+                            className="inline-flex items-center justify-center px-10 py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm"
                         >
                             View All Products <ArrowRight size={14} className="ml-2" />
                         </Link>
@@ -493,10 +495,102 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* --- GLOBAL EXPORT & SHIPPING SECTION ---
-            <div className="bg-white py-32 border-b border-[#D9D9D9]/50">
-                <div className="max-w-7xl mx-auto px-6 md:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            {/* --- BS EN 124 LOAD CLASSIFICATION MATRIX --- */}
+            <div className="bg-white py-14 md:py-24 border-b border-[#D9D9D9]/50">
+                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="text-center mb-10 md:mb-16"
+                    >
+                        <span className="inline-block py-1.5 px-4 rounded-full bg-[#FFC700] text-[#0B1B3D] text-[10px] font-black uppercase tracking-widest mb-3 md:mb-4">
+                            BS EN 124 Load Rating Guide
+                        </span>
+                        <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-black uppercase tracking-tight mb-3 md:mb-4">
+                            Certified Load Classes for Every Application
+                        </h2>
+                        <div className="w-12 md:w-16 h-1 bg-[#1B8036] mx-auto rounded-full mb-4 md:mb-6"></div>
+                        <p className="text-xs sm:text-base text-black max-w-2xl mx-auto font-medium leading-relaxed">
+                            Our composite FRP manhole covers are engineered to meet international load testing standards, ensuring safe installation from residential lawns to heavy industrial highways.
+                        </p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {[
+                            {
+                                class: "Class A15",
+                                capacity: "1.5 Tons Load",
+                                target: "Pedestrian & Garden Zones",
+                                desc: "Designed for footpaths, residential lawns, swimming pool decks, and private garden inspection chambers.",
+                                color: "border-[#1B8036]/30"
+                            },
+                            {
+                                class: "Class B125",
+                                capacity: "12.5 Tons Load",
+                                target: "Car Parking & Driveways",
+                                desc: "Ideal for residential driveways, commercial parking spaces, footways, and light vehicular traffic zones.",
+                                color: "border-[#1B8036]/50"
+                            },
+                            {
+                                class: "Class C250",
+                                capacity: "25 Tons Load",
+                                target: "Petrol Stations & Service Roads",
+                                desc: "Engineered for commercial gas stations, side gutters, industrial plant walkways, and service roads.",
+                                color: "border-[#1B8036]/70"
+                            },
+                            {
+                                class: "Class D400",
+                                capacity: "40 Tons Load",
+                                target: "Highways & Logistics Docks",
+                                desc: "Heavy-duty rating certified for arterial highways, container freight stations, airport terminals, and docks.",
+                                color: "border-[#1B8036]"
+                            }
+                        ].map((item, idx) => (
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                className={`bg-[#F5F5F5] p-8 rounded-3xl border ${item.color} flex flex-col justify-between hover:border-[#1B8036] hover:shadow-lg transition-all duration-300`}
+                            >
+                                <div>
+                                    <div className="flex justify-between items-center mb-4">
+                                        <span className="px-3 py-1 bg-[#1B8036] text-white text-[10px] font-black uppercase tracking-wider rounded-lg">
+                                            {item.class}
+                                        </span>
+                                        <span className="text-xs font-black text-black">
+                                            {item.capacity}
+                                        </span>
+                                    </div>
+                                    <h3 className="text-lg font-black text-black uppercase tracking-tight mb-2">
+                                        {item.target}
+                                    </h3>
+                                    <p className="text-xs text-black leading-relaxed font-medium">
+                                        {item.desc}
+                                    </p>
+                                </div>
+                                <button
+                                    onClick={openModal}
+                                    className="mt-6 w-full py-2.5 bg-white border border-[#1B8036] text-[#1B8036] hover:bg-[#1B8036] hover:text-white rounded-xl text-xs font-black uppercase tracking-wider transition-all"
+                                >
+                                    Get Pricing
+                                </button>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* --- INTERACTIVE MATERIAL COMPARISON MATRIX --- */}
+            <FRPComparisonMatrix />
+
+            {/* --- GLOBAL EXPORT & SHIPPING SECTION --- */}
+            <div className="bg-[#F5F5F5] py-14 md:py-24 border-b border-[#D9D9D9]/50 overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -504,45 +598,45 @@ const Home = () => {
                             transition={{ duration: 0.8 }}
                             className="lg:col-span-6 space-y-6"
                         >
-                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-wider">
-                                <Globe size={10} /> International Export Hub
+                            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC700] text-[#0B1B3D] text-[10px] font-black uppercase tracking-wider">
+                                <Globe size={12} /> International Export Hub
                             </span>
-                            <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none">
+                            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-black uppercase tracking-tighter leading-tight">
                                 FRP Cover Exporter & Global Supplier
                             </h2>
-                            <p className="text-lg text-[#333333] leading-relaxed font-medium">
+                            <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed font-medium">
                                 FLORTEK INDUSTRIES PVT. LTD. manufactures premium, export-grade composite covers tailored for harsh global climates. From our location in Rajkot, India, we arrange seaworthy shipping containers to primary ports worldwide.
                             </p>
                             
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                                 <div className="flex gap-3 items-start">
-                                    <div className="p-2 bg-[#F5F5F5] border border-[#D9D9D9] rounded-xl text-black">
-                                        <Anchor size={18} />
+                                    <div className="p-3 bg-[#1B8036]/10 border border-[#1B8036]/20 rounded-xl text-[#1B8036] shrink-0">
+                                        <Anchor size={20} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Seaworthy Palletizing</h4>
-                                        <p className="text-xs text-[#333333] mt-0.5">Heavy shrink wrapping, steel-strapping, and edge protection to ensure zero transit damage.</p>
+                                        <h4 className="font-black text-black uppercase tracking-tight text-sm">Seaworthy Palletizing</h4>
+                                        <p className="text-xs text-black mt-0.5 font-medium leading-relaxed">Heavy shrink wrapping, steel-strapping, and edge protection to ensure zero transit damage.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-3 items-start">
-                                    <div className="p-2 bg-[#F5F5F5] border border-[#D9D9D9] rounded-xl text-black">
-                                        <Truck size={18} />
+                                    <div className="p-3 bg-[#1B8036]/10 border border-[#1B8036]/20 rounded-xl text-[#1B8036] shrink-0">
+                                        <Truck size={20} />
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-black uppercase tracking-tight text-sm">Fast Maritime Dispatch</h4>
-                                        <p className="text-xs text-[#333333] mt-0.5">Direct FCL container routing via Mundra Port to Jebel Ali (UAE), Houston (USA), and European ports.</p>
+                                        <h4 className="font-black text-black uppercase tracking-tight text-sm">Fast Maritime Dispatch</h4>
+                                        <p className="text-xs text-black mt-0.5 font-medium leading-relaxed">Direct FCL container routing via Mundra Port to Jebel Ali (UAE), Houston (USA), and European ports.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="flex flex-wrap gap-4 pt-6">
-                                <Link to="/frp-cover-exporter" className="inline-flex items-center justify-center px-8 py-4 bg-black hover:bg-[#333333] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-black shadow-sm">
+                                <Link to="/frp-cover-exporter" className="inline-flex items-center justify-center px-8 py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-black uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-md">
                                     Request Export Quote <ArrowRight size={14} className="ml-2" />
                                 </Link>
                                 <a
                                     href="/brochure.pdf"
                                     download="Flortek_Export_Brochure.pdf"
-                                    className="inline-flex items-center justify-center px-8 py-4 bg-transparent border border-black hover:bg-[#F5F5F5] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all"
+                                    className="inline-flex items-center justify-center px-8 py-4 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#FFC700] shadow-md"
                                 >
                                     <Download size={14} className="mr-2" /> Export Catalog
                                 </a>
@@ -562,84 +656,22 @@ const Home = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: i * 0.1 }}
-                                    className="bg-[#F5F5F5]/40 p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between hover:border-black transition-all"
+                                    className="bg-white p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between hover:border-[#1B8036] shadow-sm transition-all"
                                 >
                                     <div>
-                                        <span className="text-[9px] font-black uppercase tracking-wider text-[#333333]/60 block mb-3">{item.detail}</span>
-                                        <h4 className="font-bold text-black text-lg mb-2 uppercase tracking-tight">{item.title}</h4>
-                                        <p className="text-xs text-[#333333] leading-relaxed font-medium">{item.desc}</p>
+                                        <span className="text-[9px] font-black uppercase tracking-wider text-[#1B8036] block mb-3">{item.detail}</span>
+                                        <h4 className="font-black text-black text-base mb-2 uppercase tracking-tight">{item.title}</h4>
+                                        <p className="text-xs text-black leading-relaxed font-medium">{item.desc}</p>
                                     </div>
                                 </motion.div>
                             ))}
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
 
-            {/* --- REVIEWS / TESTIMONIALS --- */}
-            {/* <div className="bg-white py-32 border-b border-[#D9D9D9]/50" >
-                <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                        className="mb-20"
-                    >
-                        <span className="text-black font-black uppercase tracking-widest text-xs mb-3 block">Trusted By Industry Leaders</span>
-                        <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter mb-4">What Our Clients Say</h2>
-                        <div className="w-16 h-1 bg-black mx-auto rounded-full"></div>
-                    </motion.div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {[
-                            {
-                                name: "Rajesh Kumar",
-                                role: "Project Manager, L&T Construction",
-                                text: "The quality of Flortek's FRP covers is exceptional. We used them for a large township project in Gujarat, and the ease of installation saved us significant time. Highly recommended for heavy-duty applications.",
-                                rating: 5
-                            },
-                            {
-                                name: "Amit Shah",
-                                role: "Civil Contractor, Ahmedabad",
-                                text: "Best substitute for cast iron covers. No theft issues, and they look much better aesthetically. The load capacity is exactly as certified. Great service from the team.",
-                                rating: 5
-                            },
-                            {
-                                name: "Suresh Patel",
-                                role: "Infrastructure Consultant",
-                                text: "We have been specifying Flortek for our municipal projects for over 2 years now. Their consistency in quality and timely delivery makes them our preferred vendor for drainage solutions.",
-                                rating: 5
-                            }
-                        ].map((review, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, y: 30 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1, duration: 0.5 }}
-                                className="bg-[#F5F5F5]/40 p-8 rounded-3xl border border-[#D9D9D9] text-left hover:shadow-xl transition-all duration-300 group"
-                            >
-                                <div className="flex gap-1 mb-6 text-black">
-                                    {[...Array(review.rating)].map((_, r) => (
-                                        <Star key={r} size={16} fill="currentColor" className="drop-shadow-sm" />
-                                    ))}
-                                </div>
-                                <p className="text-[#333333] mb-8 font-medium leading-relaxed italic text-sm">"{review.text}"</p>
-                                <div className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center text-white font-bold text-sm">
-                                        {review.name.charAt(0)}
-                                    </div>
-                                    <div>
-                                        <h4 className="font-bold text-black text-sm">{review.name}</h4>
-                                        <p className="text-[10px] text-[#333333]/80 font-bold uppercase tracking-wider">{review.role}</p>
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </div> */}
+            {/* --- GOOGLE BUSINESS REVIEWS COMPONENT --- */}
+            <GoogleReviews />
 
             {/* --- FAQ SECTION (BLACK & WHITE) --- */}
             <div className="bg-[#F5F5F5] py-24 border-t border-[#D9D9D9]/50">
@@ -657,8 +689,8 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* --- CTA SECTION (BLACK & WHITE) --- */}
-            <div className="bg-black py-32 text-center px-6 relative overflow-hidden border-t border-[#333333]">
+            {/* --- CTA SECTION (BROCHURE GREEN) --- */}
+            <div className="bg-[#1B8036] py-32 text-center px-6 relative overflow-hidden border-t border-[#145C27]">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -667,12 +699,12 @@ const Home = () => {
                     className="max-w-4xl mx-auto relative z-10"
                 >
                     <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-6">Ready to upgrade?</h2>
-                    <p className="text-[#D9D9D9] text-lg mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
+                    <p className="text-white/90 text-lg mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
                         Get in touch with our team for technical specifications, bulk pricing, or custom size requirements.
                     </p>
                     <button
                         onClick={openModal}
-                        className="inline-block px-12 py-5 bg-white hover:bg-[#F5F5F5] text-black text-xs font-bold uppercase tracking-widest rounded-xl transition-all shadow-md"
+                        className="inline-block px-12 py-5 bg-white hover:bg-[#F5F5F5] text-[#0B1B3D] text-xs font-extrabold uppercase tracking-widest rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0"
                     >
                         Get a Quote Today
                     </button>

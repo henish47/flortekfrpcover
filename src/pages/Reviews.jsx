@@ -1,128 +1,62 @@
 import React from 'react';
 import Section from '../components/common/Section';
 import SEO from '../components/common/SEO';
-import { Star, Quote, User } from 'lucide-react';
+import GoogleReviews from '../components/home/GoogleReviews';
+import { Star, Quote, User, ExternalLink } from 'lucide-react';
 
 const Reviews = () => {
-    const reviews = [
-        {
-            name: "Rajesh Kumar",
-            role: "Civil Engineer",
-            company: "BuildCon Pvt Ltd",
-            rating: 5,
-            date: "October 12, 2024",
-            text: "We have been using Flortek's FRP manhole covers for our township projects in Ahmedabad. The quality is consistent, and the load capacity is exactly as specified. Much easier to handle than the old cast iron ones.",
-            verified: true
-        },
-        {
-            name: "Amit Shah",
-            role: "Project Manager",
-            company: "Urban Infrastructure",
-            rating: 5,
-            date: "September 28, 2024",
-            text: "Excellent service from FLORTEK INDUSTRIES PVT. LTD. We needed a custom size for a drainage project, and they delivered within a week. The fit and finish are perfect.",
-            verified: true
-        },
-        {
-            name: "Sneha Patel",
-            role: "Landscape Architect",
-            company: "Green Spaces Design",
-            rating: 5,
-            date: "November 5, 2024",
-            text: "Aesthetically, these are the best covers available. The stone finish options blend seamlessly with our paving designs. Highly recommended for premium residential projects.",
-            verified: true
-        },
-        {
-            name: "Vikram Singh",
-            role: "Contractor",
-            company: "Singh Developers",
-            rating: 4,
-            date: "August 15, 2024",
-            text: "Good robust product. We used the heavy-duty variants for the main driveway. No cracking or issues after 6 months of heavy traffic.",
-            verified: true
-        },
-        {
-            name: "Mehul Mehta",
-            role: "Facility Manager",
-            company: "Corporate Park",
-            rating: 5,
-            date: "December 01, 2024",
-            text: "Switched all our society covers to Flortek. The best part is they don't get stolen like the iron ones, and they don't rust. Very happy with the decision.",
-            verified: true
-        },
-        {
-            name: "Anjali Gupta",
-            role: "Procurement Officer",
-            company: "City Municipal Corp",
-            rating: 5,
-            date: "July 20, 2024",
-            text: "Standard compliant (IS 1726) products. We appreciate the transparency in load testing. Will definitely procure again for future phases.",
-            verified: true
-        }
-    ];
-
     return (
-        <div className="bg-white min-h-screen font-sans">
+        <div className="bg-white min-h-screen font-sans pt-0">
             <SEO
                 title="Client Reviews & Testimonials | FLORTEK INDUSTRIES PVT. LTD."
                 description="Read what engineers, architects, and contractors say about Flortek's FRP Manhole Covers and composite solutions."
             />
 
-            <section className="bg-black text-white py-20 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-[100px] pointer-events-none"></div>
+            {/* Hero Section */}
+            <section className="bg-[#1B8036] text-white py-20 relative overflow-hidden border-b border-[#145C27]">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-[100px] pointer-events-none"></div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
-                    <h1 className="text-4xl md:text-6xl font-black mb-6">What Our Clients Say</h1>
-                    <p className="text-xl text-[#D9D9D9] max-w-2xl mx-auto">
+                    <h1 className="text-4xl md:text-6xl font-black mb-6 uppercase tracking-tight">What Our Clients Say</h1>
+                    <p className="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
                         Trusted by industry leaders for quality, durability, and reliability.
                     </p>
+                    <div className="mt-8">
+                        <a
+                            href="https://g.page/r/CXduO0ff9Z7oEAE/review"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all shadow-lg active:scale-95"
+                        >
+                            Review Us On Google <ExternalLink size={16} />
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            {/* Reviews Grid */}
-            <Section>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {reviews.map((review, index) => (
-                        <div key={index} className="bg-[#F5F5F5] p-8 rounded-3xl border border-[#D9D9D9] hover:border-black transition-all duration-300 flex flex-col h-full">
-                            <div className="flex items-center justify-between mb-6">
-                                <div className="flex text-black gap-1">
-                                    {[...Array(review.rating)].map((_, i) => (
-                                        <Star key={i} size={18} fill="currentColor" />
-                                    ))}
-                                </div>
-                                <span className="text-xs text-[#333333]/60 font-medium">{review.date}</span>
-                            </div>
+            {/* Main Google Business Reviews Component */}
+            <GoogleReviews />
 
-                            <div className="mb-6 flex-grow">
-                                <Quote className="text-black/10 mb-3 rotate-180" size={40} />
-                                <p className="text-[#333333] leading-relaxed italic">"{review.text}"</p>
-                            </div>
-
-                            <div className="flex items-center gap-4 mt-auto pt-6 border-t border-[#D9D9D9]/50">
-                                <div className="bg-white p-3 rounded-full text-[#333333] border border-[#D9D9D9]/50">
-                                    <User size={24} />
-                                </div>
-                                <div>
-                                    <h4 className="font-bold text-black">{review.name}</h4>
-                                    <div className="text-xs text-black font-bold uppercase tracking-wider">{review.role}</div>
-                                    <div className="text-xs text-[#333333]/80">{review.company}</div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </Section>
-
-            {/* CTA */}
-            <Section className="bg-white">
-                <div className="bg-black rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-2xl border border-[#333333]">
-                    <div className="relative z-10">
-                        <h2 className="text-3xl md:text-5xl font-black mb-6">Join Our Satisfied Clients</h2>
-                        <p className="text-[#D9D9D9] text-lg mb-10 max-w-2xl mx-auto">
+            {/* CTA Section */}
+            <Section className="bg-white py-16">
+                <div className="bg-[#1B8036] rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden shadow-xl border border-[#145C27]">
+                    <div className="relative z-10 max-w-2xl mx-auto">
+                        <h2 className="text-3xl md:text-5xl font-black mb-6 uppercase tracking-tight">Join Our Satisfied Clients</h2>
+                        <p className="text-white/90 text-base md:text-lg mb-10 font-medium leading-relaxed">
                             Experience the difference of premium quality FRP covers. Get a quote for your project today.
                         </p>
-                        <a href="/contact" className="inline-block bg-white text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-[#F5F5F5] hover:scale-105 transition-all shadow-xl">
-                            Start Your Project
-                        </a>
+                        <div className="flex flex-wrap gap-4 justify-center">
+                            <a href="/contact" className="inline-block bg-[#FFC700] text-[#0B1B3D] px-8 py-4 rounded-xl font-extrabold text-xs uppercase tracking-wider hover:bg-[#E6B200] transition-all shadow-md">
+                                Get a Fast Quote
+                            </a>
+                            <a
+                                href="https://g.page/r/CXduO0ff9Z7oEAE/review"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 bg-white text-[#0B1B3D] px-8 py-4 rounded-xl font-extrabold text-xs uppercase tracking-wider hover:bg-[#F5F5F5] transition-all shadow-md"
+                            >
+                                Leave Google Review <ExternalLink size={14} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </Section>

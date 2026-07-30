@@ -55,7 +55,7 @@ const ProductPreviewCard = ({ categoryData }) => {
 
             <Link
                 to="/products"
-                className="w-full h-11 bg-black text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
+                className="w-full h-11 bg-[#1B8036] text-white rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#333333] transition-colors flex items-center justify-center gap-1.5 shadow-sm outline-none active:scale-95"
             >
                 View Gallery
             </Link>
@@ -178,7 +178,7 @@ const SizeChart = () => {
                             if (tab.id === 'gulley') setGulleySubTab('Pedestrian / Light Duty');
                         }}
                         className={`px-5 py-3 rounded-xl text-xs md:text-sm font-bold transition-all flex-grow text-center ${activeTab === tab.id
-                            ? 'bg-black text-white shadow-sm'
+                            ? 'bg-[#1B8036] text-white shadow-sm'
                             : 'text-[#333333] hover:text-black hover:bg-[#F5F5F5]'
                             }`}
                     >
@@ -230,18 +230,18 @@ const SizeChart = () => {
                             <TableWrapper>
                                 <thead>
                                     {/* Desktop Headers */}
-                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center" colSpan={2}>Frame Inner Size</th>
                                     </tr>
-                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center">MM</th>
                                     </tr>
                                     {/* Mobile Headers */}
-                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                    <tr className="md:hidden bg-[#1B8036] text-white text-[10px] font-bold uppercase tracking-wider">
                                         <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
                                         <th className="py-3 px-2 text-center">Inner Size</th>
                                     </tr>
@@ -278,7 +278,7 @@ const SizeChart = () => {
                             {/* Class Sub-tabs */}
                             <div className="flex justify-center max-w-lg mx-auto">
                                 <button
-                                    className="px-5 py-2.5 rounded-xl text-xs font-bold border bg-black text-white border-black shadow-sm cursor-default"
+                                    className="px-5 py-2.5 rounded-xl text-xs font-bold border bg-[#1B8036] text-white border-black shadow-sm cursor-default"
                                     onClick={(e) => e.preventDefault()}
                                 >
                                     Class B125, C250 & D400 (12.5 T, 25 T & 40 T)
@@ -316,19 +316,19 @@ const SizeChart = () => {
                             <TableWrapper>
                                 <thead>
                                     {/* Desktop Headers */}
-                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Inner Size</th>
                                         <th className="py-4 px-4 text-center" rowSpan={2}>capacity</th>
                                     </tr>
-                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center">MM</th>
                                     </tr>
                                     {/* Mobile Headers */}
-                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                    <tr className="md:hidden bg-[#1B8036] text-white text-[10px] font-bold uppercase tracking-wider">
                                         <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
                                         <th className="py-3 px-2 text-center border-r border-white/10">Inner Size</th>
                                         <th className="py-3 px-2 text-center">capacity</th>
@@ -378,19 +378,19 @@ const SizeChart = () => {
                             <TableWrapper>
                                 <thead>
                                     {/* Desktop Headers */}
-                                    <tr className="hidden md:table-row bg-black text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[11px] md:text-xs font-bold uppercase tracking-wider">
                                         <th className="py-4 px-4 text-center border-r border-white/10" rowSpan={2}>Depth</th>
                                         <th className="py-4 px-4 text-center border-r border-white/10" colSpan={2}>Frame Outer Size</th>
                                         <th className="py-4 px-4 text-center" colSpan={2}>Frame Inner Opening</th>
                                     </tr>
-                                    <tr className="hidden md:table-row bg-black text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
+                                    <tr className="hidden md:table-row bg-[#1B8036] text-white text-[10px] md:text-xs font-bold uppercase border-t border-white/10">
                                         <th className="py-2 px-3 text-center border-r border-white/10">INCH</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center border-r border-white/10">MM</th>
                                         <th className="py-2 px-3 text-center">INCH</th>
                                     </tr>
                                     {/* Mobile Headers */}
-                                    <tr className="md:hidden bg-black text-white text-[10px] font-bold uppercase tracking-wider">
+                                    <tr className="md:hidden bg-[#1B8036] text-white text-[10px] font-bold uppercase tracking-wider">
                                         <th className="py-3 px-2 text-center border-r border-white/10">Depth</th>
                                         <th className="py-3 px-2 text-center border-r border-white/10">Outer Size</th>
                                         <th className="py-3 px-2 text-center">Inner Opening</th>

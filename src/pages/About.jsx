@@ -23,7 +23,7 @@ const About = () => {
                                 "name": "FLORTEK INDUSTRIES PVT. LTD.",
                                 "logo": {
                                     "@type": "ImageObject",
-                                    "url": "https://www.flortekfrpcover.com/images/logo.png"
+                                    "url": "https://www.flortekfrpcover.com/flortek_logo_2.webp"
                                 }
                             },
                             "breadcrumb": {
@@ -37,8 +37,8 @@ const About = () => {
 
             {/* --- HEADER SECTION --- */}
             <div className="max-w-7xl mx-auto px-4 md:px-8 mb-16 text-center md:text-left">
-                <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 tracking-tight">About Flortek</h1>
-                <p className="text-lg text-[#333333] max-w-3xl leading-relaxed">
+                <h1 className="text-4xl md:text-5xl font-black text-black mb-6 tracking-tight uppercase">About Flortek</h1>
+                <p className="text-lg text-black max-w-3xl leading-relaxed font-medium">
                     FLORTEK INDUSTRIES PVT. LTD. is a premier manufacturer and supplier of high-quality FRP (Fiber Reinforced Plastic), BMC (Bulk Molding Compound), and Steel Manhole Covers. Established in 2017 in Rajkot, Gujarat, we are dedicated to building the backbone of modern infrastructure with products designed for strength, safety, and longevity.
                 </p>
             </div>
@@ -55,12 +55,12 @@ const About = () => {
                         { label: "Quality", value: "ISO 9001:2015", icon: Award },
                     ].map((item, i) => (
                         <div key={i} className="bg-[#F5F5F5] p-6 rounded-2xl border border-[#D9D9D9]/50 flex items-center gap-4">
-                            <div className="bg-white p-3 rounded-xl text-black border border-[#D9D9D9]/30 shadow-sm">
+                            <div className="bg-[#1B8036]/10 p-3 rounded-xl text-[#1B8036] border border-[#1B8036]/20 shadow-sm">
                                 <item.icon size={24} />
                             </div>
                             <div>
-                                <p className="text-xs font-bold text-[#333333]/80 uppercase tracking-wide">{item.label}</p>
-                                <p className="text-lg font-bold text-black">{item.value}</p>
+                                <p className="text-xs font-bold text-black uppercase tracking-wide">{item.label}</p>
+                                <p className="text-lg font-black text-black">{item.value}</p>
                             </div>
                         </div>
                     ))}
@@ -70,7 +70,7 @@ const About = () => {
 
                     {/* LEFT COLUMN: COMPANY PROFILE TABLE */}
                     <div className="lg:col-span-8">
-                        <h2 className="text-2xl font-bold text-black mb-8 pb-2 border-b border-[#D9D9D9]/50">Company Profile</h2>
+                        <h2 className="text-2xl font-black text-black mb-8 pb-2 border-b border-[#D9D9D9]/50 uppercase tracking-tight">Company Profile</h2>
 
                         <div className="bg-white rounded-3xl border border-[#D9D9D9] overflow-hidden shadow-sm">
                             <table className="w-full text-left border-collapse">
@@ -86,10 +86,10 @@ const About = () => {
                                         { label: "GST No", value: "24AAHFF1407D1Z3" },
                                     ].map((row, index) => (
                                         <tr key={index} className="hover:bg-[#F5F5F5]/50 transition-colors">
-                                            <th className="py-5 px-6 md:px-8 font-semibold text-[#333333]/80 w-1/3 md:w-1/4 bg-[#F5F5F5]/30 align-top text-sm md:text-base border-r border-[#D9D9D9]/30">
+                                            <th className="py-5 px-6 md:px-8 font-bold text-black w-1/3 md:w-1/4 bg-[#F5F5F5]/50 align-top text-sm md:text-base border-r border-[#D9D9D9]/30">
                                                 {row.label}
                                             </th>
-                                            <td className="py-5 px-6 md:px-8 font-bold text-black text-sm md:text-base">
+                                            <td className="py-5 px-6 md:px-8 font-black text-black text-sm md:text-base">
                                                 {row.value}
                                             </td>
                                         </tr>
@@ -103,7 +103,7 @@ const About = () => {
                     <div className="lg:col-span-4 space-y-10">
 
                         <div>
-                            <h3 className="text-xl font-bold text-black mb-6">Why Choose Flortek?</h3>
+                            <h3 className="text-xl font-black text-black mb-6 uppercase tracking-tight">Why Choose Flortek?</h3>
                             <div className="space-y-4">
                                 {[
                                     { title: "Premium Quality", desc: "Manufactured using high-grade raw materials." },
@@ -113,22 +113,22 @@ const About = () => {
                                     { title: "Custom Solutions", desc: "Tailored products for specific needs." }
                                 ].map((item, i) => (
                                     <div key={i} className="flex gap-4">
-                                        <div className="mt-1 text-black">
+                                        <div className="mt-1 text-[#1B8036]">
                                             <CheckCircle size={20} />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-black text-sm">{item.title}</h4>
-                                            <p className="text-sm text-[#333333] leading-snug">{item.desc}</p>
+                                            <h4 className="font-bold text-black text-sm uppercase tracking-tight">{item.title}</h4>
+                                            <p className="text-sm text-black leading-snug font-medium">{item.desc}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
                         </div>
 
-                        <div className="p-8 bg-black rounded-3xl text-white">
-                            <h3 className="text-xl font-bold mb-4 text-white">Need a Quote?</h3>
-                            <p className="text-[#D9D9D9] text-sm mb-6">Contact our sales team for bulk orders and technical specifications.</p>
-                            <Link to="/contact" className="block w-full text-center py-3 bg-white hover:bg-[#F5F5F5] text-black font-bold rounded-xl transition-colors">
+                        <div className="p-8 bg-[#1B8036] rounded-3xl text-white shadow-lg">
+                            <h3 className="text-xl font-black mb-4 text-white uppercase tracking-tight">Need a Quote?</h3>
+                            <p className="text-white/90 text-sm mb-6 font-medium">Contact our sales team for bulk orders and technical specifications.</p>
+                            <Link to="/contact" className="block w-full text-center py-3 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all shadow-md">
                                 Contact Us
                             </Link>
                         </div>
@@ -138,13 +138,13 @@ const About = () => {
                 {/* --- OUR TEAM SECTION --- */}
                 <div className="mt-24 border-t border-[#D9D9D9]/50 pt-16">
                     <div className="text-center md:text-left mb-12">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#333333]/60 mb-2 block">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-black mb-2 block">
                             Leadership
                         </span>
                         <h2 className="text-3xl md:text-4xl font-black text-black uppercase tracking-tight mb-4">
                             Our Team
                         </h2>
-                        <p className="text-xs md:text-sm text-[#333333] max-w-2xl leading-relaxed font-medium">
+                        <p className="text-xs md:text-sm text-black max-w-2xl leading-relaxed font-medium">
                             Meet the visionaries driving Flortek's mission to engineer premium, high-strength composite infrastructure solutions for global markets.
                         </p>
                     </div>
@@ -155,13 +155,13 @@ const About = () => {
                             { name: "Naresh Savaliya", role: "Co-Founder & Managing Director", description: "" },
                             { name: "Ketan Paghdar", role: "Technical Director", description: "" },
                         ].map((member, idx) => (
-                            <div key={idx} className="bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] p-8 flex flex-col items-center text-center hover:border-black hover:shadow-lg transition-all duration-500 group">
-                                <div className="w-16 h-16 rounded-2xl bg-black text-white flex items-center justify-center font-black text-lg mb-6 shadow-sm group-hover:scale-105 transition-transform duration-300">
+                            <div key={idx} className="bg-[#F5F5F5] rounded-3xl border border-[#D9D9D9] p-8 flex flex-col items-center text-center hover:border-[#1B8036] hover:shadow-lg transition-all duration-500 group">
+                                <div className="w-16 h-16 rounded-2xl bg-[#1B8036] text-white flex items-center justify-center font-black text-lg mb-6 shadow-md shadow-[#1B8036]/20 group-hover:scale-105 transition-transform duration-300">
                                     {member.name.split(' ').map(n => n[0]).join('')}
                                 </div>
                                 <h3 className="text-base font-black text-black uppercase tracking-tight mb-1">{member.name}</h3>
-                                <p className="text-[10px] font-black text-[#333333]/60 uppercase tracking-widest mb-4">{member.role}</p>
-                                <p className="text-xs text-[#333333] leading-relaxed font-medium">{member.description}</p>
+                                <p className="text-[10px] font-black text-[#1B8036] uppercase tracking-widest mb-4">{member.role}</p>
+                                <p className="text-xs text-black leading-relaxed font-medium">{member.description}</p>
                             </div>
                         ))}
                     </div>

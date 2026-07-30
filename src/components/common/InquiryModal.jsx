@@ -90,9 +90,9 @@ const InquiryModal = ({ isOpen, onClose }) => {
                         className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden"
                     >
                         {/* Header */}
-                        <div className="px-6 py-4 border-b border-[#D9D9D9] flex justify-between items-center bg-[#F5F5F5]">
-                            <h3 className="text-xl font-bold text-black">Get a Quote</h3>
-                            <button onClick={onClose} className="p-2 hover:bg-[#D9D9D9] rounded-full transition-colors text-[#333333]">
+                        <div className="px-6 py-4 border-b border-[#0B1B3D]/10 flex justify-between items-center bg-[#FFC700]">
+                            <h3 className="text-xl font-black text-[#0B1B3D]">Get a Quote</h3>
+                            <button onClick={onClose} className="p-2 hover:bg-[#E6B200] rounded-full transition-colors text-[#0B1B3D]">
                                 <X size={20} />
                             </button>
                         </div>
@@ -101,33 +101,33 @@ const InquiryModal = ({ isOpen, onClose }) => {
                         <div className="p-6">
                             {status === 'success' ? (
                                 <div className="flex flex-col items-center justify-center py-8 text-center animate-fade-in">
-                                    <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mb-4">
+                                    <div className="w-16 h-16 bg-[#1B8036] text-white rounded-full flex items-center justify-center mb-4 shadow-lg shadow-[#1B8036]/30">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h4 className="text-xl font-bold text-black mb-2">Quote Request Submitted Successfully!</h4>
-                                    <p className="text-[#333333] mb-1 font-medium">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
-                                    <p className="text-[#333333] text-sm">We'll contact you shortly.</p>
+                                    <h4 className="text-xl font-black text-[#0B1B3D] mb-2">Quote Request Submitted Successfully!</h4>
+                                    <p className="text-black mb-1 font-medium">Thank you for contacting FLORTEK INDUSTRIES PVT. LTD.</p>
+                                    <p className="text-black text-sm">We'll contact you shortly.</p>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-4">
                                     <div className="grid grid-cols-2 gap-4">
                                         <div>
-                                            <label className="block text-sm font-medium text-[#333333] mb-1">Name</label>
-                                            <input required name="name" type="text" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="John Doe" />
+                                            <label className="block text-xs font-bold uppercase tracking-wider text-black mb-1">Name</label>
+                                            <input required name="name" type="text" className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none transition-all text-black font-medium" placeholder="John Doe" />
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-[#333333] mb-1">Phone</label>
-                                            <input required name="phone" type="tel" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="+91..." />
+                                            <label className="block text-xs font-bold uppercase tracking-wider text-black mb-1">Phone</label>
+                                            <input required name="phone" type="tel" className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none transition-all text-black font-medium" placeholder="+91..." />
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         <div>
-                                            <label className="block text-sm font-medium text-[#333333] mb-1">Email</label>
-                                            <input required name="email" type="email" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="john@company.com" />
+                                            <label className="block text-xs font-bold uppercase tracking-wider text-black mb-1">Email</label>
+                                            <input required name="email" type="email" className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none transition-all text-black font-medium" placeholder="john@company.com" />
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-[#333333] mb-1">Country</label>
-                                            <select required name="country" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all bg-white text-sm font-medium h-[42px]">
+                                            <label className="block text-xs font-bold uppercase tracking-wider text-black mb-1">Country</label>
+                                            <select required name="country" className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none transition-all bg-white text-black font-medium h-[44px]">
                                                 <option value="India">India</option>
                                                 <option value="United Arab Emirates">United Arab Emirates (UAE)</option>
                                                 <option value="United States">United States (USA)</option>
@@ -145,14 +145,14 @@ const InquiryModal = ({ isOpen, onClose }) => {
                                         </div>
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-[#333333] mb-1">Requirement</label>
-                                        <textarea required name="requirement" rows="3" className="w-full px-4 py-2 rounded-lg border border-[#D9D9D9] focus:border-black outline-none transition-all" placeholder="Describe your requirement..."></textarea>
+                                        <label className="block text-xs font-bold uppercase tracking-wider text-black mb-1">Requirement</label>
+                                        <textarea required name="requirement" rows="3" className="w-full px-4 py-2.5 rounded-xl border border-[#D9D9D9] focus:border-[#1B8036] focus:ring-1 focus:ring-[#1B8036] outline-none transition-all text-black font-medium" placeholder="Describe your requirement..."></textarea>
                                     </div>
                                     <Button
                                         type="submit"
                                         disabled={status === 'submitting'}
                                         variant="primary"
-                                        className="w-full justify-center mt-2"
+                                        className="w-full justify-center mt-2 font-black uppercase tracking-wider text-xs py-3.5"
                                     >
                                         {status === 'submitting' ? (
                                             <>
