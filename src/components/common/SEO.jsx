@@ -298,6 +298,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
             <meta name="description" content={seoDescription} />
             {seoKeywords && <meta name="keywords" content={seoKeywords} />}
             <link rel="canonical" href={cleanUrl} />
+            <link rel="icon" type="image/png" href="/Favicon icon.png" />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content={type || "website"} />
