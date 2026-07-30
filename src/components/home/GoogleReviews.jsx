@@ -183,7 +183,7 @@ const GoogleReviews = () => {
                                 <span className="text-[#1B8036] font-extrabold flex items-center gap-1">
                                     <span className="w-1.5 h-1.5 rounded-full bg-[#1B8036]"></span> Verified Google Review
                                 </span>
-                                <span className="text-black/60">Flortek Industries</span>
+                                <span className="text-black/60">Flortek Industries Private Limited</span>
                             </div>
                         </motion.div>
                     ))}
