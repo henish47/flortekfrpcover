@@ -10,21 +10,28 @@
   <meta name="google-site-verification" content="cRcZtuXMQkFJtnthhGy2wTfWCXk9ZyN2B2WPckmHZ6E" />
   <meta name="author" content="FLORTEK INDUSTRIES PVT. LTD." />
 
-  <!-- Preconnect to Google Fonts and Preload Logo Image -->
+  <!-- Preconnect to Font & Icon Domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
-  <link rel="preload" href="/Favicon icon.png" as="image" />
+
+  <!-- Preload Header Logo for LCP / FCP improvements -->
+  <link rel="preload" href="/flortek_logo_2.webp" as="image" type="image/webp" fetchpriority="high" />
+
+  <!-- Optimized Google Fonts loading (Non-blocking with Display Swap) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet" />
+  </noscript>
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2YPL6KZQB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2YPL6KZQB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-W2YPL6KZQB');
-</script>
+    gtag('config', 'G-W2YPL6KZQB');
+  </script>
 
 </head>
 

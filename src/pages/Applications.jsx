@@ -100,11 +100,11 @@ const Applications = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-[#F5F5F5] border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-[0.3em] mb-8">
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-[#FFC700] text-[#0B1B3D] border border-[#FFC700] text-[10px] font-black uppercase tracking-[0.3em] mb-8 shadow-sm">
                             Engineering the Future
                         </span>
                         <h1 className="text-5xl md:text-7xl font-black text-black mb-8 tracking-tighter leading-none">
-                            Built For <br /><span className="text-[#333333] italic">Every Purpose.</span>
+                            Built For <br /><span className="text-[#1B8036] italic">Every Purpose.</span>
                         </h1>
                         <p className="text-[#333333] max-w-2xl mx-auto text-lg md:text-xl font-medium leading-relaxed mb-10">
                             From the chemical rigor of industrial plants to the aesthetic demands of luxury townships, Flortek solutions are engineered to outperform.
@@ -127,8 +127,9 @@ const Applications = () => {
             <section className="py-24 bg-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 relative z-10">
                     <div className="text-center mb-20">
-                        <h4 className="text-black font-black uppercase tracking-[0.4em] text-[10px] mb-6">Load Classifications</h4>
-                        <h2 className="text-4xl md:text-5xl font-black text-black mb-6 tracking-tighter">Strength for Every Drive</h2>
+                        <h4 className="text-[#1B8036] font-black uppercase tracking-[0.4em] text-[10px] mb-6">Load Classifications</h4>
+                        <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tighter">Strength for <span className="text-[#1B8036]">Every Drive</span></h2>
+                        <div className="w-16 h-1 bg-[#1B8036] mx-auto rounded-full mb-6"></div>
                         <p className="text-[#333333] max-w-xl mx-auto font-medium text-lg">We strictly adhere to IS 1726 & BS EN 124 standards to ensure structural integrity across four primary load grades.</p>
                     </div>
 
@@ -140,13 +141,13 @@ const Applications = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: id * 0.1 }}
                                 key={id}
-                                className="relative bg-[#F5F5F5] border border-[#D9D9D9]/50 rounded-[2.5rem] p-8 group hover:border-black hover:bg-white transition-all duration-300"
+                                className="relative bg-[#F5F5F5]/40 border border-[#D9D9D9] rounded-[2.5rem] p-8 group hover:border-[#1B8036] hover:shadow-glow hover:bg-white transition-all duration-300"
                             >
-                                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-white border border-[#D9D9D9]/50 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-black font-black text-lg">{item.id}</span>
+                                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 bg-[#1B8036]/10 border border-[#1B8036]/20 text-[#1B8036] shadow-sm group-hover:bg-[#1B8036] group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                                    <span className="font-black text-lg">{item.id}</span>
                                 </div>
-                                <h4 className="text-[#333333] font-black text-[10px] uppercase tracking-widest mb-3">{item.load}</h4>
-                                <h3 className="text-xl font-black text-black mb-4 group-hover:text-[#333333] transition-colors">{item.title}</h3>
+                                <h4 className="text-[#1B8036] font-black text-[10px] uppercase tracking-widest mb-3">{item.load}</h4>
+                                <h3 className="text-xl font-bold text-black mb-4 transition-colors">{item.title}</h3>
                                 <p className="text-[#333333]/80 text-sm font-medium leading-relaxed">
                                     {item.desc}
                                 </p>
@@ -161,10 +162,10 @@ const Applications = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                         <div>
-                            <span className="inline-flex items-center gap-3 bg-[#F5F5F5] text-black px-5 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-widest mb-10 border border-[#D9D9D9]">
-                                <HardHat size={14} className="text-black" /> Technical Guide
+                            <span className="inline-flex items-center gap-3 bg-[#FFC700] text-[#0B1B3D] px-5 py-2.5 rounded-2xl text-[10px] font-black uppercase tracking-widest mb-10 border border-[#FFC700] shadow-sm">
+                                <HardHat size={14} className="text-[#0B1B3D]" /> Technical Guide
                             </span>
-                            <h2 className="text-5xl md:text-6xl font-black text-black mb-10 tracking-tighter leading-none">Precision <br />Installation Matters</h2>
+                            <h2 className="text-5xl md:text-6xl font-black text-black mb-10 tracking-tighter leading-none">Precision <br /><span className="text-[#1B8036]">Installation Matters</span></h2>
                             <p className="text-[#333333] text-lg font-medium mb-12 leading-relaxed">
                                 Proper frame seating is critical for the long-term performance and safety of FRP manhole covers. Follow our engineered protocol for maximum durability.
                             </p>
@@ -177,7 +178,7 @@ const Applications = () => {
                                     { id: "04", text: "Ensure full radial support. The frame itself is not load-bearing without concrete backing." }
                                 ].map((step, sIdx) => (
                                     <div key={sIdx} className="flex gap-8 group">
-                                        <div className="w-12 h-12 rounded-2xl bg-[#F5F5F5] border border-[#D9D9D9]/50 text-black font-black flex items-center justify-center shrink-0 group-hover:bg-black group-hover:text-white transition-all duration-300">
+                                        <div className="w-12 h-12 rounded-2xl bg-[#1B8036]/10 border border-[#1B8036]/20 text-[#1B8036] font-black flex items-center justify-center shrink-0 group-hover:bg-[#1B8036] group-hover:text-white transition-all duration-300 shadow-sm">
                                             {step.id}
                                         </div>
                                         <p className="text-lg text-[#333333] font-bold leading-relaxed pt-2">
@@ -193,7 +194,7 @@ const Applications = () => {
                                 initial={{ x: 50, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 viewport={{ once: true }}
-                                className="relative z-10 bg-[#F5F5F5] p-6 rounded-[4rem] border border-[#D9D9D9]/50 shadow-sm overflow-hidden"
+                                className="relative z-10 bg-white p-6 rounded-[4rem] border border-[#D9D9D9] hover:border-[#1B8036] hover:shadow-glow transition-all duration-300 overflow-hidden"
                             >
                                 <img
                                     src="/images/technical/installation.png"
@@ -209,9 +210,9 @@ const Applications = () => {
                         <div className="text-center lg:col-span-2 mt-8 border-t border-[#D9D9D9]/30 pt-8">
                             <p className="text-sm font-bold text-[#333333]/80">
                                 Need custom load configurations for specific application areas? Browse our {" "}
-                                <Link to="/products" className="underline text-black hover:text-[#333333] transition-colors">Product Gallery</Link>
+                                <Link to="/products" className="underline text-[#1B8036] hover:text-[#145C27] transition-colors">Product Gallery</Link>
                                 {" "} or {" "}
-                                <Link to="/contact" className="underline text-black hover:text-[#333333] transition-colors">Request a Quote</Link>
+                                <Link to="/contact" className="underline text-[#1B8036] hover:text-[#145C27] transition-colors">Request a Quote</Link>
                                 {" "} for direct-from-factory wholesale pricing.
                             </p>
                         </div>

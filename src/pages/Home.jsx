@@ -122,7 +122,7 @@ const Home = () => {
                     "@id": "https://www.flortekfrpcover.com/#breadcrumb"
                 }
             },
-            
+
             {
                 "@type": "Organization",
                 "@id": "https://www.flortekfrpcover.com/#organization",
@@ -187,7 +187,7 @@ const Home = () => {
             <SEO
                 title="FLORTEK INDUSTRIES PVT. LTD. | FRP Manhole Cover Manufacturer in India | BMC & Steel Covers"
                 description="FLORTEK INDUSTRIES PVT. LTD. is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects."
-               keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
+                keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
                 schema={homeSchema}
                 canonicalUrl="https://www.flortekfrpcover.com"
             />            {/* --- HERO SECTION (TWO-COLUMN WITH PRODUCT IMAGE) --- */}
@@ -241,13 +241,13 @@ const Home = () => {
                         {/* Right Column: Circular Orbit Product Showcase (matching user schema drawing) */}
                         <div className="lg:col-span-5 relative w-full flex flex-col items-center justify-center gap-8 py-6">
                             {/* Orbiting Wheel Container */}
-                            <div 
+                            <div
                                 className="relative flex items-center justify-center select-none"
                                 style={{ width: containerSize, height: containerSize }}
                             >
                                 {/* Orbit Path Ring Line */}
-                                <div 
-                                    className="absolute rounded-full border border-dashed border-[#D9D9D9] pointer-events-none" 
+                                <div
+                                    className="absolute rounded-full border border-dashed border-[#D9D9D9] pointer-events-none"
                                     style={{ width: radius * 2, height: radius * 2 }}
                                 />
 
@@ -285,9 +285,8 @@ const Home = () => {
                                             key={idx}
                                             onMouseEnter={() => setCurrentSlide(idx)}
                                             onClick={() => setCurrentSlide(idx)}
-                                            className={`absolute rounded-full bg-white border flex items-center justify-center p-1.5 shadow-md cursor-pointer hover:scale-110 hover:shadow-lg transition-all duration-300 z-20 ${
-                                                isActive ? 'border-black ring-4 ring-black/5' : 'border-[#D9D9D9] hover:border-black/60'
-                                            }`}
+                                            className={`absolute rounded-full bg-white border flex items-center justify-center p-1.5 shadow-md cursor-pointer hover:scale-110 hover:shadow-lg transition-all duration-300 z-20 ${isActive ? 'border-black ring-4 ring-black/5' : 'border-[#D9D9D9] hover:border-black/60'
+                                                }`}
                                             style={{
                                                 width: thumbSize,
                                                 height: thumbSize,
@@ -309,16 +308,17 @@ const Home = () => {
                                 })}
                             </div>
 
-                            {/* Specs Float Badge overlay */}
+                            {/* Specs Float Badge overlay
                             <div className="bg-black text-white px-5 py-3 rounded-2xl shadow-xl border border-white/10 max-w-[240px] text-center z-10">
                                 <p className="text-[9px] font-black uppercase tracking-widest text-[#D9D9D9]">{heroSlides[currentSlide].type}</p>
                                 <p className="text-xs font-bold uppercase mt-1">{heroSlides[currentSlide].title}</p>
                                 <p className="text-[10px] text-[#D9D9D9]/80 mt-0.5">{heroSlides[currentSlide].load}</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
             </div>
+
 
             {/* --- PRODUCT SHOWCASE GALLERY --- */}
             <div className="bg-[#F5F5F5] py-32 border-b border-[#D9D9D9]/50">
@@ -330,9 +330,9 @@ const Home = () => {
                         transition={{ duration: 0.6 }}
                         className="text-center mb-20"
                     >
-                        <span className="text-black font-black uppercase tracking-widest text-xs mb-3 block">Visual Portfolio</span>
+                        <span className="text-[#1B8036] font-black uppercase tracking-widest text-xs mb-3 block">Visual Portfolio</span>
                         <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tight mb-4">Product Gallery</h2>
-                        <div className="w-16 h-1 bg-black mx-auto rounded-full mb-6"></div>
+                        <div className="w-16 h-1 bg-[#1B8036] mx-auto rounded-full mb-6"></div>
                         <p className="text-[#333333] max-w-xl mx-auto font-medium text-lg leading-relaxed">
                             Take a closer look at our high-quality composite builds, designed for absolute safety, strength, and durability.
                         </p>
@@ -346,7 +346,7 @@ const Home = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                                className="group bg-white rounded-2xl sm:rounded-3xl border border-[#D9D9D9] hover:border-black overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+                                className="group bg-white rounded-2xl sm:rounded-3xl border border-[#D9D9D9] hover:border-[#1B8036] overflow-hidden hover:shadow-glow transition-all duration-300 flex flex-col h-full"
                             >
                                 {/* Image container */}
                                 <div className="relative aspect-square overflow-hidden bg-white flex items-center justify-center p-4 sm:p-8 border-b border-[#D9D9D9]/50">
@@ -412,7 +412,7 @@ const Home = () => {
                         className="text-center mb-20"
                     >
                         <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tight mb-4">Our Product Range</h2>
-                        <div className="w-16 h-1 bg-black mx-auto rounded-full mb-6"></div>
+                        <div className="w-16 h-1 bg-[#1B8036] mx-auto rounded-full mb-6"></div>
                         <p className="text-[#333333] max-w-xl mx-auto font-medium text-lg leading-relaxed">
                             From residential walkways to heavy industrial highways, we provide certified, engineered load class solutions.
                         </p>
@@ -427,14 +427,14 @@ const Home = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                             >
-                                <Link to="/products" className="group block bg-[#F5F5F5]/40 p-10 rounded-3xl border border-[#D9D9D9] hover:border-black hover:shadow-xl transition-all duration-300 h-full relative">
-                                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-black mb-8 group-hover:bg-black group-hover:text-white transition-colors duration-300">
+                                <Link to="/products" className="group block bg-[#F5F5F5]/40 p-10 rounded-3xl border border-[#D9D9D9] hover:border-[#1B8036] hover:shadow-glow transition-all duration-300 h-full relative">
+                                    <div className="w-12 h-12 bg-[#1B8036]/10 rounded-xl flex items-center justify-center text-[#1B8036] mb-8 group-hover:bg-[#1B8036] group-hover:text-white transition-colors duration-300 shadow-sm">
                                         <cat.icon size={24} />
                                     </div>
-                                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black transition-colors uppercase tracking-tight">{cat.title}</h3>
+                                    <h3 className="text-xl font-bold text-black mb-3 transition-colors uppercase tracking-tight">{cat.title}</h3>
                                     <p className="text-sm text-[#333333] mb-6 leading-relaxed font-medium">{cat.desc}</p>
-                                    <span className="text-xs font-black text-black uppercase tracking-wider transition-colors flex items-center gap-1.5 border-b border-black w-fit pb-0.5">
-                                        Explore <ArrowRight size={12} />
+                                    <span className="text-xs font-black text-[#1B8036] uppercase tracking-wider transition-colors flex items-center gap-1.5 border-b border-[#1B8036] group-hover:text-[#145C27] group-hover:border-[#145C27] w-fit pb-0.5">
+                                        Explore <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </Link>
                             </motion.div>
@@ -454,13 +454,13 @@ const Home = () => {
                             transition={{ duration: 0.8 }}
                             className="lg:col-span-5"
                         >
-                            <span className="text-black font-black uppercase tracking-widest text-xs mb-3 block">Material Superiority</span>
-                            <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none mb-6">Why Professionals Choose Flortek</h2>
+                            <span className="text-[#1B8036] font-black uppercase tracking-widest text-xs mb-3 block">Material Superiority</span>
+                            <h2 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter leading-none mb-6">Why Professionals Choose <span className="text-[#1B8036]">Flortek</span></h2>
                             <p className="text-lg text-[#333333] leading-relaxed font-medium mb-8">
                                 Traditional cast iron and concrete covers are heavy, brittle, and prone to theft. Our FRP composite technology offers a superior alternative that solves these problems permanently.
                             </p>
                             <Link to="/contact">
-                                <button className="bg-black hover:bg-[#333333] text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-xs">
+                                <button className="bg-[#1B8036] hover:bg-[#145C27] text-white px-8 py-4 rounded-xl font-bold uppercase tracking-wider text-xs border border-[#1B8036] shadow-sm hover:shadow-md transition-all active:scale-95 duration-300">
                                     Request Technical Datasheet
                                 </button>
                             </Link>
@@ -479,11 +479,11 @@ const Home = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: i * 0.1 }}
-                                    className="bg-white p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between"
+                                    className="bg-white p-8 rounded-3xl border border-[#D9D9D9] flex flex-col justify-between hover:border-[#1B8036] hover:shadow-glow transition-all duration-300"
                                 >
                                     <div>
-                                        <div className="w-8 h-8 rounded-full bg-black flex items-center justify-center text-white mb-6">
-                                            <CheckCircle size={14} />
+                                        <div className="w-8 h-8 rounded-full bg-[#1B8036]/10 border border-[#1B8036]/20 flex items-center justify-center text-[#1B8036] mb-6 shadow-sm">
+                                            <CheckCircle size={16} />
                                         </div>
                                         <h4 className="font-bold text-black text-lg mb-2 uppercase tracking-tight">{feature.title}</h4>
                                         <p className="text-sm text-[#333333] leading-relaxed font-medium">{feature.desc}</p>
@@ -607,7 +607,7 @@ const Home = () => {
                             <p className="text-xs sm:text-base md:text-lg text-black leading-relaxed font-medium">
                                 FLORTEK INDUSTRIES PVT. LTD. manufactures premium, export-grade composite covers tailored for harsh global climates. From our location in Rajkot, India, we arrange seaworthy shipping containers to primary ports worldwide.
                             </p>
-                            
+
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
                                 <div className="flex gap-3 items-start">
                                     <div className="p-3 bg-[#1B8036]/10 border border-[#1B8036]/20 rounded-xl text-[#1B8036] shrink-0">
@@ -677,7 +677,7 @@ const Home = () => {
             <div className="bg-[#F5F5F5] py-24 border-t border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="text-center mb-16">
-                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#D9D9D9] text-black text-[10px] font-black uppercase tracking-[0.2em] mb-4">
+                        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FFC700] text-[#0B1B3D] text-[10px] font-black uppercase tracking-[0.2em] mb-4">
                             FAQ
                         </span>
                         <h2 className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter mb-4">Frequently Asked Questions</h2>
@@ -739,41 +739,41 @@ const categories = [
 
 const galleryProducts = [
     {
-        title: "Square Manhole Covers",
-        desc: "Highly durable solid-top square covers for municipal chambers and gardens.",
-        load: "2.5 T / 5.0 T",
-        image: "/images/square/FRP-24x24-2.5T-FW.png"
+    title: "FRP Square Manhole Covers",
+    desc: "Premium-quality FRP square manhole covers designed for residential, commercial, municipal, and landscaping applications. Lightweight, corrosion-resistant, weatherproof, and engineered for long-lasting durability with excellent load-bearing performance.",
+    load: "2.5 T / 5 T",
+    image: "/images/square/FRP-24x24-2.5T-FW.png"
+},
+    {
+        title: "Heavy Duty FRP Manhole Cover",
+        desc: "High-strength FRP heavy-duty manhole cover engineered for municipal roads, industrial areas, commercial projects, and infrastructure applications. Corrosion-resistant, lightweight, and compliant with BS EN 124 standards.",
+        load: "C250 / 25 T",
+        image: "/images/900 X 900_124_C250.PNG"
+    },
+   {
+    title: "FRP Round Manhole Covers",
+    desc: "Premium-quality FRP round manhole covers designed for municipal, residential, commercial, and utility applications. Engineered for superior strength, corrosion resistance, weather protection, and long-lasting performance while ensuring safe and easy access to underground utility chambers.",
+    load: "B125 / 12.5 T",
+    image: "/images/circular/FRP 600 BS EN_124_B125.png"
+},
+    {
+        title: "Heavy Duty FRP Traffic Manhole Covers",
+        desc: "Premium heavy-duty FRP traffic manhole covers engineered for highways, industrial roads, cargo terminals, and high-load infrastructure. Designed for superior durability, corrosion resistance, and BS EN 124 D400 compliance.",
+        load: "D400 / 40 T",
+        image: "/images/FRP-600x600-D400-FLORTEK.jpg"
     },
     {
-        title: "Rectangle Manhole Covers",
-        desc: "Precision-molded rectangular covers suitable for utility ducts and storm drains.",
-        load: "2.5 T / 5.0 T",
-        image: "/images/rectangular/FRP-18x24-2.5T-FW.png"
+        title: "FRP Water Gully Grating Covers",
+        desc: "High-performance FRP water gully grating covers designed for efficient stormwater drainage, road gutters, commercial complexes, and municipal infrastructure. Lightweight, corrosion-resistant, and built for long-lasting performance.",
+        load: "2.5 T / 5 T / B125",
+        image: "/images/GULLY COVER-5T-500x500-GRAY.png"
     },
-    {
-        title: "Round Circular Covers",
-        desc: "Heavy-duty circular covers designed for high stability and easy access.",
-        load: "B125 (12.5 T)",
-        image: "/images/circular/FRP 600 BS EN_124_B125.png"
-    },
-    {
-        title: "Heavy Duty Traffic Covers",
-        desc: "Traffic-rated composite covers certified for highways and cargo bays.",
-        load: "C250 / D400",
-        image: "/images/FRP 600x600 BS En 124_D400.png"
-    },
-    {
-        title: "Water Gulley Grating Covers",
-        desc: "Slotted design optimized for maximum water intake and drainage flow control.",
-        load: "2.5T / 5T / B125",
-        image: "/images/watergully/GULLY COVER _300X600_5T_GRAY.png"
-    },
-    {
-        title: "Recessed Manhole Covers",
-        desc: "Deep tray design allowing paving stone infills to blend seamlessly with paths.",
-        load: "2.5 T / 5.0 T",
-        image: "/images/recessed/RECESS COVER _ 450X450_2.5T_GRAY.jpg"
-    }
+   {
+    title: "FRP Recessed Manhole Covers",
+    desc: "Premium-quality FRP recessed manhole covers featuring a deep tray design for paving blocks, tiles, and stone infills. Ideal for residential, commercial, landscaping, and pedestrian areas, offering a seamless finish, corrosion resistance, and long-lasting durability.",
+    load: "2.5 T / 5 T",
+    image: "/images/recessed/RECESS COVER _ 450X450_2.5T_GRAY.jpg"
+},
 ];
 
 export default Home;
