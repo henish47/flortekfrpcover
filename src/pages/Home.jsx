@@ -178,45 +178,70 @@ const Home = () => {
                                     High-performance, corrosion-resistant FRP manhole covers engineered with absolute precision for modern infrastructure, commercial hubs, and industrial applications.
                                 </p>
                                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-2">
-                                    <Link to="/products" className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm">
+                                    <Link to="/products" className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm hover:shadow-md">
                                         View Products <ArrowRight size={14} className="ml-2" />
                                     </Link>
                                     <button
                                         onClick={openModal}
-                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#FFC700] shadow-sm"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#FFC700] hover:bg-[#E6B200] text-[#0B1B3D] font-extrabold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#FFC700] shadow-sm hover:shadow-md"
                                     >
                                         Get Quote
                                     </button>
                                     <a
                                         href="/brochure.pdf"
                                         download="Flortek_Brochure.pdf"
-                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#F5F5F5] hover:bg-[#D9D9D9] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#D9D9D9]"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#F5F5F5] hover:bg-[#EBEBEB] text-black font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#D9D9D9]"
                                     >
                                         <Download size={14} className="mr-2" /> Brochure
                                     </a>
                                 </div>
+
+                                {/* Trust Badges Strip */}
+                                <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-4 text-[11px] sm:text-xs text-[#333333] font-semibold border-t border-[#F0F0F0]">
+                                    <span className="flex items-center gap-1.5">
+                                        <CheckCircle size={15} className="text-[#1B8036] shrink-0" />
+                                        <span>BS EN 124 Certified</span>
+                                    </span>
+                                    <span className="flex items-center gap-1.5">
+                                        <ShieldCheck size={15} className="text-[#1B8036] shrink-0" />
+                                        <span>100% Anti-Theft (Zero Scrap)</span>
+                                    </span>
+                                    <span className="flex items-center gap-1.5">
+                                        <Truck size={15} className="text-[#1B8036] shrink-0" />
+                                        <span>Direct Factory Rates</span>
+                                    </span>
+                                </div>
                             </motion.div>
                         </div>
 
-                        {/* Right Column: Circular Orbit Product Showcase (matching user schema drawing) */}
-                        <div className="lg:col-span-5 relative w-full flex flex-col items-center justify-center gap-8 py-6">
+                        {/* Right Column: Circular Orbit Product Showcase */}
+                        <div className="lg:col-span-5 relative w-full flex flex-col items-center justify-center gap-6 py-6">
+                            {/* Ambient Soft Glow Behind Wheel */}
+                            <div className="absolute w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#1B8036]/5 via-[#FFC700]/5 to-transparent blur-3xl pointer-events-none -z-0" />
+
                             {/* Orbiting Wheel Container */}
                             <div
-                                className="relative flex items-center justify-center select-none"
+                                className="relative flex items-center justify-center select-none z-10"
                                 style={{ width: containerSize, height: containerSize }}
                             >
-                                {/* Orbit Path Ring Line */}
+                                {/* Outer Dashed Orbit Path Line */}
                                 <div
                                     className="absolute rounded-full border border-dashed border-[#D9D9D9] pointer-events-none"
                                     style={{ width: radius * 2, height: radius * 2 }}
                                 />
 
+                                {/* Subtle Inner Concentric Ring */}
+                                <div
+                                    className="absolute rounded-full border border-dotted border-[#E5E7EB] pointer-events-none"
+                                    style={{ width: radius * 1.5, height: radius * 1.5 }}
+                                />
+
                                 {/* Central Focus Product Card */}
                                 <motion.div
-                                    className="absolute rounded-full bg-[#F5F5F5] border border-[#D9D9D9] p-6 flex items-center justify-center shadow-lg group overflow-hidden z-10"
+                                    className="absolute rounded-full bg-white border border-[#D9D9D9] p-5 sm:p-6 flex items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.08)] group overflow-hidden z-10"
                                     style={{ width: centerSize, height: centerSize }}
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-[#D9D9D9]/20 via-transparent to-transparent opacity-50 pointer-events-none" />
+                                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/[0.02] pointer-events-none" />
                                     <AnimatePresence mode="wait">
                                         <motion.img
                                             key={currentSlide}
@@ -224,11 +249,11 @@ const Home = () => {
                                             alt={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
                                             title={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
                                             decoding="async"
-                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            initial={{ opacity: 0, scale: 0.85 }}
                                             animate={{ opacity: 1, scale: 1 }}
-                                            exit={{ opacity: 0, scale: 0.85 }}
-                                            transition={{ duration: 0.35 }}
-                                            className="w-[85%] h-[85%] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.1)] group-hover:scale-105 transition-transform duration-500"
+                                            exit={{ opacity: 0, scale: 0.9 }}
+                                            transition={{ duration: 0.3 }}
+                                            className="w-[88%] h-[88%] object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-500 z-10"
                                         />
                                     </AnimatePresence>
                                 </motion.div>
@@ -245,7 +270,7 @@ const Home = () => {
                                             key={idx}
                                             onMouseEnter={() => setCurrentSlide(idx)}
                                             onClick={() => setCurrentSlide(idx)}
-                                            className={`absolute rounded-full bg-white border flex items-center justify-center p-1.5 shadow-md cursor-pointer hover:scale-110 hover:shadow-lg transition-all duration-300 z-20 ${isActive ? 'border-black ring-4 ring-black/5' : 'border-[#D9D9D9] hover:border-black/60'
+                                            className={`absolute rounded-full bg-white border flex items-center justify-center p-1.5 shadow-md cursor-pointer hover:scale-110 hover:shadow-lg transition-all duration-300 z-20 ${isActive ? 'border-[#1B8036] ring-4 ring-[#1B8036]/15 scale-105' : 'border-[#D9D9D9] hover:border-black/60'
                                                 }`}
                                             style={{
                                                 width: thumbSize,
@@ -268,12 +293,28 @@ const Home = () => {
                                 })}
                             </div>
 
-                            {/* Specs Float Badge overlay
-                            <div className="bg-black text-white px-5 py-3 rounded-2xl shadow-xl border border-white/10 max-w-[240px] text-center z-10">
-                                <p className="text-[9px] font-black uppercase tracking-widest text-[#D9D9D9]">{heroSlides[currentSlide].type}</p>
-                                <p className="text-xs font-bold uppercase mt-1">{heroSlides[currentSlide].title}</p>
-                                <p className="text-[10px] text-[#D9D9D9]/80 mt-0.5">{heroSlides[currentSlide].load}</p>
-                            </div> */}
+                            {/* Live Specs Floating Pill Badge */}
+                            <div className="relative z-20 min-h-[44px] flex items-center justify-center">
+                                <AnimatePresence mode="wait">
+                                    <motion.div
+                                        key={currentSlide}
+                                        initial={{ opacity: 0, y: 8, scale: 0.96 }}
+                                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                                        exit={{ opacity: 0, y: -8, scale: 0.96 }}
+                                        transition={{ duration: 0.25 }}
+                                        className="inline-flex items-center gap-2.5 px-4 py-2 bg-white/95 backdrop-blur-md border border-[#D9D9D9] shadow-md rounded-full"
+                                    >
+                                        <span className="w-2 h-2 rounded-full bg-[#1B8036] animate-pulse"></span>
+                                        <span className="text-xs font-black uppercase text-black tracking-wider">
+                                            {heroSlides[currentSlide].title}
+                                        </span>
+                                        <span className="w-1 h-1 rounded-full bg-[#D9D9D9]"></span>
+                                        <span className="text-[10px] font-bold text-[#1B8036] uppercase tracking-wider bg-[#1B8036]/10 px-2 py-0.5 rounded-full">
+                                            {heroSlides[currentSlide].load.replace('Tested Load Cap: ', '')}
+                                        </span>
+                                    </motion.div>
+                                </AnimatePresence>
+                            </div>
                         </div>
                     </div>
                 </div>
