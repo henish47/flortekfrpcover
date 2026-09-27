@@ -14,12 +14,41 @@ const HeavyDutyFRPCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "Heavy-Duty FRP & Composite Manhole Covers | Flortek Industries PVT. LTD.",
-                "description": "High-strength, export-grade heavy-duty FRP manhole covers certified to Class C250 and D400 BS EN 124 standards. Built for highway and industrial cargo traffic.",
+                "name": "Heavy Duty FRP Manhole Covers D400 & C250 Load Rated | FLORTEK",
+                "description": "Class D400 (40 Ton) and C250 (25 Ton) heavy-duty FRP composite covers engineered for heavy traffic highways, ports, and industrial roadways. EN 124 compliant.",
                 "url": "https://www.flortekfrpcover.com/heavy-duty-frp-covers",
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/heavy-duty-frp-covers#breadcrumb"
                 }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is the difference between Class C250 and Class D400 FRP covers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Class C250 covers withstand 250 kN (25 Tons) and are intended for gully tops and roadside parking lanes. Class D400 covers withstand 400 kN (40 Tons) and are engineered for carriageways, highways, ports, and industrial logistics parks."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "How does Flortek test its heavy-duty FRP covers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Every production lot is validated using a calibrated 100-ton computerized hydraulic load testing press according to BS EN 124 standards, complete with batch test certificates."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do heavy-duty FRP covers crack or shatter under high-speed wheel impacts?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No. Flortek composite covers incorporate high-density multi-directional woven fiberglass roving that absorbs dynamic impact shocks and prevents micro-cracking even under intense vehicle pounding."
+                        }
+                    }
+                ]
             }
         ]
     };

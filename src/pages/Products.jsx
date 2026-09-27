@@ -404,23 +404,171 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "WebPage",
-                "name": "FRP & GRP Manhole Cover Price List & Catalog | Flortek",
-                "description": "Explore Flortek's full catalog of FRP, SMC, and GRP manhole covers, recessed drain covers, and water gully gratings. Certified to EN 124 load classes.",
-                "url": "https://www.flortekfrpcover.com/products",
-                "breadcrumb": {
-                    "@id": "https://www.flortekfrpcover.com/products#breadcrumb"
-                }
+                "@type": "ItemList",
+                "name": "FLORTEK FRP Manhole Covers & Drainage Gratings Catalog",
+                "description": "Full product catalog of BS EN 124 certified FRP and composite covers manufactured by FLORTEK INDUSTRIES.",
+                "numberOfItems": 5,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "item": {
+                            "@type": "Product",
+                            "name": "FRP Square Manhole Covers (18x18, 24x24, 600x600mm)",
+                            "description": "Heavy-duty FRP square manhole covers tested to BS EN 124 standards for municipal sewer chambers, commercial pavements, and residential developments.",
+                            "image": "https://www.flortekfrpcover.com/images/square/FRP-24x24-2.5T-FW.png",
+                            "brand": { "@type": "Brand", "name": "FLORTEK" },
+                            "manufacturer": { "@type": "Organization", "name": "FLORTEK INDUSTRIES PVT. LTD." },
+                            "offers": {
+                                "@type": "AggregateOffer",
+                                "priceCurrency": "INR",
+                                "lowPrice": "1100",
+                                "highPrice": "12000",
+                                "offerCount": "12",
+                                "availability": "https://schema.org/InStock"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "reviewCount": "84",
+                                "bestRating": "5"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "item": {
+                            "@type": "Product",
+                            "name": "FRP Circular Manhole Covers (18\", 24\", 600mm Diameter)",
+                            "description": "Precision-engineered circular composite covers for deep inspection shafts, storm drains, and municipal pipelines. Anti-theft and corrosion resistant.",
+                            "image": "https://www.flortekfrpcover.com/images/circular/FRP-18-2.5T-FW.png",
+                            "brand": { "@type": "Brand", "name": "FLORTEK" },
+                            "manufacturer": { "@type": "Organization", "name": "FLORTEK INDUSTRIES PVT. LTD." },
+                            "offers": {
+                                "@type": "AggregateOffer",
+                                "priceCurrency": "INR",
+                                "lowPrice": "1250",
+                                "highPrice": "14500",
+                                "offerCount": "8",
+                                "availability": "https://schema.org/InStock"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "reviewCount": "62",
+                                "bestRating": "5"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "item": {
+                            "@type": "Product",
+                            "name": "Heavy Duty FRP Covers Class D400 (40 Ton) & C250 (25 Ton)",
+                            "description": "High-load traffic-rated composite covers built to withstand articulated heavy truck transit on highways, container depots, and bus terminals.",
+                            "image": "https://www.flortekfrpcover.com/images/circular/FRP%20600%20BS%20EN_124_B125.png",
+                            "brand": { "@type": "Brand", "name": "FLORTEK" },
+                            "manufacturer": { "@type": "Organization", "name": "FLORTEK INDUSTRIES PVT. LTD." },
+                            "offers": {
+                                "@type": "AggregateOffer",
+                                "priceCurrency": "INR",
+                                "lowPrice": "3500",
+                                "highPrice": "22000",
+                                "offerCount": "6",
+                                "availability": "https://schema.org/InStock"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "5.0",
+                                "reviewCount": "48",
+                                "bestRating": "5"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "item": {
+                            "@type": "Product",
+                            "name": "FRP Drainage Gratings & Water Gully Covers",
+                            "description": "Storm water drainage grates featuring anti-clogging vertical flow slots, skid-proof ribbed surface, and chemical resistance.",
+                            "image": "https://www.flortekfrpcover.com/images/square/FRP-18x18-2.5T-FW.png",
+                            "brand": { "@type": "Brand", "name": "FLORTEK" },
+                            "manufacturer": { "@type": "Organization", "name": "FLORTEK INDUSTRIES PVT. LTD." },
+                            "offers": {
+                                "@type": "AggregateOffer",
+                                "priceCurrency": "INR",
+                                "lowPrice": "950",
+                                "highPrice": "8500",
+                                "offerCount": "10",
+                                "availability": "https://schema.org/InStock"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.8",
+                                "reviewCount": "55",
+                                "bestRating": "5"
+                            }
+                        }
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "item": {
+                            "@type": "Product",
+                            "name": "FRP Cable Trench Covers (24x36, 18x24\")",
+                            "description": "Electrically insulated, non-sparking trench lids for thermal power stations, electrical substations, and data centers.",
+                            "image": "https://www.flortekfrpcover.com/images/rectangular/24%20X%2036%20FRP.PNG",
+                            "brand": { "@type": "Brand", "name": "FLORTEK" },
+                            "manufacturer": { "@type": "Organization", "name": "FLORTEK INDUSTRIES PVT. LTD." },
+                            "offers": {
+                                "@type": "AggregateOffer",
+                                "priceCurrency": "INR",
+                                "lowPrice": "1800",
+                                "highPrice": "16500",
+                                "offerCount": "7",
+                                "availability": "https://schema.org/InStock"
+                            },
+                            "aggregateRating": {
+                                "@type": "AggregateRating",
+                                "ratingValue": "4.9",
+                                "reviewCount": "39",
+                                "bestRating": "5"
+                            }
+                        }
+                    }
+                ]
             },
-            
             {
-                "@type": "Organization",
-                "name": "FLORTEK INDUSTRIES PVT. LTD.",
-                "url": "https://www.flortekfrpcover.com",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.flortekfrpcover.com/logo.png"
-                }
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What standard sizes of FRP manhole covers are available?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FLORTEK manufactures all standard Indian and international dimensions including 300x300mm (12x12\"), 450x450mm (18x18\"), 600x600mm (24x24\"), 600x900mm (24x36\"), 900x900mm, and round covers in 450mm (18\") and 600mm (24\") clear openings, along with custom engineered sizes."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What load classes do Flortek FRP manhole covers support?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Our covers adhere to BS EN 124 standards across all classes: Class A15 (1.5 Tons for pedestrian areas), Class B125 (12.5 Tons for car parking), Class C250 (25 Tons for commercial traffic), and Class D400 (40 Tons for highways and industrial zones)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Why choose FRP manhole covers instead of cast iron or ductile iron?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FRP composite manhole covers have zero scrap value which completely eliminates theft. They are 70% lighter than cast iron for easy maintenance, 100% rust and chemical proof, non-conductive, and have a 30+ year lifespan without maintenance."
+                        }
+                    }
+                ]
             }
         ]
     };
@@ -428,8 +576,8 @@ const ProductCard = ({ product, onZoom, onQuote }) => {
     return (
         <div className="bg-white min-h-screen font-sans">
             <SEO
-                title="FRP & GRP Manhole Cover Price List & Catalog | FLORTEK INDUSTRIES PVT. LTD."
-                description="Explore FLORTEK INDUSTRIES PVT. LTD.'s full catalog of FRP, SMC, and GRP manhole covers, recessed drain covers, and water gully gratings. Certified to EN 124 load classes."
+                title="FRP Manhole Cover Catalogue & Price List | All Sizes | FLORTEK"
+                description="Explore FLORTEK INDUSTRIES' full catalog of FRP, SMC, and GRP manhole covers, recessed drain covers, and water gully gratings. Certified to EN 124 load classes."
                 keywords="FRP manhole cover price list, composite manhole cover sizes, 600x600mm manhole cover, 450x450mm chamber cover, GRP manhole cover manufacturers, drainage gratings price, heavy duty gully covers catalog, recessed tile manhole covers, A15 B125 C250 D400 covers"
                 schema={productsSchema}
                 canonicalUrl="https://www.flortekfrpcover.com/products"

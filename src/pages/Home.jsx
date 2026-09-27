@@ -103,80 +103,40 @@ const Home = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "WebSite",
-                "@id": "https://www.flortekfrpcover.com/#website",
-                "url": "https://www.flortekfrpcover.com",
-                "name": "FLORTEK INDUSTRIES PVT. LTD.",
-                "description": "Leading manufacturer of high-quality FRP, GRP and composite manhole covers in India."
-            },
-            {
-                "@type": "WebPage",
-                "@id": "https://www.flortekfrpcover.com/#webpage",
-                "url": "https://www.flortekfrpcover.com",
-                "name": "Home | FLORTEK INDUSTRIES PVT. LTD.",
-                "description": "FLORTEK INDUSTRIES PVT. LTD. is a leading FRP manhole cover manufacturer in India, offering heavy-duty, corrosion-resistant covers for municipal and industrial drainage projects.",
-                "isPartOf": {
-                    "@id": "https://www.flortekfrpcover.com/#website"
-                },
-                "breadcrumb": {
-                    "@id": "https://www.flortekfrpcover.com/#breadcrumb"
-                }
-            },
-
-            {
-                "@type": "Organization",
-                "@id": "https://www.flortekfrpcover.com/#organization",
-                "name": "FLORTEK INDUSTRIES PVT. LTD.",
-                "url": "https://www.flortekfrpcover.com",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://www.flortekfrpcover.com/logo.png"
-                },
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+91-8000888620",
-                    "contactType": "sales",
-                    "email": "flortekindustries@gmail.com",
-                    "areaServed": "IN",
-                    "availableLanguage": ["en", "hi", "gu"]
-                }
-            },
-            {
-                "@type": "LocalBusiness",
-                "@id": "https://www.flortekfrpcover.com/#localbusiness",
-                "name": "FLORTEK INDUSTRIES PVT. LTD.",
-                "image": "https://www.flortekfrpcover.com/logo.png",
-                "url": "https://www.flortekfrpcover.com",
-                "telephone": "+91-8000888620",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
-                    "addressLocality": "Rajkot",
-                    "addressRegion": "Gujarat",
-                    "postalCode": "360024",
-                    "addressCountry": "IN"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": 22.1509,
-                    "longitude": 70.7969
-                },
-                "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": [
-                        "Monday",
-                        "Tuesday",
-                        "Wednesday",
-                        "Thursday",
-                        "Friday",
-                        "Saturday"
-                    ],
-                    "opens": "09:00",
-                    "closes": "18:00"
-                },
-                "sameAs": [
-                    "https://www.facebook.com/flortek",
-                    "https://www.instagram.com/flortek"
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Who is the leading FRP manhole cover manufacturer in Rajkot, Gujarat?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FLORTEK INDUSTRIES PVT. LTD., situated in Radhe Industrial Zone, Shapar Veraval, Rajkot, is a premier B2B manufacturer and exporter of BS EN 124 certified FRP, BMC, and composite manhole covers."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the main advantages of Flortek FRP covers over cast iron covers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Flortek FRP covers have zero scrap value (100% theft-proof), are 70% lighter than cast iron for ergonomic handling, will never corrode or rust from sewer gases, and support heavy vehicular loads up to 40 Tons (Class D400)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Are Flortek FRP manhole covers tested according to BS EN 124 standards?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, our composite covers are tested in-house on a calibrated 100-ton computerized hydraulic load testing machine across BS EN 124 load classes: A15 (1.5T), B125 (12.5T), C250 (25T), and D400 (40T)."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What dimensions and load ratings are available?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We provide square covers (12x12, 18x18, 24x24, 600x600, 900x900mm), rectangular trench covers (18x24, 24x36\"), and circular covers (18\", 24\", 600mm) with custom load capacities tailored to your engineering project."
+                        }
+                    }
                 ]
             }
         ]

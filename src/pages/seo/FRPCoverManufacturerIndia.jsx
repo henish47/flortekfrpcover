@@ -11,12 +11,41 @@ const FRPCoverManufacturerIndia = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "FRP Cover Manufacturer & B2B Supplier in India | Flortek Industries PVT. LTD.",
-                "description": "Flortek is a premier ISO 9001:2015 certified manufacturer of high-quality composite FRP covers in India. Nationwide delivery, custom sizing, and BS EN 124 compliance.",
+                "name": "FRP Cover Manufacturer in India | Top Composite Covers | FLORTEK",
+                "description": "Leading Indian manufacturer of FRP/GRP composite manhole covers, trench covers, and gully grates. High tensile strength, zero scrap value, EN 124 certified.",
                 "url": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india",
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-india#breadcrumb"
                 }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Who is the top FRP manhole cover manufacturer in India?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FLORTEK INDUSTRIES PVT. LTD. is recognized among India's premier B2B manufacturers of BS EN 124 certified composite FRP manhole covers, BMC covers, and drainage gratings, delivering nationwide with full factory load test certifications."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you supply FRP covers for government and smart city tenders in India?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Flortek products are extensively specified and supplied for municipal corporations, smart city drainage, PWD, national highway projects, and industrial corridors across India."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What certifications does Flortek hold for manufacturing composite covers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FLORTEK INDUSTRIES is an ISO 9001:2015 certified company and strictly adheres to BS EN 124:2015 load testing standards (A15, B125, C250, D400) backed by our in-house 100-ton hydraulic compression test lab."
+                        }
+                    }
+                ]
             }
         ]
     };

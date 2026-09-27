@@ -11,12 +11,41 @@ const FRPCoverManufacturerGujarat = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "FRP Cover Manufacturer & Supplier in Gujarat | Flortek Industries PVT. LTD.",
-                "description": "Flortek is the leading manufacturer and supplier of premium composite FRP covers in Gujarat. Located in Rajkot with direct supply to Ahmedabad, Surat, and Vadodara.",
+                "name": "FRP Cover Manufacturer in Rajkot Gujarat | FLORTEK INDUSTRIES",
+                "description": "FLORTEK INDUSTRIES is Rajkot's premier FRP manhole cover factory in Shapar Veraval. Supplying municipal authorities and contractors across Gujarat and India.",
                 "url": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat",
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-cover-manufacturer-gujarat#breadcrumb"
                 }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Where is Flortek's FRP cover manufacturing factory located in Gujarat?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Our modern manufacturing facility and hydraulic load testing laboratory is located at Radhe Industrial Zone, Survey No. 99/1-2, Plot No. 4/37, Veraval Shapar, Rajkot, Gujarat 360024."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Does Flortek supply FRP manhole covers across all cities in Gujarat?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, we provide direct factory supply across Ahmedabad, Surat, Vadodara, Rajkot, Gandhinagar, GIFT City, Jamnagar, Bhavnagar, and all GIDC industrial zones."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can project consultants and municipal engineers witness live load testing at the Rajkot factory?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, we encourage municipal authorities and civil contractors to visit our Rajkot plant to witness calibrated 100-ton hydraulic load tests according to BS EN 124 standards."
+                        }
+                    }
+                ]
             }
         ]
     };

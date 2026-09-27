@@ -1,9 +1,50 @@
-# Optimized robots.txt for Google and AI Search Engines (Googlebot, Bingbot, ChatGPT, Claude, Gemini, etc.)
+# High-Performance robots.txt for FLORTEK INDUSTRIES PVT. LTD.
+# Optimized for Google, Bing, Yahoo, Yandex, Applebot, and AI Search Engines
+
 User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
+# Explicit indexing rules for Googlebot & Image Search
+User-agent: Googlebot
+Allow: /
+Allow: /images/
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+
+# Applebot
+User-agent: Applebot
+Allow: /
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+
+# AI Crawlers for generative search answers (ChatGPT Search, Perplexity, Claude, Gemini)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 # Host
 Host: https://www.flortekfrpcover.com
 
-# Sitemap Link
+# XML Sitemaps
 Sitemap: https://www.flortekfrpcover.com/sitemap.xml

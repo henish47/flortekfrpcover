@@ -14,12 +14,41 @@ const FRPDrainCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "Heavy-Duty FRP Drain Covers & Sewer Gratings | FLORTEK INDUSTRIES PVT. LTD.",
-                "description": "Premium industrial FRP drain covers, storm water gully gratings, and slotted trench covers. Corrosion-free, rust-resistant, and high load capacity.",
+                "name": "FRP Drain Covers & Storm Water Gratings Manufacturer | FLORTEK",
+                "description": "High-strength composite FRP drain covers and stormwater gratings for roads, highways, and industrial estates. Fast drainage, anti-slip, corrosion-resistant.",
                 "url": "https://www.flortekfrpcover.com/frp-drain-covers",
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-drain-covers#breadcrumb"
                 }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Why use FRP drain covers instead of mild steel or cast iron gratings?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "FRP drain gratings do not rust, have zero scrap value which prevents roadside theft, offer superior chemical resistance to acidic runoff, and feature non-slip textured surfaces for pedestrian and vehicle safety."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the common applications for composite drainage gratings?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "They are widely installed along highway gutters, stormwater collection channels, car parking facilities, chemical plant trenches, and municipal road infrastructure."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can Flortek FRP drain covers support heavy commercial vehicles?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Flortek drain covers are manufactured in Class B125, Class C250 (25 Ton), and Class D400 (40 Ton) ratings engineered specifically for municipal roads and heavy vehicle traffic."
+                        }
+                    }
+                ]
             }
         ]
     };

@@ -47,7 +47,7 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
 
     // Organization Schema
     const organizationSchema = {
-        "@type": "Organization",
+        "@type": ["Organization", "Manufacturer"],
         "@id": `${domain}/#organization`,
         "name": "FLORTEK INDUSTRIES PVT. LTD.",
         "legalName": "FLORTEK INDUSTRIES PVT. LTD.",
@@ -71,6 +71,47 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
             "postalCode": "360024",
             "addressCountry": "IN"
         },
+        "areaServed": [
+            "India",
+            "Gujarat",
+            "Maharashtra",
+            "Delhi NCR",
+            "Karnataka",
+            "Tamil Nadu",
+            "Rajasthan",
+            "Madhya Pradesh",
+            "UAE",
+            "Saudi Arabia",
+            "Worldwide"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "185",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "FRP & Composite Infrastructure Products",
+            "itemListElement": [
+                {
+                    "@type": "OfferCatalog",
+                    "name": "FRP Manhole Covers (BS EN 124 Compliant)",
+                    "description": "Heavy-duty FRP circular and square manhole covers from 2.5T to 40T load capacity."
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "FRP Drain & Gully Gratings",
+                    "description": "High-flow composite drainage gratings and gully covers for roads and highways."
+                },
+                {
+                    "@type": "OfferCatalog",
+                    "name": "FRP Cable Trench Covers",
+                    "description": "Non-conductive electrical and utility trench covers for power substations and industrial plants."
+                }
+            ]
+        },
         "sameAs": [
             "https://www.youtube.com/@flortekindustries7143",
             "https://wa.me/919724035200?text=Hello%20Flortek%2C%20I%20visited%20your%20website%20and%20am%20interested%20in%20your%20FRP%20products.%20Please%20provide%20more%20details.",
@@ -88,6 +129,10 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
         "url": domain,
         "telephone": "+91-8000888620",
         "email": "flortekindustries@gmail.com",
+        "priceRange": "$$",
+        "currenciesAccepted": "INR, USD",
+        "paymentAccepted": "Cash, Credit Card, Bank Transfer, Cheque",
+        "hasMap": "https://maps.google.com/?q=22.1509449,70.7968815",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Radhe Industrial Zone, Survey No.99/1-2, Plot No.4/37, Veraval Shapar",
@@ -299,17 +344,31 @@ const SEO = ({ title: propTitle, description: propDescription, keywords: propKey
             {seoKeywords && <meta name="keywords" content={seoKeywords} />}
             <link rel="canonical" href={cleanUrl} />
             <link rel="icon" type="image/png" href="/Favicon icon.png" />
+            <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+            {/* Local & Geo Targeting for Gujarat & India */}
+            <meta name="geo.region" content="IN-GJ" />
+            <meta name="geo.placename" content="Rajkot, Gujarat, India" />
+            <meta name="geo.position" content="22.150945;70.796882" />
+            <meta name="ICBM" content="22.150945, 70.796882" />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content={type || "website"} />
+            <meta property="og:locale" content="en_IN" />
             <meta property="og:title" content={seoTitle} />
             <meta property="og:description" content={seoDescription} />
             <meta property="og:url" content={cleanUrl} />
             <meta property="og:image" content={ogImage} />
+            <meta property="og:image:secure_url" content={ogImage} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:image:alt" content={seoTitle} />
             <meta property="og:site_name" content="FLORTEK INDUSTRIES PVT. LTD." />
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@flortekfrpcover" />
+            <meta name="twitter:creator" content="@flortekfrpcover" />
             <meta name="twitter:title" content={seoTitle} />
             <meta name="twitter:description" content={seoDescription} />
             <meta name="twitter:image" content={ogImage} />

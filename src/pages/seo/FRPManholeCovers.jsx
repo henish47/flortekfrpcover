@@ -14,12 +14,41 @@ const FRPManholeCovers = () => {
         "@graph": [
             {
                 "@type": "WebPage",
-                "name": "Premium FRP Manhole Covers Manufacturer in Rajkot, India",
-                "description": "Looking for heavy-duty FRP manhole covers? Flortek is a leading manufacturer in Rajkot, Gujarat, providing corrosion-free, high-load composite covers.",
+                "name": "FRP Manhole Covers Manufacturer & Supplier in India | FLORTEK INDUSTRIES PVT LTD",
+                "description": "Heavy-duty FRP manhole covers manufactured for municipal roadways and industrial hubs. BS EN 124 certified, anti-theft, 2.5T to 40T load capacity.",
                 "url": "https://www.flortekfrpcover.com/frp-manhole-covers",
                 "breadcrumb": {
                     "@id": "https://www.flortekfrpcover.com/frp-manhole-covers#breadcrumb"
                 }
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What makes Flortek FRP manhole covers better than conventional cast iron?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Flortek composite covers are engineered from premium vinyl/polyester resins and multi-directional glass fiber, providing zero scrap value (100% anti-theft), complete immunity to sewer gas corrosion (H2S), 70% lighter weight, and certified BS EN 124 load ratings up to 40 Tons."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "What are the standard sizes available for FRP manhole covers?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We manufacture 300x300mm (12x12\"), 450x450mm (18x18\"), 600x600mm (24x24\"), 900x900mm (36x36\"), along with round 18-inch and 24-inch clear opening covers."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Can FRP manhole covers withstand heavy highway traffic?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Flortek manufactures Class C250 (25 Ton) and Class D400 (40 Ton) heavy-duty composite covers engineered and tested for major highways, bus terminals, and industrial truck roadways."
+                        }
+                    }
+                ]
             }
         ]
     };
