@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, Layers, Star, Download, Globe, Anchor } from 'lucide-react';
+import { 
+    ArrowRight, CheckCircle, Truck, ShieldCheck, Activity, Zap, 
+    Layers, Star, Download, Globe, Anchor, Award, Sparkles, ChevronRight 
+} from 'lucide-react';
 import { useModal } from '../context/ModalContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import SEO from '../components/common/SEO';
@@ -8,96 +11,107 @@ import FAQAccordion, { faqs } from '../components/common/FAQAccordion';
 import GoogleReviews from '../components/home/GoogleReviews';
 import FRPComparisonMatrix from '../components/home/FRPComparisonMatrix';
 
-// Slide show data for Hero section
+// Slide show data for Hero section with detailed engineering specs
 const heroSlides = [
     {
-        title: "D400 Heavy Duty",
+        id: "d400-40t",
+        title: "D400 Heavy Duty Square Cover",
+        shortTitle: "D400 40T",
         type: "Square Cover",
-        load: "Tested Load Cap: 40 Tons",
-        image: "/images/FRP-600x600-D400-FLORTEK.jpg"
+        loadClass: "D400 (Extra Heavy)",
+        loadBadge: "Up to 40T",
+        loadTons: "40T",
+        loadCapacity: "40 Tons (400 kN)",
+        size: "600 × 600 mm",
+        idealFor: "Highways & Heavy Transit",
+        image: "/images/FRP-600x600-D400-FLORTEK.jpg",
+        highlight: true
     },
     {
-        title: "Circular B125",
+        id: "c250-25t",
+        title: "C250 Heavy Duty Chamber Cover",
+        shortTitle: "C250 25T",
+        type: "Main Road Cover",
+        loadClass: "C250 (Heavy Duty)",
+        loadBadge: "25T",
+        loadTons: "25T",
+        loadCapacity: "25 Tons (250 kN)",
+        size: "900 × 900 mm",
+        idealFor: "City Arterials & Petrol Pumps",
+        image: "/images/900 X 900_124_C250.PNG",
+        highlight: false
+    },
+    {
+        id: "b125-12.5t",
+        title: "Circular B125 Inspection Cover",
+        shortTitle: "B125 12.5T",
         type: "Round Cover",
-        load: "Tested Load Cap: 12.5 Tons",
-        image: "/images/circular/FRP 600 BS EN_124_B125.png"
+        loadClass: "B125 (Medium Duty)",
+        loadBadge: "12.5T",
+        loadTons: "12.5T",
+        loadCapacity: "12.5 Tons (125 kN)",
+        size: "600 mm Dia (24\")",
+        idealFor: "Car Parking & Sidewalks",
+        image: "/images/circular/FRP 600 BS EN_124_B125.png",
+        highlight: false
     },
     {
-        title: "Water Gulley 5T",
+        id: "gully-5t",
+        title: "Water Gully Grating Cover",
+        shortTitle: "Gully 5T",
         type: "Gulley Cover",
-        load: "Tested Load Cap: 5 Tons",
-        image: "/images/watergully/GULLY COVER _300X600_5T_GRAY.png"
+        loadClass: "5T Gully Grate",
+        loadBadge: "5T",
+        loadTons: "5T",
+        loadCapacity: "5 Tons (50 kN)",
+        size: "300 × 600 mm",
+        idealFor: "Kerbside & Storm Drainage",
+        image: "/images/watergully/GULLY COVER _300X600_5T_GRAY.png",
+        highlight: false
     },
     {
-        title: "Recessed Cover 2.5T",
-        type: "Recessed Cover",
-        load: "Tested Load Cap: 2.5 Tons",
-        image: "/images/recessed/RECESS COVER _ 450X450_2.5T_GRAY.jpg"
-    },
-    {
-        title: "Square Cover 2.5T",
+        id: "square-2.5t",
+        title: "Square Chamber Cover (A15)",
+        shortTitle: "Square 2.5T",
         type: "Square Cover",
-        load: "Tested Load Cap: 2.5 Tons",
-        image: "/images/square/FRP-24x24-2.5T-FW.png"
+        loadClass: "A15 (Light Duty)",
+        loadBadge: "2.5T",
+        loadTons: "2.5T",
+        loadCapacity: "2.5 Tons (25 kN)",
+        size: "600 × 600 mm (24×24\")",
+        idealFor: "Walkways & Residential Parks",
+        image: "/images/square/FRP-24x24-2.5T-FW.png",
+        highlight: false
     },
     {
-        title: "Rectangle Cover 2.5T",
-        type: "Rectangle Cover",
-        load: "Tested Load Cap: 2.5 Tons",
-        image: "/images/rectangular/FRP-18x24-2.5T-FW.png"
+        id: "recessed-2.5t",
+        title: "Recessed Architectural Paver Cover",
+        shortTitle: "Recessed 2.5T",
+        type: "Recessed Cover",
+        loadClass: "2.5T Recessed",
+        loadBadge: "2.5T",
+        loadTons: "2.5T",
+        loadCapacity: "2.5 Tons (25 kN)",
+        size: "450 × 450 mm",
+        idealFor: "Tile Infill & Aesthetic Paving",
+        image: "/images/recessed/RECESS COVER _ 450X450_2.5T_GRAY.jpg",
+        highlight: false
     }
 ];
 
 const Home = () => {
     const { openModal } = useModal();
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [radius, setRadius] = useState(150);
-    const [centerSize, setCenterSize] = useState(200);
-    const [thumbSize, setThumbSize] = useState(96);
-    const [containerSize, setContainerSize] = useState(450);
+    const [isHovering, setIsHovering] = useState(false);
 
-    // Auto rotate slide every 5 seconds unless manually hovered/clicked
+    // Auto rotate slide every 5.5 seconds unless user hovers
     useEffect(() => {
+        if (isHovering) return;
         const timer = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-        }, 5000);
+        }, 5500);
         return () => clearInterval(timer);
-    }, []);
-
-    // Responsive scaling resize listener for circular layout coordinates
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth < 400) {
-                setRadius(90);
-                setCenterSize(110);
-                setThumbSize(52);
-                setContainerSize(260);
-            } else if (window.innerWidth < 480) {
-                setRadius(105);
-                setCenterSize(130);
-                setThumbSize(58);
-                setContainerSize(290);
-            } else if (window.innerWidth < 640) {
-                setRadius(120);
-                setCenterSize(150);
-                setThumbSize(68);
-                setContainerSize(340);
-            } else if (window.innerWidth < 1024) {
-                setRadius(145);
-                setCenterSize(180);
-                setThumbSize(80);
-                setContainerSize(400);
-            } else {
-                setRadius(155);
-                setCenterSize(200);
-                setThumbSize(96);
-                setContainerSize(440);
-            }
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    }, [isHovering]);
 
     const homeSchema = {
         "@context": "https://schema.org",
@@ -150,35 +164,90 @@ const Home = () => {
                 keywords="FLORTEK INDUSTRIES PVT. LTD., Flortek FRP Cover, Flortek FRP, India's No. 1 FRP manhole cover manufacturer, best FRP manhole cover manufacturer in India, composite manhole cover exporter Rajkot, heavy duty chamber covers Gujarat, EN 124 certified drainage covers, D400 B125 C250 A15, industrial road drain covers, municipal sewer inspection covers, anti theft chamber covers"
                 schema={homeSchema}
                 canonicalUrl="https://www.flortekfrpcover.com"
-            />            {/* --- HERO SECTION (TWO-COLUMN WITH PRODUCT IMAGE) --- */}
-            <div className="bg-white text-black min-h-[85vh] flex items-center relative overflow-hidden border-b border-[#F5F5F5]">
-                {/* Background decorative blobs */}
-                <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-black rounded-full blur-[120px] -mr-40 -mt-40"></div>
+            />            {/* --- HERO SECTION WITH INTERACTIVE 40T LOAD CAPACITY SHOWCASE --- */}
+            <div 
+                className="bg-white text-black min-h-[88vh] flex items-center relative overflow-hidden border-b border-[#F5F5F5]"
+                onMouseEnter={() => setIsHovering(true)}
+                onMouseLeave={() => setIsHovering(false)}
+            >
+                {/* Background decorative ambient glow */}
+                <div className="absolute inset-0 opacity-[0.04] pointer-events-none">
+                    <div className="absolute top-0 right-0 w-[650px] h-[650px] bg-[#1B8036] rounded-full blur-[140px] -mr-40 -mt-40"></div>
+                    <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#FFC700] rounded-full blur-[130px] -ml-32 -mb-32"></div>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 md:px-8 w-full py-10 sm:py-16 md:py-24 relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
-                        {/* Left Column: Text Content */}
-                        <div className="lg:col-span-7 text-left space-y-6 md:space-y-8">
+                <div className="max-w-7xl mx-auto px-4 md:px-8 w-full py-10 sm:py-16 md:py-20 relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        {/* Left Column: Text & Value Proposition */}
+                        <div className="lg:col-span-7 text-left space-y-6">
                             <motion.div
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={{ opacity: 0, y: 25 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                className="space-y-6 md:space-y-8"
+                                transition={{ duration: 0.7, ease: "easeOut" }}
+                                className="space-y-5 sm:space-y-6"
                             >
-                                <span className="inline-block py-1.5 px-3.5 rounded-full bg-[#FFC700]/20 text-black text-[10px] font-black tracking-widest uppercase border border-[#FFC700]">
-                                    Est. 2017 | Rajkot, India
-                                </span>
-                                <h1 className="text-3xl sm:text-5xl md:text-7xl font-black tracking-tighter leading-[1.05] sm:leading-[0.95] text-black uppercase">
+                                {/* Badge Row */}
+                                <div className="flex flex-wrap items-center gap-2">
+                                    <span className="inline-block py-1 px-3 rounded-full bg-[#FFC700]/25 text-black text-[10px] font-black tracking-widest uppercase border border-[#FFC700]">
+                                        Est. 2017 | Rajkot, India
+                                    </span>
+                                    <span className="inline-flex items-center gap-1.5 py-1 px-3 rounded-full bg-[#1B8036]/10 text-[#1B8036] text-[10px] font-black tracking-wider uppercase border border-[#1B8036]/30">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-[#1B8036] animate-pulse"></span>
+                                        BS EN 124 Certified • Up to 40T
+                                    </span>
+                                </div>
+
+                                {/* Main Headline */}
+                                <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] sm:leading-[0.98] text-black uppercase">
                                     Engineering <br />
-                                    <span className="text-[#1B8036]">Structural Strength.</span>
+                                    <span className="text-[#1B8036]">Structural Strength.</span> <br />
+                                    <span className="text-xl sm:text-3xl md:text-4xl text-neutral-800 font-extrabold tracking-tight normal-case block mt-2">
+                                        Heavy-duty composite covers tested <span className="text-black font-black underline decoration-[#FFC700] decoration-4 underline-offset-4">up to 40T</span>
+                                    </span>
                                 </h1>
-                                <p className="text-xs sm:text-base md:text-xl text-black font-medium leading-relaxed max-w-2xl">
-                                    High-performance, corrosion-resistant FRP manhole covers engineered with absolute precision for modern infrastructure, commercial hubs, and industrial applications.
+
+                                <p className="text-xs sm:text-base md:text-lg text-neutral-700 font-medium leading-relaxed max-w-2xl">
+                                    High-performance, corrosion-resistant FRP manhole covers engineered with absolute precision. Certified to <strong className="text-black">BS EN 124 standards</strong> across 2.5T, 5T, 12.5T, 25T, and heavy-duty 40T load ratings for municipal and industrial infrastructure.
                                 </p>
+
+                                {/* Interactive Load Capacity Spectrum / Quick Selector */}
+                                <div className="space-y-2 pt-1">
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-[10px] font-black uppercase tracking-wider text-neutral-500">
+                                            Select Tested Load Class:
+                                        </span>
+                                        <span className="text-[10px] font-bold text-[#1B8036] bg-[#1B8036]/10 px-2 py-0.5 rounded-full">
+                                            {heroSlides[currentSlide].loadCapacity}
+                                        </span>
+                                    </div>
+                                    <div className="flex flex-wrap gap-1.5 sm:gap-2">
+                                        {heroSlides.map((slide, idx) => {
+                                            const isActive = currentSlide === idx;
+                                            return (
+                                                <button
+                                                    key={slide.id}
+                                                    onClick={() => setCurrentSlide(idx)}
+                                                    className={`px-3 py-1.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border cursor-pointer ${
+                                                        isActive
+                                                            ? 'bg-[#1B8036] text-white border-[#1B8036] shadow-sm scale-105'
+                                                            : slide.loadBadge.includes('40T')
+                                                            ? 'bg-[#FFC700]/30 hover:bg-[#FFC700] text-black border-[#FFC700] font-black'
+                                                            : 'bg-white hover:bg-neutral-100 text-neutral-800 border-[#D9D9D9]'
+                                                    }`}
+                                                >
+                                                    {slide.loadBadge.includes('40T') ? '🔥 Up to 40T (D400)' : slide.loadBadge}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+
+                                {/* Call to Action Buttons */}
                                 <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-2">
-                                    <Link to="/products" className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm hover:shadow-md">
+                                    <Link 
+                                        to="/products" 
+                                        className="w-full sm:w-auto inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-[#1B8036] hover:bg-[#145C27] text-white font-bold uppercase tracking-wider text-xs rounded-xl transition-all border border-[#1B8036] shadow-sm hover:shadow-md"
+                                    >
                                         View Products <ArrowRight size={14} className="ml-2" />
                                     </Link>
                                     <button
@@ -214,34 +283,37 @@ const Home = () => {
                             </motion.div>
                         </div>
 
-                        {/* Right Column: Circular Orbit Product Showcase */}
-                        <div className="lg:col-span-5 relative w-full flex flex-col items-center justify-center gap-6 py-6">
-                            {/* Ambient Soft Glow Behind Wheel */}
-                            <div className="absolute w-[85%] h-[85%] rounded-full bg-gradient-to-tr from-[#1B8036]/5 via-[#FFC700]/5 to-transparent blur-3xl pointer-events-none -z-0" />
+                        {/* Right Column: High-Impact Product Showcase Deck */}
+                        <div className="lg:col-span-5 relative w-full flex flex-col items-center">
+                            {/* Ambient Glow */}
+                            <div className="absolute -inset-4 bg-gradient-to-tr from-[#1B8036]/10 via-[#FFC700]/10 to-transparent blur-3xl pointer-events-none rounded-3xl" />
 
-                            {/* Orbiting Wheel Container */}
-                            <div
-                                className="relative flex items-center justify-center select-none z-10"
-                                style={{ width: containerSize, height: containerSize }}
-                            >
-                                {/* Outer Dashed Orbit Path Line */}
-                                <div
-                                    className="absolute rounded-full border border-dashed border-[#D9D9D9] pointer-events-none"
-                                    style={{ width: radius * 2, height: radius * 2 }}
-                                />
+                            {/* Main Showcase Card */}
+                            <div className="relative w-full bg-white rounded-3xl border border-[#D9D9D9] p-5 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.06)] overflow-hidden transition-all duration-300 hover:border-[#1B8036]/50">
+                                
+                                {/* Subtle Engineering Grid Background */}
+                                <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-70 pointer-events-none" />
+                                <div className="absolute top-0 right-0 w-48 h-48 bg-[#FFC700]/10 rounded-full blur-2xl pointer-events-none" />
 
-                                {/* Subtle Inner Concentric Ring */}
-                                <div
-                                    className="absolute rounded-full border border-dotted border-[#E5E7EB] pointer-events-none"
-                                    style={{ width: radius * 1.5, height: radius * 1.5 }}
-                                />
+                                {/* Top Badges Row */}
+                                <div className="relative z-10 flex items-center justify-between gap-2 mb-4">
+                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1B8036]/10 border border-[#1B8036]/30 text-[#1B8036] text-[11px] font-black uppercase tracking-wider">
+                                        <span className="w-2 h-2 rounded-full bg-[#1B8036] animate-pulse"></span>
+                                        BS EN 124 Certified
+                                    </span>
 
-                                {/* Central Focus Product Card */}
-                                <motion.div
-                                    className="absolute rounded-full bg-white border border-[#D9D9D9] p-5 sm:p-6 flex items-center justify-center shadow-[0_20px_50px_rgba(0,0,0,0.08)] group overflow-hidden z-10"
-                                    style={{ width: centerSize, height: centerSize }}
-                                >
-                                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/[0.02] pointer-events-none" />
+                                    {/* UP TO 40T HIGHLIGHT BADGE */}
+                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFC700] text-[#0B1B3D] text-[11px] font-black uppercase tracking-wider shadow-sm">
+                                        <ShieldCheck size={13} className="shrink-0" />
+                                        {heroSlides[currentSlide].loadBadge.includes('40T') ? 'Tested Up to 40T' : `Load: ${heroSlides[currentSlide].loadBadge}`}
+                                    </span>
+                                </div>
+
+                                {/* Center Product Image Container with Framer Motion */}
+                                <div className="relative z-10 h-64 sm:h-72 md:h-80 flex items-center justify-center p-2">
+                                    {/* Subtle Circular Radial Glow behind Cover */}
+                                    <div className="absolute w-56 h-56 rounded-full bg-neutral-100 border border-neutral-200/80 shadow-inner flex items-center justify-center pointer-events-none" />
+
                                     <AnimatePresence mode="wait">
                                         <motion.img
                                             key={currentSlide}
@@ -249,71 +321,145 @@ const Home = () => {
                                             alt={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
                                             title={`${heroSlides[currentSlide].title} - FRP Composite Manhole Cover`}
                                             decoding="async"
-                                            initial={{ opacity: 0, scale: 0.85 }}
-                                            animate={{ opacity: 1, scale: 1 }}
-                                            exit={{ opacity: 0, scale: 0.9 }}
-                                            transition={{ duration: 0.3 }}
-                                            className="w-[88%] h-[88%] object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.15)] group-hover:scale-105 transition-transform duration-500 z-10"
+                                            initial={{ opacity: 0, scale: 0.88, y: 10 }}
+                                            animate={{ opacity: 1, scale: 1, y: 0 }}
+                                            exit={{ opacity: 0, scale: 0.92, y: -10 }}
+                                            transition={{ duration: 0.3, ease: "easeOut" }}
+                                            className="relative max-h-full max-w-[85%] object-contain drop-shadow-[0_18px_25px_rgba(0,0,0,0.18)] z-10 hover:scale-105 transition-transform duration-500 cursor-pointer"
+                                            onClick={openModal}
                                         />
                                     </AnimatePresence>
-                                </motion.div>
 
-                                {/* 6 Orbiting Product Thumbnails */}
+                                    {/* Quick Floating Pill: Anti-Theft / Zero Scrap */}
+                                    <div className="absolute bottom-1 left-2 z-20 hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md border border-[#D9D9D9] shadow-sm text-[10px] font-bold text-neutral-800">
+                                        <CheckCircle size={12} className="text-[#1B8036]" />
+                                        Zero Scrap (Theft-Proof)
+                                    </div>
+                                    
+                                    {/* Quick Floating Pill: Hydraulic Load Rig */}
+                                    <div className="absolute bottom-1 right-2 z-20 hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md border border-[#D9D9D9] shadow-sm text-[10px] font-bold text-neutral-800">
+                                        <Activity size={12} className="text-[#1B8036]" />
+                                        100T Rig Tested
+                                    </div>
+                                </div>
+
+                                {/* Live Active Product Info Strip */}
+                                <div className="relative z-10 mt-4 pt-4 border-t border-[#E5E7EB]">
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                                        <div>
+                                            <h3 className="text-sm sm:text-base font-black uppercase text-black tracking-tight leading-snug">
+                                                {heroSlides[currentSlide].title}
+                                            </h3>
+                                            <p className="text-xs text-[#555555] font-medium mt-0.5">
+                                                Ideal for: <span className="font-semibold text-black">{heroSlides[currentSlide].idealFor}</span>
+                                            </p>
+                                        </div>
+                                        <button
+                                            onClick={openModal}
+                                            className="self-start sm:self-auto px-3.5 py-1.5 bg-[#1B8036] hover:bg-[#145C27] text-white text-[10px] font-extrabold uppercase tracking-wider rounded-lg transition-colors shrink-0 shadow-sm cursor-pointer"
+                                        >
+                                            Get Rate
+                                        </button>
+                                    </div>
+
+                                    {/* Micro Specs Grid */}
+                                    <div className="grid grid-cols-3 gap-2 mt-3 pt-3 border-t border-neutral-100 text-center">
+                                        <div className="bg-[#F8F9FA] rounded-xl py-1.5 px-2 border border-neutral-200/60">
+                                            <span className="block text-[9px] font-bold uppercase tracking-wider text-neutral-500">Outer Size</span>
+                                            <span className="text-[11px] font-black text-black">{heroSlides[currentSlide].size}</span>
+                                        </div>
+                                        <div className="bg-[#F8F9FA] rounded-xl py-1.5 px-2 border border-neutral-200/60">
+                                            <span className="block text-[9px] font-bold uppercase tracking-wider text-neutral-500">Tested Force</span>
+                                            <span className="text-[11px] font-black text-[#1B8036]">{heroSlides[currentSlide].loadCapacity}</span>
+                                        </div>
+                                        <div className="bg-[#F8F9FA] rounded-xl py-1.5 px-2 border border-neutral-200/60">
+                                            <span className="block text-[9px] font-bold uppercase tracking-wider text-neutral-500">Class Rating</span>
+                                            <span className="text-[11px] font-black text-black">{heroSlides[currentSlide].loadClass.split(' ')[0]}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Interactive Thumbnails Strip to Switch Models */}
+                            <div className="w-full mt-4 flex items-center justify-between gap-1.5 sm:gap-2 overflow-x-auto pb-1 no-scrollbar">
                                 {heroSlides.map((slide, idx) => {
-                                    const angle = (idx * 60 - 90) * Math.PI / 180;
-                                    const x = Math.cos(angle) * radius;
-                                    const y = Math.sin(angle) * radius;
                                     const isActive = currentSlide === idx;
-
                                     return (
                                         <button
-                                            key={idx}
-                                            onMouseEnter={() => setCurrentSlide(idx)}
+                                            key={slide.id}
                                             onClick={() => setCurrentSlide(idx)}
-                                            className={`absolute rounded-full bg-white border flex items-center justify-center p-1.5 shadow-md cursor-pointer hover:scale-110 hover:shadow-lg transition-all duration-300 z-20 ${isActive ? 'border-[#1B8036] ring-4 ring-[#1B8036]/15 scale-105' : 'border-[#D9D9D9] hover:border-black/60'
-                                                }`}
-                                            style={{
-                                                width: thumbSize,
-                                                height: thumbSize,
-                                                left: `calc(50% + ${x}px)`,
-                                                top: `calc(50% + ${y}px)`,
-                                                transform: 'translate(-50%, -50%)',
-                                            }}
-                                            aria-label={`Showcase product ${slide.title}`}
+                                            className={`flex-1 min-w-[54px] sm:min-w-[64px] flex flex-col items-center gap-1 p-1.5 sm:p-2 rounded-2xl border transition-all duration-200 cursor-pointer ${
+                                                isActive
+                                                    ? 'bg-white border-[#1B8036] shadow-md ring-2 ring-[#1B8036]/20 scale-105'
+                                                    : 'bg-white/80 border-[#D9D9D9] hover:border-black/40 hover:bg-white'
+                                            }`}
                                         >
-                                            <img
-                                                src={slide.image}
-                                                alt={`${slide.title} - FRP Cover Showcase`}
-                                                title={`${slide.title} - FRP Cover Showcase`}
-                                                decoding="async"
-                                                className="w-4/5 h-4/5 object-contain"
-                                            />
+                                            <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
+                                                <img
+                                                    src={slide.image}
+                                                    alt={slide.shortTitle}
+                                                    className="max-h-full max-w-full object-contain"
+                                                />
+                                            </div>
+                                            <span className={`text-[9px] sm:text-[10px] font-black uppercase tracking-tight ${isActive ? 'text-[#1B8036]' : 'text-neutral-700'}`}>
+                                                {slide.loadTons}
+                                            </span>
                                         </button>
                                     );
                                 })}
                             </div>
+                        </div>
+                    </div>
 
-                            {/* Live Specs Floating Pill Badge */}
-                            <div className="relative z-20 min-h-[44px] flex items-center justify-center">
-                                <AnimatePresence mode="wait">
-                                    <motion.div
-                                        key={currentSlide}
-                                        initial={{ opacity: 0, y: 8, scale: 0.96 }}
-                                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                                        exit={{ opacity: 0, y: -8, scale: 0.96 }}
-                                        transition={{ duration: 0.25 }}
-                                        className="inline-flex items-center gap-2.5 px-4 py-2 bg-white/95 backdrop-blur-md border border-[#D9D9D9] shadow-md rounded-full"
-                                    >
-                                        <span className="w-2 h-2 rounded-full bg-[#1B8036] animate-pulse"></span>
-                                        <span className="text-xs font-black uppercase text-black tracking-wider">
-                                            {heroSlides[currentSlide].title}
-                                        </span>
-                                        <span className="w-1 h-1 rounded-full bg-[#D9D9D9]"></span>
-                                        <span className="text-[10px] font-bold text-[#1B8036] uppercase tracking-wider bg-[#1B8036]/10 px-2 py-0.5 rounded-full">
-                                            {heroSlides[currentSlide].load.replace('Tested Load Cap: ', '')}
-                                        </span>
-                                    </motion.div>
-                                </AnimatePresence>
+                    {/* Full-Width Key Metrics Strip: 40T Proof Load, Anti-Theft, 70% Lighter, 100T Rig */}
+                    <div className="mt-12 sm:mt-16 pt-8 border-t border-[#E5E7EB]">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                            <div className="bg-[#F9FAFB] rounded-2xl p-4 sm:p-5 border border-[#E5E7EB] hover:border-[#1B8036] transition-colors">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-xl bg-[#1B8036]/10 text-[#1B8036] flex items-center justify-center shrink-0">
+                                        <ShieldCheck size={22} />
+                                    </div>
+                                    <div>
+                                        <div className="text-xl sm:text-2xl font-black text-black tracking-tight">Up to 40T</div>
+                                        <div className="text-[11px] text-[#555555] font-semibold leading-tight mt-0.5">Heavy Duty Class D400</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-[#F9FAFB] rounded-2xl p-4 sm:p-5 border border-[#E5E7EB] hover:border-[#1B8036] transition-colors">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-xl bg-[#FFC700]/25 text-[#0B1B3D] flex items-center justify-center shrink-0">
+                                        <Zap size={22} />
+                                    </div>
+                                    <div>
+                                        <div className="text-xl sm:text-2xl font-black text-black tracking-tight">100%</div>
+                                        <div className="text-[11px] text-[#555555] font-semibold leading-tight mt-0.5">Anti-Theft Zero Scrap</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-[#F9FAFB] rounded-2xl p-4 sm:p-5 border border-[#E5E7EB] hover:border-[#1B8036] transition-colors">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-xl bg-[#1B8036]/10 text-[#1B8036] flex items-center justify-center shrink-0">
+                                        <Truck size={22} />
+                                    </div>
+                                    <div>
+                                        <div className="text-xl sm:text-2xl font-black text-black tracking-tight">70% Lighter</div>
+                                        <div className="text-[11px] text-[#555555] font-semibold leading-tight mt-0.5">Than Cast & Ductile Iron</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="bg-[#F9FAFB] rounded-2xl p-4 sm:p-5 border border-[#E5E7EB] hover:border-[#1B8036] transition-colors">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 rounded-xl bg-neutral-200/80 text-black flex items-center justify-center shrink-0">
+                                        <Activity size={22} />
+                                    </div>
+                                    <div>
+                                        <div className="text-xl sm:text-2xl font-black text-black tracking-tight">100-Ton</div>
+                                        <div className="text-[11px] text-[#555555] font-semibold leading-tight mt-0.5">In-House Testing Rig</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

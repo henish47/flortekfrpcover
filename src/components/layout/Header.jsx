@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, MapPin, Download } from 'lucide-react';
 import Button from '../common/Button';
@@ -9,11 +9,29 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const headerRef = useRef(null);
+    const [navbarHeight, setNavbarHeight] = useState(0);
     const location = useLocation();
 
+    // Measure navbar height for zero-layout-shift spacer
     useEffect(() => {
-        const handleScroll = () => setScrolled(window.scrollY > 20);
-        window.addEventListener('scroll', handleScroll);
+        const updateHeight = () => {
+            if (headerRef.current) {
+                setNavbarHeight(headerRef.current.offsetHeight);
+            }
+        };
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+        return () => window.removeEventListener('resize', updateHeight);
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 35;
+            setScrolled(isScrolled);
+        };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -34,6 +52,7 @@ const Header = () => {
         <>
             <InquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
+            {/* Top Bar with Contact Info (scrolls away naturally) */}
             <div className="bg-[#1B8036] text-white py-2.5 text-[10px] font-extrabold tracking-wider uppercase hidden md:block border-b border-black/10">
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                     <div className="flex gap-6">
@@ -67,8 +86,14 @@ const Header = () => {
                 </div>
             </div>
 
+            {/* Main Navbar - Fixed position on scroll */}
             <header
-                className={`sticky top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#FFC700]/95 backdrop-blur-md border-b border-[#0B1B3D]/10 py-2 shadow-lg shadow-[#0B1B3D]/5' : 'bg-[#FFC700] border-b border-[#0B1B3D]/10 py-3.5 shadow-sm'}`}
+                ref={headerRef}
+                className={`w-full z-50 transition-all duration-300 ${
+                    scrolled
+                        ? 'fixed top-0 left-0 right-0 bg-[#FFC700]/95 backdrop-blur-md border-b border-[#0B1B3D]/15 py-2 shadow-lg shadow-black/10'
+                        : 'relative bg-[#FFC700] border-b border-[#0B1B3D]/10 py-3 sm:py-3.5 shadow-sm'
+                }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
@@ -201,6 +226,15 @@ const Header = () => {
                     )}
                 </AnimatePresence>
             </header>
+
+            {/* Placeholder spacer when navbar is fixed on scroll, preventing layout jump */}
+            {scrolled && (
+                <div 
+                    style={{ height: navbarHeight || 80 }} 
+                    className="w-full pointer-events-none" 
+                    aria-hidden="true" 
+                />
+            )}
         </>
     );
 };
