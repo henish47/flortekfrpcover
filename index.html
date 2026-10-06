@@ -173,6 +173,39 @@
     gtag('config', 'G-W2YPL6KZQB');
   </script>
 
+  <!-- Anti-Inspect & Source Code Protection -->
+  <script>
+    (function () {
+      // Block context menu immediately
+      document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        return false;
+      }, true);
+
+      // Block F12, Ctrl+Shift+I/J/C, Ctrl+U, Ctrl+S immediately
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'F12' || e.keyCode === 123) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+        if (e.ctrlKey || e.metaKey) {
+          var k = (e.key || '').toLowerCase();
+          if (e.shiftKey && (k === 'i' || k === 'j' || k === 'c' || e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 67)) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+          if (k === 'u' || e.keyCode === 85 || k === 's' || e.keyCode === 83) {
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+          }
+        }
+      }, true);
+    })();
+  </script>
+
 </head>
 
 <body>

@@ -8,6 +8,7 @@ export default defineConfig({
     target: 'es2020',
     cssCodeSplit: true,
     minify: 'esbuild',
+    sourcemap: false,
     rollupOptions: {
       output: {
         manualChunks(id) {
