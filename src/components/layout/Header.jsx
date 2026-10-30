@@ -43,7 +43,7 @@ const Header = () => {
         { name: 'Product Gallery', path: '/products' },
         { name: 'Sizes', path: '/sizes' },
         { name: 'Install', path: '/installation' },
-        // { name: 'Export', path: '/frp-cover-exporter' },
+        { name: 'Export', path: '/frp-cover-exporter' },
         { name: 'Applications', path: '/applications' },
         { name: 'Contact', path: '/contact' },
     ];

@@ -820,7 +820,8 @@ const Home = () => {
             {/* --- GOOGLE BUSINESS REVIEWS COMPONENT --- */}
             <GoogleReviews />
 
-            {/* --- FAQ SECTION (BLACK & WHITE) --- */}
+
+                        {/* --- FAQ SECTION (BLACK & WHITE) --- */}
             <div className="bg-[#F5F5F5] py-24 border-t border-[#D9D9D9]/50">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="text-center mb-16">
